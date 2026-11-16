@@ -69,6 +69,13 @@ document. Wat nog misloopt: "fosfor" vindt de tabel met "fosfaat"-normen niet,
 en "groenbedekker op leemgrond" vindt de regels voor bodembedekking in plaats
 van de uitrijregeling.
 
+**Antwoorden** (oefenvragen, 16 nov 2026), Claude Sonnet 5.5: de juiste bron
+geciteerd bij 39 van 41 vragen (95%), het antwoord klopt bij 39 van 41 (95%),
+en bij alle 4 vragen zonder antwoord in de documenten zegt het "Dat staat niet
+in mijn documenten". Gemiddeld 5,4 s en ± 7.900 tokens in per vraag. Het open
+model gpt-oss-120b haalt in de gratis laag van Groq hoogstens 200.000 tokens per
+dag, minder dan één volledige meting.
+
 De vragen zijn geschreven met de documenten ernaast, dus deze scores zijn
 eerder te hoog dan te laag.
 

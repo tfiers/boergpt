@@ -89,6 +89,7 @@ async function vraagModel(naam, url, headers, body) {
     if (r.status === 429 && poging < 3 && wacht <= WACHT_MAX) { await new Promise(k => setTimeout(k, wacht * 1000)); continue; }
     const fout = new Error(`${naam}: ${r.status} ${(await r.text()).slice(0, 200)}`);
     fout.status = r.status;
+    fout.perDag = /per day/.test(fout.message); // Groq: de gratis portie van de dag is op
     throw fout;
   }
 }
