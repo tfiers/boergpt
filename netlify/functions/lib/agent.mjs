@@ -6,7 +6,7 @@ import { bronnen, lees, zoek, STAPELS } from "./zoek.mjs";
 const kalender = JSON.parse(lees("uitrijkalender.json"));
 
 export const MODELLEN = {
-  open: { naam: "gpt-oss-120b (open model)", id: process.env.OPEN_MODEL || "openai/gpt-oss-120b" },
+  open: { naam: "gpt-oss-120b (open model)" },
   claude: { naam: "Claude Sonnet 5.5", id: process.env.CLAUDE_MODEL || "claude-sonnet-5-5" },
 };
 
@@ -136,12 +136,14 @@ const openAanbieder = (naam, url, sleutel, id) => ({
   },
   start: vraag => [{ role: "system", content: SYSTEEM() }, { role: "user", content: vraag }],
 });
+// OPEN_VIA + OPEN_MODEL kiezen een ander model bij één aanbieder, om modellen te vergelijken.
+const gekozen = (via, standaard) => () => (process.env.OPEN_VIA === via && process.env.OPEN_MODEL) || standaard;
 const groq = openAanbieder("Groq", () => "https://api.groq.com/openai/v1/chat/completions",
-  () => process.env.GROQ_API_KEY, () => MODELLEN.open.id);
+  () => process.env.GROQ_API_KEY, gekozen("groq", "openai/gpt-oss-120b"));
 // Reserve: hetzelfde model op Cloudflare Workers AI, met de sleutel die ook de vraagvector haalt.
 const cloudflare = openAanbieder("Cloudflare",
   () => `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
-  () => process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_API_TOKEN, () => "@cf/openai/gpt-oss-120b");
+  () => process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_API_TOKEN, gekozen("cloudflare", "@cf/openai/gpt-oss-120b"));
 
 // OPEN_VIA=groq of cloudflare legt de aanbieder vast (voor een meting); anders eerst Groq,
 // en Cloudflare zodra Groq "te druk" zegt, zonder te wachten.
