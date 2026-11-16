@@ -165,15 +165,18 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {
 export function opmaak(tekst, gezien, stappen) {
   const jaar = new Date().getFullYear();
   const geciteerd = new Map();
-  const schoon = tekst.replace(/\s*\[(S(\d+)|K|S[^\]]*)\]/g, (heel, wat, nr) => {
-    if (wat === "K") return gezien.kalender ? " [K]" : "";
-    if (nr === undefined) return "";
-    const s = gezien.stukjes.get(Number(nr));
+  const bewaar = id => {
+    const s = gezien.stukjes.get(id);
     if (!s) return "";
     const b = bronnen[s.bron];
     geciteerd.set(s.id, { id: s.id, titel: b.titel, uitgever: b.uitgever, datum: b.datum, url: b.url, stapel: b.stapel,
       pagina: s.pagina, tekst: s.tekst, oud: jaar - Number(b.datum.slice(0, 4)) > 3 });
-    return ` [S${nr}]`;
+    return ` [S${id}]`;
+  };
+  // Modellen schrijven het niet altijd netjes: "[ S12 ]", "[S12, S13]" of "【S12】" tellen ook.
+  const schoon = tekst.replace(/\s*[\[【]\s*(K|S[^\]】]*)[\]】]/g, (heel, wat) => {
+    if (wat.trim() === "K") return gezien.kalender ? " [K]" : "";
+    return (wat.match(/\d+/g) || []).map(n => bewaar(Number(n))).join("");
   });
   return { antwoord: schoon.trim(), stappen, bronnen: [...geciteerd.values()], kalender: gezien.kalender };
 }
