@@ -97,10 +97,11 @@ const anthropic = {
   naam: "Anthropic",
   tools: GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
     input_schema: { type: "object", properties: g.velden, required: g.verplicht } })),
-  async stap(berichten) {
+  async stap(berichten, geduld, moet) {
     const j = await vraagModel("Claude", "https://api.anthropic.com/v1/messages",
       { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-      { model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten });
+      { model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten,
+        tool_choice: { type: { zoeken: "any", schrijven: "none" }[moet] || "auto" } }, geduld);
     berichten.push({ role: "assistant", content: j.content });
     const oproepen = j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
     return { oproepen, tekst: j.content.filter(c => c.type === "text").map(c => c.text).join(""),
@@ -119,9 +120,10 @@ const openTools = GEREEDSCHAP.map(g => ({ type: "function", function: { name: g.
 const openAanbieder = (naam, url, sleutel, id) => ({
   naam,
   klaar: () => Boolean(sleutel()),
-  async stap(berichten, geduld) {
+  async stap(berichten, geduld, moet) {
     const j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
-      { model: id(), max_tokens: 1200, temperature: 0.2, tools: openTools, messages: berichten }, geduld);
+      { model: id(), max_tokens: 1200, temperature: 0.2, tools: openTools, messages: berichten,
+        tool_choice: { zoeken: "required", schrijven: "none" }[moet] || "auto" }, geduld);
     const m = j.choices[0].message;
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
     const oproepen = (m.tool_calls || []).map(t => {
@@ -155,6 +157,8 @@ function aanbieders(model) {
   return cloudflare.klaar() ? [groq, cloudflare] : [groq];
 }
 
+// De eerste ronde moet het model gereedschap gebruiken (zo antwoordt het nooit uit het hoofd),
+// de laatste ronde moet het schrijven (zo eindigt een vraag nooit zonder antwoord).
 // Hoogstens 4 modelaanroepen per vraag en 3 gereedschappen per ronde: zo blijft een
 // vraag goedkoop, ook als iemand het model vraagt om twintig keer tegelijk te zoeken.
 export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {}) {
@@ -167,16 +171,17 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {
   const gebruik = { in: 0, uit: 0, aanroepen: 0 };  // tokens, om de kost per vraag te meten
   for (let ronde = 0; ronde <= maxRondes; ronde++) {
     let s;
-    try { s = await a.stap(berichten, rij.length ? 0 : WACHT_MAX); }
+    const moet = ronde === 0 ? "zoeken" : ronde === maxRondes ? "schrijven" : null;
+    try { s = await a.stap(berichten, rij.length ? 0 : WACHT_MAX, moet); }
     catch (e) {
       if (e.status !== 429 || !rij.length) throw e;
       a = rij.shift();
-      s = await a.stap(berichten);
+      s = await a.stap(berichten, WACHT_MAX, moet);
     }
     gebruik.in += s.gebruik.in; gebruik.uit += s.gebruik.uit; gebruik.aanroepen++;
     tekst = s.tekst;
     if (!s.oproepen.length) break;
-    if (ronde === maxRondes) { tekst ||= "Ik vond niet genoeg om te antwoorden."; break; }
+    if (ronde === maxRondes) { tekst ||= "Dat staat niet in mijn documenten."; break; }
     const uit = [];
     for (const [i, o] of s.oproepen.entries()) {
       // Elke oproep krijgt een antwoord (beide API's eisen dat), maar alleen de eerste paar lopen echt.
@@ -202,8 +207,8 @@ export function opmaak(tekst, gezien, stappen) {
       pagina: s.pagina, tekst: s.tekst, oud: jaar - Number(b.datum.slice(0, 4)) > 3 });
     return ` [S${id}]`;
   };
-  // Modellen schrijven het niet altijd netjes: "[ S12 ]", "[S12, S13]" of "【S12】" tellen ook.
-  const schoon = tekst.replace(/\s*[\[【]\s*(K|S[^\]】]*)[\]】]/g, (heel, wat) => {
+  // Modellen schrijven het niet altijd netjes: "[ S12 ]", "[S12, S13]", "【S12】" of "[12]" tellen ook.
+  const schoon = tekst.replace(/\s*[\[【]\s*(K|S[^\]】]*|\d+(?:\s*,\s*S?\d+)*)\s*[\]】]/g, (heel, wat) => {
     if (wat.trim() === "K") return gezien.kalender ? " [K]" : "";
     return (wat.match(/\d+/g) || []).map(n => bewaar(Number(n))).join("");
   });
