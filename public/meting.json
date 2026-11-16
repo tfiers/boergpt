@@ -4,39 +4,58 @@
   "datum": "2026-11-16",
   "kolommen": [
    "",
-   "oefenvragen",
-   "apart gehouden"
+   "oefenvragen (40)",
+   "apart gehouden (22)",
+   "echte vragen (41)"
   ],
   "rijen": [
    [
     "alleen op woorden",
     "83%",
+    "73%",
     "73%"
+   ],
+   [
+    "alleen op betekenis",
+    "83%",
+    "91%",
+    "88%"
    ],
    [
     "woorden + betekenis",
     "90%",
-    "91%"
+    "91%",
+    "73%"
    ]
   ]
  },
  {
-  "titel": "Antwoorden, op de oefenvragen",
+  "titel": "Antwoorden van Claude Sonnet 5.5",
   "datum": "2026-11-16",
   "kolommen": [
    "",
    "juiste bron",
    "klopt",
+   "half",
    "zegt 'weet ik niet'",
    "tijd"
   ],
   "rijen": [
    [
-    "Claude",
-    "95%",
-    "95%",
-    "100%",
-    "5.4 s"
+    "oefenvragen (45)",
+    "93%",
+    "98%",
+    "2%",
+    "4 van 4",
+    "5,4 s"
+   ],
+   [
+    "echte vragen (50)",
+    "90%",
+    "80%",
+    "16%",
+    "7 van 9",
+    "7,6 s"
    ]
   ]
  }
