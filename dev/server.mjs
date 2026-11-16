@@ -1,5 +1,6 @@
 // Lokale stand-in: serveert public/ en beantwoordt /api/vraag en /api/perceel met een nep-model
-// dat echt zoekt (zelfde agent-lus), met vertraging, en /api/oordeel uit het geheugen.
+// dat echt zoekt (zelfde agent-lus), met vertraging, en /api/oordeel met de echte functie en een
+// opslag in het geheugen (geheim "dev": de link staat in de console).
 // Alleen om de pagina's te testen.
 import http from "node:http"; import { readFileSync, existsSync } from "node:fs"; import { join, extname } from "node:path";
 process.chdir(process.argv[2]);
@@ -29,7 +30,12 @@ globalThis.fetch = async (url, opt) => {
 };
 const { vraagAan, MODELLEN } = await import(join(process.cwd(), "netlify/functions/lib/agent.mjs"));
 const { FICHE, perceelVraag } = await import(join(process.cwd(), "netlify/functions/lib/fiche.mjs"));
-const oordelen = new Map();
+const { opslag } = await import(join(process.cwd(), "netlify/functions/lib/budget.mjs"));
+const { nepStore } = await import(join(process.cwd(), "test/nep.mjs"));
+const winkels = {};
+opslag.open = naam => (winkels[naam] ??= nepStore());
+process.env.OORDEEL_GEHEIM ||= "dev";
+const { default: oordeel, sleutelVoor } = await import(join(process.cwd(), "netlify/functions/oordeel.mjs"));
 const lees = async req => { let body = ""; for await (const c of req) body += c; return JSON.parse(body); };
 const stuur = (res, data, status = 200) => { res.writeHead(status, { "content-type": "application/json" }); res.end(JSON.stringify(data)); };
 const TYPE = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" };
@@ -45,11 +51,11 @@ http.createServer(async (req, res) => {
     return stuur(res, { model: MODELLEN[p.model === "open" ? "open" : "claude"].naam, vraag, ...await vraagAan(p.model === "open" ? "open" : "claude", vraag, { maxRondes: 4, taak: FICHE }) });
   }
   if (req.url.startsWith("/api/oordeel")) {
-    if (!existsSync("data/oordeel.json")) return stuur(res, { fout: "Geen data/oordeel.json: maak er een met node test/oordeel.mjs maak." }, 404);
-    if (req.method === "POST") { const o = await lees(req); oordelen.set(o.item, o); return stuur(res, { ok: true }); }
-    return stuur(res, { ...JSON.parse(readFileSync("data/oordeel.json")), oordelen: [...oordelen.values()] });
+    const body = req.method === "POST" ? JSON.stringify(await lees(req)) : undefined;
+    const r = await oordeel(new Request(`http://localhost${req.url}`, { method: req.method, body }));
+    return stuur(res, await r.json(), r.status);
   }
   const p = join("public", req.url === "/" ? "index.html" : req.url.split("?")[0]);
   if (!existsSync(p)) { res.writeHead(404); return res.end(); }
   res.writeHead(200, { "content-type": TYPE[extname(p)] || "text/plain" }); res.end(readFileSync(p));
-}).listen(8787, () => console.log("op http://localhost:8787"));
+}).listen(8787, () => console.log(`op http://localhost:8787 (oordeel: /oordeel.html?wie=test&sleutel=${sleutelVoor("test")})`));

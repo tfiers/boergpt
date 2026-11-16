@@ -90,7 +90,6 @@ sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
 .balk{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--panel);border-top:1px solid var(--line);z-index:5}
 .balk button{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
 .balk button:disabled{opacity:.4;cursor:default}
-#wie{font:inherit;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);flex:1;background:var(--panel);color:var(--ink)}
 .perceelform{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:640px}
 .perceelform>label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
 .perceelform input:not([type=radio]),.perceelform select{font:inherit;font-size:16px;font-weight:400;min-height:44px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
@@ -110,7 +109,6 @@ sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
 .kopieer{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--accent);background:none;color:var(--accent);font:inherit}
 .kaart h3{font-size:15px;margin:4px 0 0}
 [hidden]{display:none !important}
-#wie{min-width:0}
 .balk button,#teller{white-space:nowrap}
 .balk button{padding:0 14px}
 .stukjes summary::before{content:"▸";margin-right:6px}
