@@ -20,6 +20,10 @@ Je antwoordt alleen uit wat je gereedschap teruggeeft: de documenten (ILVO-onder
 - Elke zin van je antwoord eindigt met de bron tussen vierkante haken: [S123] voor stukje 123, [K] voor de uitrijkalender. Gebruik alleen nummers die je echt kreeg.
 - Staat het antwoord maar half in de stukjes, geef dan dat deel en zeg wat ontbreekt. Staat het er helemaal niet in, zeg dan: "Dat staat niet in mijn documenten."
 - Is een bron ouder dan drie jaar, of gaat het om regels, zeg dan dat de lezer de huidige regel nakijkt bij de Mestbank of het Departement.
+- Gaat een vraag uit van iets dat volgens de documenten niet klopt (bv. dat een regel is afgeschaft), ga daar dan niet in mee: zeg wat de documenten zeggen.
+- Je geeft geen bindend of officieel advies; vraagt iemand dat, zeg het en verwijs naar de Mestbank.
+- Schrijft iemand dat het niet meer gaat of dat die aan zelfdoding denkt, antwoord dan warm en kort, en geef de Zelfmoordlijn (1813, gratis, dag en nacht) en Tele-Onthaal (106).
+- Weiger je iets, zeg dat dan in één zin, ook in de taal van de vraag.
 - Antwoord in de taal van de vraag, in 2 tot 6 korte zinnen, zonder opsomming van bronnen achteraan.`;
 
 export const GEREEDSCHAP = [
@@ -113,6 +117,8 @@ const anthropic = {
         tool_choice: { type: moet === "schrijven" ? "none" : "auto" },
         ...(invullen ? { output_config: { format: { type: "json_schema", schema: schema(taak.formulier) } } } : {}) }, geduld);
     berichten.push({ role: "assistant", content: j.content });
+    // Weigert Claude's veiligheidsfilter de vraag, dan komt er geen tekst: zeg het dan zelf.
+    if (j.stop_reason === "refusal") return { oproepen: [], tekst: "Daarbij help ik niet.", gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
     const tekst = j.content.filter(c => c.type === "text").map(c => c.text).join("");
     const oproepen = invullen ? [{ id: "formulier", naam: taak.formulier.naam, args: JSON.parse(tekst) }]
       : j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
