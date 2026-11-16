@@ -47,6 +47,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           WACHT_MAX: 90
+          TIJD_MAX: 180
           WAT: ${{ inputs.wat }}
           DEEL: ${{ inputs.deel }}
           MODEL: ${{ inputs.model }}
