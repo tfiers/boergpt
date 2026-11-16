@@ -116,7 +116,7 @@ const anthropic = {
       { model: MODELLEN.claude.id, max_tokens: taak.formulier ? 4000 : 1500, system: taak.opdracht(), tools, messages: berichten,
         tool_choice: { type: moet === "schrijven" ? "none" : "auto" },
         ...(invullen ? { output_config: { format: { type: "json_schema", schema: schema(taak.formulier) } } } : {}) }, geduld);
-    berichten.push({ role: "assistant", content: j.content });
+    if (j.content.length) berichten.push({ role: "assistant", content: j.content });  // een leeg bericht weigert de API later
     // Weigert Claude's veiligheidsfilter de vraag, dan komt er geen tekst: zeg het dan zelf.
     if (j.stop_reason === "refusal") return { oproepen: [], tekst: "Daarbij help ik niet. Ik beantwoord alleen vragen over landbouw in Vlaanderen, uit mijn documenten.", gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
     const tekst = j.content.filter(c => c.type === "text").map(c => c.text).join("");
@@ -187,7 +187,7 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3, taak
   let formulier = null;
   const gezien = { stukjes: new Map(), kalender: null };
   const stappen = [];
-  let tekst = "";
+  let tekst = "", nogEens = false;
   const gebruik = { in: 0, uit: 0, aanroepen: 0 };  // tokens, om de kost per vraag te meten
   for (let ronde = 0; ronde <= maxRondes; ronde++) {
     let s;
@@ -204,13 +204,16 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3, taak
     formulier = s.oproepen.find(o => o.naam === taak.formulier?.naam)?.args || null;
     if (formulier) break;
     if (!s.oproepen.length) {
-      if (!taak.formulier || ronde === maxRondes) break;
-      // Klaar met zoeken maar het formulier nog niet ingevuld: dan nu, in de laatste ronde.
-      berichten.push({ role: "user", content: "Vul nu de fiche in." });
+      // Klaar met zoeken maar het formulier nog niet ingevuld, of klaar zonder één woord te schrijven:
+      // vraag het dan nog één keer, in de laatste ronde.
+      const nog = taak.formulier ? "Vul nu de fiche in." : !tekst.trim() && !nogEens ? "Schrijf nu je antwoord, met de bronnen." : null;
+      if (!nog || (taak.formulier && ronde === maxRondes)) break;
+      nogEens = true;
+      vraagNog(berichten, nog);
       ronde = maxRondes - 1;
       continue;
     }
-    if (ronde === maxRondes) { tekst ||= "Dat staat niet in mijn documenten."; break; }
+    if (ronde === maxRondes) break;
     const uit = [];
     for (const [i, o] of s.oproepen.entries()) {
       // Elke oproep krijgt een antwoord (beide API's eisen dat), maar alleen de eerste paar lopen echt.
@@ -227,7 +230,15 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3, taak
     const velden = Object.fromEntries(Object.entries(formulier).map(([k, v]) => [k, b.schoon(String(v))]));
     return { formulier: velden, stappen, bronnen: b.lijst(), kalender: gezien.kalender, gebruik, via: a.naam };
   }
-  return { ...opmaak(tekst, gezien, stappen), gebruik, via: a.naam };
+  return { ...opmaak(tekst || "Dat staat niet in mijn documenten.", gezien, stappen), gebruik, via: a.naam };
+}
+
+// Een extra vraag aan het model. Staan er al antwoorden van gereedschap als laatste bericht van de
+// gebruiker (Claude's vorm), dan komt de vraag daarbij: twee gebruikersberichten na elkaar mogen niet.
+function vraagNog(berichten, vraag) {
+  const laatste = berichten.at(-1);
+  if (laatste.role === "user" && Array.isArray(laatste.content)) laatste.content.push({ type: "text", text: vraag });
+  else berichten.push({ role: "user", content: vraag });
 }
 
 // Alleen bronnen die het model echt kreeg, worden getoond; een verzonnen nummer valt weg.

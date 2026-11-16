@@ -67,7 +67,7 @@ async function meetAgent(model) {
     try { a = await vraagAan(model, v.vraag); } catch (e) { r.push({ nr: v.nr, vraag: v.vraag, fout: String(e.message).slice(0, 200) }); continue; }
     const zegtWeetNiet = WEET_NIET.test(a.antwoord);
     const rij = { nr: v.nr, vraag: v.vraag, antwoord: a.antwoord, stappen: a.stappen.length, gebruik: a.gebruik, ms: Date.now() - t0,
-      via: a.via, bronnen: a.bronnen.map(b => ({ id: b.id, titel: b.titel, pagina: b.pagina, tekst: b.tekst })), kalender: a.kalender?.uitleg };
+      via: a.via, bronnen: a.bronnen.map(b => ({ id: b.id, titel: b.titel, datum: b.datum, pagina: b.pagina, tekst: b.tekst })), kalender: a.kalender?.uitleg };
     if (v.bron) {
       rij.bron = v.bron === "kalender" ? !!a.kalender : a.bronnen.some(b => isBron(b, v.bron));
       // NFKC maakt van een smalle harde spatie ("60\u202f%") een gewone, zoals de sleutels verwachten.
