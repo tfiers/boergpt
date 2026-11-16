@@ -1,0 +1,23 @@
+[
+ {
+  "titel": "Zoeken: zit het juiste document bij de 6 stukjes die het model krijgt?",
+  "datum": "2026-11-16",
+  "kolommen": [
+   "",
+   "oefenvragen",
+   "apart gehouden"
+  ],
+  "rijen": [
+   [
+    "alleen op woorden",
+    "83%",
+    "73%"
+   ],
+   [
+    "woorden + betekenis",
+    "90%",
+    "91%"
+   ]
+  ]
+ }
+]

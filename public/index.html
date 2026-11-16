@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BoerGPT: Vlaamse mestregels, praktijkgidsen en ILVO-onderzoek</title>
+<meta name="description" content="Vragen over Vlaamse landbouw, beantwoord uit 37 openbare documenten, met de bron bij elke zin. Een open model en Claude naast elkaar.">
+<link rel="stylesheet" href="stijl.css">
+<script defer src="https://tomasfiers.net/p/count.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>BoerGPT <span class="demo">demo</span></h1>
+    <p class="demotekst">Een demo, geen echt product: gemaakt om te tonen hoe zoeken met een taalmodel werkt.</p>
+    <p class="sub">Vlaamse mestregels, praktijkgidsen, GLB-subsidies en ILVO-onderzoek: 37 openbare documenten. Elke zin van een antwoord heeft zijn bron. <button class="q" aria-expanded="false" aria-controls="hoe" type="button">Hoe werkt het?</button></p>
+    <div class="pop" id="hoe" hidden>
+      <button class="x" type="button" aria-label="Sluiten">×</button>
+      <svg viewBox="0 0 320 170" role="img" aria-label="Pijplijn: vraag, agent, zoeken, kalender, antwoord met bronnen">
+        <g class="blok" data-uitleg="Je typt een vraag in gewone taal, in het Nederlands of een andere taal."><rect x="4" y="66" width="62" height="36" rx="8"/><text x="35" y="88">vraag</text></g>
+        <path d="M66 84h22" class="pijl"/>
+        <g class="blok" data-uitleg="Een taalmodel (links een open model, rechts Claude) krijgt twee gereedschappen. Het beslist zelf of het zoekt, in welke stapel, en of het de uitrijkalender nodig heeft. Elke stap staat bij het antwoord."><rect x="90" y="62" width="70" height="44" rx="8"/><text x="125" y="82">agent</text><text x="125" y="97" class="klein">kiest stappen</text></g>
+        <path d="M160 74l28-34M160 94l28 34" class="pijl"/>
+        <g class="blok" data-uitleg="Zoeken op betekenis en op woorden. Elk stukje tekst (± 1000 tekens, 5.000 in totaal) heeft een vector van het open model bge-m3; een vraag over 'drijfmest' vindt zo ook 'vloeibare dierlijke mest'. Daarnaast zoekt BM25 op exacte woorden. De twee lijsten worden samengevoegd."><rect x="190" y="14" width="80" height="44" rx="8"/><text x="230" y="34">zoeken</text><text x="230" y="49" class="klein">5.000 stukjes</text></g>
+        <g class="blok" data-uitleg="De uitrijregeling van de VLM (2026) als tabel: per type meststof, grasland of akkerland en datum zegt ze ja, nee of onder voorwaarden."><rect x="190" y="110" width="80" height="44" rx="8"/><text x="230" y="130">kalender</text><text x="230" y="145" class="klein">uitrijregeling</text></g>
+        <path d="M270 36q40 0 40 40M270 132q40 0 40-40" class="pijl"/>
+        <g class="blok" data-uitleg="Het antwoord noemt bij elke zin het stukje waar het uit komt. Een nummer dat het model niet echt kreeg, valt weg. Tik op een bron voor de letterlijke tekst, de datum en de pagina in de pdf."><rect x="282" y="72" width="34" height="24" rx="6"/><text x="299" y="88" class="klein">✓</text></g>
+      </svg>
+      <p id="uitleg" class="uitleg">Tik op een blok.</p>
+      <p class="klein">Code: <a href="https://github.com/tfiers/boergpt">github.com/tfiers/boergpt</a> · <a href="#bronnen">alle documenten</a></p>
+    </div>
+  </header>
+
+  <form id="vraagform">
+    <label for="vraag" class="verborgen">Je vraag</label>
+    <textarea id="vraag" rows="2" maxlength="400" placeholder="Bv. Mag ik eind november nog drijfmest uitrijden op grasland?" required></textarea>
+    <div class="rij">
+      <span id="bewaard" class="klein"></span>
+      <button type="submit" id="stel">Vraag</button>
+    </div>
+    <div class="voorbeelden">
+      <button type="button" class="vb">Mag ik eind november drijfmest uitrijden op grasland?</button>
+      <button type="button" class="vb">Wat zijn ureaseremmers en werken ze?</button>
+      <button type="button" class="vb">Tot wanneer moet een vanggewas blijven staan in de leemstreek?</button>
+    </div>
+  </form>
+
+  <section class="antwoorden" id="antwoorden" hidden>
+    <article class="kaart" data-model="open">
+      <h2>Open model <span class="klein" data-naam>gpt-oss-120b</span></h2>
+      <div class="inhoud"></div>
+    </article>
+    <article class="kaart" data-model="claude">
+      <h2>Claude <span class="klein" data-naam>Sonnet 5.5</span></h2>
+      <div class="inhoud"></div>
+    </article>
+  </section>
+
+  <section id="meting">
+    <h2>Hoe goed is het?</h2>
+    <p class="klein">Gemeten op vragen met een gekend antwoord in de documenten, de helft in andere woorden dan het document. De apart gehouden vragen dienen niet om de demo bij te stellen. <a href="https://github.com/tfiers/boergpt/blob/main/test/vragen.json">Alle vragen</a></p>
+    <div id="metingen"></div>
+  </section>
+
+  <section id="bronnen">
+    <h2>De documenten</h2>
+    <ul id="bronlijst" class="bronlijst"></ul>
+  </section>
+
+  <footer class="klein">
+    Gemaakt door Tomas Fiers, met Claude Code. Geen officieel advies: kijk regels na bij de <a href="https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank">Mestbank</a>.
+    <span id="versie"></span>
+  </footer>
+</main>
+</body>
+</html>

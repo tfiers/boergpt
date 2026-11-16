@@ -1,0 +1,13 @@
+[build]
+  publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["data/**"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://tomasfiers.net; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://tomasfiers.net; frame-ancestors 'self' https://zolder-tomas.netlify.app"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

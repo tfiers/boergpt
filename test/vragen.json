@@ -1,0 +1,544 @@
+[
+ {
+  "nr": 1,
+  "vraag": "Tot wanneer moet een vanggewas blijven staan op een perceel in de leemstreek?",
+  "bron": "Overzicht uitrijregeling",
+  "sleutel": "30 november",
+  "deel": "oefen"
+ },
+ {
+  "nr": 2,
+  "vraag": "Hoeveel werkzame stikstof mag ik na de oogst nog geven als het vanggewas na 31 juli wordt ingezaaid?",
+  "bron": "Overzicht uitrijregeling",
+  "sleutel": "36 kg",
+  "deel": "oefen"
+ },
+ {
+  "nr": 3,
+  "vraag": "Wat is de fosfaatnorm voor maaigrasland in fosfaatklasse I in 2026?",
+  "bron": "Bemestingsnormen en richtwaarden 2026",
+  "sleutel": "115",
+  "deel": "oefen"
+ },
+ {
+  "nr": 4,
+  "vraag": "Hoeveel fosfaat mag op suikerbieten in klasse IV?",
+  "bron": "Bemestingsnormen en richtwaarden 2026",
+  "sleutel": "\\b45\\b",
+  "deel": "apart"
+ },
+ {
+  "nr": 5,
+  "vraag": "Hoe lang moet een siertelers het register van bestrijdingen bewaren?",
+  "bron": "Praktijkgids Gewasbescherming: module IPM sierteelt",
+  "sleutel": "3 jaar|drie jaar",
+  "deel": "oefen"
+ },
+ {
+  "nr": 6,
+  "vraag": "Hoe groot moet de spoelwatertank van een spuittoestel minstens zijn?",
+  "bron": "Praktijkgids Gewasbescherming (algemeen deel)",
+  "sleutel": "5 ?%",
+  "deel": "oefen"
+ },
+ {
+  "nr": 7,
+  "vraag": "Vanaf wanneer telt een grasland als permanent grasland?",
+  "bron": [
+   "Wetgeving op het raakvlak van landbouw en natuur",
+   "Praktijkgids Landbouw en Natuur: graslanden"
+  ],
+  "sleutel": "4 jaar|vier jaar",
+  "deel": "oefen"
+ },
+ {
+  "nr": 8,
+  "vraag": "Hoeveel dagen uitstel tussen percelen raadt men aan bij maaitrappen voor weidevogels?",
+  "bron": "Praktijkgids Landbouw en Natuur: graslanden",
+  "sleutel": "7 dagen|zeven dagen",
+  "deel": "apart"
+ },
+ {
+  "nr": 9,
+  "vraag": "Bij welk vochtgehalte spreekt men van droog dorsen van graan?",
+  "bron": "Praktijkgids Landbouw en Natuur: voedergewassen",
+  "sleutel": "14 ?%",
+  "deel": "oefen"
+ },
+ {
+  "nr": 10,
+  "vraag": "Wat is de werkingscoëfficiënt van vleesvarkensmengmest?",
+  "bron": "Toelichting bij het bemestingsplan en -register",
+  "sleutel": "60 ?%",
+  "deel": "oefen"
+ },
+ {
+  "nr": 11,
+  "vraag": "Aan wie worden de bemestingsrechten sinds 2025 toegekend?",
+  "bron": "Startersbrochure Mestbank",
+  "sleutel": "hoofdteelt",
+  "deel": "oefen"
+ },
+ {
+  "nr": 12,
+  "vraag": "Heb ik een mestafzetdocument nodig om kunstmest te vervoeren?",
+  "bron": "Brochure voor landbouwers met vrijstelling van aangifteplicht",
+  "sleutel": "niet|geen",
+  "deel": "apart"
+ },
+ {
+  "nr": 13,
+  "vraag": "Tegen wanneer moest de bijkomende bestemming OCS op het perceel staan in 2025?",
+  "bron": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+  "sleutel": "31 mei",
+  "deel": "oefen"
+ },
+ {
+  "nr": 14,
+  "vraag": "Hoeveel steun krijg je per hectare voor plaatsspecifiek bekalken?",
+  "bron": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)",
+  "sleutel": "100 euro",
+  "deel": "oefen"
+ },
+ {
+  "nr": 15,
+  "vraag": "Hoeveel bodemstalen moet je laten analyseren voor het actief gebruik van het bodempaspoort?",
+  "bron": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)",
+  "sleutel": "2 percelen|twee percelen",
+  "deel": "apart"
+ },
+ {
+  "nr": 16,
+  "vraag": "Hoe breed moet een meerjarige bloemenstrook aan de rand van een fruitboomgaard zijn?",
+  "bron": [
+   "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2023)",
+   "Ecoregelingen en agromilieuklimaatmaatregelen: algemeen 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "3 en 6 m|3 tot 6 m|3-6 m",
+  "deel": "oefen"
+ },
+ {
+  "nr": 17,
+  "vraag": "Hoe werkt foto-akoestische spectroscopie om ammoniak te meten?",
+  "bron": "ILVO-mededeling D/2025/12: Meetmethodes voor ammoniakconcentraties in stallucht",
+  "sleutel": "druk|geluid|microfoon|akoestisch",
+  "deel": "oefen"
+ },
+ {
+  "nr": 18,
+  "vraag": "Waar heeft ILVO sleufsilo's met cementloos beton aangelegd?",
+  "bron": "ILVO Activiteitenverslag 2025",
+  "sleutel": "Merelbeke",
+  "deel": "oefen"
+ },
+ {
+  "nr": 19,
+  "vraag": "Welk deel van de aardappelen blijft volgens Bolinder op het veld liggen?",
+  "bron": "ILVO-mededeling D/2025/11: Effectieve organische koolstofinput aan bodems",
+  "sleutel": "5 ?%",
+  "deel": "apart"
+ },
+ {
+  "nr": 20,
+  "vraag": "Mag kalk samen met ammoniumhoudende meststoffen worden uitgestrooid?",
+  "bron": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+  "sleutel": "niet|nee|neen",
+  "deel": "oefen"
+ },
+ {
+  "nr": 21,
+  "vraag": "Op hoeveel principes is geïntegreerde gewasbescherming (IPM) gebaseerd?",
+  "bron": "Praktijkgids Gewasbescherming: module IPM akkerbouw",
+  "sleutel": "\\b8\\b|acht",
+  "deel": "oefen"
+ },
+ {
+  "nr": 22,
+  "vraag": "Welke ruimtelijke resolutie gebruikt het NEMO-model?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "50 ?m",
+  "deel": "apart"
+ },
+ {
+  "nr": 23,
+  "vraag": "Hoeveel begeleidingstrajecten rond peilgestuurde drainage startte het OP-PEIL-project?",
+  "bron": "ILVO-mededeling D/2025/14: OP-PEIL, peilgestuurde drainage in Vlaanderen",
+  "sleutel": "36",
+  "deel": "oefen"
+ },
+ {
+  "nr": 24,
+  "vraag": "Waar ziet Jürgen Vangeyte het meeste potentieel van AI in de landbouw?",
+  "bron": "Landbouwleven: interview met Jürgen Vangeyte over AI",
+  "sleutel": "administratie",
+  "deel": "oefen"
+ },
+ {
+  "nr": 25,
+  "vraag": "Hoeveel onderzoeksinstellingen werken samen in EJP SOIL?",
+  "bron": "ILVO-mededeling 272: Towards climate-smart sustainable management of agricultural soils (EJP SOIL)",
+  "sleutel": "26",
+  "deel": "apart"
+ },
+ {
+  "nr": 26,
+  "vraag": "Welke taken heeft de Mestbank volgens het Mestdecreet?",
+  "bron": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+  "sleutel": "inform|begeleid|bemiddel",
+  "deel": "oefen"
+ },
+ {
+  "nr": 27,
+  "vraag": "Mag ik op 20 november drijfmest uitrijden op grasland?",
+  "bron": "kalender",
+  "sleutel": "\\bnee\\b|\\bneen\\b|niet",
+  "deel": "oefen"
+ },
+ {
+  "nr": 28,
+  "vraag": "Mag ik op 1 maart drijfmest op grasland uitrijden?",
+  "bron": "kalender",
+  "sleutel": "\\bja\\b|mag",
+  "deel": "apart"
+ },
+ {
+  "nr": 29,
+  "vraag": "Hoeveel kost een nieuwe tractor van 150 pk?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "oefen"
+ },
+ {
+  "nr": 30,
+  "vraag": "Wat is deze week de prijs van bintjes op de beurs van Roeselare?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "oefen"
+ },
+ {
+  "nr": 31,
+  "vraag": "Hoe behandel ik kreupelheid bij een paard?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "oefen"
+ },
+ {
+  "nr": 32,
+  "vraag": "Wanneer opent de Agribex-beurs in 2027?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "apart"
+ },
+ {
+  "nr": 33,
+  "vraag": "Wat is het btw-tarief op kunstmest in België?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "oefen"
+ },
+ {
+  "nr": 34,
+  "vraag": "Hoeveel melk geeft een Holstein-koe gemiddeld per dag in Frankrijk?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "apart"
+ },
+ {
+  "nr": 35,
+  "vraag": "Hoe lang moet een groenbedekker na de oogst blijven staan op leemgrond?",
+  "bron": "Overzicht uitrijregeling",
+  "sleutel": "30 november",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 36,
+  "vraag": "Hoeveel fosfor mag ik geven op weiland dat gemaaid wordt, in de laagste klasse?",
+  "bron": "Bemestingsnormen en richtwaarden 2026",
+  "sleutel": "115",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 37,
+  "vraag": "Hoe lang moet ik bijhouden welke pesticiden ik spoot in de sierteelt?",
+  "bron": "Praktijkgids Gewasbescherming: module IPM sierteelt",
+  "sleutel": "3 jaar|drie jaar",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 38,
+  "vraag": "Welk deel van de stikstof uit varkensdrijfmest kan het gewas echt gebruiken?",
+  "bron": "Toelichting bij het bemestingsplan en -register",
+  "sleutel": "60 ?%",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 39,
+  "vraag": "Hoeveel proper water moet ik meenemen op de veldspuit om ze daar te kunnen spoelen?",
+  "bron": "Praktijkgids Gewasbescherming (algemeen deel)",
+  "sleutel": "5 ?%",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 40,
+  "vraag": "Mag ik kalk en ammonitraat samen strooien?",
+  "bron": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+  "sleutel": "niet|nee|neen",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 41,
+  "vraag": "Hoeveel kost het gemiddeld om een nieuw bestrijdingsmiddel toegelaten te krijgen?",
+  "bron": "Praktijkgids Gewasbescherming (algemeen deel)",
+  "sleutel": "190 miljoen",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 42,
+  "vraag": "Hoe ver van de perceelsgrens mag ik een grote boom planten?",
+  "bron": "Wetgeving op het raakvlak van landbouw en natuur",
+  "sleutel": "2 meter|twee meter|2 m\\b",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 43,
+  "vraag": "Hoeveel bomen per hectare mogen er hoogstens staan op een perceel met boslandbouw?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "200",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 44,
+  "vraag": "Hoe breed mag een sloot hoogstens zijn?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "6 m",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 45,
+  "vraag": "Hoeveel stikstof uit dierlijke mest mocht er onder derogatie op grasland?",
+  "bron": "Praktijkgids Bemesting: wettelijk kader",
+  "sleutel": "250",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 46,
+  "vraag": "Wat is de gewone grens voor stikstof uit dierlijke mest per hectare?",
+  "bron": [
+   "Praktijkgids Bemesting: wettelijk kader",
+   "Brochure voor landbouwers met vrijstelling van aangifteplicht",
+   "Bemestingsnormen en richtwaarden 2026",
+   "Goede praktijken voor de bemesting (klimaatadaptief)"
+  ],
+  "sleutel": "170",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 47,
+  "vraag": "Hoe hoog worden maïsplanten?",
+  "bron": "Praktijkgids Landbouw en Natuur: maïs",
+  "sleutel": "2 tot 4|4 m",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 48,
+  "vraag": "Hoeveel hectare silomaïs staat er in Vlaanderen?",
+  "bron": "Praktijkgids Landbouw en Natuur: maïs",
+  "sleutel": "120\\.?000",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 49,
+  "vraag": "Om de hoeveel jaar moet ik minstens een bodemanalyse laten doen volgens de IPM-richtlijnen?",
+  "bron": "Duurzaam gebruik van gewasbeschermingsmiddelen (presentatie)",
+  "sleutel": "4-5|4 tot 5|vier",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 50,
+  "vraag": "Hoe ver moet ik blijven van een beek als ik spuit?",
+  "bron": [
+   "Duurzaam gebruik van gewasbeschermingsmiddelen (presentatie)",
+   "Praktijkgids Gewasbescherming (algemeen deel)",
+   "Praktijkgids Gewasbescherming: module IPM akkerbouw"
+  ],
+  "sleutel": "1 m|1 meter|één meter",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 51,
+  "vraag": "Hoeveel drijfmest per hectare geef je best aan aardappelen zodat je het nog kunt onderwerken?",
+  "bron": "Goede praktijken voor de bemesting (klimaatadaptief)",
+  "sleutel": "30.{0,4}35",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 52,
+  "vraag": "Welk deel van het stikstofadvies geef je bij aardappelen best voor het poten?",
+  "bron": "Goede praktijken voor de bemesting (klimaatadaptief)",
+  "sleutel": "70",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 53,
+  "vraag": "Hoeveel stikstof had maïs nodig in een ruime vruchtwisseling, tegenover maïs na maïs?",
+  "bron": "Goede praktijken voor de bemesting (klimaatadaptief)",
+  "sleutel": "102",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 54,
+  "vraag": "Hoeveel tijd mag er tussen twee mestvrachten zitten om met één vrachtstaal te werken?",
+  "bron": "Startersbrochure Mestbank",
+  "sleutel": "7 dagen|zeven dagen",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 55,
+  "vraag": "Tot wanneer worden de nitraatstalen in het najaar genomen volgens het nieuwe mestactieplan?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "30 november",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 56,
+  "vraag": "Welke boete riskeer ik als ik mijn bemestingsregister niet bijhoud?",
+  "bron": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+  "sleutel": "250",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 57,
+  "vraag": "Hoeveel vergoeding per hectare krijg je als het bemestingsverbod op je perceel ingaat in 2027?",
+  "bron": "Toelichting PAS 2026: snellere en ruimere nulbemesting",
+  "sleutel": "13\\.?125",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 58,
+  "vraag": "Hoeveel steun krijg je per hectare bio voor je eerste vijf hectare?",
+  "bron": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+  "sleutel": "300",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 59,
+  "vraag": "Wat krijg ik per hectare als ik onkruid wegschoffel in plaats van te spuiten?",
+  "bron": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2023)",
+  "sleutel": "310",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 60,
+  "vraag": "Tot wanneer moet Japanse haver als nateelt blijven staan voor de ecoregeling voor fauna?",
+  "bron": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)",
+  "sleutel": "15/3|15 maart",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 61,
+  "vraag": "Hoe lang duurt het om het fosforgehalte van mijn grond één punt te verhogen als ik 20 kg extra fosfaat geef?",
+  "bron": "Praktijkgids fosforbemesting",
+  "sleutel": "16 jaar",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 62,
+  "vraag": "Hoeveel fosfaat haalt grasland per jaar uit de grond?",
+  "bron": "Praktijkgids fosforbemesting",
+  "sleutel": "100",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 63,
+  "vraag": "Ik heb drie paarden op anderhalve hectare: moet ik dan aangifte doen bij de Mestbank?",
+  "bron": "Brochure voor landbouwers met vrijstelling van aangifteplicht",
+  "sleutel": "vrijstell|niet",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 64,
+  "vraag": "Vanaf welke concentratie meet een elektrochemische sensor ammoniak in een stal betrouwbaar?",
+  "bron": "ILVO-mededeling D/2025/12: Meetmethodes voor ammoniakconcentraties in stallucht",
+  "sleutel": "1 ppm",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 65,
+  "vraag": "Hoeveel minder ammoniak gaf het vernevelen van een ureaseremmer op de stalvloer?",
+  "bron": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+  "sleutel": "58",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 66,
+  "vraag": "Levert peilgestuurde drainage in Sint-Katelijne-Waver geld op of kost het geld?",
+  "bron": "ILVO-mededeling D/2025/14: OP-PEIL, peilgestuurde drainage in Vlaanderen",
+  "sleutel": "101|opbr|baat|winst",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 67,
+  "vraag": "Welk land is het grootst in de visserij in dat Noordzeegebied dat ILVO onderzocht?",
+  "bron": "ILVO Activiteitenverslag 2025",
+  "sleutel": "Nederland",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 68,
+  "vraag": "Mag ik in de zomer kalk strooien op weiland?",
+  "bron": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+  "sleutel": "weide|ja|mag",
+  "deel": "apart",
+  "andere_woorden": true
+ },
+ {
+  "nr": 69,
+  "vraag": "Hoeveel van de input van een gft-compostering mag bedrijfsafval zijn?",
+  "bron": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+  "sleutel": "25",
+  "deel": "oefen",
+  "andere_woorden": true
+ },
+ {
+  "nr": 70,
+  "vraag": "How do stakeholders rate the coordination of knowledge transfer on soil management in Europe?",
+  "bron": "ILVO-mededeling 272: Towards climate-smart sustainable management of agricultural soils (EJP SOIL)",
+  "sleutel": "53|poor",
+  "deel": "apart",
+  "andere_woorden": true
+ }
+]
