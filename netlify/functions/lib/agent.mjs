@@ -51,12 +51,17 @@ export const GEREEDSCHAP = [
 
 const binnen = (d, van, tot) => van <= tot ? d >= van && d <= tot : d >= van || d <= tot;
 
+// Zonder "verboden" las een open model "Periode 08-15 t.e.m. 02-15" bij een "Neen" als de periode
+// waarin het wel mag.
+const MAG = { ja: "toegelaten", nee: "verboden", voorwaarden: "toegelaten onder voorwaarden" };
+export const periode = r => `Deze regel geldt van ${r.van} t.e.m. ${r.tot} (MM-DD): in die hele periode is het ${MAG[r.mag]}.`;
+
 function uitrij({ type, grond, datum }) {
   const d = String(datum).slice(-5);
   const r = kalender.regels.find(x => x.type === Number(type) && (x.grond === "alle" || x.grond === grond) && binnen(d, x.van, x.tot));
   if (!r) return { tekst: "Geen regel gevonden voor die combinatie.", kalender: null };
   return {
-    tekst: `Type ${type} (${kalender.types[type]}) op ${grond}, ${d}: ${r.uitleg} Periode ${r.van} t.e.m. ${r.tot}. ${kalender.let_op} [K]`,
+    tekst: `Type ${type} (${kalender.types[type]}) op ${grond}, ${d}: ${r.uitleg} ${periode(r)} ${kalender.let_op} [K]`,
     kalender: { ...r, bron: kalender.bron, url: kalender.url },
   };
 }

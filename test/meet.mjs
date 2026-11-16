@@ -16,6 +16,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { pct } from "./rechter.mjs";
 import { bronnen, stukjes, zoek, STAPELS, STANDAARD } from "../netlify/functions/lib/zoek.mjs";
 import { PRIJS_CLAUDE } from "../netlify/functions/lib/budget.mjs";
+import { periode } from "../netlify/functions/lib/agent.mjs";
 import * as kost from "./kost.mjs";
 
 const wat = process.argv[2];
@@ -62,7 +63,7 @@ const gemiddeld = rs => {
 };
 
 // Wat de uitrijkalender het model zei, voluit, zodat de rechter ook de periode ziet.
-const kalenderTekst = k => k && `type ${k.type} op ${k.grond}: ${k.uitleg} Periode ${k.van} t.e.m. ${k.tot} (${k.bron}).`;
+const kalenderTekst = k => k && `type ${k.type} op ${k.grond}: ${k.uitleg} ${periode(k)} (${k.bron})`;
 
 async function meetAgent(model) {
   const { vraagAan } = await import("../netlify/functions/lib/agent.mjs");
