@@ -92,7 +92,7 @@ fetch("modellen.json").then(r => r.json()).then(rijen => {
   $("#modellen .balken").innerHTML = rijen.map(m => `<li>
     <p><b>${esc(m.model)}</b>${m.open ? ` <span class="open">open</span>` : ""} <span class="klein">via ${esc(m.via)}</span></p>
     <div class="balk-rij" title="${esc(m.model)}: klopt ${m.klopt}%"><span class="klopt" style="width:${m.klopt}%"></span></div>
-    <p class="klein">klopt ${m.klopt}% · juiste bron ${m.bron}% · ${komma(m.seconden)} s per vraag · $ ${komma(m.kostPer1000.toFixed(2))} per 1000 vragen</p></li>`).join("");
+    <p class="klein">klopt ${m.klopt}% · juiste bron ${m.bron}% · ${komma(m.seconden)} s per vraag · $ ${komma(m.kostPer1000.toFixed(2))} per 1000 vragen</p></li>`).join("");
   $("#modellen").hidden = false;
 }).catch(() => {});
 
