@@ -79,6 +79,19 @@ async function vraagVector(vraag) {
   return v.map(x => x / n);
 }
 
+// Een herrangschikker leest vraag en stukje samen; null als Cloudflare niet antwoordt.
+async function herschik(vraag, ids) {
+  const { CLOUDFLARE_ACCOUNT_ID: acc, CLOUDFLARE_API_TOKEN: token } = process.env;
+  if (!acc || !token) return null;
+  const r = await fetch(`https://api.cloudflare.com/client/v4/accounts/${acc}/ai/run/@cf/baai/bge-reranker-base`, {
+    method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ query: vraag, contexts: ids.map(i => ({ text: stukjes[i].tekst })) }), signal: AbortSignal.timeout(8000),
+  }).catch(() => null);
+  if (!r?.ok) return null;
+  const uit = (await r.json()).result?.response;
+  return uit?.length ? uit.sort((a, b) => b.score - a.score).map(x => ids[x.id]) : null;
+}
+
 function dichtbij(v, mag, vectoren) {
   const scores = [];
   for (let i = 0; i < stukjes.length; i++) {
@@ -92,12 +105,13 @@ function dichtbij(v, mag, vectoren) {
 
 // --- Samen ------------------------------------------------------------------
 export const STAPELS = ["regels", "praktijk", "onderzoek", "subsidies", "wet"];
-export const STANDAARD = { aantal: 6, kop: false, gewicht: 1, vectoren: "vectoren.i8" };
+export const STANDAARD = { aantal: 6, kop: false, gewicht: 1, vectoren: "vectoren.i8", herrangschik: false };
 
 // `vector`: de vraagvector als die al bekend is, `false` om alleen op woorden te zoeken.
 // `gewicht`: hoe zwaar de lijst op betekenis telt tegenover die op woorden.
+// `herrangschik`: de 30 beste kandidaten laten herschikken door bge-reranker-base op Cloudflare.
 export async function zoek(vraag, stapels = STAPELS, { vector, ...opties } = {}) {
-  const { aantal, kop, gewicht, vectoren } = { ...STANDAARD, ...opties };
+  const { aantal, kop, gewicht, vectoren, herrangschik } = { ...STANDAARD, ...opties };
   const ok = new Set([].concat(stapels || []).filter(s => STAPELS.includes(s)));
   if (!ok.size) STAPELS.forEach(s => ok.add(s));
   const mag = i => !inhoudstafel.has(i) && ok.has(bronnen[stukjes[i].bron].stapel);
@@ -106,6 +120,8 @@ export async function zoek(vraag, stapels = STAPELS, { vector, ...opties } = {})
   if (v) lijsten.push([dichtbij(v, mag, vectorenUit(vectoren)), gewicht]);
   const rrf = new Map();
   for (const [lijst, g] of lijsten) lijst.forEach((i, r) => rrf.set(i, (rrf.get(i) || 0) + g / (60 + r)));
-  const top = [...rrf].sort((a, b) => b[1] - a[1]).slice(0, aantal).map(x => x[0]);
-  return { manier: v ? "betekenis + woorden" : "alleen woorden", stukjes: top.map(i => stukjes[i]) };
+  let top = [...rrf].sort((a, b) => b[1] - a[1]).slice(0, herrangschik ? 30 : aantal).map(x => x[0]);
+  const herschikt = herrangschik && await herschik(vraag, top);
+  if (herrangschik) top = (herschikt || top).slice(0, aantal);
+  return { manier: (v ? "betekenis + woorden" : "alleen woorden") + (herschikt ? ", herschikt" : ""), stukjes: top.map(i => stukjes[i]) };
 }
