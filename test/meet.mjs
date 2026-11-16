@@ -19,7 +19,9 @@ const woorden = process.argv.includes("--alleen-woorden");
 const i = process.argv.indexOf("--opties");
 const opties = i > 0 ? JSON.parse(process.argv[i + 1]) : {};
 const vv = existsSync("test/vraagvectoren.json") ? JSON.parse(readFileSync("test/vraagvectoren.json", "utf8")) : {};
-const WEET_NIET = /staat niet in mijn documenten|not in my documents/i;
+// "Weet ik niet" telt alleen als het antwoord ermee begint: een antwoord dat zegt dat één detail
+// ontbreekt ("de termijn staat niet in mijn documenten"), geeft wel een antwoord.
+const WEET_NIET = /^[^.]*(staat niet in mijn documenten|not in my documents)/i;
 // "bron" is de titel van het juiste document, zoals in data/bronnen.json, of een lijst
 // titels als het antwoord in meer dan één document staat.
 const isBron = (b, bron) => [].concat(bron).includes(b.titel);
@@ -62,7 +64,7 @@ async function meetAgent(model) {
       rij.bron = v.bron === "kalender" ? !!a.kalender : a.bronnen.some(b => isBron(b, v.bron));
       rij.klopt = new RegExp(v.sleutel, "i").test(a.antwoord) && !zegtWeetNiet;
     } else {
-      rij.weetNiet = zegtWeetNiet && a.bronnen.length === 0;
+      rij.weetNiet = zegtWeetNiet;
     }
     r.push(rij);
     process.stdout.write(".");
