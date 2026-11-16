@@ -12,11 +12,11 @@ en wat we over het juiste antwoord weten. Oordeel streng maar eerlijk:
 - bron: "ja" als elke bewering steun vindt in de aangehaalde stukjes, "deels" als sommige beweringen geen steun hebben, "nee" als de stukjes het antwoord niet dragen. Zonder beweringen: "ja".
 Geef een uitleg van één zin, in het Nederlands.`;
 
-const GEREEDSCHAP = [{ name: "oordeel", description: "Je oordeel over het antwoord.",
-  input_schema: { type: "object", required: ["klopt", "bron", "uitleg"], properties: {
-    klopt: { type: "string", enum: ["ja", "half", "nee"] },
-    bron: { type: "string", enum: ["ja", "deels", "nee"] },
-    uitleg: { type: "string" } } } }];
+// Het oordeel komt terug als JSON volgens dit schema (structured output).
+const SCHEMA = { type: "object", required: ["klopt", "bron", "uitleg"], additionalProperties: false, properties: {
+  klopt: { type: "string", enum: ["ja", "half", "nee"] },
+  bron: { type: "string", enum: ["ja", "deels", "nee"] },
+  uitleg: { type: "string" } } };
 
 export async function oordeel({ vraag, antwoord, bronnen = [], kalender, verwacht }) {
   const stukjes = bronnen.map(b => `[S${b.id}] ${b.titel}, p. ${b.pagina}:\n${b.tekst}`).join("\n\n") || "(geen)";
@@ -24,11 +24,11 @@ export async function oordeel({ vraag, antwoord, bronnen = [], kalender, verwach
   for (let poging = 0; poging < 4; poging++) {
     const r = await fetch("https://api.anthropic.com/v1/messages", { method: "POST",
       headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({ model: RECHTER, max_tokens: 400, system: OPDRACHT, tools: GEREEDSCHAP,
-        tool_choice: { type: "tool", name: "oordeel" }, messages: [{ role: "user", content: inhoud }] }) });
+      body: JSON.stringify({ model: RECHTER, max_tokens: 2000, system: OPDRACHT,
+        output_config: { format: { type: "json_schema", schema: SCHEMA } }, messages: [{ role: "user", content: inhoud }] }) });
     if (r.status === 429 || r.status >= 500) { await new Promise(k => setTimeout(k, 15000)); continue; }
     if (!r.ok) throw new Error(`rechter: ${r.status} ${(await r.text()).slice(0, 200)}`);
-    return (await r.json()).content.find(c => c.type === "tool_use").input;
+    return JSON.parse((await r.json()).content.find(c => c.type === "text").text);
   }
   throw new Error("rechter: te druk");
 }

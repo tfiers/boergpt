@@ -540,5 +540,709 @@
   "sleutel": "53|poor",
   "deel": "apart",
   "andere_woorden": true
+ },
+ {
+  "nr": 71,
+  "vraag": "Mag er met een sleepslang mest uitgereden worden op wintertarwe?",
+  "bron": [
+   "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+   "Ontwerp 7de Mestactieprogramma (MAP 7)"
+  ],
+  "sleutel": "beteeld|toegelaten|toegestaan|\\bja\\b",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": null
+  },
+  "nota": "Fiche en MAP 7: op beteelde akkers (geen grasland) blijft sleepslang toegelaten."
+ },
+ {
+  "nr": 72,
+  "vraag": "Mag een sleepslang niet meer worden gebruikt op grasland in 2028?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "2027|zode|sleufkouter|injectie",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/emissiearme_aanwending/veelgestelde_vragen_mest_stikstof/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: mest, stikstof en ureaseremmers",
+   "datum": null
+  },
+  "nota": "MAP 7: sleepslang op grasland nog toegelaten tot en met 2027, daarna zode-injectie/sleufkouter."
+ },
+ {
+  "nr": 73,
+  "vraag": "Moeten er ureaseremmers toegevoegd worden aan dierlijke mest?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "kunstmest|ureum",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/emissiearme_aanwending/veelgestelde_vragen_mest_stikstof/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: mest, stikstof en ureaseremmers",
+   "datum": null
+  },
+  "nota": "MAP 7: ureaseremmer is een optie voor ureumhoudende kunstmest, niet voor dierlijke mest; ILVO-stalproef kan verwarren."
+ },
+ {
+  "nr": 74,
+  "vraag": "Welke ureaseremmers zijn oké en aan welke dosis?",
+  "bron": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+  "sleutel": "NBPT|NPPT|2-NPT",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/emissiearme_aanwending/veelgestelde_vragen_mest_stikstof/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: mest, stikstof en ureaseremmers",
+   "datum": null
+  },
+  "nota": "ILVO-mededeling noemt de Europees goedgekeurde werkzame stoffen NBPT, NPPT, 2-NPT; dosis staat er niet als regel in."
+ },
+ {
+  "nr": 75,
+  "vraag": "Mag stalmest worden gespreid op grasland?",
+  "bron": [
+   "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+   "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+   "Praktijkgids Bemesting: wettelijk kader"
+  ],
+  "sleutel": "\\bja\\b|toegelaten|toegestaan|mag|niet emissiearm",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/emissiearme_aanwending/veelgestelde_vragen_mest_stikstof/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: mest, stikstof en ureaseremmers",
+   "datum": null
+  },
+  "nota": "Fiche/Mestdecreet: stalmest op grasland hoeft niet emissiearm aangewend te worden."
+ },
+ {
+  "nr": 76,
+  "vraag": "Is er een verschil in de regels tussen beteelde en niet-beteelde landbouwgrond?",
+  "bron": [
+   "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+   "Ontwerp 7de Mestactieprogramma (MAP 7)"
+  ],
+  "sleutel": "sleepslang|injectie|inwerk|onderwerk",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/emissiearme_aanwending/veelgestelde_vragen_mest_stikstof/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: mest, stikstof en ureaseremmers",
+   "datum": null
+  },
+  "nota": "Fiche: andere technieken (sleepslang wel op beteeld, op niet-beteeld injectie of inwerken)."
+ },
+ {
+  "nr": 77,
+  "vraag": "Mag er in de fruitteelt nog stalmest aan de stammen gegeven worden in de winter?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "meld|1 november|15 januari",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": null
+  },
+  "nota": "MAP 7: geen meldingsplicht meer voor type 1 rond de stam van fruitbomen (1 nov t.e.m. 15 jan)."
+ },
+ {
+  "nr": 78,
+  "vraag": "Voor maïs en late aardappelen zonder voorteelt mag er pas bemest worden vanaf 16 maart. Ik heb nu gras (als groenbemester ingezaaid tijdens vorig najaar) staan op een perceel en wil er na het onderwerken van het gras later dit jaar als hoofdteelt aardappelen planten. Mag er dan op dit gras voor 16 maart bemest worden? Het gras zal pas ondergewerkt worden na 16 maart.",
+  "bron": [
+   "Overzicht uitrijregeling",
+   "Uitrijregeling 2027 (kalender per type meststof)"
+  ],
+  "sleutel": "\\bja\\b|toegelaten|toegestaan|mag (wel|u|er)",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-02"
+  },
+  "nota": "Uitrijregeling: verbod vóór 16 maart geldt alleen zonder voorteelt; met voorteelt mag het (sleutel is ruim, nakijken)."
+ },
+ {
+  "nr": 79,
+  "vraag": "Geldt de boete voor het te hoge nitraatresidu (250 euro/ha) voor de percelen waarop het nitraatresidu is genomen of voor het volledige bedrijfsareaal?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "nitraatresidutype",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2026-09"
+  },
+  "nota": "MAP 7 p93: boete voor de percelen van het nitraatresidutype dat de drempel overschrijdt."
+ },
+ {
+  "nr": 80,
+  "vraag": "Mag je zelf als landbouwer nog vloeibare dierlijke mest voeren met AGR-GPS in burenregeling naar percelen in gebiedstype 2 en 3?",
+  "bron": [
+   "Startersbrochure Mestbank",
+   "Ontwerp 7de Mestactieprogramma (MAP 7)"
+  ],
+  "sleutel": "1 juli|erkende? mestvoerder",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": null
+  },
+  "nota": "Startersbrochure/MAP 7: vanaf 1 juli moet dat vervoer door een erkend mestvoerder (behalve grasland/blijvende teelt)."
+ },
+ {
+  "nr": 81,
+  "vraag": "Hoe diep moet er bemonsterd worden in kader van nitraatresidu?",
+  "bron": "ILVO-mededeling 272: Towards climate-smart sustainable management of agricultural soils (EJP SOIL)",
+  "sleutel": "90 ?cm|0 ?[-–] ?90",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2026-09"
+  },
+  "nota": "Alleen ILVO-mededeling 272 (Engels) noemt de laag 0-90 cm; test meertalig ophalen."
+ },
+ {
+  "nr": 82,
+  "vraag": "Moet ik op een klein perceel ook 5 meter laten liggen bij nitraatgevoelige teelten? Of zijn er hiervoor uitzonderingen?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "4 ?%|3 ?m",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-02"
+  },
+  "nota": "MAP 7 p71: waar 5 m meer dan 4 % van het perceel inneemt, wordt beperking tot 3 m bekeken."
+ },
+ {
+  "nr": 83,
+  "vraag": "Waarom zijn de uitscheidingsnormen voor zoogkoeien nu plots verhoogd?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "onderschat|studie|ILVO|75 kg",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-02"
+  },
+  "nota": "MAP 7: studie toonde dat forfaitaire uitscheidingscijfers onderschat waren (65 naar 75 kg N)."
+ },
+ {
+  "nr": 84,
+  "vraag": "Hoe breed moet de beschermingsstrook zijn als het perceel zowel in SBZ-H ligt als in een groene bestemming?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "\\b5 ?m\\b|5 meter|vijf meter",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: beschermingsstroken",
+   "datum": null
+  },
+  "nota": "MAP 7 p71: 5 m in natuurgebied (document spreekt niet van SBZ-H; nakijken)."
+ },
+ {
+  "nr": 85,
+  "vraag": "Wat is de definitie van een hoofdteelt? Is dit de teelt die er staat op 30 mei of 1 juni?",
+  "bron": [
+   "Toelichting bij de verzamelaanvraag 2025",
+   "Ontwerp 7de Mestactieprogramma (MAP 7)"
+  ],
+  "sleutel": "15 mei",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: beschermingsstroken",
+   "datum": null
+  },
+  "nota": "Toelichting verzamelaanvraag: overwegend aanwezig van 15 mei t.e.m. 31 augustus."
+ },
+ {
+  "nr": 86,
+  "vraag": "Wat is het verschil tussen een 'bufferstrook' en 'beschermstrook'? Waarom worden beide gebruikt?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "ecoregeling|beheerovereenkomst",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: beschermingsstroken",
+   "datum": null
+  },
+  "nota": "MAP 7 p70: naam 'beschermingsstrook' om ze te onderscheiden van bufferstroken in ecoregelingen/beheerovereenkomsten."
+ },
+ {
+  "nr": 87,
+  "vraag": "Mogen stroken worden aangelegd voor spontane begrazing van bijvoorbeeld schapen?",
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "tijdelijk|onderhoud",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: beschermingsstroken",
+   "datum": null
+  },
+  "nota": "MAP 7 p70: begrazing alleen langs grasland of tijdelijk voor onderhoud."
+ },
+ {
+  "nr": 88,
+  "vraag": "Welke verbodsbepalingen moet ik altijd respecteren?",
+  "bron": [
+   "Praktijkgids Bemesting: wettelijk kader",
+   "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)"
+  ],
+  "sleutel": "zon- en feestdag|zondag|zonsopgang|zonsondergang|bevroren|besneeuwd|drassig",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/uitrijregeling/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: uitrijregeling",
+   "datum": null
+  },
+  "nota": "Praktijkgids/Mestdecreet: niet op zon- en feestdagen, niet voor zonsopgang/na zonsondergang, enz."
+ },
+ {
+  "nr": 89,
+  "vraag": "Stalen voor OC en ph, 1 per 5 ha, jaarlijks of voor hoeveel jaar geldig?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "5 jaar|vijf jaar",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting verzamelaanvraag: elk analyseresultaat is vijf jaar geldig."
+ },
+ {
+  "nr": 90,
+  "vraag": "Voor het winterploegen van zware gronden; is dit op basis van de landbouwstreek of de grondsoort op een analyseverslag of de bodemkaart?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "bodemkaart|bodemsta(al|len)|code",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p89-90: klei/leem volgens bodemkaart of bodemstaal (codes 50, 60, 70)."
+ },
+ {
+  "nr": 91,
+  "vraag": "Aardappelen (geen pootgoed) telen; rotatie - minimum 2 jaar tussen teelten of 3 jaar?",
+  "bron": [
+   "Toelichting bij de verzamelaanvraag 2025",
+   "Praktijkgids Gewasbescherming: module IPM akkerbouw",
+   "Goede praktijken voor de bemesting (klimaatadaptief)"
+  ],
+  "sleutel": "1 ?op ?3|één ?op ?drie|om de (3|drie) jaar|(eenmaal|éénmaal) om de drie",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting/IPM: aardappelen slechts eenmaal om de drie jaar (1 op 3)."
+ },
+ {
+  "nr": 92,
+  "vraag": "Wat zijn de sancties als niet aan de 80% voldaan is?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "(^|[^0-9])(1|3|10|15) ?%",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p65/68: verlaging normaal 3 %, 1-10 %, opzettelijk minstens 15 %."
+ },
+ {
+  "nr": 93,
+  "vraag": "In de polder wordt er veelal nog eens geploegd voor 15/10. Mag dit dan niet meer?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "altijd|polders en duinen",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting 2025 p89: op kleibodem in Polders en Duinen is winterploegen altijd toegestaan (antwoord webinar 2023 was anders)."
+ },
+ {
+  "nr": 94,
+  "vraag": "Als je 2 ha blijvend grasland ploegt, en je zaait een ander perceel van 2ha bouwland in met gras, heb je dan nog voldaan of moet dat andere perceel eerst blijvend worden?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "3 ?%|vijf jaar|5 jaar",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p70-72: zolang Vlaamse ratio niet meer dan 3 % daalt geen verplichtingen; herinzaai blijft 5 jaar."
+ },
+ {
+  "nr": 95,
+  "vraag": "Vroeger waren percelen met bomen(rijen) met 100+/ha NIET-subsidiabel... hoe zit het nu met deze subsidiabele status, kunnen deze bomenrijen meetellen voor de niet productieve oppervlakte?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "200",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p48: gronden met tot 200 bomen/ha blijven subsidiabel."
+ },
+ {
+  "nr": 96,
+  "vraag": "Teeltrotatie: meerdere jaren mais mag indien er een nateelt (groenbemester) gezaaid wordt die langer dan 12 weken op het veld blijft?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "gewasgroep",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting 2025 p92: rotatie via nateelt van minstens 12 weken uit een andere gewasgroep (regels sinds 2023 gewijzigd)."
+ },
+ {
+  "nr": 97,
+  "vraag": "Gewasrotatie: Is graszaad een afzonderlijk gewas die niet beschouwd wordt als weidegras? Gecertificeerd graszaad is dit gras of een afzonderlijke akkerbouwteelt?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "vrijgesteld|zaaizaad gras|601|grassen en andere kruidachtige",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p94: zaaizaad gras (601) valt onder grassen, vrijgesteld van de basisnorm gewasrotatie."
+ },
+ {
+  "nr": 98,
+  "vraag": "Wat is de definitie van oogstresten? Zijn de oogstresten van aardappelen voldoende om aan de 80% bedekking te voldoen?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "groenbedekker|nateelt|onvoldoende",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-04/Conditionaliteit.pdf",
+   "wie": "vragen deelnemers lunchwebinar Conditionaliteit (Dep. Landbouw en Visserij)",
+   "datum": "2023-04"
+  },
+  "nota": "Toelichting p88: bij onvoldoende of snel verterende oogstresten een groenbedekker/nateelt inzaaien."
+ },
+ {
+  "nr": 99,
+  "vraag": "Mogen de ecoregeling-bufferstroken begraasd worden in plaats van te maaien?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "niet toegestaan|niet toegelaten|verboden|\\bneen?\\b|mag niet",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Bufferstroken.pdf",
+   "wie": "vragen deelnemers lunchwebinar Bufferstroken (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen per perceel: bemesting en begrazing van de bufferstroken zijn niet toegestaan."
+ },
+ {
+  "nr": 100,
+  "vraag": "Tellen ecoregelingen ook mee als niet-productieve elementen (NPE)?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "niet combineerbaar|niet gecombineerd|niet mee|\\bneen?\\b|niet meer verplicht",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Bufferstroken.pdf",
+   "wie": "vragen deelnemers lunchwebinar Bufferstroken (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen p69: bufferstrook-ecoregeling niet combineerbaar met NPE; sinds 2025 is NPE ook niet meer verplicht."
+ },
+ {
+  "nr": 101,
+  "vraag": "Wat is de minimale oppervlakte van een bufferstrook?",
+  "bron": [
+   "Toelichting bij de verzamelaanvraag 2025",
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025"
+  ],
+  "sleutel": "\\b(9|6|3) ?m\\b|erosiegevoelig",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Bufferstroken.pdf",
+   "wie": "vragen deelnemers lunchwebinar Bufferstroken (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Geen oppervlakte maar breedtes per type en erosieklasse (bv. 9 m paars/rood, 6 m anders, BUW 3-6 m)."
+ },
+ {
+  "nr": 102,
+  "vraag": "Wat is het verschil tussen een waterloop bij de ecoregeling-bufferstrook langs waterlopen tegenover die langs kwetsbare landschapselementen?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "3 ?[-–] ?6|6 ?[-–] ?12",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Bufferstroken.pdf",
+   "wie": "vragen deelnemers lunchwebinar Bufferstroken (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen: BUW 3-6 m breed, strook langs kwetsbare landschapselementen standaard 6-12 m."
+ },
+ {
+  "nr": 103,
+  "vraag": "Wat met de gemengde rassen die ook melk geven?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "melkproductieregistratie|gemolken|vleesvee",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Voedermanagement_0.pdf",
+   "wie": "vragen deelnemers lunchwebinar Voedermanagement (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Toelichting p235: rastype gemengd telt als melkvee als ze gemolken worden en het bedrijf onder melkproductieregistratie staat."
+ },
+ {
+  "nr": 104,
+  "vraag": "Kan de eenjarige ecoteelt faunamengsel aangevraagd worden op een perceel blijvend grasland?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025",
+   "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)"
+  ],
+  "sleutel": "bouwland",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Biologische%20landbouw_0.pdf",
+   "wie": "vragen deelnemers lunchwebinar Biologische landbouw (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen: faunamengsel (EEF) is een maatregel voor bouwland."
+ },
+ {
+  "nr": 105,
+  "vraag": "Kan de maatregel ‘Aanbreng organische koolstof via stalmest’ ook op weiland?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "bouwland",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Biologische%20landbouw_0.pdf",
+   "wie": "vragen deelnemers lunchwebinar Biologische landbouw (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen: maatregelen verhogen organische koolstof staan bij Bouwland."
+ },
+ {
+  "nr": 106,
+  "vraag": "Moet ik een bodemanalyse laten doen voor maatregel ‘Aanbreng organische koolstof via stalmest’?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "streefzone|OCS",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Biologische%20landbouw_0.pdf",
+   "wie": "vragen deelnemers lunchwebinar Biologische landbouw (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen: bodemanalyse alleen nodig voor de aanvulling 'bereiken van de streefzone' (OCS)."
+ },
+ {
+  "nr": 107,
+  "vraag": "Moet de stalmest van je eigen bedrijf afkomstig zijn voor de maatregel 'Aanbreng organische koolstof via stalmest'?",
+  "bron": [
+   "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+   "Toelichting bij de verzamelaanvraag 2025"
+  ],
+  "sleutel": "extern|derde|ander(e)? bedrij",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlaamsruraalnetwerk.be/sites/vrn/files/2023-02/Biologische%20landbouw_0.pdf",
+   "wie": "vragen deelnemers lunchwebinar Biologische landbouw (Dep. Landbouw en Visserij)",
+   "datum": "2023-02"
+  },
+  "nota": "Ecoregelingen p56: stalmest van eigen bedrijf of extern verkregen."
+ },
+ {
+  "nr": 108,
+  "vraag": "Moet ik nog niet-productieve elementen aanleggen op mijn bedrijf?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "niet meer|geen .{0,40}meer|\\bnee\\b|\\bneen\\b",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://lv.vlaanderen.be/e-loket/help-e-loket/verzamelaanvraag/wat-u-zeker-moet-weten/veelgestelde-vragen-over-de",
+   "wie": "FAQ verzamelaanvraag (Agentschap Landbouw en Zeevisserij)",
+   "datum": null
+  },
+  "nota": "Toelichting 2025: niet-productieve elementen/areaal zijn niet meer verplicht."
+ },
+ {
+  "nr": 109,
+  "vraag": "Wanneer kan ik mestrechten krijgen voor een perceel?",
+  "bron": [
+   "Startersbrochure Mestbank",
+   "Ontwerp 7de Mestactieprogramma (MAP 7)"
+  ],
+  "sleutel": "hoofdteelt",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://lv.vlaanderen.be/e-loket/help-e-loket/verzamelaanvraag/wat-u-zeker-moet-weten/veelgestelde-vragen-over-de",
+   "wie": "FAQ verzamelaanvraag (Agentschap Landbouw en Zeevisserij)",
+   "datum": null
+  },
+  "nota": "Startersbrochure: bemestingsrechten voor wie de hoofdteelt op het perceel in gebruik heeft."
+ },
+ {
+  "nr": 110,
+  "vraag": "Kan ik graslanden scheuren?",
+  "bron": "Toelichting bij de verzamelaanvraag 2025",
+  "sleutel": "EKBG|ecologisch kwetsbaar",
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://lv.vlaanderen.be/e-loket/help-e-loket/verzamelaanvraag/wat-u-zeker-moet-weten/veelgestelde-vragen-over-de",
+   "wie": "FAQ verzamelaanvraag (Agentschap Landbouw en Zeevisserij)",
+   "datum": null
+  },
+  "nota": "Toelichting: EKBG mag nooit geploegd/omgezet worden; ander blijvend grasland afhankelijk van ratio en natuurwetgeving."
+ },
+ {
+  "nr": 111,
+  "vraag": "Wat is een circulair stalmestbedrijf?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-02"
+  },
+  "nota": "Term staat in MAP 7 maar zonder definitie (90 % stalmest-regel ontbreekt)."
+ },
+ {
+  "nr": 112,
+  "vraag": "Is het mogelijk om de criteria van de doelgerichte selectie van de nitraatresiducampagne te kennen?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2026-09"
+  },
+  "nota": "Doelgerichte selectie komt in geen document voor."
+ },
+ {
+  "nr": 113,
+  "vraag": "Kan een loonwerker via de AGR-GPS-app verschillende klanten bedienen?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-02"
+  },
+  "nota": "AGR-GPS-app en AGR-nummer staan niet in de documenten."
+ },
+ {
+  "nr": 114,
+  "vraag": "Welke regel geldt er voor aardappelen pootgoed met teeltcode 907 en 908? Worden die pootaardappelen aanzien als vroege aardappelen of als late?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2025-01"
+  },
+  "nota": "Grens vroeg/laat via geplande oogst voor 1/09 staat niet in de documenten."
+ },
+ {
+  "nr": 115,
+  "vraag": "Wat gebeurt er als door de droogte niet tot 90 cm diep bemonsterd kan worden?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2026-09"
+  },
+  "nota": "Omrekening van ondiepere lagen staat niet in de documenten."
+ },
+ {
+  "nr": 116,
+  "vraag": "Kan ik teeltmislukking inroepen voor de nitraatresidumetingen?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/MAP7/FAQ/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)",
+   "datum": "2026-09"
+  },
+  "nota": "Teeltschade/bezwaar bij nitraatresidu niet behandeld."
+ },
+ {
+  "nr": 117,
+  "vraag": "Mag de beschermingsstrook gebruikt worden als wendakker?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
+   "wie": "FAQ Mestbank: beschermingsstroken",
+   "datum": "2026-09"
+  },
+  "nota": "Wendakker komt alleen in teeltadvies voor, niet bij beschermingsstroken."
+ },
+ {
+  "nr": 118,
+  "vraag": "Een aantal maanden geleden diende ik een bezwaarschrift in tegen een nieuw ruimtelijk uitvoeringsplan (RUP). Dit plan voorzag onder meer in de omzetting van de agrarische bestemming van sommige van mijn weides naar natuurgebied. Momenteel hoor ik niets meer van dat RUP. Hoe verloopt deze procedure verder? En wat kan ik doen als de overheid mijn weides toch tot natuurgebied herbestemt?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.landbouwleven.be/17698/article/2023-10-01/de-procedure-na-openbaar-onderzoek-rond-ruimtelijk-uitvoeringsplan",
+   "wie": "lezersvraag Landbouwleven (rubriek Recht)",
+   "datum": "2023-10"
+  },
+  "nota": "RUP-procedure en beroep bij Raad van State staan niet in de documenten."
+ },
+ {
+  "nr": 119,
+  "vraag": "Op de laatste grote landbouwbetoging zou de politie een tractor in beslag hebben genomen, die ze nu zouden vernietigen. Kan dit echt of is dit een gerucht dat de ronde doet en dat wettelijk gezien niet mogelijk is?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.landbouwleven.be/24822/article/2026-03-16/kan-de-politie-een-tractor-beslag-nemen-en-vernietigen",
+   "wie": "lezersvraag Landbouwleven (rubriek Recht)",
+   "datum": "2026-03"
+  },
+  "nota": "Strafrecht/politie valt buiten de documenten."
+ },
+ {
+  "nr": 120,
+  "vraag": "Kan een gepensioneerde pachter worden opgezegd?",
+  "bron": null,
+  "sleutel": null,
+  "deel": "echt",
+  "herkomst": {
+   "url": "https://www.landbouwleven.be/25419/article/2026-06-08/juridische-positie-van-de-gepensioneerde-pachter",
+   "wie": "lezersvraag Landbouwleven (rubriek Recht)",
+   "datum": "2026-06"
+  },
+  "nota": "Pachtwetgeving wordt in de documenten alleen als hoofdstuktitel genoemd, pensioen niet."
  }
 ]
