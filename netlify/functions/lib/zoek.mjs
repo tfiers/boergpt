@@ -65,7 +65,7 @@ function bm25(vraag, mag, kop) {
 
 // --- Vectoren: betekenis ----------------------------------------------------
 async function vraagVector(vraag) {
-  const { CLOUDFLARE_ACCOUNT_ID: acc, CLOUDFLARE_API_TOKEN: token } = process.env;
+  const { CLOUDFLARE_ACCOUNT_ID_FOR_BOERGPT: acc, CLOUDFLARE_AI_TOKEN_FOR_BOERGPT: token } = process.env;
   if (!acc || !token) return null;
   const r = await fetch(`https://api.cloudflare.com/client/v4/accounts/${acc}/ai/run/@cf/baai/bge-m3`, {
     method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },

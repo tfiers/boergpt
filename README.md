@@ -93,9 +93,9 @@ node --test test/teller.test.mjs
 ```
 
 Online: een Netlify-site met deze map, en als omgevingsvariabelen
-`GROQ_API_KEY`, `ANTHROPIC_API_KEY`,
-`CLOUDFLARE_API_TOKEN` (Workers AI, alleen lezen) en
-`CLOUDFLARE_ACCOUNT_ID`. Zonder Cloudflare zoekt het alleen op woorden.
+`GROQ_KEY_FOR_BOERGPT`, `ANTHROPIC_KEY_FOR_BOERGPT`,
+`CLOUDFLARE_AI_TOKEN_FOR_BOERGPT` (Workers AI, alleen lezen) en
+`CLOUDFLARE_ACCOUNT_ID_FOR_BOERGPT`. Zonder Cloudflare zoekt het alleen op woorden.
 
 De documenten opnieuw verwerken (Python 3.11+, ± 75 minuten op een gewone
 processor):
