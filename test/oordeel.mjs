@@ -6,13 +6,15 @@
 //     naar data/oordeel.json, zonder het model. Welk antwoord van welk model is, staat in
 //     test/oordeel-sleutel.json.
 //
-//   OORDEEL_GEHEIM=... node test/oordeel.mjs link <naam> [site]
-//     De persoonlijke link voor één expert (het geheim staat in de Netlify-omgeving en in Bitwarden).
+//   node test/oordeel.mjs code <naam> [site]
+//     Geeft één expert een nieuwe willekeurige code: de hash gaat in data/oordeel.json, de
+//     persoonlijke link komt op het scherm (en nergens anders: bewaar hem bij het bericht aan die expert).
 //
 //   node test/oordeel.mjs vergelijk [site]
 //     Haalt alle oordelen op (/api/oordeel?alles) en zet ze naast de sleutel en het oordeel van
 //     de rechter (test/rechter.mjs): per model hoe vaak het klopt, en hoe vaak mens en rechter het eens zijn.
 import { readFileSync, writeFileSync } from "node:fs";
+import { randomBytes } from "node:crypto";
 
 const [, , wat, ...rest] = process.argv;
 const lees = p => JSON.parse(readFileSync(p, "utf8"));
@@ -50,11 +52,14 @@ if (wat === "maak") {
   writeFileSync("data/oordeel.json", JSON.stringify(ronde, null, 1));
   writeFileSync("test/oordeel-sleutel.json", JSON.stringify(sleutel, null, 1));
   console.log(`${items.length} antwoorden op ${nrs.length} vragen → data/oordeel.json (ronde ${ronde.ronde})`);
-} else if (wat === "link") {
-  const { sleutelVoor } = await import("../netlify/functions/oordeel.mjs");
+} else if (wat === "code") {
+  const { hash } = await import("../netlify/functions/oordeel.mjs");
   const [naam, site = "https://boergpt.netlify.app"] = rest;
-  if (!process.env.OORDEEL_GEHEIM || !/^[a-z0-9-]{2,30}$/.test(naam || "")) throw new Error("Gebruik: OORDEEL_GEHEIM=... node test/oordeel.mjs link <naam in kleine letters>");
-  console.log(`${site}/oordeel.html?wie=${naam}&sleutel=${sleutelVoor(naam)}`);
+  if (!/^[a-z0-9-]{2,30}$/.test(naam || "")) throw new Error("Gebruik: node test/oordeel.mjs code <naam in kleine letters>");
+  const ronde = lees("data/oordeel.json"), code = randomBytes(12).toString("hex");
+  ronde.codes = { ...ronde.codes, [naam]: hash(code) };
+  writeFileSync("data/oordeel.json", JSON.stringify(ronde, null, 1));
+  console.log(`${site}/oordeel.html?wie=${naam}&code=${code}`);
 } else if (wat === "vergelijk") {
   const site = rest[0] || "https://boergpt.netlify.app";
   const sleutel = lees("test/oordeel-sleutel.json");
@@ -75,5 +80,5 @@ if (wat === "maak") {
   console.log(`Mens en rechter eens over "klopt": ${eens}/${samen}`);
   console.log(`Aantal experts: ${new Set(oordelen.map(o => o.door)).size}`);
 } else {
-  console.log("Gebruik: node test/oordeel.mjs maak <uitslag A> <uitslag B> [aantal] | link <naam> | vergelijk [site]");
+  console.log("Gebruik: node test/oordeel.mjs maak <uitslag A> <uitslag B> [aantal] | code <naam> | vergelijk [site]");
 }

@@ -2,25 +2,23 @@
 // zonder het model dat ze schreef. Elk oordeel wordt bewaard in Netlify Blobs onder de naam van de
 // expert, zodat die kan stoppen en later verdergaan.
 //
-// Elke expert krijgt een eigen link met een sleutel: ?wie=expert&sleutel=... (node test/oordeel.mjs
-// link expert). De sleutel is een HMAC van de naam met het geheim OORDEEL_GEHEIM (Netlify-omgeving):
-// zonder dat geheim kan niemand oordelen namens een ander, of een nieuwe naam verzinnen.
-//   GET  /api/oordeel?wie=naam&sleutel=s   de antwoorden en wat die persoon al oordeelde
-//   GET  /api/oordeel?alles                alle oordelen, zonder naam en opmerking (voor test/oordeel.mjs vergelijk)
-//   POST /api/oordeel {wie, sleutel, item, klopt, bron, opmerking}
-import { createHmac, timingSafeEqual } from "node:crypto";
+// Elke expert krijgt een eigen link met een willekeurige code: ?wie=expert&code=... (node
+// test/oordeel.mjs code expert). In data/oordeel.json staat alleen de hash van elke code: wie de
+// code niet heeft, kan niet oordelen namens een ander, en een verzonnen naam heeft geen code.
+//   GET  /api/oordeel?wie=naam&code=c   de antwoorden en wat die persoon al oordeelde
+//   GET  /api/oordeel?alles             alle oordelen, zonder naam en opmerking (voor test/oordeel.mjs vergelijk)
+//   POST /api/oordeel {wie, code, item, klopt, bron, opmerking}
+import { createHash, timingSafeEqual } from "node:crypto";
 import { lees } from "./lib/zoek.mjs";
 import { json, opslag } from "./lib/budget.mjs";
 
 const KLOPT = ["ja", "half", "nee", "weet niet"], BRON = ["ja", "deels", "nee", "weet niet"];
 
-export const sleutelVoor = (wie, geheim = process.env.OORDEEL_GEHEIM) =>
-  createHmac("sha256", geheim).update(`oordeel ${wie}`).digest("hex").slice(0, 24);
+export const hash = code => createHash("sha256").update(String(code)).digest("hex");
 
-function echt(wie, sleutel) {
-  if (!process.env.OORDEEL_GEHEIM || typeof wie !== "string" || !/^[a-z0-9-]{2,30}$/.test(wie) || typeof sleutel !== "string") return false;
-  const a = Buffer.from(sleutelVoor(wie)), b = Buffer.from(sleutel);
-  return a.length === b.length && timingSafeEqual(a, b);
+function echt(r, wie, code) {
+  const juist = typeof wie === "string" && Object.hasOwn(r.codes || {}, wie) && r.codes[wie];
+  return Boolean(juist) && typeof code === "string" && timingSafeEqual(Buffer.from(juist), Buffer.from(hash(code)));
 }
 
 // Pas bij de eerste vraag gelezen: zonder ronde antwoordt de functie netjes in plaats van te crashen.
@@ -44,14 +42,15 @@ export default async req => {
       return json({ ronde: r.ronde, oordelen: oordelen.map(({ opmerking, wie, ...o }) => ({ ...o, door: nummer.indexOf(wie) + 1 })) });
     }
     const wie = url.searchParams.get("wie");
-    if (!echt(wie, url.searchParams.get("sleutel"))) return json({ fout: "Open de link die je kreeg: hij bevat je naam en je sleutel." }, 403);
+    if (!echt(r, wie, url.searchParams.get("code"))) return json({ fout: "Open de link die je kreeg: hij bevat je naam en je code." }, 403);
     const { blobs } = await store.list({ prefix: `${wie}/` });
-    return json({ ...r, oordelen: await Promise.all(blobs.map(b => store.get(b.key, { type: "json" }))) });
+    const { codes, ...open } = r;
+    return json({ ...open, oordelen: await Promise.all(blobs.map(b => store.get(b.key, { type: "json" }))) });
   }
   if (req.method !== "POST") return json({ fout: "Alleen GET of POST." }, 405);
   let o;
   try { o = await req.json(); } catch { return json({ fout: "Geen geldige JSON." }, 400); }
-  if (!o || !echt(o.wie, o.sleutel)) return json({ fout: "Open de link die je kreeg: hij bevat je naam en je sleutel." }, 403);
+  if (!o || !echt(r, o.wie, o.code)) return json({ fout: "Open de link die je kreeg: hij bevat je naam en je code." }, 403);
   if (!r.items.some(i => i.id === o.item) || !KLOPT.includes(o.klopt) || !BRON.includes(o.bron))
     return json({ fout: "Onvolledig oordeel." }, 400);
   const opmerking = String(o.opmerking || "").slice(0, 1000);
