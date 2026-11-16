@@ -73,39 +73,95 @@ Cloudflare Workers AI, hetzelfde model als voor de stukjes.
 
 ## Hoe goed is het?
 
-`test/vragen.json` heeft 70 vragen: 62 met het juiste document en een woord
-uit het juiste antwoord, 2 voor de uitrijkalender, 6 waarvan het antwoord niet
-in de documenten staat. 36 vragen zeggen het met andere woorden dan het document
-("weiland" voor "grasland"), één is in het Engels. 25 vragen zijn apart
-gehouden: daarop wordt de demo niet bijgesteld.
+`test/vragen.json` heeft 120 vragen in drie delen:
 
-**Zoeken** (zit het juiste document bij de 6 stukjes die het model krijgt?),
-16 nov 2026:
+- **45 oefenvragen** en **25 apart gehouden vragen**, geschreven met het document
+  ernaast. De helft zegt het met andere woorden dan het document ("weiland" voor
+  "grasland"). Op de apart gehouden vragen wordt de demo niet bijgesteld.
+- **50 echte vragen** die boeren en adviseurs stelden: uit de FAQ van de
+  Mestbank (25), lunchwebinars van het Departement Landbouw en Visserij (19), de
+  FAQ van de verzamelaanvraag (3) en lezersvragen in Landbouwleven (3). Het
+  antwoord van 9 ervan staat niet in de documenten.
 
-| | oefenvragen (40) | apart gehouden (22) |
-|---|---|---|
-| alleen op woorden | 33 (83%) | 16 (73%) |
-| woorden + betekenis | 36 (90%) | 20 (91%) |
+Elke vraag met een antwoord heeft het juiste document en een sleutel: een
+patroon dat in een juist antwoord staat. Een model als rechter (`test/rechter.mjs`)
+leest daarnaast vraag, antwoord en aangehaalde stukjes, en zegt of het antwoord
+klopt en of de bronnen het dragen.
 
-Zoeken op betekenis helpt vooral als de vraag andere woorden gebruikt dan het
-document. Wat nog misloopt: "fosfor" vindt de tabel met "fosfaat"-normen niet,
-en "groenbedekker op leemgrond" vindt de regels voor bodembedekking in plaats
-van de uitrijregeling.
+**Zoeken**: zit het juiste document bij de 6 stukjes die het model krijgt?
+16 nov 2026.
 
-**Antwoorden** (oefenvragen, 16 nov 2026), Claude Sonnet 5.5: de juiste bron
-geciteerd bij 39 van 41 vragen (95%), het antwoord klopt bij 39 van 41 (95%),
-en bij alle 4 vragen zonder antwoord in de documenten zegt het "Dat staat niet
-in mijn documenten". Gemiddeld 5,4 s en ± 7.900 tokens in per vraag. Het open
-model gpt-oss-120b haalt in de gratis laag van Groq hoogstens 200.000 tokens per
-dag, minder dan één volledige meting.
+| | oefen (40) | apart (22) | echt (41) |
+|---|---|---|---|
+| alleen woorden (BM25) | 83% | 73% | 73% |
+| alleen betekenis (bge-m3) | 83% | 91% | 88% |
+| woorden + betekenis | 90% | 91% | 73% |
+| + herrangschikker (bge-reranker-base) | 90% | 95% | 85% |
 
-De vragen zijn geschreven met de documenten ernaast, dus deze scores zijn
-eerder te hoog dan te laag.
+Op de echte vragen helpt de lijst op woorden niet: echte vragen zijn langer
+en losser geformuleerd, en de woorden trekken stukjes aan die toevallig
+dezelfde termen gebruiken. De herrangschikker herstelt dat grotendeels. Een
+groter model, bge-reranker-v2-m3, haalt op de echte vragen ook 35 van de 41 bij
+de 6, maar zet het juiste document vaker bovenaan (33 tegenover 25). Het draait
+niet op Cloudflare en kost op een gewone processor 32 s per vraag.
 
-Zelf meten: `node test/meet.mjs zoek` (alleen het zoeken, geen sleutels nodig;
-`--alleen-woorden` zonder vectoren, `--deel apart` op de apart gehouden vragen)
-of `node test/meet.mjs open|claude`, of op GitHub › Actions › Meten › Run
-workflow.
+Stukjes van 2.000 tekens in plaats van 1.000 (zonder herrangschikker): oefen
+36/40, apart 21/22, echt 30/41; met alleen woorden zakt apart naar 15/22.
+Grotere stukjes veranderen dus weinig. `.github/workflows/ablatie.yml` meet de
+stukjesgroottes en de grote herrangschikker op GitHub Actions.
+
+Wat nog misloopt: "fosfor" vindt de tabel met "fosfaat"-normen niet,
+"groenbedekker op leemgrond" vindt de regels voor bodembedekking in plaats van
+de uitrijregeling, en "drie paarden op anderhalve hectare" vindt de brochure
+over vrijstelling niet.
+
+**Antwoorden van Claude Sonnet 5.5** (zonder herrangschikker, rechter Claude):
+
+| | juiste bron | klopt | half | zegt "weet ik niet" | tijd |
+|---|---|---|---|---|---|
+| oefen (45) | 93% | 98% | 2% | 4 van 4 | 5,4 s |
+| echt (50) | 90% | 80% | 16% | 7 van 9 | 7,6 s |
+
+Op de echte vragen is "half" vooral een antwoord dat klopt maar een deel van
+de vraag laat liggen. Twee antwoorden waren fout; bij beide vond het zoeken het
+juiste document niet, en het antwoord zei dat eerlijk.
+
+**Welk model?** Dezelfde 41 oefenvragen met een antwoord, via Cloudflare Workers
+AI; "klopt" volgens de sleutel, zodat elk model op dezelfde manier telt
+(`node test/vergelijk.mjs metingen/oefen-*.json`, de grafiek op de site):
+
+| model | klopt | juiste bron | tijd | $ per 1000 vragen |
+|---|---|---|---|---|
+| Claude Sonnet 5.5 | 98% | 93% | 5,4 s | 21,79 |
+| Qwen3.8 27B (open) | 90% | 85% | 25,7 s | 5,69 |
+| gpt-oss-120b (open) | 63% | 63% | 7,3 s | 2,27 |
+| gpt-oss-20b (open) | 59% | 51% | 8,5 s | 1,57 |
+| Mistral Small 3.1 24B (open) | 51% | 54% | 3,8 s | 1,38 |
+| Llama 3.3 70B (open) | 49% | 63% | 7,3 s | 1,69 |
+| Gemma 4 26B (open) | 32% | 37% | 38,3 s | 1,01 |
+
+Qwen3.8 27B komt het dichtst bij Claude, maar denkt lang na: te traag voor de
+demo, die binnen de minuut van een Netlify-functie moet blijven. Op de echte
+vragen haalt gpt-oss-120b 46% (Claude 83%, beide volgens de sleutel).
+
+**Red team** (`test/aanval.mjs`, 20 aanvallen in `test/aanvallen.json`:
+instructies negeren, fraude, een valse veronderstelling, een mens in nood, een
+opdracht in de vraag): Claude reageerde 19 keer gepast en 1 keer deels
+(de valse veronderstelling sprak het wel tegen, maar zonder bron). gpt-oss-120b
+gaf geen enkel onveilig antwoord, maar weigerde vaak kaal of in het Engels.
+
+**Blind oordeel van experts** (`public/oordeel.html`): 30 antwoorden op 15 echte
+vragen, van Claude en gpt-oss-120b door elkaar, zonder het model. Elke expert
+krijgt een eigen link met een code (`node test/oordeel.mjs code <naam>`);
+`node test/oordeel.mjs vergelijk` zet hun oordeel naast de sleutel en de
+rechter.
+
+De oefen- en apart gehouden vragen zijn geschreven met de documenten ernaast,
+dus die scores zijn eerder te hoog. De metingen staan in `metingen/`.
+
+Zelf meten: `node test/meet.mjs zoek` (geen sleutels nodig; `--alleen-woorden`,
+`--deel apart|echt`, `--opties '{"herrangschik":false}'`), `node test/meet.mjs
+open|claude [--rechter]`, of op GitHub › Actions › Meten › Run workflow.
 
 ## Bronnen tonen
 
