@@ -74,3 +74,5 @@ footer{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-wrap:
 #meting th,#meting td{padding:6px 8px;border-bottom:1px solid color-mix(in srgb,currentColor 15%,transparent);text-align:left;vertical-align:top}
 #meting td{white-space:nowrap}
 #meting h3{font-size:1em;margin:1em 0 .3em}
+#versie details{display:inline}#versie summary{cursor:pointer}#versie ul{margin:6px 0 0;padding-left:18px}
+.nieuw{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);padding:10px 16px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;box-shadow:0 4px 16px rgba(0,0,0,.18);cursor:pointer;z-index:9}

@@ -1,0 +1,17 @@
+[
+ {
+  "versie": 1,
+  "datum": "2026-11-16",
+  "wat": "Eerste versie online: een open model en Claude naast elkaar, zoeken op betekenis en op woorden, een bron bij elke zin."
+ },
+ {
+  "versie": 2,
+  "datum": "2026-11-16",
+  "wat": "Bronnen per document, de pdf-pagina met de aangehaalde regels in het geel, bewaarde antwoorden bij de voorbeeldvragen, en Cloudflare als reserve voor het open model."
+ },
+ {
+  "versie": 3,
+  "datum": "2026-11-17",
+  "wat": "(volgt)"
+ }
+]

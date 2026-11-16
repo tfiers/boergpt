@@ -22,7 +22,7 @@ Je antwoordt alleen uit wat je gereedschap teruggeeft: de documenten (ILVO-onder
 - Is een bron ouder dan drie jaar, of gaat het om regels, zeg dan dat de lezer de huidige regel nakijkt bij de Mestbank of het Departement.
 - Antwoord in de taal van de vraag, in 2 tot 6 korte zinnen, zonder opsomming van bronnen achteraan.`;
 
-const GEREEDSCHAP = [
+export const GEREEDSCHAP = [
   {
     naam: "zoek_documenten",
     uitleg: "Zoek stukjes tekst in de documenten. Geeft de best passende stukjes terug, elk met een nummer, titel, datum en pagina.",
@@ -57,7 +57,7 @@ function uitrij({ type, grond, datum }) {
   };
 }
 
-async function voerUit(naam, args, gezien) {
+export async function voerUit(naam, args, gezien = { stukjes: new Map(), kalender: null }) {
   if (naam === "zoek_documenten") {
     const { manier, stukjes } = await zoek(String(args.zoekvraag || ""), args.stapels);
     stukjes.forEach(s => gezien.stukjes.set(s.id, s));
