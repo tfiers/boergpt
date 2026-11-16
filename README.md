@@ -44,7 +44,8 @@ flowchart LR
    een bron ouder dan drie jaar, dan staat dat erbij. Staat het antwoord niet
    in de documenten, dan zegt het model dat.
 
-De modellen: `gpt-oss-120b` (open gewichten, Apache 2.0, via Groq) en Claude
+De modellen: `gpt-oss-120b` (open gewichten, Apache 2.0, via Groq; is Groq te druk of
+zijn gratis portie op, dan via Cloudflare Workers AI) en Claude
 Sonnet 5.5 (Anthropic). De vector van een vraag komt van bge-m3 op
 Cloudflare Workers AI, hetzelfde model als voor de stukjes.
 

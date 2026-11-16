@@ -40,12 +40,11 @@ export default async (req, context) => {
   const start = Date.now();
   try {
     const uit = await vraagAan(model, vraag);
-    return json({ model: MODELLEN[model].naam, ms: Date.now() - start, ...uit });
+    return json({ model: model === "open" ? `gpt-oss-120b (open model, via ${uit.via})` : MODELLEN[model].naam, ms: Date.now() - start, ...uit });
   } catch (e) {
     console.error(e);
     if (e.status === 429) return json({ fout: model === "open"
-      ? (e.perDag ? "Het open model heeft zijn gratis portie bij Groq voor vandaag op. Vraag het Claude, of probeer morgen opnieuw."
-        : "Het open model is even te druk: de gratis laag van Groq laat zo'n anderhalve vraag per minuut toe. Probeer over een minuut, of vraag het Claude.")
+      ? "Het open model is even te druk of heeft zijn gratis portie voor vandaag op. Vraag het Claude, of probeer het later opnieuw."
       : "Claude is even te druk. Probeer het over een minuut opnieuw." }, 503);
     return json({ fout: "Het model antwoordde niet. Probeer het zo opnieuw." }, 502);
   }

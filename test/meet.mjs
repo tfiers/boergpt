@@ -5,13 +5,16 @@
 // Voeg --alleen-woorden toe om zonder zoeken op betekenis te meten.
 // Voeg --opties '{"aantal":8,"kop":true}' toe om een andere instelling van het zoeken
 // te meten (zie STANDAARD in netlify/functions/lib/zoek.mjs).
+// Voeg --max 5 toe om alleen de eerste 5 vragen te meten (een snelle proef).
+// OPEN_VIA=groq of cloudflare kiest de aanbieder van het open model (zie agent.mjs).
 // Draai vanuit de map van de site. De uitslag komt in test/uitslag-<wat>.json.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { bronnen, stukjes, zoek, STAPELS, STANDAARD } from "../netlify/functions/lib/zoek.mjs";
 
 const wat = process.argv[2];
 const deel = process.argv.includes("--apart") ? "apart" : "oefen";
-const vragen = JSON.parse(readFileSync("test/vragen.json", "utf8")).filter(v => v.deel === deel);
+const max = process.argv.includes("--max") ? Number(process.argv[process.argv.indexOf("--max") + 1]) : Infinity;
+const vragen = JSON.parse(readFileSync("test/vragen.json", "utf8")).filter(v => v.deel === deel).slice(0, max);
 // Vraagvectoren die vooraf met bge-m3 berekend zijn (pipeline/vectoren.py --vragen); zo meet het zoeken
 // op betekenis ook zonder Cloudflare-sleutel.
 // Met --alleen-woorden meet je het zoeken zonder vectoren, om het verschil te zien.

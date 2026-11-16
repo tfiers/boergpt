@@ -6,7 +6,7 @@ import { bronnen, lees, zoek, STAPELS } from "./zoek.mjs";
 const kalender = JSON.parse(lees("uitrijkalender.json"));
 
 export const MODELLEN = {
-  open: { naam: "gpt-oss-120b (open model, via Groq)", id: process.env.OPEN_MODEL || "openai/gpt-oss-120b" },
+  open: { naam: "gpt-oss-120b (open model)", id: process.env.OPEN_MODEL || "openai/gpt-oss-120b" },
   claude: { naam: "Claude Sonnet 5.5", id: process.env.CLAUDE_MODEL || "claude-sonnet-5-5" },
 };
 
@@ -75,26 +75,26 @@ async function voerUit(naam, args, gezien) {
   return { tekst: "Onbekend gereedschap.", stap: { wat: naam } };
 }
 
-// --- Twee aanbieders, één lus ----------------------------------------------
-// Groq's gratis laag geeft 8000 tokens per minuut, zo'n anderhalve vraag. Bij "te druk" (429)
-// wacht dit zo lang als de aanbieder vraagt, maar niet langer dan WACHT_MAX seconden
-// (live 15, zodat de functie binnen haar minuut blijft; de meting zet het hoger).
+// --- Aanbieders, één lus -----------------------------------------------------
+// Groq's gratis laag geeft 8000 tokens per minuut, zo'n anderhalve vraag, en 200.000 per dag.
+// Bij "te druk" (429) wacht dit zo lang als de aanbieder vraagt, maar niet langer dan `geduld`
+// seconden (live 15, zodat de functie binnen haar minuut blijft; de meting zet WACHT_MAX hoger).
 const WACHT_MAX = Number(process.env.WACHT_MAX || 15);
-async function vraagModel(naam, url, headers, body) {
+async function vraagModel(naam, url, headers, body, geduld = WACHT_MAX) {
   for (let poging = 0; ; poging++) {
     const r = await fetch(url, { method: "POST", signal: AbortSignal.timeout(45000),
       headers: { ...headers, "content-type": "application/json" }, body: JSON.stringify(body) });
     if (r.ok) return r.json();
     const wacht = Number(r.headers.get("retry-after")) || 10;
-    if (r.status === 429 && poging < 3 && wacht <= WACHT_MAX) { await new Promise(k => setTimeout(k, wacht * 1000)); continue; }
+    if (r.status === 429 && poging < 3 && wacht <= geduld) { await new Promise(k => setTimeout(k, wacht * 1000)); continue; }
     const fout = new Error(`${naam}: ${r.status} ${(await r.text()).slice(0, 200)}`);
     fout.status = r.status;
-    fout.perDag = /per day/.test(fout.message); // Groq: de gratis portie van de dag is op
     throw fout;
   }
 }
 
 const anthropic = {
+  naam: "Anthropic",
   tools: GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
     input_schema: { type: "object", properties: g.velden, required: g.verplicht } })),
   async stap(berichten) {
@@ -112,18 +112,21 @@ const anthropic = {
   start: vraag => [{ role: "user", content: vraag }],
 };
 
-const groq = {
-  tools: GEREEDSCHAP.map(g => ({ type: "function", function: { name: g.naam, description: g.uitleg,
-    parameters: { type: "object", properties: g.velden, required: g.verplicht } } })),
-  async stap(berichten) {
-    const j = await vraagModel("Groq", "https://api.groq.com/openai/v1/chat/completions",
-      { Authorization: `Bearer ${process.env.GROQ_API_KEY}` },
-      { model: MODELLEN.open.id, max_tokens: 1200, temperature: 0.2, tools: this.tools, messages: berichten });
+// Het open model, bij een aanbieder met de OpenAI-vorm van API. De berichten hebben bij
+// beide dezelfde vorm, dus een vraag kan halverwege van aanbieder wisselen.
+const openTools = GEREEDSCHAP.map(g => ({ type: "function", function: { name: g.naam, description: g.uitleg,
+  parameters: { type: "object", properties: g.velden, required: g.verplicht } } }));
+const openAanbieder = (naam, url, sleutel, id) => ({
+  naam,
+  klaar: () => Boolean(sleutel()),
+  async stap(berichten, geduld) {
+    const j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
+      { model: id(), max_tokens: 1200, temperature: 0.2, tools: openTools, messages: berichten }, geduld);
     const m = j.choices[0].message;
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
     const oproepen = (m.tool_calls || []).map(t => {
-      let args = {};
-      try { args = JSON.parse(t.function.arguments || "{}"); } catch {}
+      let args = t.function.arguments || {};
+      if (typeof args === "string") try { args = JSON.parse(args || "{}"); } catch { args = {}; }
       return { id: t.id, naam: t.function.name, args };
     });
     return { oproepen, tekst: m.content || "", gebruik: { in: j.usage?.prompt_tokens || 0, uit: j.usage?.completion_tokens || 0 } };
@@ -132,19 +135,42 @@ const groq = {
     for (const u of uit) berichten.push({ role: "tool", tool_call_id: u.id, content: u.tekst });
   },
   start: vraag => [{ role: "system", content: SYSTEEM() }, { role: "user", content: vraag }],
-};
+});
+const groq = openAanbieder("Groq", () => "https://api.groq.com/openai/v1/chat/completions",
+  () => process.env.GROQ_API_KEY, () => MODELLEN.open.id);
+// Reserve: hetzelfde model op Cloudflare Workers AI, met de sleutel die ook de vraagvector haalt.
+const cloudflare = openAanbieder("Cloudflare",
+  () => `https://api.cloudflare.com/client/v4/accounts/${process.env.CLOUDFLARE_ACCOUNT_ID}/ai/v1/chat/completions`,
+  () => process.env.CLOUDFLARE_ACCOUNT_ID && process.env.CLOUDFLARE_API_TOKEN, () => "@cf/openai/gpt-oss-120b");
+
+// OPEN_VIA=groq of cloudflare legt de aanbieder vast (voor een meting); anders eerst Groq,
+// en Cloudflare zodra Groq "te druk" zegt, zonder te wachten.
+function aanbieders(model) {
+  if (model === "claude") return [anthropic];
+  const via = process.env.OPEN_VIA;
+  if (via === "groq") return [groq];
+  if (via === "cloudflare") return [cloudflare];
+  return cloudflare.klaar() ? [groq, cloudflare] : [groq];
+}
 
 // Hoogstens 4 modelaanroepen per vraag en 3 gereedschappen per ronde: zo blijft een
 // vraag goedkoop, ook als iemand het model vraagt om twintig keer tegelijk te zoeken.
 export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {}) {
-  const a = model === "claude" ? anthropic : groq;
+  const rij = aanbieders(model);
+  let a = rij.shift();
   const berichten = a.start(vraag);
   const gezien = { stukjes: new Map(), kalender: null };
   const stappen = [];
   let tekst = "";
   const gebruik = { in: 0, uit: 0, aanroepen: 0 };  // tokens, om de kost per vraag te meten
   for (let ronde = 0; ronde <= maxRondes; ronde++) {
-    const s = await a.stap(berichten);
+    let s;
+    try { s = await a.stap(berichten, rij.length ? 0 : WACHT_MAX); }
+    catch (e) {
+      if (e.status !== 429 || !rij.length) throw e;
+      a = rij.shift();
+      s = await a.stap(berichten);
+    }
     gebruik.in += s.gebruik.in; gebruik.uit += s.gebruik.uit; gebruik.aanroepen++;
     tekst = s.tekst;
     if (!s.oproepen.length) break;
@@ -159,7 +185,7 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {
     }
     a.antwoorden(berichten, uit);
   }
-  return { ...opmaak(tekst, gezien, stappen), gebruik };
+  return { ...opmaak(tekst, gezien, stappen), gebruik, via: a.naam };
 }
 
 // Alleen bronnen die het model echt kreeg, worden getoond; een verzonnen nummer valt weg.

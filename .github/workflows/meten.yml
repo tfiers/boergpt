@@ -12,6 +12,15 @@ on:
         description: "De apart gehouden vragen meten (alleen op het einde)"
         type: boolean
         default: false
+      via:
+        description: "Aanbieder van het open model: groq, cloudflare, of eerst Groq en dan Cloudflare"
+        type: choice
+        options: [beide, groq, cloudflare]
+        default: beide
+      max:
+        description: "Hoogstens zoveel vragen (leeg: allemaal)"
+        type: string
+        default: ""
 permissions:
   contents: read
 jobs:
@@ -32,8 +41,10 @@ jobs:
           WACHT_MAX: 90
           WAT: ${{ inputs.wat }}
           APART: ${{ inputs.apart && '--apart' || '' }}
+          OPEN_VIA: ${{ inputs.via != 'beide' && inputs.via || '' }}
+          MAX: ${{ inputs.max && format('--max {0}', inputs.max) || '' }}
         run: |
-          node test/meet.mjs "$WAT" $APART | tee uitslag.txt
+          node test/meet.mjs "$WAT" $APART $MAX | tee uitslag.txt
           { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
