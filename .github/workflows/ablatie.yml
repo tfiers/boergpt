@@ -1,0 +1,59 @@
+# Wat elk deel van het zoeken bijdraagt: andere stukjesgroottes, en een herrangschikker.
+# Start hem met "Run workflow" op het tabblad Actions; elk deel loopt op een eigen machine.
+# Geen sleutels nodig: de pdf's zijn openbaar en de vectoren komen van bge-m3 op de machine zelf.
+name: Ablatie
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  grootte:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    strategy:
+      fail-fast: false
+      matrix:
+        tekens: [500, 2000]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r pipeline/requirements.txt
+      - name: Knippen en vectoren
+        run: |
+          python pipeline/ophalen.py
+          python pipeline/knippen.py --grootte ${{ matrix.tekens }} --map k${{ matrix.tekens }}
+          python pipeline/vectoren.py --map k${{ matrix.tekens }}
+      - name: Meten
+        run: |
+          for deel in oefen apart echt; do
+            for w in "" --alleen-woorden; do
+              echo "== ${{ matrix.tekens }} tekens, $deel $w"
+              DATA_MAP=k${{ matrix.tekens }} node test/meet.mjs zoek --deel $deel $w | tail -8
+            done
+          done | tee -a "$GITHUB_STEP_SUMMARY"
+
+  herrangschikker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        deel: [oefen, apart, echt]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r pipeline/requirements.txt
+      - name: Meten
+        run: |
+          node test/meet.mjs zoek --deel ${{ matrix.deel }} --opties '{"aantal":30}' > /dev/null
+          python test/herrangschik.py test/uitslag-zoek*.json | tee -a "$GITHUB_STEP_SUMMARY"
