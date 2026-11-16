@@ -98,20 +98,25 @@ async function vraagModel(naam, url, headers, body, geduld = WACHT_MAX) {
 export const VRAAG = { opdracht: SYSTEEM, gereedschap: GEREEDSCHAP, formulier: null };
 const metFormulier = taak => taak.formulier ? [...taak.gereedschap, taak.formulier] : taak.gereedschap;
 
+// Claude (Sonnet 5.5) kan niet gedwongen worden een gereedschap te gebruiken: het kiest zelf ("auto"),
+// en de opdracht zegt dat het eerst zoekt. Het formulier vult het in als JSON volgens een schema
+// (structured output), in een laatste ronde zonder gereedschap.
+const schema = g => ({ type: "object", properties: g.velden, required: g.verplicht, additionalProperties: false });
 const anthropic = {
   naam: "Anthropic",
   async stap(berichten, geduld, moet, taak) {
-    const tools = metFormulier(taak).map(g => ({ name: g.naam, description: g.uitleg,
-      input_schema: { type: "object", properties: g.velden, required: g.verplicht } }));
-    const kies = moet === "gereedschap" ? { type: "any" }
-      : moet === "schrijven" ? (taak.formulier ? { type: "tool", name: taak.formulier.naam } : { type: "none" }) : { type: "auto" };
+    const tools = taak.gereedschap.map(g => ({ name: g.naam, description: g.uitleg, input_schema: schema(g) }));
+    const invullen = moet === "schrijven" && taak.formulier;
     const j = await vraagModel("Claude", "https://api.anthropic.com/v1/messages",
       { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-      { model: MODELLEN.claude.id, max_tokens: taak.formulier ? 2500 : 1200, system: taak.opdracht(), tools, messages: berichten, tool_choice: kies }, geduld);
+      { model: MODELLEN.claude.id, max_tokens: taak.formulier ? 4000 : 1500, system: taak.opdracht(), tools, messages: berichten,
+        tool_choice: { type: moet === "schrijven" ? "none" : "auto" },
+        ...(invullen ? { output_config: { format: { type: "json_schema", schema: schema(taak.formulier) } } } : {}) }, geduld);
     berichten.push({ role: "assistant", content: j.content });
-    const oproepen = j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
-    return { oproepen, tekst: j.content.filter(c => c.type === "text").map(c => c.text).join(""),
-      gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
+    const tekst = j.content.filter(c => c.type === "text").map(c => c.text).join("");
+    const oproepen = invullen ? [{ id: "formulier", naam: taak.formulier.naam, args: JSON.parse(tekst) }]
+      : j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
+    return { oproepen, tekst, gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
   },
   antwoorden(berichten, uit) {
     berichten.push({ role: "user", content: uit.map(u => ({ type: "tool_result", tool_use_id: u.id, content: u.tekst })) });
@@ -164,7 +169,8 @@ function aanbieders(model) {
   return cloudflare.klaar() ? [groq, cloudflare] : [groq];
 }
 
-// De eerste ronde moet het model gereedschap gebruiken (zo antwoordt het nooit uit het hoofd),
+// De eerste ronde moet het open model gereedschap gebruiken (zo antwoordt het nooit uit het hoofd;
+// Claude kan dat niet afdwingen en volgt de opdracht),
 // de laatste ronde moet het schrijven (zo eindigt een vraag nooit zonder antwoord).
 // Hoogstens 4 modelaanroepen per vraag en 3 gereedschappen per ronde: zo blijft een
 // vraag goedkoop, ook als iemand het model vraagt om twintig keer tegelijk te zoeken.
@@ -190,7 +196,14 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3, taak
     gebruik.in += s.gebruik.in; gebruik.uit += s.gebruik.uit; gebruik.aanroepen++;
     tekst = s.tekst;
     formulier = s.oproepen.find(o => o.naam === taak.formulier?.naam)?.args || null;
-    if (formulier || !s.oproepen.length) break;
+    if (formulier) break;
+    if (!s.oproepen.length) {
+      if (!taak.formulier || ronde === maxRondes) break;
+      // Klaar met zoeken maar het formulier nog niet ingevuld: dan nu, in de laatste ronde.
+      berichten.push({ role: "user", content: "Vul nu de fiche in." });
+      ronde = maxRondes - 1;
+      continue;
+    }
     if (ronde === maxRondes) { tekst ||= "Dat staat niet in mijn documenten."; break; }
     const uit = [];
     for (const [i, o] of s.oproepen.entries()) {
