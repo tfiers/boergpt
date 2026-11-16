@@ -1,0 +1,727 @@
+{
+ "ronde": "2026-11-16",
+ "items": [
+  {
+   "id": "a1",
+   "vraag": "Mag een sleepslang niet meer worden gebruikt op grasland in 2028?",
+   "antwoord": "Dat staat niet in mijn documenten: ik vind nergens een verbod op de sleepslang op grasland vanaf 2028. De sleepslangtechniek staat in een praktijkgids uit 2014 als toegelaten emissiearme aanwendingstechniek op grasland, naast zode-injectie en sleufkouter [S1429]. Die bron is ouder dan drie jaar. Controleer de huidige regel dus bij de Mestbank of het Departement.\n\nWat in 2028 wel verandert, is het bemestingsverbod in bepaalde groene bestemmingen in Speciale Beschermingszones van de Habitatrichtlijn (SBZ-H). Dat komt uit het Stikstofdecreet en gaat over bemesting in het algemeen, niet over één techniek [S3047]. Daar vervalt de ontheffing op 1 januari 2028 [S3046].",
+   "bronnen": [
+    {
+     "id": 1429,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 28,
+     "tekst": "emissiearmer de mest is toegediend, des te meer N er in de bodem blijft = besparing op kunstmest.\n8.1.1 Wat is emissiearm mest uitrijden? - andere meststoffen, champost en (strorijke) stalmest die arm zijn aan ammoniakale stikstof, moeten binnen de 24 uur ondergewerkt worden - dierlijke mest en andere meststoffen die niet arm zijn aan ammoniakale stikstof moeten op de volgende wijze toegepast worden: Tabel 5 Technieken voor emissiearm aanwenden van mest Teelt Emissiearme aanwendingstechniek Grasland - zode-injectie - sleepslangtechniek - sleufkouter Niet-beteelde akkers - injectie - inwerken binnen 2 uur na spreiden, op zaterdag echter onmiddellijk Beteelde akkers - injectie - sleepslangtechniek\nAmmoniakemissie beperken = winst stikstofbemesting"
+    },
+    {
+     "id": 3047,
+     "titel": "Toelichting PAS 2026: snellere en ruimere nulbemesting",
+     "datum": "2026-08",
+     "pagina": 3,
+     "tekst": "van de Habitatrichtlijn (verder: SBZ-H), waar de ontheffing (vrijstelling van het bemestingsverbod) dus uitdooft tegen 1 januari 2028. → Het bemestingsverbod wordt vanaf 2028 verruimd ingevoerd in alle andere groene bestemmingen die door gewestelijke, provinciale of gemeentelijke ruimtelijke uitvoeringsplannen of gewestplannen als groene bestemming zijn geclassificeerd, als die gelegen zijn in SBZ-H. Uitzondering hierop zijn de bestemmingen ‘Agrarisch gebied van ecologisch belang’ en ‘Agrarisch gebied met overdruk natuurverweving’.\n→ Ook de bestaande afwijkingen op het bemestingsverbod (ontheffing, huiskavel en beheerovereenkomst 100 kg N/ha uit kunstmest (BKM)) wijzigen in deze versnellings- en verruimingsgebieden.\nEr werd een compensatievergoeding van 15.000 euro per hectare voorzien voor wie de nulbemesting reeds toepaste vanaf 1 januari 2024. De vergoeding wordt geleidelijk afgebouwd tot 12.500 euro voor wie de nulbemesting toepast op het laatste moment, namelijk op 1 januari 2028."
+    },
+    {
+     "id": 3046,
+     "titel": "Toelichting PAS 2026: snellere en ruimere nulbemesting",
+     "datum": "2026-08",
+     "pagina": 3,
+     "tekst": "Habitatrichtlijngebied (SBZ-H) liggen. Het bemestingsverbod (2GVE/ha/jaar) wordt hierdoor ofwel versneld, ofwel nieuw ingevoerd in bepaalde gebieden: → Het bemestingsverbod wordt vanaf 2028 versneld ingevoerd in de groene bestemmingen ‘Bos’ en ‘Natuur en reservaat’ die door gewestelijke ruimtelijke uitvoeringsplannen zijn afgebakend alsook ‘Natuurgebieden’, ‘Natuurontwikkelingsgebieden’, ‘Natuurreservaten’ en ‘Bosgebieden’ die door gewestplannen zijn geclassificeerd. Dit gebeurt enkel voor percelen die gelegen zijn in de Speciale Beschermingszone van de Habitatrichtlijn (verder: SBZ-H), waar de ontheffing (vrijstelling van het bemestingsverbod) dus uitdooft tegen 1 januari 2028."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a2",
+   "vraag": "Hoe breed moet de beschermingsstrook zijn als het perceel zowel in SBZ-H ligt als in een groene bestemming?",
+   "antwoord": "De beschermingsstrook langs VHA‑waterlopen moet volgens het 7de Mestactieprogramma minimaal 5 m breed zijn wanneer er een nitraatgevoelige teelt wordt uitgevoerd in gebiedstype 2 of 3; voor niet‑nitraatgevoelige teelten (of nitraatgevoelige teelten in gebiedstype 0‑1) geldt een breedte van 3 m, tenzij het perceel zich in een natuur‑ of groene bestemming bevindt, dan blijft de breedte 5 m [S3324].  \nWanneer de 5 m‑strook meer dan 4 % van het perceeloppervlak inneemt, kan het opvolgingsorgaan beoordelen of de breedte naar 3 m kan worden teruggebracht [S3324].  \nIn de beschermingsstrook mag geen mest of gewasbeschermingsmiddel worden toegepast; alleen spontane vegetatie of een meerjarig buffergewas is toegestaan [S3321].",
+   "bronnen": [
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    },
+    {
+     "id": 3321,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 70,
+     "tekst": "de regeling eenvoudiger, effectiever en beter handhaafbaar te maken, worden aangepaste beschermingsstroken ingevoerd langs VHA-waterlopen in MAP 7. Om een duidelijk onderscheid te bewerkstelligen met bufferstroken in het kader van ecoregelingen of beheerovereenkomsten, worden deze stroken ‘beschermingsstroken’ genoemd, omwille van hun beschermingsfunctie van de waterlopen: • Er mag geen bemesting toegepast worden in de beschermingsstrook (met uitzondering van bemesting door directe uitscheiding van begrazers op beschermingsstroken langs grasland of bij tijdelijke begrazing voor onderhoud);\n• Er mogen geen gewasbeschermingsmiddelen toegepast worden in de beschermingsstrook;\n• Er mag enkel spontane vegetatie aanwezig zijn in de beschermingsstrook, of een meerjarig buffergewas (gras, meerjarige vlinderbloemigen of meerjarige mengsels met vlinderbloemigen of houtige gewassen) vanaf 1 meter landinwaarts vanaf de bovenste rand van het talud;"
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: beschermingsstroken"
+  },
+  {
+   "id": "a3",
+   "vraag": "Moet ik op een klein perceel ook 5 meter laten liggen bij nitraatgevoelige teelten? Of zijn er hiervoor uitzonderingen?",
+   "antwoord": "Ja, voor nitraatgevoelige teelten in gebiedstype 2 en 3 moet volgens de huidige ecoregeling een beschermingsstrook van 5 m worden aangelegd [S3324]. Wanneer die 5 m strook meer dan 4 % van het perceeloppervlak inneemt, kan het opvolgingsorgaan beoordelen of de breedte kan worden teruggebracht naar 3 m [S3324]. Controleer de actuele regelgeving bij de Mestbank of het Departement, want regels kunnen sindsdien zijn aangepast.",
+   "bronnen": [
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a4",
+   "vraag": "Moeten er ureaseremmers toegevoegd worden aan dierlijke mest?",
+   "antwoord": "Ureaseremmers zijn geen verplichte toevoeging aan dierlijke mest, ze worden slechts als optioneel additief gebruikt om ammoniakemissies te beperken [S779]. Het gebruik ervan is toegestaan, maar de veiligheid en de regelgeving voor mestadditieven moeten strikt worden nageleefd [S767]. Wanneer u ze toepast, moet u zich houden aan de Europese verordening 2003/2003 die het gebruik van dergelijke bemestingsadditieven regelt [S779]. Omdat de bron uit 2023 dateert, controleert u de actuele regels bij de Mestbank of het Departement [S779].",
+   "bronnen": [
+    {
+     "id": 779,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 12,
+     "tekst": "er geen negatief effect te zijn van het toevoegen van verschillende concentraties aan ureaseremmer (Inhibitor K) op de biogas- of methaanproductie. Onderzoek naar het gebruik van ureaseremmers in compostering, tonen een verminderde ammoniakvorming en verhoogde stikstofinhoud van het eindproduct aan.\nHet toevoegen van ureaseremmer zorgde voor een verlaagde enzymactiviteit in het thermofiele stadium en verhoogde de activiteit in de rijpingsfase (Jiang et al., 2020).\n3.4 Ureaseremmers als additief in bemesting Aangezien ureaseremmers die verneveld worden op de vloer of in de mestput in de mest terecht komen en dus ook mee op het veld verspreid worden bij bemesting, moet ook de veiligheid en regelgeving als mestadditief nagegaan en nageleefd worden.\nIn tegenstelling tot het gebruik van ureaseremmers in de stal, werd het gebruik ervan als additief in bemesting wel opgenomen in de Europese wetgeving via verordening (EG) nr.\n2003/2003."
+    },
+    {
+     "id": 767,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 10,
+     "tekst": "\\10\n3 Veiligheid en wetgeving Ureaseremmers zijn vooral gekend voor hun gebruik als bemestingsadditief.\nWanneer ureaseremmers in de stal toegepast worden om de ammoniakemissies te verminderen, moet een veilig gebruik van het product gegarandeerd zijn.\nIn een melkveestal met roostervloer wordt ingeschat dat ongeveer 60-70% van de ammoniak geproduceerd op de vloer en 30-40% afkomstig is uit de mestput (van den Bogaert & Boussery, 2020).\nUreaseremmers hebben bijgevolg het grootste potentieel bij gebruik op de loopgedeeltes, waar de mest en urine achtergelaten worden.\nWanneer ureaseremmers echter gebruikt worden bovenop de vloer, kunnen de dieren in contact komen met het toegepaste product om nadien in de mestput terecht te komen."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a5",
+   "vraag": "Mag er in de fruitteelt nog stalmest aan de stammen gegeven worden in de winter?",
+   "antwoord": "Ja, rond de stam van fruitbomen mag het nog. Voor stalmest, champost en traagwerkende meststoffen (type 1) geldt van 1 november tot en met 15 januari een verbod, met als enige uitzondering mest rond de stam van fruitbomen [S2668] [K]. Vandaag, 16 november, geldt die uitzondering dus [K]. Vanaf 16 januari mag stalmest weer algemeen worden uitgereden [S2668].\n\nDe uitrijregeling 2027 staat al online. Die geeft voor de herfst een andere kalender, waarbij type 1 al vanaf 16 oktober niet meer mag. Ook daar blijft de uitzondering voor mest rond de stam van fruitbomen staan [S2657]. Regels veranderen, dus kijk de huidige regeling na bij de Mestbank of het Departement Landbouw en Visserij. Ik geef hier geen officieel advies.",
+   "bronnen": [
+    {
+     "id": 2668,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 2,
+     "tekst": "2\nMESTSTOFFEN VAN TYPE 1: STALMEST, CHAMPOST EN TRAAGWERKENDE MESTSTOFFEN Periode Mag u bemesten met type 1 meststof? 16 januari t.e.m. 31 augustus Ja 1 september t.e.m. 31 oktober Ja, maar de maximale dosis is beperkt tot 50 kg werkzame N/ha over de hele periode. 1 november t.e.m. 15 januari Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten."
+    },
+    {
+     "id": 2657,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "www.vlm.be\nUitrijregeling 2027\nType 1 Stalmest, champost en traagwerkende meststoffen JANUARI |16 JAN FEBRUARI |16 FEB MAART |16 MAA APRIL MEI JUNI JULI AUGUSTUS |15 AUG SEPTEMBER OKTOBER |16 OKT NOVEMBER DECEMBER Neen Ja De maximale dosis is beperkt tot 50 kg werkzame stikstof per hectare over de hele periode. Neen. Alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten.\nType 2 Alle meststoffen die niet tot type 1 of 3 behoren Grasland\nJa Neen\nAkkerland\nNiet-zware kleigrond\nNeen Ja, uitgezonderd op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt Ja, maar na de oogst van de hoofdteelt mag er niet meer worden bemest, behalve in twee gevallen:\n1. Er wordt uiterlijk op 31 juli een nateelt ingezaaid (kan een vanggewas* zijn). Er geldt in dat geval geen dosisbeperking voor bemesting tot en met 31 juli."
+    }
+   ],
+   "kalender": "type 1 op alle: Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten. Periode 11-01 t.e.m. 01-15 (Overzicht uitrijregeling (VLM Mestbank, augustus 2026)).",
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a6",
+   "vraag": "Welke ureaseremmers zijn oké en aan welke dosis?",
+   "antwoord": "NBPT‑houdende ureaseremmers zijn de enige die momenteel in Vlaanderen als bemestingsadditief zijn goedgekeurd [S791]. De documenten geven echter geen vaste toepassingsdosis; men moet per stal een risico‑analyse uitvoeren en de benodigde dosering daaruit afleiden [S775] [S780]. Andere ureaseremmers hebben nog geen toelating en mogen dus niet worden gebruikt [S780]. Omdat de informatie uit 2023 dateert, controleer u de actuele regels bij de Mestbank of het Departement [‑].",
+   "bronnen": [
+    {
+     "id": 791,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 16,
+     "tekst": "\\16\n5.3 Huidige status en verdere onderzoeksmogelijkheden Ureaseremmers lijken een groot potentieel te hebben voor het verminderen van ammoniakemissies in de Vlaamse melkveestallen.\nToch lijkt de status van de ureaseremmers in dit toepassingsgebied niet veel geëvolueerd ten opzichte van wat werd geconcludeerd door Smits & Bokma in 2008 (Smits & Bokma, 2008).\nHieronder bespreken we de huidige status van en de onderzoeksmogelijkheden rond de verschillende ureaseremmers die aan bod kwamen in de voorgaande secties.\n5.4 Huidige status 5.4.1 NBPT NBPT-houdende producten zijn commercieel beschikbaar als bemestingsadditief.\nIn het ideale geval kunnen deze producten rechtstreeks in de stal toegepast worden.\nVoor deze producten mist echter praktijkgericht onderzoek in situaties die van belang zijn in Vlaanderen.\nOok de nodige dosis voor gebruik op de roostervloer of in de mestput zou nog verder onderzocht moeten worden."
+    },
+    {
+     "id": 775,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 11,
+     "tekst": "aangewezen toepassingsmethoden, de geschikte dosis, de frequentie van gebruik, e.d.) op te stellen en mee te nemen in de verdere risicoanalyse. In het beste geval is er geen rechtstreeks contact tussen de dieren en de ureaseremmers, bijvoorbeeld wanneer het product rechtstreeks in de mestput gebruikt wordt.\nIn dat geval volstaat het om via de SDS-fiche de veiligheid van het product na te gaan.\nAnders zal er moeten aangetoond worden dat de kans op absorptie of consumptie van het product door de dieren minimaal is en er dus ook geen risico is dat de stof of zijn residuen in het dier en bijgevolg zijn dierlijke producten terechtkomen.\nWanneer dit wel zo is, zal ingeschat moeten worden welke dosissen opgenomen kunnen worden.\nHierbij wordt uitgegaan van een worst-case scenario.\nAan de hand hiervan moet bepaald worden welke risico’s hieraan verbonden zijn voor het dier en of er residuen in melk en vlees terug te vinden zijn."
+    },
+    {
+     "id": 780,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 12,
+     "tekst": "ureaseremmers in de stal, werd het gebruik ervan als additief in bemesting wel opgenomen in de Europese wetgeving via verordening (EG) nr.\n2003/2003. De sindsdien goedgekeurde ureaseremmers en de toegelaten hoeveelheden kunnen teruggevonden worden in Tabel 2.\nDit betekent dat enkel deze stoffen al een goedkeuring hebben en dat voor andere ureaseremmers toelating gevraagd zal moeten worden indien van toepassing.\nNieuwe ureaseremmers kunnen in deze lijst worden opgenomen na beoordeling van de ingediende dossiers, die volgens de richtlijnen voor deze stoffen moeten worden uitgewerkt.\nWanneer een bemestingsproduct een ureaseremmer bevat moet dit duidelijk vermeldt worden.\nVerordening 2003/2003 werd vanaf 16 juli 2022 vervangen worden door verordening 2019/1009."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a7",
+   "vraag": "Mag je zelf als landbouwer nog vloeibare dierlijke mest voeren met AGR-GPS in burenregeling naar percelen in gebiedstype 2 en 3?",
+   "antwoord": "Ja, elk vervoer van vloeibare dierlijke mest met een burenregeling moet met de AGR‑GPS‑app gebeuren [S2819]. Sinds MAP 7 moet dat vervoer naar percelen in gebiedstype 2 of 3 echter door een erkende mestvoerder gebeuren; als je zelf geen erkende mestvoerder bent, mag je het niet zelf uitvoeren [S3380]. Controleer de actuele regels bij de Mestbank of het Departement om zeker te zijn van de huidige verplichtingen [S2819].",
+   "bronnen": [
+    {
+     "id": 2819,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 24,
+     "tekst": "niet met een burenregeling uitgevoerd worden.\nU mag alleen mest vervoeren met een burenregeling als aan alle onderstaande voorwaarden voldaan is: - Nieuw in 2025: elk vervoer van vloeibare dierlijke mest met een burenregeling moet gebeuren met AGR-GPS. Daarnaast moet ook de aanvoer van alle dierlijke mest (vast en vloeibaar) naar een verwerkingseenheid en een mestzak met de AGR-GPS-app. Klik hier voor meer informatie over de AGR-GPS-app. - Nieuw in 2025: omdat het vervoer opgevolgd wordt met de AGR-GPS app, is de melding van vervoer in het kader van de burenregeling uiterlijk de dag voorafgaand aan het vervoer niet meer verplicht. - Het vervoer moet gebeuren door de aanbieder of de afnemer van de mest met een trekkend voertuig waarvan hij eigenaar is. - In de gevallen 2 t.e.m. 6: o moet de mest gelost worden in dezelfde gemeente als die van de exploitatie of uitbating van de aanbieder of in een aangrenzende gemeente."
+    },
+    {
+     "id": 3380,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 86,
+     "tekst": "de landbouworganisaties wordt ingezet op doorverwijzing naar en vormingen door B3W en andere actoren om de goede praktijken ingang te doen vinden. 8.3.2.3 Erkend mestvervoer met AGR-GPS vanaf 1/7 in gebiedstype 2 en 3 Naast de bemestingsreductie of de goede bodem-, teelt- en bemestingspraktijken in gebiedstype 1, 2 of 3, moet elk vervoer van vloeibare dierlijke mest naar percelen (uitgezonderd met blijvende teelten en grasland) in gebiedstype 2 en 3 vanaf 1 juli gebeuren door een erkend mestvoerder met AGR-GPS.\nDat is een verstrenging van de gebiedsgerichte vervoersmaatregel vanaf 1 augustus uit MAP 6."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a8",
+   "vraag": "Mag stalmest worden gespreid op grasland?",
+   "antwoord": "Stalmest (type 1) mag niet zomaar worden uitgespreid op grasland; het moet emissiearm worden aangebracht, bijvoorbeeld met zode‑injectie, sleepslangtechniek of een sleufkouter, of in twee opeenvolgende werkgangen worden uitgespreid en binnen twee uur worden ingewerkt [S3020]",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a9",
+   "vraag": "Is er een verschil in de regels tussen beteelde en niet-beteelde landbouwgrond?",
+   "antwoord": "Ja, voor de manier waarop je mest opbrengt (emissiearme aanwending) is er een verschil. Of er ook verschillen zijn bij bijvoorbeeld de uitrijperiodes, staat niet in de stukjes die ik vond.\n\n- Op beteelde landbouwgrond die geen grasland is, moet je mest opbrengen met mestinjectie of de sleepslangtechniek. [S3020]\n- Op niet-beteelde landbouwgrond moet je mest injecteren. Je mag de mest ook in twee opeenvolgende werkgangen uitspreiden en inwerken, en dan moet ze binnen twee uur na het uitspreiden ingewerkt zijn op dat perceel. [S3020]\n- Op zaterdagen moet je dierlijke mest op niet-beteelde grond onmiddellijk inwerken. [S4633]\n- Voor grasland gelden weer andere technieken: zode-injectie, sleepslangtechniek of sleufkouter. [S3020]\n\nKijk de huidige regels na bij de Mestbank of het Departement Landbouw en Omgeving, want het Mestdecreet in mijn documenten is de oorspronkelijke tekst uit 2006. [S4633]",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    },
+    {
+     "id": 4633,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 10,
+     "tekst": "afspoelen;\n2° andere meststoffen en dierlijke mest dienen : a) op grasland opgebracht te worden door middel van zode-injectie of sleepslangtechniek; b) op niet-beteelde landbouwgrond opgebracht te worden door middel van mestinjectie of door middel van het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie.\nOp zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken;\nc) op beteelde landbouwgronden andere dan grasland opgebracht te worden door middel van mestinjectie of door middel van sleepslangtechniek;\n3° in afwijking van 2° moeten andere meststoffen die arm zijn aan ammoniakale stikstof, champost die arm is aan ammoniakale stikstof en stalmest die arm is aan ammoniakale stikstof binnen 24 uur na de opbrenging worden ingewerkt;"
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a10",
+   "vraag": "Moet ik op een klein perceel ook 5 meter laten liggen bij nitraatgevoelige teelten? Of zijn er hiervoor uitzonderingen?",
+   "antwoord": "In de documenten staat geen vaste uitzondering voor kleine percelen. De 5 meter geldt langs waterlopen uit de Vlaamse Hydrografische Atlas (VHA), in gebiedstype 2 en 3, op percelen met een nitraatgevoelige hoofdteelt. Die strook mag geen nitraatgevoelige teelt bevatten en moet vrij blijven van pesticiden en bemesting [S3530]. Volgens de verzamelaanvraag 2025 moet u de beschermingsstrook aangeven in de percelenlijst [S3530].\n\nHet ontwerp van het 7de Mestactieprogramma (maart 2025) noemt wel een mogelijke versoepeling. Als de 5 m strook meer dan 4% van de perceelsoppervlakte inneemt, zou het opvolgingsorgaan bekijken of de strook naar 3 m kan [S3324]. Dat staat in een ontwerptekst en gaat over een onderzoek, niet over een vastgestelde uitzondering [S3324].\n\nLigt het perceel in gebiedstype 0 of 1, dan is de strook volgens dat ontwerp vanaf 2026 3 m. In natuurgebied blijft het 5 m [S3324]. Waar nu bredere stroken gelden, blijven die van toepassing, bijvoorbeeld 10 m langs hellingen en in VEN [S3324].\n\nIk heb geen definitieve tekst gevonden. Kijk daarom de huidige regel na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "bronnen": [
+    {
+     "id": 3530,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 5,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 5 van 277\nCONDITIONALITEIT 1.4.1 Waterkwaliteit (afstandsregels langs waterlopen, bemesting, watercaptatie, …) (GLMC 4 + RBE 1 + 2)  Langs een waterloop die opgenomen is in de Vlaamse Hydrografische Atlas (VHA) is het in gebiedstype 2 en 3 verplicht om een beschermingsstrook van 5 meter aan te houden op een perceel met een nitraatgevoelige hoofdteelt.\nDeze beschermingszone van 5 meter mag geen nitraatgevoelige teelt bevatten en moet pesticide- en bemestingsvrij blijven.\n De beschermingsstroken moeten worden aangegeven in een extra kolom in de percelenlijst in de verzamelaanvraag.\n Percelen met als hoofdteelt mais of late aardappelen zonder voorteelt, mogen pas vanaf 16 maart bemest worden met meststoffen type 2 en 3, zoals vloeibare dierlijke mest en kunstmest."
+    },
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a11",
+   "vraag": "Mag er met een sleepslang mest uitgereden worden op wintertarwe?",
+   "antwoord": "Ja, de sleepslangtechniek is nog tot en met 2027 toegestaan op wintertarwe, omdat op beteelde landbouwgronden die geen grasland zijn, zowel injectie als sleepslang toegelaten blijven [S3343]. Let op: controleer de actuele regels bij de Mestbank of het Departement, want dit document is ouder dan drie jaar [S3343].",
+   "bronnen": [
+    {
+     "id": 3343,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "uitgebreid voor biologische pluimveemest voor de toepassing op gras of graan, mits op graan de mest wordt ingewerkt in de bodem met een wiedeg. Daarnaast zal de verstrenging van de voorschriften voor de emissiearme aanwending van meststoffen zoals voorzien in het luchtbeleidsplan en in uitvoering gebracht via het Stikstofdecreet, ook een bijdrage hebben aan de realisatie van de doelen van het ontwerp-MAP 7: • Strengere voorschriften voor het emissiearm aanwenden van vloeibare dierlijke en andere meststoffen: • Injectie of direct onderwerken na spreiden op niet-beteelde landbouwgrond;\n• Zode-injectie, zodenbemester of sleufkouter op grasland.\nDe sleepslangtechniek is nog toegelaten tot en met 2027.\nOp grasland dat gescheurd zal worden, mogen de meststoffen ook via het direct inwerken na spreiden worden opgebracht.\n• Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a12",
+   "vraag": "Mag er in de fruitteelt nog stalmest aan de stammen gegeven worden in de winter?",
+   "antwoord": "Ja, in de winter (van 1 november tot 15 januari) mag stalmest alleen rond de stam van fruitbomen worden aangebracht, niet op de grond. [S2668]",
+   "bronnen": [
+    {
+     "id": 2668,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 2,
+     "tekst": "2\nMESTSTOFFEN VAN TYPE 1: STALMEST, CHAMPOST EN TRAAGWERKENDE MESTSTOFFEN Periode Mag u bemesten met type 1 meststof? 16 januari t.e.m. 31 augustus Ja 1 september t.e.m. 31 oktober Ja, maar de maximale dosis is beperkt tot 50 kg werkzame N/ha over de hele periode. 1 november t.e.m. 15 januari Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a13",
+   "vraag": "Hoe breed moet de beschermingsstrook zijn als het perceel zowel in SBZ-H ligt als in een groene bestemming?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma geldt vanaf 2026 een beschermingsstrook van 5 m in natuurgebied, los van gewas en gebiedstype [S3324]. Liggen er in de huidige regelgeving bredere stroken, dan blijven die gelden, bijvoorbeeld 10 m langs hellingen en in VEN [S3324]. In de beschermingsstrook mag u niet bemesten en geen gewasbeschermingsmiddelen gebruiken [S3321]. De strook telt ook niet mee in de mestgebruiksruimte van het perceel [S3323].\n\nDat is wel een ontwerptekst van maart 2025 [S3324]. Ze zegt ook niets over SBZ-H als aparte voorwaarde, alleen over ligging in natuurgebied. Controleer daarom de huidige regel bij de Mestbank of het Departement Landbouw en Visserij.",
+   "bronnen": [
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    },
+    {
+     "id": 3321,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 70,
+     "tekst": "de regeling eenvoudiger, effectiever en beter handhaafbaar te maken, worden aangepaste beschermingsstroken ingevoerd langs VHA-waterlopen in MAP 7. Om een duidelijk onderscheid te bewerkstelligen met bufferstroken in het kader van ecoregelingen of beheerovereenkomsten, worden deze stroken ‘beschermingsstroken’ genoemd, omwille van hun beschermingsfunctie van de waterlopen: • Er mag geen bemesting toegepast worden in de beschermingsstrook (met uitzondering van bemesting door directe uitscheiding van begrazers op beschermingsstroken langs grasland of bij tijdelijke begrazing voor onderhoud);\n• Er mogen geen gewasbeschermingsmiddelen toegepast worden in de beschermingsstrook;\n• Er mag enkel spontane vegetatie aanwezig zijn in de beschermingsstrook, of een meerjarig buffergewas (gras, meerjarige vlinderbloemigen of meerjarige mengsels met vlinderbloemigen of houtige gewassen) vanaf 1 meter landinwaarts vanaf de bovenste rand van het talud;"
+    },
+    {
+     "id": 3323,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 71 van 101 maaisel toegelaten (behalve in de periode van 15/3 t.e.m.\n15/7).\nGrondbewerking is niet toegelaten tenzij het nodig is het meerjarig buffergewas te vernieuwen (waarbij dit beperkt wordt tot maximum 1 maal per 3 jaar) of om probleemonkruiden mechanisch pleksgewijs aan te pakken.\nDe beschermingsstrook mag gebruikt worden als wendakker;\n• Deze beschermingsstroken tellen niet mee in de mestgebruiksruimte van het perceel.\nDe maximale bemestingsnormen gelden dus voor het deel van het perceel, zonder de oppervlakte van de te respecteren bemestingsvrije beschermingsstrook.\nDe beschermingsstroken worden gefaseerd ingevoerd via een aanpassing van het waterwetboek.\nIn 2025 wordt een beschermingsstrook van 5 m breedte ingevoerd op percelen met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: beschermingsstroken"
+  },
+  {
+   "id": "a14",
+   "vraag": "Voor maïs en late aardappelen zonder voorteelt mag er pas bemest worden vanaf 16 maart. Ik heb nu gras (als groenbemester ingezaaid tijdens vorig najaar) staan op een perceel en wil er na het onderwerken van het gras later dit jaar als hoofdteelt aardappelen planten. Mag er dan op dit gras voor 16 maart bemest worden? Het gras zal pas ondergewerkt worden na 16 maart.",
+   "antwoord": "Dat hangt ervan af of het gras bij u als voorteelt telt, en dat zeggen mijn documenten niet. Het verbod vóór 16 maart geldt voor maïs of late aardappelen \"zonder voorteelt\". Op akkers met een andere teelt, of mét voorteelt, mag type 2 en 3 wel vanaf 16 februari [S2680] [S2675]. In een VLM-voorbeeld wordt gras als voorteelt voor maïs al in februari bemest, om een eerste snede af te halen vóór het onderwerken [S2993]. Dat voorbeeld gaat over maïs met derogatie, niet over gras dat als groenbemester is ingezaaid. Mijn documenten geven ook niet aan of een ingezaaide groenbemester als voorteelt telt. Kijk daarom bij de Mestbank na of uw gras als voorteelt geldt vóór u bemest. De uitrijregeling kan ook wijzigen, en er bestaat al een kalender voor 2027 [S2660].",
+   "bronnen": [
+    {
+     "id": 2680,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 6,
+     "tekst": "voorafgegaan wordt door een voorteelt. 16 februari t.e.m. 15 maart - op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen - op akkers met andere teelt dan hoofdteelt maïs of late aardappelen zonder voorteelt: ja 16 maart t.e.m. 31 augustus ja, maar na de oogst van de hoofdteelt mag niet meer bemest worden, behalve in deze drie gevallen:\n1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 augustus als de nateelt uiterlijk 31 juli werd ingezaaid.\n2) Er wordt uiterlijk 31 augustus een specifieke teelt ingezaaid. Er geldt geen dosisbeperking.\n3) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***"
+    },
+    {
+     "id": 2675,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 4,
+     "tekst": "zonder voorteelt: ja 16 maart t.e.m. 31 augustus Ja, maar na de oogst van de hoofdteelt mag niet meer worden bemest, behalve in drie gevallen: 1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 augustus als de nateelt uiterlijk 31 juli werd ingezaaid. 2) Er wordt uiterlijk 31 augustus een specifieke teelt ingezaaid. Er geldt geen dosisbeperking. 3) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***\n1 september t.e.m. 15 februari Neen"
+    },
+    {
+     "id": 2993,
+     "titel": "Toelichting bij het bemestingsplan en -register",
+     "datum": "2025-06",
+     "pagina": 16,
+     "tekst": "meststoffen ammoniumnitraat 27 % 0 % 1750 kg 250 kg\n67,5\n67,5 0 20 febr\nammoniumnitraat 27 % 0 % 1350 kg 150 kg\n40,5\n40,5 0 20 mei\n% % kg kg totale uitgevoerde bemesting met kunstmeststoffen (5)\n108\n108 0\nandere meststoffen\nkg/ton kg/ton ton ton\ntotale uitgevoerde bemesting met andere meststoffen (6)\n0 0 0\ntotale uitgevoerde bemesting = (4)+(5)+(6) 240 108 0 252 70\nDuiding: Meer uitleg over deze perceelsgroep vindt u hierboven in de Toelichting bij het bemestingsplan en -register. De voorteelt gras wordt al bemest in februari om er een eerste snede te kunnen afhalen alvorens onder te werken. Er wordt nog een kleine gift kunstmest gegeven bij het inzaaien van mais. Als het volgende jaar opnieuw mais met derogatie toegepast wordt, moet opnieuw gras ingezaaid worden nadat de mais geoogst is. Lees meer over de voorwaarden van derogatie onder derogatie."
+    },
+    {
+     "id": 2660,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "hoofdteelt maïs of late aardappelen zonder voorteelt Ja, maar na de oogst van de hoofdteelt mag er niet meer worden bemest, behalve in drie gevallen: 1. Er wordt uiterlijk op 31 juli een nateelt ingezaaid (kan een vanggewas* zijn). Er geldt in dat geval geen dosisbeperking voor bemesting tot en met 31 augustus als de nateelt uiterlijk 31 juli werd ingezaaid.\n2. Er wordt uiterlijk 31 augustus een specifieke teelt ingezaaid (groenten van groep I, II, III, spruitkool, graszoden, sierteelt & boomkweek en aardbeien). Er is geen dosisbeperking.\n3.\nEr wordt na 31 juli en uiterlijk op 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt.\nEr geldt in dat geval een dosisbeperking van 36 kg werkzame stikstof per hectare.*** Neen Neen Voor effluent met lage stikstofinhoud en kunstmest op specifieke teelten: zie volgende pagina."
+    }
+   ],
+   "kalender": "type 2 op akkerland: Op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen. Op akkers met een andere teelt: ja. Periode 02-16 t.e.m. 03-15 (Overzicht uitrijregeling (VLM Mestbank, augustus 2026)).",
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a15",
+   "vraag": "Waarom zijn de uitscheidingsnormen voor zoogkoeien nu plots verhoogd?",
+   "antwoord": "De verhoging is het gevolg van nieuw wetenschappelijk onderzoek (ILVO en andere) dat aantoont dat de oude forfaitaire cijfers voor zoogkoeien te laag waren; daarom past MAP 7 de uitscheidingscijfers aan, geleidelijk van 65 kg N naar 75 kg N per dier per jaar (en van 25 kg P₂O₅ naar 31 kg P₂O₅) [S3308]. Deze aanpassing maakt de berekening van de mestproductie nauwkeuriger en helpt beter te voldoen aan de Nitraatrichtlijn en de doelstellingen van het Mestactieprogramma [S3271].",
+   "bronnen": [
+    {
+     "id": 3308,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 67,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 67 van 101\nFiguur 39 Exploitaties met dieren met een impactscore van meer dan 5% 8.2.2 Correcte bepaling mestproductie Een correcte bepaling van de mestproductie is belangrijk. Op basis van wetenschappelijk onderzoek, door het ILVO en andere wetenschappelijke instellingen, kunnen de uitscheidingscijfers aangepast worden. De uitscheidingscijfers voor zoogkoeien en melkkoeien met een melkproductie hoger dan 10.000 kg melk/koe/jaar worden verhoogd. Voor zoogkoeien betekent dit een stijging van de uitscheiding van 65 kg N/dier per jaar naar 75 kg N/dier per jaar en van 25 kg P2O5/dier per jaar naar 31 kg P2O5/dier per jaar. Deze stijging wordt gradueel doorgevoerd over een periode van 3 jaar (Tabel 3). Tabel 3 Gefaseerde invoer van aangepaste uitscheidingscijfers voor zoogkoeien\nkg P2O5/dier/jaar kg N/dier/jaar MAP 6 2024 25 65 MAP 7 2025 27 69\n2026 29 72\n2027 31 75"
+    },
+    {
+     "id": 3271,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 56,
+     "tekst": "bleek dat de forfaitaire mestuitscheidingscijfers voor zoogkoeien en hoogproductieve melkkoeien (>10.000 kg melk/j) onderschat zijn. • In de studie ‘Klimaatadaptieve praktijken voor het terugdringen van nutriëntenverliezen’11 werden maatregelen en innovaties voorgesteld om bij wijzigende klimaatomstandigheden de verliezen van nutriënten te vermijden.\nHet gaat hier onder meer over gefractioneerde bemesting, vanggewassen, vlinderbloemige gewassen, en inzet op bodemkwaliteit.\n• In de studie over ‘Bemestingsvrije stroken langs waterlopen’12 werden verschillende scenario's onderzocht, zoals de toepassing van bemestingsvrije stroken met verschillende breedte, alleen langs"
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a16",
+   "vraag": "Hoe diep moet er bemonsterd worden in kader van nitraatresidu?",
+   "antwoord": "De nitraatresidu‑meting wordt in het najaar (1 oktober‑15 november) uitgevoerd op een diepte van 0‑30 cm in het bodemprofiel, zodat zowel de bovenste als de onderliggende laag wordt meegenomen in de bepaling van het residu [S3177] [S3454].",
+   "bronnen": [
+    {
+     "id": 3177,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 24,
+     "tekst": "pagina 24 van 101 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn 18.03.2025\n3.2 NITRAATRESIDU Elk najaar wordt op een 23.000-tal percelen het nitraatresidu in de bodem gemeten. De Vlaamse Landmaatschappij volgt de evolutie van het nitraatresidu op omdat er een duidelijk verband is met het risico op uitspoeling van nitraten naar oppervlakte- en grondwater gedurende de winter. Het gemiddelde nitraatresidu toont schommelingen, mede onder invloed van de weersomstandigheden. (Figuur 13). Zo hebben de droogteperiodes in 2017-2020 geleid tot minder opname van stikstof door landbouwgewassen en bijgevolg een hoger nitraatresidu in de jaren 2017 t.e.m. 2020. Ook 2022 was een relatief droog jaar. 2021 en 2023 waren dan weer uitzonderlijk nat. Ook bij de nitraatresidumetingen speelt, net zoals bij de metingen in de waterlopen zelf, mogelijk een weerseffect."
+    },
+    {
+     "id": 3454,
+     "titel": "Goede praktijken voor de bemesting (klimaatadaptief)",
+     "datum": "2021-03",
+     "pagina": 8,
+     "tekst": "pagina 8 van 25 Praktijkgids-Goede praktijken voor de bemesting van aardappelen en maïs 20.01.2021\nAARDAPPELEN EN MAÏS IN HET MESTACTIEPLAN In Vlaanderen wordt op het einde van het teeltseizoen (1/10-15/11) het nitraatresidu gemeten om in te schatten of er te veel nitraat is achtergebleven in de bodem.\nAls er veel nitraat achterblijft na het teeltseizoen, neemt de nitraatuitspoeling naar het grond- en oppervlaktewater tijdens de wintermaanden toe.\nDe landbouwers worden daarom aangezet om scherp op de snee te bemesten, de nitraatrest te beperken en zo mee te zorgen voor een goede waterkwaliteit.\nIn sommige situaties en voor sommige teelten is het een hele uitdaging om een voldoende laag residu te behalen.\nPercelen met aardappelen of groenten tonen gemiddeld de hoogste nitraatresidu’s, gevolgd door maïs (Figuur 4).\nZeker in jaren gekarakteriseerd door atypische weersomstandigheden wordt vaak een hoger nitraatresidu gemeten in gewassen zoals maïs, aardappelen, groenten en sierteelt."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a17",
+   "vraag": "Moeten er ureaseremmers toegevoegd worden aan dierlijke mest?",
+   "antwoord": "In de documenten die ik vond, staat geen verplichting om ureaseremmers aan dierlijke mest toe te voegen. De fiche over emissiearme aanwending beschrijft alleen hoe je mest moet opbrengen, bijvoorbeeld met zode-injectie, sleepslang of mestinjectie. Ureaseremmers komen daarin niet voor [S3020]. ILVO beschrijft ureaseremmers als een mogelijke maatregel om ammoniakemissies in melkveestallen te verminderen, dus als optie en niet als plicht [S767]. Omdat een ureaseremmer die je in de stal vernevelt in de mestput terechtkomt en mee op het veld wordt gebracht, moet je ook de regelgeving voor mestadditieven nagaan. Het gebruik als bemestingsadditief valt onder Europese wetgeving, namelijk verordening (EG) nr. 2003/2003 [S779]. De ILVO-mededeling dateert van januari 2023 en is dus ouder dan drie jaar. Kijk daarom de huidige regels na bij de Mestbank of het Departement.",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    },
+    {
+     "id": 767,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 10,
+     "tekst": "\\10\n3 Veiligheid en wetgeving Ureaseremmers zijn vooral gekend voor hun gebruik als bemestingsadditief.\nWanneer ureaseremmers in de stal toegepast worden om de ammoniakemissies te verminderen, moet een veilig gebruik van het product gegarandeerd zijn.\nIn een melkveestal met roostervloer wordt ingeschat dat ongeveer 60-70% van de ammoniak geproduceerd op de vloer en 30-40% afkomstig is uit de mestput (van den Bogaert & Boussery, 2020).\nUreaseremmers hebben bijgevolg het grootste potentieel bij gebruik op de loopgedeeltes, waar de mest en urine achtergelaten worden.\nWanneer ureaseremmers echter gebruikt worden bovenop de vloer, kunnen de dieren in contact komen met het toegepaste product om nadien in de mestput terecht te komen."
+    },
+    {
+     "id": 779,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 12,
+     "tekst": "er geen negatief effect te zijn van het toevoegen van verschillende concentraties aan ureaseremmer (Inhibitor K) op de biogas- of methaanproductie. Onderzoek naar het gebruik van ureaseremmers in compostering, tonen een verminderde ammoniakvorming en verhoogde stikstofinhoud van het eindproduct aan.\nHet toevoegen van ureaseremmer zorgde voor een verlaagde enzymactiviteit in het thermofiele stadium en verhoogde de activiteit in de rijpingsfase (Jiang et al., 2020).\n3.4 Ureaseremmers als additief in bemesting Aangezien ureaseremmers die verneveld worden op de vloer of in de mestput in de mest terecht komen en dus ook mee op het veld verspreid worden bij bemesting, moet ook de veiligheid en regelgeving als mestadditief nagegaan en nageleefd worden.\nIn tegenstelling tot het gebruik van ureaseremmers in de stal, werd het gebruik ervan als additief in bemesting wel opgenomen in de Europese wetgeving via verordening (EG) nr.\n2003/2003."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a18",
+   "vraag": "Mag er met een sleepslang mest uitgereden worden op wintertarwe?",
+   "antwoord": "Ja, op beteelde akkers zoals wintertarwe mag dierlijke mest en andere meststoffen met de sleepslangtechniek of met mestinjectie worden opgebracht. [S3020] Het Mestdecreet zegt hetzelfde voor beteelde landbouwgrond die geen grasland is. [S4633] Het tijdstip is wel van belang. Vandaag, 16 november, mag je volgens de uitrijkalender geen type 2-mest zoals drijfmest op akkerland uitrijden, want dat is verboden van 16 oktober tot en met 15 februari. [K] Die kalender is de regeling van 2026, en voor 2027 wijkt de VLM-kalender op enkele punten af. [K] Voor type 1 en type 3 meststoffen gelden andere data, en die heb ik niet opgezocht. Omdat het om regels gaat, kijk je de huidige regeling na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    },
+    {
+     "id": 4633,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 10,
+     "tekst": "afspoelen;\n2° andere meststoffen en dierlijke mest dienen : a) op grasland opgebracht te worden door middel van zode-injectie of sleepslangtechniek; b) op niet-beteelde landbouwgrond opgebracht te worden door middel van mestinjectie of door middel van het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie.\nOp zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken;\nc) op beteelde landbouwgronden andere dan grasland opgebracht te worden door middel van mestinjectie of door middel van sleepslangtechniek;\n3° in afwijking van 2° moeten andere meststoffen die arm zijn aan ammoniakale stikstof, champost die arm is aan ammoniakale stikstof en stalmest die arm is aan ammoniakale stikstof binnen 24 uur na de opbrenging worden ingewerkt;"
+    }
+   ],
+   "kalender": "type 2 op akkerland: Neen. Periode 10-16 t.e.m. 02-15 (Overzicht uitrijregeling (VLM Mestbank, augustus 2026)).",
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a19",
+   "vraag": "Voor maïs en late aardappelen zonder voorteelt mag er pas bemest worden vanaf 16 maart. Ik heb nu gras (als groenbemester ingezaaid tijdens vorig najaar) staan op een perceel en wil er na het onderwerken van het gras later dit jaar als hoofdteelt aardappelen planten. Mag er dan op dit gras voor 16 maart bemest worden? Het gras zal pas ondergewerkt worden na 16 maart.",
+   "antwoord": "Ja, je mag het gras vóór 16 maart bemesten, want voor type‑2 meststoffen (bijvoorbeeld vloeibare dierlijke mest) is bemesten op grasland al toegestaan vanaf 16 februari tot 14 augustus [S2670]. De latere start van de uitrijperiode (vanaf 16 maart) geldt alleen voor akkerland met hoofdteelt maïs of late aardappelen zonder voorteelt, niet voor het huidige grasland [S3328]. Houd er wel rekening mee dat zodra je het gras onderwerkt en overgaat op akkerland, de bemesting vanaf 16 maart moet volgen volgens de uitrijregeling. Controleer de actuele regels bij de Mestbank of het Departement.",
+   "bronnen": [
+    {
+     "id": 2670,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 3,
+     "tekst": "respecteren.\nPeriode Mag u bemesten met type 2 meststoffen op grasland?\n16 februari t.e.m. 14 augustus Ja\n15 augustus t.e.m. 15 februari Neen AKKERLAND Periode Mag u bemesten met type 2 meststoffen op akkerland? 16 februari t.e.m. 15 maart - op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen - op akkers met andere teelt dan hoofdteelt maïs of late aardappelen zonder voorteelt: ja 16 maart t.e.m. 31 juli - op akkerland - andere dan zware kleigronden: ja, maar na de oogst van de hoofdteelt mag niet meer worden bemest, behalve in twee gevallen: 1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 juli als de nateelt uiterlijk 31 juli werd ingezaaid. 2) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***"
+    },
+    {
+     "id": 3328,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 72,
+     "tekst": "3 zijn kunstmest, spuistroom en effluenten en hebben een werkingscoëfficiënt van 100%.\nAlle overige meststoffen zijn meststoffen type 2, zoals vb. vloeibare dierlijke mest die geen effluent is.\n8.2.6.1 Verlaten start uitrijperiode voor maïs en late aardappelen Bij de teelt van maïs en late aardappelen zonder voorteelt, wordt de start van de uitrijperiode verlaat van 16 februari naar 16 maart voor type 2 en 3 meststoffen, zoals vloeibare dierlijke meststoffen, kunstmest, spuistroom en effluenten.\nZowel maïs als aardappelen zijn nitraatgevoelige hoofdteelten die in normale omstandigheden worden geplant vanaf half april en waarvoor het niet aangewezen is om reeds vóór 16 maart meststoffen op te brengen.\nDoor het bemesten van deze teelten pas toe te laten vanaf 16 maart, wordt de uitrijperiode beter afgestemd op de groeiperiode van deze gewassen."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a20",
+   "vraag": "Geldt de boete voor het te hoge nitraatresidu (250 euro/ha) voor de percelen waarop het nitraatresidu is genomen of voor het volledige bedrijfsareaal?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma geldt de boete van 250 euro per ha niet voor het hele bedrijfsareaal. Ze geldt alleen voor bepaalde percelen. Dat zijn de percelen die behoren tot het nitraatresidutype waarvoor het nitraatresidu boven de tweede drempelwaarde ligt. Het gaat om de percelen van het jaar waarin voor de tweede keer een overschrijding is vastgesteld. [S3411]\n\nDe boete volgt pas als het resultaat van de bedrijfsevaluatie in een periode van 5 jaar twee keer boven de tweede drempelwaarde ligt. [S3411]\n\nDit staat in een ontwerptekst uit maart 2025. De lezer moet de huidige regel nakijken bij de Mestbank of het Departement. [S3411]",
+   "bronnen": [
+    {
+     "id": 3411,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 93,
+     "tekst": "het resultaat van de bedrijfsevaluatie twee maal boven de 2de drempelwaarde ligt in een periode van 5 jaar, volgt bovendien een financiële sanctie. De boete bedraagt 250 euro per ha en wordt opgelegd voor die percelen die (in het jaar waar voor de tweede maal een overschrijding vastgesteld werd) behoren tot het nitraatresidutype waarvoor het nitraatresidu boven de tweede drempelwaarde van dat nitraatresidutype ligt."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a21",
+   "vraag": "Geldt de boete voor het te hoge nitraatresidu (250 euro/ha) voor de percelen waarop het nitraatresidu is genomen of voor het volledige bedrijfsareaal?",
+   "antwoord": "De boete van 250 euro per hectare wordt opgelegd voor de percelen waarop in dat jaar een nitraatresidu‑overschrijding is vastgesteld, niet voor het totale bedrijfsareaal [S3411].",
+   "bronnen": [
+    {
+     "id": 3411,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 93,
+     "tekst": "het resultaat van de bedrijfsevaluatie twee maal boven de 2de drempelwaarde ligt in een periode van 5 jaar, volgt bovendien een financiële sanctie. De boete bedraagt 250 euro per ha en wordt opgelegd voor die percelen die (in het jaar waar voor de tweede maal een overschrijding vastgesteld werd) behoren tot het nitraatresidutype waarvoor het nitraatresidu boven de tweede drempelwaarde van dat nitraatresidutype ligt."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a22",
+   "vraag": "Hoe diep moet er bemonsterd worden in kader van nitraatresidu?",
+   "antwoord": "Het nitraatresidu wordt bepaald in drie bodemlagen: 0–30, 30–60 en 60–90 cm [S1412]. Dat komt neer op een bemonstering tot 90 cm diep. Die 90 cm is wel mijn eigen optelling van de drie lagen. Zo staat het getal niet letterlijk in de tekst.\n\nDe bemonstering gebeurt tussen 1 oktober en 15 november door een erkend labo op percelen die de Mestbank aanduidt [S1408]. De bron met de drie lagen is een praktijkgids uit 2014. Controleer daarom de huidige regels bij de Mestbank of het Departement Landbouw en Visserij.",
+   "bronnen": [
+    {
+     "id": 1412,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 24,
+     "tekst": "18 Met de informatie die voortvloeit uit de bepaling van het nitraatresidu kan een landbouwer enerzijds terugkoppelen met het voorbije seizoen om na te gaan wat beter had gekund.\nDe hoeveelheid nitraat in de 3 bodemlagen 0-30, 30-60 en 60-90 is namelijk een tijdspiegel: afhankelijk van het bodemtype, de weersomstandigheden, teeltopbrengsten en toegepaste bemesting in de loop van het afgelopen teeltseizoen, kan de hoeveelheid nitraat in elke laag meestal toegewezen worden.\nAnderzijds levert het nitraatresidu een eerste indicatie op hoe groot de bodemvoorraad aan nitraat kan zijn bij de start van het volgende seizoen.\nHet bodemtype speelt daarbij een belangrijke rol: hoe zwaarder het bodemtype, des te meer er beschikbaar blijft."
+    },
+    {
+     "id": 1408,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 23,
+     "tekst": "17 6 NITRAATRESIDU In de referentieperiode 1 oktober - 15 november wordt op percelen die door de overheid worden aangeduid, het nitraatresidu bepaald.\nIn sommige gevallen is dit op kosten van de landbouwer.\nIndien het nitraatresidu bepaalde drempelwaarden overschrijdt, worden zogenaamde maatregelenpakketten opgelegd.\n6.1 Er zijn verschillende “soorten” nitraatresidu!?\nEr zijn verschillende soorten van staalnames, afhankelijk van de oorsprong of het doel: - controlestalen - opvolgstalen - derogatiestalen - stalen Beheerovereenkomst (BO-staal) - tegenstalen Bij een controlestaal wordt het nitraatresidu bepaald in opdracht en op kosten van de Mestbank.\nDit bestaat voornamelijk uit percelen die willekeurig zijn geselecteerd in focusgebieden (iets meer) en niet-focusgebieden (iets minder).\nDaarnaast zijn er ook door de dienst Handhaving een 100-tal percelen aangeduid, waarvan vermoed wordt dat ze overbemest zijn."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a23",
+   "vraag": "Is er een verschil in de regels tussen beteelde en niet-beteelde landbouwgrond?",
+   "antwoord": "Ja, er is een verschil: op beteelde landbouwgronden (die geen grasland zijn) mag dierlijke mest worden aangebracht met mestinjectie of sleepslangtechniek, terwijl op niet‑beteelde landbouwgrond de mest moet worden geïnjecteerd of in twee opeenvolgende werkgangen moet worden uitgespreid en binnen twee uur moet worden ingewerkt; op zaterdagen moet de mest dan ook onmiddellijk worden ingewerkt [S3020]. Bovendien blijft injectie en sleepslangtechniek tot 2027 toegelaten op beteelde grond, terwijl op niet‑beteelde grond de voorkeur uitgaat naar injectie of direct onderwerken na spreiden [S3343].",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    },
+    {
+     "id": 3343,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "uitgebreid voor biologische pluimveemest voor de toepassing op gras of graan, mits op graan de mest wordt ingewerkt in de bodem met een wiedeg. Daarnaast zal de verstrenging van de voorschriften voor de emissiearme aanwending van meststoffen zoals voorzien in het luchtbeleidsplan en in uitvoering gebracht via het Stikstofdecreet, ook een bijdrage hebben aan de realisatie van de doelen van het ontwerp-MAP 7: • Strengere voorschriften voor het emissiearm aanwenden van vloeibare dierlijke en andere meststoffen: • Injectie of direct onderwerken na spreiden op niet-beteelde landbouwgrond;\n• Zode-injectie, zodenbemester of sleufkouter op grasland.\nDe sleepslangtechniek is nog toegelaten tot en met 2027.\nOp grasland dat gescheurd zal worden, mogen de meststoffen ook via het direct inwerken na spreiden worden opgebracht.\n• Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a24",
+   "vraag": "Mag stalmest worden gespreid op grasland?",
+   "antwoord": "Op dit moment niet. Vandaag, 16 november, mag stalmest niet op grasland, want die periode loopt van 1 november tot en met 15 januari. Alleen mest rond de stam van fruitbomen is toegelaten [K]. Volgens de uitrijregeling 2027 geldt voor type 1 in de herfst een stop vanaf 16 oktober. In de winter is er een beperking tot 50 kg werkzame stikstof per hectare over de hele periode, en vanaf 16 februari mag het weer zonder die beperking [S2657]. Stalmest of champost op grasland hoeft ook niet emissiearm te worden aangewend [S4634]. Een oudere praktijkgids (2014) noemt voor niet-derogatiepercelen 16 januari tot en met 14 oktober [S1422]. Dat is een oude bron, dus kijk de huidige regels na bij de Mestbank.",
+   "bronnen": [
+    {
+     "id": 2657,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "www.vlm.be\nUitrijregeling 2027\nType 1 Stalmest, champost en traagwerkende meststoffen JANUARI |16 JAN FEBRUARI |16 FEB MAART |16 MAA APRIL MEI JUNI JULI AUGUSTUS |15 AUG SEPTEMBER OKTOBER |16 OKT NOVEMBER DECEMBER Neen Ja De maximale dosis is beperkt tot 50 kg werkzame stikstof per hectare over de hele periode. Neen. Alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten.\nType 2 Alle meststoffen die niet tot type 1 of 3 behoren Grasland\nJa Neen\nAkkerland\nNiet-zware kleigrond\nNeen Ja, uitgezonderd op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt Ja, maar na de oogst van de hoofdteelt mag er niet meer worden bemest, behalve in twee gevallen:\n1. Er wordt uiterlijk op 31 juli een nateelt ingezaaid (kan een vanggewas* zijn). Er geldt in dat geval geen dosisbeperking voor bemesting tot en met 31 juli."
+    },
+    {
+     "id": 4634,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 10,
+     "tekst": "champost die arm is aan ammoniakale stikstof en stalmest die arm is aan ammoniakale stikstof binnen 24 uur na de opbrenging worden ingewerkt; 4° in afwijking van 2° en 3° moeten volgende meststoffen niet emissiearm aangewend worden : a) stalmest of champost die op grasland wordt opgebracht;\nb) stalmest, champost of compost die gebruikt wordt voor bepaalde houtige teelten;\nc) spuistroom;\nDe Vlaamse Regering stelt nadere regels vast met betrekking tot de opbrenging van meststoffen, vermeld in eerste lid, 4°, en bepaalt ondermeer welke teelten als houtige teelten worden aanzien.\nDe Vlaamse Regering kan bijkomende maatregelen inzake emissiearme aanwending van dierlijke mest en andere meststoffen vaststellen.\n§ 2."
+    },
+    {
+     "id": 1422,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 26,
+     "tekst": "meststoffen niet afspoelen van het veld.\n* Deze bufferende zone zorgt er voor dat er niet per ongeluk mest ongewild in de waterloop terecht komt (bv. bij schokken vliegt kunstmest soms verder dan bedoeld) en dat er bij een regenbui kort na het toedienen het regenwater via oppervlakkige afspoeling de mest meesleurt naar de waterloop.\nOok wordt snelle, ondiepe uitspoeling van nitraat in deze zone verminderd.\n7.1.2 Wanneer mag ik welke mest uitrijden?\nAlgemeen mogen dierlijke mest, kunstmest en andere meststoffen toegepast worden vanaf 16 februari tot en met 31 augustus.\nRechtstreekse bemesting als gevolg van begrazing kan het ganse jaar door.\n7.1.2.1 Uitrijregeling op derogatiepercelen - Minstens 2/3 van de N uit dierlijke mest moet vóór 31 mei toegepast zijn.\n- Kunstmest dat fosfaat (P2O5) bevat is niet toegestaan.\n7.1.2.2 Uitrijregeling op niet-derogatiepercelen - Stalmest en champost mag toegepast worden vanaf 16 januari tot en met 14 oktober."
+    }
+   ],
+   "kalender": "type 1 op alle: Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten. Periode 11-01 t.e.m. 01-15 (Overzicht uitrijregeling (VLM Mestbank, augustus 2026)).",
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a25",
+   "vraag": "Wat is de definitie van een hoofdteelt? Is dit de teelt die er staat op 30 mei of 1 juni?",
+   "antwoord": "De hoofdteelt is de teelt die volgens de gangbare teeltpraktijk op een perceel overwegend aanwezig is van 15 mei tot en met 31 augustus, conform de GLB‑regelgeving [S3426]. Omdat zowel 30 mei als 1 juni binnen deze periode vallen, kan de teelt die op die data aanwezig is als hoofdteelt worden beschouwd, mits ze gedurende de hele periode dominant is [S3426]. Controleer de actuele definitie en eventuele wijzigingen bij de Mestbank of het Departement, want dit document is ouder dan drie jaar [S3426].",
+   "bronnen": [
+    {
+     "id": 3426,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 96,
+     "tekst": "in Vlaanderen.\nVanaf 2025 worden de bemestingsrechten toegekend aan de gebruiker van de hoofdteelt27 en niet langer aan de gebruiker van 1 januari. Hiermee worden de bemestingsrechten in lijn gebracht met de bepalingen die vastleggen wie recht heeft op de rechtstreekse betalingen in het kader van het GLB.\nIn die regelgeving staat dat de landbouwer die de hoofdteelt verbouwt, recht heeft op de rechtstreekse betalingen, inclusief eventuele steunmaatregelen (ecoregelingen, beheerovereenkomsten, agromilieuklimaatmaatregelen) waarin soms bemestingsbeperkingen opgelegd worden.\n27 De hoofdteelt is de teelt die volgens de gangbare teeltpraktijk op een perceel overwegend aanwezig is van 15 mei tot en met 31 augustus, conform de GLB-regelgeving"
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: beschermingsstroken"
+  },
+  {
+   "id": "a26",
+   "vraag": "Mag je zelf als landbouwer nog vloeibare dierlijke mest voeren met AGR-GPS in burenregeling naar percelen in gebiedstype 2 en 3?",
+   "antwoord": "Volgens de Startersbrochure van de Mestbank (oktober 2025) mag dat. Vervoer van vloeibare dierlijke mest met een burenregeling moet dan wel met AGR-GPS gebeuren [S2819]. Het vervoer moet door de aanbieder of de afnemer zelf gebeuren, met een trekkend voertuig waarvan die eigenaar is [S2819]. Bij de burenregeling moet de mest ook gelost worden in dezelfde gemeente als de exploitatie van de aanbieder, of in een aangrenzende gemeente [S2819].\n\nDe brochure vermeldt geen aparte regel voor gebiedstype 2 en 3. Onder het vorige programma (MAP 6) moest het vervoer naar akkers in die gebieden vanaf 1 augustus door een erkende mestvoerder met AGR-GPS gebeuren [S3133]. Het ontwerp van MAP 7 verstrengt dat: vanaf 1 juli moet elk vervoer van vloeibare dierlijke mest naar percelen in gebiedstype 2 en 3 door een erkend mestvoerder met AGR-GPS [S3380]. Percelen met blijvende teelten en grasland zijn daarvan uitgezonderd [S3380]. Het gaat om een ontwerptekst. Mijn documenten zeggen niet of die regel ook geldt voor een landbouwer die zelf vervoert in een burenregeling.\n\nHet is een regel, dus kijk de huidige versie na bij de Mestbank. Dat is zeker nodig voor uw situatie in gebiedstype 2 en 3. Ik kan geen bindend advies geven.",
+   "bronnen": [
+    {
+     "id": 2819,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 24,
+     "tekst": "niet met een burenregeling uitgevoerd worden.\nU mag alleen mest vervoeren met een burenregeling als aan alle onderstaande voorwaarden voldaan is: - Nieuw in 2025: elk vervoer van vloeibare dierlijke mest met een burenregeling moet gebeuren met AGR-GPS. Daarnaast moet ook de aanvoer van alle dierlijke mest (vast en vloeibaar) naar een verwerkingseenheid en een mestzak met de AGR-GPS-app. Klik hier voor meer informatie over de AGR-GPS-app. - Nieuw in 2025: omdat het vervoer opgevolgd wordt met de AGR-GPS app, is de melding van vervoer in het kader van de burenregeling uiterlijk de dag voorafgaand aan het vervoer niet meer verplicht. - Het vervoer moet gebeuren door de aanbieder of de afnemer van de mest met een trekkend voertuig waarvan hij eigenaar is. - In de gevallen 2 t.e.m. 6: o moet de mest gelost worden in dezelfde gemeente als die van de exploitatie of uitbating van de aanbieder of in een aangrenzende gemeente."
+    },
+    {
+     "id": 3133,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 7,
+     "tekst": "voor werkzame stikstof stelselmatig verstrengd tot een bemestingsreductie van 10% in gebiedstype 2 en 20% in gebiedstype 3 sinds 2022. Daarnaast werden er ook strengere voorwaarden doorgevoerd voor het vervoer van vloeibare dierlijke mest die de opvolging door de Mestbank versterken.\nZo moest het transport van vloeibare dierlijke mest naar akkers in gebiedstype 2 of 3 vanaf 1 augustus uitgevoerd worden door een erkende mestvoerder met AGR-GPS.\nBemesting was slechts toegestaan als de landbouwer"
+    },
+    {
+     "id": 3380,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 86,
+     "tekst": "de landbouworganisaties wordt ingezet op doorverwijzing naar en vormingen door B3W en andere actoren om de goede praktijken ingang te doen vinden. 8.3.2.3 Erkend mestvervoer met AGR-GPS vanaf 1/7 in gebiedstype 2 en 3 Naast de bemestingsreductie of de goede bodem-, teelt- en bemestingspraktijken in gebiedstype 1, 2 of 3, moet elk vervoer van vloeibare dierlijke mest naar percelen (uitgezonderd met blijvende teelten en grasland) in gebiedstype 2 en 3 vanaf 1 juli gebeuren door een erkend mestvoerder met AGR-GPS.\nDat is een verstrenging van de gebiedsgerichte vervoersmaatregel vanaf 1 augustus uit MAP 6."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a27",
+   "vraag": "Mag een sleepslang niet meer worden gebruikt op grasland in 2028?",
+   "antwoord": "De sleepslangtechniek is nog toegelaten tot en met 2027. Vanaf 2028 mag de sleepslang niet meer op grasland worden gebruikt [S3343].",
+   "bronnen": [
+    {
+     "id": 3343,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "uitgebreid voor biologische pluimveemest voor de toepassing op gras of graan, mits op graan de mest wordt ingewerkt in de bodem met een wiedeg. Daarnaast zal de verstrenging van de voorschriften voor de emissiearme aanwending van meststoffen zoals voorzien in het luchtbeleidsplan en in uitvoering gebracht via het Stikstofdecreet, ook een bijdrage hebben aan de realisatie van de doelen van het ontwerp-MAP 7: • Strengere voorschriften voor het emissiearm aanwenden van vloeibare dierlijke en andere meststoffen: • Injectie of direct onderwerken na spreiden op niet-beteelde landbouwgrond;\n• Zode-injectie, zodenbemester of sleufkouter op grasland.\nDe sleepslangtechniek is nog toegelaten tot en met 2027.\nOp grasland dat gescheurd zal worden, mogen de meststoffen ook via het direct inwerken na spreiden worden opgebracht.\n• Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  },
+  {
+   "id": "a28",
+   "vraag": "Wat is de definitie van een hoofdteelt? Is dit de teelt die er staat op 30 mei of 1 juni?",
+   "antwoord": "De hoofdteelt hangt dus niet af van één datum, zoals 30 mei of 1 juni. Het gaat om een periode.\n\n- **Definitie:** de hoofdteelt is de teelt die volgens de gangbare teeltpraktijk overwegend op het perceel aanwezig is van 15 mei tot en met 31 augustus. [S3608]\n- **Bron van de definitie:** die periode komt uit de GLB-regelgeving. Het Mestactieprogramma gebruikt dezelfde definitie voor de bemestingsrechten. [S3426]\n- **Altijd hoofdteelt:** aardappelen en wintergewassen zijn altijd hoofdteelt. Onrijp geoogste wintergranen, ook met vlinderbloemigen, zijn daarop de uitzondering. [S3608]\n- **Groenten:** groenten die tussen 15 mei en 31 augustus aanwezig zijn, zijn steeds hoofdteelt, behalve voorjaarspinazie. Dat geldt alleen als er geen aardappelen, zomergranen of wintergewassen staan. Staan er twee groenten na elkaar, dan is de eerste de hoofdteelt. [S3610]\n- **Wijzigen:** u kunt de hoofdteelt in de verzamelaanvraag wijzigen tot 31 augustus 2025, tenzij er al een controle op het perceel was. [S3555]\n\nDeze bronnen gaan over de verzamelaanvraag 2025. Kijk voor het huidige jaar de geldende regel na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "bronnen": [
+    {
+     "id": 3608,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 30,
+     "tekst": "Tweede nateelt: de teelt die in 2025 nog ingezaaid/geplant wordt na het oogsten van de eerste nateelt.\nIedere teelt heeft een specifieke teeltcode. Hieronder leest u een bijkomende toelichting over een aantal bijzondere teeltcodes.\nVoor de volledige lijst van teeltcodes zie tabel ‘Teeltcodes’ op de webpagina ‘Tabellen’.\nVoor sommige percelen kunt u bijkomende informatie opgeven wat teelttechniek of teeltomstandigheden betreft.\nDeze info kunt u toevoegen onder het veld ‘Gespecialiseerde productiemethode’.\n1 HOOFDTEELT DEFINITIE HOOFDTEELT Definitie Hoofdteelt: De teelt die volgens de gangbare teeltpraktijk overwegend aanwezig is op een perceel in de periode van 15 mei tot en met 31 augustus.\nAardappelen en wintergewassen2, met uitzondering van onrijp geoogste wintergranen en onrijp geoogste wintergranen met vlinderbloemigen, worden altijd beschouwd als hoofdteelt.\nHet komt voor dat gewassen zoals bv."
+    },
+    {
+     "id": 3426,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 96,
+     "tekst": "in Vlaanderen.\nVanaf 2025 worden de bemestingsrechten toegekend aan de gebruiker van de hoofdteelt27 en niet langer aan de gebruiker van 1 januari. Hiermee worden de bemestingsrechten in lijn gebracht met de bepalingen die vastleggen wie recht heeft op de rechtstreekse betalingen in het kader van het GLB.\nIn die regelgeving staat dat de landbouwer die de hoofdteelt verbouwt, recht heeft op de rechtstreekse betalingen, inclusief eventuele steunmaatregelen (ecoregelingen, beheerovereenkomsten, agromilieuklimaatmaatregelen) waarin soms bemestingsbeperkingen opgelegd worden.\n27 De hoofdteelt is de teelt die volgens de gangbare teeltpraktijk op een perceel overwegend aanwezig is van 15 mei tot en met 31 augustus, conform de GLB-regelgeving"
+    },
+    {
+     "id": 3610,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 31,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 31 van 277\ngeoogst wintergranen met vlinderbloemigen wordt aangegeven als voorteelt ‘wintermeteil’ (teeltcode 398).\nOok andere groen geoogste granen geeft u aan als voorteelt, bv snijrogge (teeltcode 639).\nGroenten die aanwezig zijn in de periode van 15 mei tot en met 31 augustus zijn steeds de hoofdteelt (uitgezonderd voorjaarspinazie) voor zover er geen aardappelen, zomergranen of wintergewassen aanwezig zijn (met uitzondering van wintergranen en wintergranen met vlinderbloemigen die onrijp geoogst worden).\nAls er twee groenten na elkaar staan, is de eerste groente de hoofdteelt (uitgezonderd voorjaarspinazie).\n De hoofdteelt is de teelt die de primaire gebruiksdoelstelling van het perceel weerspiegelt.\nBv.\neen wijngaard met veel gras wordt aangegeven als ‘Wijnstokken’, niet als ‘Gras’."
+    },
+    {
+     "id": 3555,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 12,
+     "tekst": "is er geen wijziging meer mogelijk.\nEr kan ook geen steun aangevraagd worden voor een maatregel als die niet uiterlijk op 31 mei 2025 is aangevraagd. 2.2.1 Hoofd- en nateeltwijzigingen De hoofdteelt kan tot 31 augustus 2025 gewijzigd worden tenzij er een controle op het perceel werd uitgevoerd.\nNa 31 augustus 2025 kan dit enkel mits bewijs zoals een foto die met LV-Agrilens genomen werd terwijl de hoofdteelt op het perceel aanwezig was.\nDe nateelt is wijzigbaar tot 31 oktober 2025.\nOok hier is wijzigen nog mogelijk na 31 oktober 2025 mits bewijs.\n2.2.2 Verklaring actieve landbouwer Verklaringen in het kader van actieve landbouwer zijn niet meer wijzigbaar na 31 mei 2025."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: beschermingsstroken"
+  },
+  {
+   "id": "a29",
+   "vraag": "Waarom zijn de uitscheidingsnormen voor zoogkoeien nu plots verhoogd?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma (MAP 7) is de reden dat de uitscheidingscijfers moeten kloppen met de werkelijkheid. Op basis van wetenschappelijk onderzoek van het ILVO en andere instellingen kunnen die cijfers worden aangepast [S3308]. Voor zoogkoeien gaat het om een stijging van 65 naar 75 kg N per dier per jaar en van 25 naar 31 kg P2O5 per dier per jaar [S3308]. Het is dus niet plots: de verhoging wordt over 3 jaar gespreid. Het wordt 69 kg N en 27 kg P2O5 in 2025, 72 kg N en 29 kg P2O5 in 2026, en 75 kg N en 31 kg P2O5 in 2027 [S3308]. Samen met de hogere cijfers voor hoogproductieve melkkoeien geeft dit meer beschikbare mest, namelijk 2 miljoen kg N en 1,2 miljoen kg P2O5 [S3310]. Mijn bron is een ontwerptekst uit maart 2025, dus controleer de huidige geldende cijfers bij de Mestbank.",
+   "bronnen": [
+    {
+     "id": 3308,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 67,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 67 van 101\nFiguur 39 Exploitaties met dieren met een impactscore van meer dan 5% 8.2.2 Correcte bepaling mestproductie Een correcte bepaling van de mestproductie is belangrijk. Op basis van wetenschappelijk onderzoek, door het ILVO en andere wetenschappelijke instellingen, kunnen de uitscheidingscijfers aangepast worden. De uitscheidingscijfers voor zoogkoeien en melkkoeien met een melkproductie hoger dan 10.000 kg melk/koe/jaar worden verhoogd. Voor zoogkoeien betekent dit een stijging van de uitscheiding van 65 kg N/dier per jaar naar 75 kg N/dier per jaar en van 25 kg P2O5/dier per jaar naar 31 kg P2O5/dier per jaar. Deze stijging wordt gradueel doorgevoerd over een periode van 3 jaar (Tabel 3). Tabel 3 Gefaseerde invoer van aangepaste uitscheidingscijfers voor zoogkoeien\nkg P2O5/dier/jaar kg N/dier/jaar MAP 6 2024 25 65 MAP 7 2025 27 69\n2026 29 72\n2027 31 75"
+    },
+    {
+     "id": 3310,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 68,
+     "tekst": "per jaar wordt doorgetrokken voor producties boven de 10.000 kg melk per dier per jaar, tot een jaarlijkse melkproductie van 15.000 kg melk per dier. De uitscheidingscijfers voor melkkoeien met een melkproductie hoger dan 10.000 kg melk/dier/jaar bedragen 131 kg N/dier/jaar en 43 kg P2O5/dier/jaar in 2024.\nMet het ontwerp-MAP 7 worden de uitscheidingscijfers van hoogproductieve melkkoeien verhoogd, in trappen van 250 kg melk/dier/jaar, tot 169 kg N/dier/jaar en 57 kg P2O5/dier/jaar voor melkkoeien met een melkproductie van meer dan 14.750 kg melk/dier/jaar.\nDe aanpassing van de uitscheidingscijfers voor zoogkoeien en hoogproductieve melkkoeien zal resulteren in een grotere hoeveelheid beschikbare mest van 2 miljoen kg N en 1,2 miljoen kg P2O5 waar de veehouders mee rekening zullen moeten houden.\nEr zal verder onderzoek gebeuren naar de excretiefactoren voor extensieve vleesveerassen."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: nieuwe mestmaatregelen (MAP 7)"
+  },
+  {
+   "id": "a30",
+   "vraag": "Welke ureaseremmers zijn oké en aan welke dosis?",
+   "antwoord": "Volgens de ILVO-mededeling over ureaseremmers uit januari 2023 zijn er drie goedgekeurde ureaseremmers als additief in meststoffen. Dat zijn NBPT, 2-NPT en de combinatie NBPT + NPPT in een 3:1-verhouding. [S781] Andere ureaseremmers hebben nog geen goedkeuring, en daarvoor moet eerst toelating worden gevraagd. [S780]\n\nDe toegelaten dosis wordt uitgedrukt als gewichtspercentage van de totale stikstof in de vorm van ureumstikstof:\n- NBPT: minimaal 0,09 en maximaal 0,20. [S781] [S782]\n- 2-NPT: minimaal 0,04 en maximaal 0,15. [S782]\n- NBPT + NPPT (3:1): minimaal 0,02 en maximaal 0,3. [S782]\n\nEen product met een ureaseremmer moet dat duidelijk vermelden. [S780] Voorbeelden van producten met deze stoffen zijn Agrotain® (NBPT), Limus® Clear (NBPT + NPPT) en PIAGRAN® pro (2-NPT). [S783]\n\nDie tabel verwijst naar verordening 2003/2003, die sinds 16 juli 2022 vervangen is door verordening 2019/1009. [S780] De bron is ook ouder dan drie jaar, dus kijk de huidige regels en doseringen na bij de Mestbank of het Departement.",
+   "bronnen": [
+    {
+     "id": 781,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 12,
+     "tekst": "een ureaseremmer bevat moet dit duidelijk vermeldt worden.\nVerordening 2003/2003 werd vanaf 16 juli 2022 vervangen worden door verordening 2019/1009. Tabel 2. Geregistreerde urease remmers als additief in meststoffen volgens EG 2003/2003 en latere wijzigingen. Type ureaseremmer Actief ingrediënt Jaar van registratie Minimum- en maximumgehalte aan ureaseremmers in gewichtspercentage van de totale stikstof in de vorm van ureumstikstof NBPT N-(n-butyl) thioposphoric triamide (NBPT) 2008 Min 0.09"
+    },
+    {
+     "id": 780,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 12,
+     "tekst": "ureaseremmers in de stal, werd het gebruik ervan als additief in bemesting wel opgenomen in de Europese wetgeving via verordening (EG) nr.\n2003/2003. De sindsdien goedgekeurde ureaseremmers en de toegelaten hoeveelheden kunnen teruggevonden worden in Tabel 2.\nDit betekent dat enkel deze stoffen al een goedkeuring hebben en dat voor andere ureaseremmers toelating gevraagd zal moeten worden indien van toepassing.\nNieuwe ureaseremmers kunnen in deze lijst worden opgenomen na beoordeling van de ingediende dossiers, die volgens de richtlijnen voor deze stoffen moeten worden uitgewerkt.\nWanneer een bemestingsproduct een ureaseremmer bevat moet dit duidelijk vermeldt worden.\nVerordening 2003/2003 werd vanaf 16 juli 2022 vervangen worden door verordening 2019/1009."
+    },
+    {
+     "id": 782,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 13,
+     "tekst": "\\13\nMax. 0.20 2NPT N-(2-nitrophenyl) phosphoric triamide (2- NPT) 2012/2003 Min 0.04 Max. 0.15 NBPT + NPPT N-(n-Butyl) thiophosphoric acid triamide (NBPT) en N-(n-Propyl) thiophosphoric acid triamide (NPPT) in een 3:1 ratio 2014 Min 0.02 Max 0.3"
+    },
+    {
+     "id": 783,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 14,
+     "tekst": "\\14\n4 Marktbeschikbaarheid Op de markt zijn vooral ureaseremmers beschikbaar in formuleringen voor gebruik op het veld als meststofadditief of soms in directe combinatie met een ureumhoudende meststof.\nDit betreft producten die een van de Europees goedgekeurde werkzame stoffen (weergegeven in Tabel 2) bevat, zoals meststofadditieven Agrotain® (NBPT), Didin® (NBPT + nitrificatie inhibitor) en Limus® Clear (NBPT + NPPT) of meststoffen gecombineerd met een ureaseremmer zoals Novurea® (NBPT), Nexur® (NBPT), PIAGRAN® pro (2-NPT) en ALZON® neo-N (2-NPT + nitrificatie inhibitors).\nSpecifieke producten voor gebruik in de stal of in de mestput lijken nog niet beschikbaar te zijn op de markt.\nHiervoor kan in eerste instantie gekeken worden naar welke producten gebruikt werden bij de bovengenoemde onderzoeken in veestallen.\nZo zijn er studies waarbij gebruik is gemaakt van Agrotain® (NBPT), NBPT (zonder verder specificaties), CHPT, Inhibitor K (PPDA) en Inhibitor EBN (een PDA)."
+    }
+   ],
+   "kalender": null,
+   "herkomst": "FAQ Mestbank: mest, stikstof en ureaseremmers"
+  }
+ ],
+ "codes": {
+  "wannes": "aa55d0313966f0212c6d70051d8f78e338c2bc0ecfab49e10e7f706bed659834",
+  "isabeau": "3869c11a70f9a53ffab9d680da37208aa75386b7f79ea0285c2116eab2ca8f73"
+ }
+}
