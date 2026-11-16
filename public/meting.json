@@ -19,5 +19,25 @@
     "91%"
    ]
   ]
+ },
+ {
+  "titel": "Antwoorden, op de oefenvragen",
+  "datum": "2026-11-16",
+  "kolommen": [
+   "",
+   "juiste bron",
+   "klopt",
+   "zegt 'weet ik niet'",
+   "tijd"
+  ],
+  "rijen": [
+   [
+    "Claude",
+    "95%",
+    "95%",
+    "100%",
+    "5.4 s"
+   ]
+  ]
  }
 ]

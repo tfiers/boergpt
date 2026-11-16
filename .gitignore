@@ -3,3 +3,4 @@ data/pdf/
 .netlify/
 __pycache__/
 dev/*.png
+test/uitslag-*
