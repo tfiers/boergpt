@@ -2,7 +2,7 @@
 // zonder het model dat ze schreef. Elk oordeel wordt bewaard in Netlify Blobs onder de naam die
 // in de link staat (?wie=...), zodat een expert kan stoppen en later verdergaan.
 //   GET  /api/oordeel?wie=naam    de antwoorden en wat die persoon al oordeelde
-//   GET  /api/oordeel?alles       alle oordelen (voor test/vergelijk-oordeel.mjs)
+//   GET  /api/oordeel?alles       alle oordelen, zonder opmerkingen (voor test/oordeel.mjs vergelijk)
 //   POST /api/oordeel {wie, item, klopt, bron, opmerking}
 import { getStore } from "@netlify/blobs";
 import { lees } from "./lib/zoek.mjs";
@@ -22,7 +22,8 @@ export default async req => {
     if (!alles && !geldigeNaam(wie)) return json({ fout: "Open de link met je naam erin, bv. ?wie=expert." }, 400);
     const { blobs } = await store.list(alles ? {} : { prefix: `${wie}/` });
     const oordelen = await Promise.all(blobs.map(b => store.get(b.key, { type: "json" })));
-    return json(alles ? { ronde: ronde.ronde, oordelen } : { ...ronde, oordelen });
+    // Alle oordelen samen zijn openbaar, maar zonder de opmerkingen: die staan alleen in Netlify Blobs.
+    return json(alles ? { ronde: ronde.ronde, oordelen: oordelen.map(({ opmerking, ...o }) => o) } : { ...ronde, oordelen });
   }
   if (req.method !== "POST") return json({ fout: "Alleen GET of POST." }, 405);
   let o;
