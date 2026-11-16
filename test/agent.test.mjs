@@ -1,6 +1,6 @@
-// De papierwerk-agent met een nagemaakte Claude: eerst zoeken, dan de fiche invullen
-// als JSON in de laatste ronde. Een verzonnen bronnummer valt weg.
-// node --test test/fiche.test.mjs
+// De agent met een nagemaakt model: de perceelfiche (eerst zoeken, dan invullen als JSON in de
+// laatste ronde; een verzonnen bronnummer valt weg), een leeg antwoord, en Groq's tool_use_failed.
+// node --test test/agent.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { vraagAan } from "../netlify/functions/lib/agent.mjs";
@@ -51,4 +51,12 @@ test("een leeg laatste antwoord wordt nog één keer gevraagd", async t => {
   // Het lege antwoord komt niet in het gesprek; de vraag staat bij de antwoorden van het zoeken.
   assert.deepEqual(vragen[2].messages.at(-1).content.map(c => c.type), ["tool_result", "text"]);
   assert.equal(uit.antwoord, "Ja, dat mag.");
+});
+
+test("Groq's tool_use_failed: tekst waar een gereedschap moest, is het antwoord", async t => {
+  process.env.GROQ_API_KEY ||= "test";
+  t.mock.method(globalThis, "fetch", async () => Response.json({ error: { message: "Tool choice is required, but model did not call a tool",
+    type: "invalid_request_error", code: "tool_use_failed", failed_generation: "Dat staat niet in mijn documenten." } }, { status: 400 }));
+  const uit = await vraagAan("open", "Hoeveel kost een tractor?");
+  assert.equal(uit.antwoord, "Dat staat niet in mijn documenten.");
 });
