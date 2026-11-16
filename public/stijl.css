@@ -76,3 +76,18 @@ footer{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-wrap:
 #meting h3{font-size:1em;margin:1em 0 .3em}
 #versie details{display:inline}#versie summary{cursor:pointer}#versie ul{margin:6px 0 0;padding-left:18px}
 .nieuw{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);padding:10px 16px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;box-shadow:0 4px 16px rgba(0,0,0,.18);cursor:pointer;z-index:9}
+.oordeel main{padding-bottom:96px}
+.oordeel .vraag{font-size:18px;margin:0}
+.oordeel fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.oordeel legend{font-weight:600;margin-bottom:6px}
+.keuzes{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.keuzes button{min-height:48px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.keuzes button[aria-checked="true"]{border-color:var(--accent);background:var(--soft);font-weight:600}
+.stukjes summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:600}
+.stukjes ol{padding-left:20px;display:flex;flex-direction:column;gap:10px}
+.stukjes blockquote{margin:4px 0 0;padding:8px 10px;border-left:3px solid var(--accent);background:var(--soft);font-size:14px;white-space:pre-line;border-radius:0 8px 8px 0}
+sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
+.balk{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--panel);border-top:1px solid var(--line);z-index:5}
+.balk button{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
+.balk button:disabled{opacity:.4;cursor:default}
+#wie{font:inherit;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);flex:1;background:var(--panel);color:var(--ink)}

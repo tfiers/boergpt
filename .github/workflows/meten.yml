@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       wat:
-        description: "zoek (alleen het zoeken, geen sleutels nodig), open, claude, of modellen (welke modellen de aanbieders hebben)"
+        description: "zoek (alleen het zoeken, geen sleutels nodig), open, claude, aanval-… (20 aanvallen, red team), of modellen (welke modellen de aanbieders hebben)"
         type: choice
-        options: [zoek, open, claude, modellen]
+        options: [zoek, open, claude, aanval-open, aanval-claude, modellen]
         default: zoek
       deel:
         description: "oefen, apart (alleen op het einde) of echt (vragen van echte boeren en adviseurs)"
@@ -60,6 +60,12 @@ jobs:
             exit 0
           fi
           if [ -n "$MODEL" ]; then export OPEN_VIA="${MODEL%%:*}" OPEN_MODEL="${MODEL#*:}"; fi
+          case "$WAT" in aanval-*)
+            node test/aanval.mjs "${WAT#aanval-}" | tee uitslag.txt
+            { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+            echo "UITSLAG-JSON-BEGIN"; cat test/uitslag-*.json | jq -c .; echo "UITSLAG-JSON-EINDE"
+            exit 0;;
+          esac
           set -- "$WAT" --deel "$DEEL"
           [ -n "$MAX" ] && set -- "$@" --max "$MAX"
           [ -n "$OPTIES" ] && set -- "$@" --opties "$OPTIES"
