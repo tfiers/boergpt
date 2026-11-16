@@ -84,6 +84,17 @@ Zelf meten: `node test/meet.mjs zoek` (alleen het zoeken, geen sleutels nodig;
 of `node test/meet.mjs open|claude`, of op GitHub › Actions › Meten › Run
 workflow.
 
+## Bronnen tonen
+
+Bij elke aangehaalde pagina toont de demo de letterlijke tekst, en op een tik de
+pagina zelf, met de aangehaalde regels geel gemarkeerd. De pdf komt via
+`/pdf/<nr>.pdf` van de eigen site: Netlify haalt hem bij de bron op
+(`public/_redirects`, gemaakt door `pipeline/doorverwijzingen.py`). De pagina
+tekent [pdf.js](https://mozilla.github.io/pdf.js/) (Apache 2.0, in
+`public/vendor/pdfjs/`). De drie voorbeeldvragen hebben een bewaard antwoord
+(`public/voorbeelden.json`, gemaakt door `node test/voorbeelden.mjs`), met de
+vermelding dat het bewaard is.
+
 ## Kosten en grenzen
 
 Per dag hoogstens 300 vragen in totaal en 30 per bezoeker, geteld in Netlify

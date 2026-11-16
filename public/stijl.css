@@ -39,6 +39,8 @@ textarea{font:inherit;font-size:16px;width:100%;padding:10px 12px;border-radius:
 .inhoud{display:flex;flex-direction:column;gap:12px}
 .antwoord{font-size:16px}
 .laden{color:var(--muted)}
+.bewaard{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 8px}
+.bewaard .live{font:inherit;font-size:13px;min-height:36px;padding:0 10px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--accent);cursor:pointer}
 .fout{color:var(--rood)}
 .ref{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 5px;border-radius:7px;border:1px solid var(--accent);color:var(--accent);background:none;font-size:12px;font-weight:700;vertical-align:1px;margin-left:2px}
 button.ref{position:relative}
@@ -50,6 +52,12 @@ button.ref::after{content:"";position:absolute;inset:-11px -6px}
 .pag .ref{margin-left:0}
 .pag[aria-expanded="true"]{border-color:var(--accent);background:var(--soft)}
 .bron blockquote{margin:4px 0 8px;padding:8px 10px;border-left:3px solid var(--accent);background:var(--soft);font-size:14px;white-space:pre-line;border-radius:0 8px 8px 0}
+.pdfknoppen{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px}
+.toon{font:inherit;font-size:13px;min-height:40px;padding:0 10px;border:1px solid var(--accent);border-radius:10px;background:none;color:var(--accent);cursor:pointer}
+.blad{display:block;margin-top:8px;color:var(--muted);font-size:13px}
+.blad canvas{display:block;width:100% !important;height:auto !important;cursor:zoom-in;border:1px solid var(--line);border-radius:6px;background:#fff}
+.blad.groot{overflow:auto;max-height:70vh}
+.blad.groot canvas{width:200% !important;cursor:zoom-out}
 .oud{font-size:13px;background:var(--geel);padding:4px 8px;border-radius:6px}
 .stappen{font-size:13px;color:var(--muted)}
 .stappen summary{min-height:44px;display:flex;align-items:center;cursor:pointer}
