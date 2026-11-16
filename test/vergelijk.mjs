@@ -1,4 +1,6 @@
-// Modellen naast elkaar: kwaliteit, kost en snelheid, uit metingen van test/meet.mjs open|claude --rechter.
+// Modellen naast elkaar: kwaliteit, kost en snelheid, uit metingen van test/meet.mjs open|claude.
+// "Klopt" is volgens de sleutel van elke vraag (het juiste getal of woord staat in het antwoord), op
+// de vragen met een antwoord in de documenten; zo telt elk model op dezelfde manier, ook zonder rechter.
 //   node test/vergelijk.mjs <uitslag.json> [<uitslag.json> ...]   → public/modellen.json (de grafiek op de site)
 // De kost is tokens × de prijs per miljoen tokens hieronder (Cloudflare Workers AI geeft ook een
 // prijs per miljoen tokens, naast zijn neurons).
@@ -24,20 +26,22 @@ const rijen = process.argv.slice(2).map(pad => {
   const id = u.model ? u.model.slice(u.model.indexOf(":") + 1) : u.wat;
   const p = PRIJS[id] || PRIJS[u.wat];
   if (!p) throw new Error(`Geen prijs voor ${id} (${pad})`);
-  const r = u.r.filter(x => !x.fout), geoordeeld = r.filter(x => x.rechter?.klopt);
+  const r = u.r.filter(x => !x.fout), met = u.r.filter(x => "klopt" in x), zonder = u.r.filter(x => "weetNiet" in x);
   const gem = k => r.reduce((s, x) => s + (k(x) || 0), 0) / r.length;
   const tin = gem(x => x.gebruik?.in), tuit = gem(x => x.gebruik?.uit);
+  const pct = (n, d) => Math.round(100 * n / d);
   return {
     model: p.naam, open: p.open, via: u.model ? u.model.split(":")[0] : "anthropic", deel: u.deel, datum: u.datum,
     vragen: u.r.length, fouten: u.r.length - r.length,
-    klopt: geoordeeld.length ? Math.round(100 * tel(geoordeeld, x => x.rechter.klopt === "ja") / geoordeeld.length) : null,
-    half: geoordeeld.length ? Math.round(100 * tel(geoordeeld, x => x.rechter.klopt === "half") / geoordeeld.length) : null,
+    klopt: pct(tel(met, x => x.klopt), met.length),
+    bron: pct(tel(met, x => x.bron), met.length),
+    weetNiet: `${tel(zonder, x => x.weetNiet)} van ${zonder.length}`,
     seconden: Math.round(gem(x => x.ms) / 100) / 10,
     tokensIn: Math.round(tin), tokensUit: Math.round(tuit),
     kostPer1000: Math.round((tin * p.in + tuit * p.uit) / 1000 * 100) / 100,  // dollar per 1000 vragen
     prijsbron: p.bron,
   };
 });
-rijen.sort((a, b) => (b.klopt ?? -1) - (a.klopt ?? -1));
+rijen.sort((a, b) => b.klopt - a.klopt);
 writeFileSync("public/modellen.json", JSON.stringify(rijen, null, 1));
 console.table(rijen.map(({ prijsbron, ...r }) => r));

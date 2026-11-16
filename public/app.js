@@ -86,13 +86,13 @@ fetch("meting.json").then(r => r.json()).then(tabellen => {
     <tbody>${t.rijen.map(r => `<tr><th>${esc(r[0])}</th>${r.slice(1).map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`).join("");
 }).catch(() => { $("#meting").hidden = true; });
 
-// --- Welk model? Een balk per model: klopt en half, volgens de rechter (test/vergelijk.mjs) ---
+// --- Welk model? Een balk per model: hoe vaak het antwoord klopt (test/vergelijk.mjs) ---
 fetch("modellen.json").then(r => r.json()).then(rijen => {
   const komma = n => String(n).replace(".", ",");
   $("#modellen .balken").innerHTML = rijen.map(m => `<li>
     <p><b>${esc(m.model)}</b>${m.open ? ` <span class="open">open</span>` : ""} <span class="klein">via ${esc(m.via)}</span></p>
-    <div class="balk-rij" title="${esc(m.model)}: klopt ${m.klopt}%, half ${m.half}%"><span class="klopt" style="width:${m.klopt}%"></span><span class="half" style="width:${m.half}%"></span></div>
-    <p class="klein">klopt ${m.klopt}% · half ${m.half}% · ${komma(m.seconden)} s per vraag · $ ${komma(m.kostPer1000.toFixed(2))} per 1000 vragen · ${m.vragen} vragen</p></li>`).join("");
+    <div class="balk-rij" title="${esc(m.model)}: klopt ${m.klopt}%"><span class="klopt" style="width:${m.klopt}%"></span></div>
+    <p class="klein">klopt ${m.klopt}% · juiste bron ${m.bron}% · ${komma(m.seconden)} s per vraag · $ ${komma(m.kostPer1000.toFixed(2))} per 1000 vragen</p></li>`).join("");
   $("#modellen").hidden = false;
 }).catch(() => {});
 
