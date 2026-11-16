@@ -1,0 +1,20 @@
+# Bij elke push: de tests en een meting van het zoeken (geen sleutels nodig).
+name: Test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: node --test test/teller.test.mjs
+      - name: Zoeken meten
+        run: |
+          node test/meet.mjs zoek | tee uitslag.txt
+          { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,5 @@
+node_modules/
+data/pdf/
+.netlify/
+__pycache__/
+dev/*.png

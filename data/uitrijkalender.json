@@ -1,0 +1,23 @@
+{
+ "bron": "Overzicht uitrijregeling (VLM Mestbank, augustus 2026)",
+ "url": "https://www.vlm.be/nl/SiteCollectionDocuments/Mestbank/Uitrijregeling/Overzicht_uitrijregeling.pdf",
+ "let_op": "Dit is de regeling van 2026. De VLM-kalender voor 2027 wijkt op enkele punten af (bv. type 1 in de herfst tot 15 oktober). Specifieke teelten, bio-percelen, spuistroom en effluent met lage stikstofinhoud volgen eigen regels.",
+ "regels": [
+  {"type": 1, "grond": "alle", "pagina": 2, "van": "01-16", "tot": "08-31", "mag": "ja", "uitleg": "Ja."},
+  {"type": 1, "grond": "alle", "pagina": 2, "van": "09-01", "tot": "10-31", "mag": "voorwaarden", "uitleg": "Ja, maar de maximale dosis is beperkt tot 50 kg werkzame N/ha over de hele periode."},
+  {"type": 1, "grond": "alle", "pagina": 2, "van": "11-01", "tot": "01-15", "mag": "nee", "uitleg": "Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten."},
+  {"type": 2, "grond": "grasland", "pagina": 3, "van": "02-16", "tot": "08-14", "mag": "ja", "uitleg": "Ja."},
+  {"type": 2, "grond": "grasland", "pagina": 3, "van": "08-15", "tot": "02-15", "mag": "nee", "uitleg": "Neen."},
+  {"type": 2, "grond": "akkerland", "pagina": 3, "van": "02-16", "tot": "03-15", "mag": "voorwaarden", "uitleg": "Op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen. Op akkers met een andere teelt: ja."},
+  {"type": 2, "grond": "akkerland", "pagina": 3, "van": "03-16", "tot": "07-31", "mag": "voorwaarden", "uitleg": "Ja, maar na de oogst van de hoofdteelt mag niet meer worden bemest, behalve als er uiterlijk 31 juli een nateelt wordt ingezaaid, of (niet op zware klei) na 31 juli en uiterlijk 15 september een vanggewas na een niet-nitraatgevoelige hoofdteelt, met max. 36 kg werkzame N/ha. Op zware kleigrond: nateelt uiterlijk 15 september."},
+  {"type": 2, "grond": "akkerland", "pagina": 3, "van": "08-01", "tot": "08-31", "mag": "voorwaarden", "uitleg": "Andere dan zware kleigronden: neen, behalve beperkt (max. 36 kg werkzame N/ha) na een niet-nitraatgevoelige hoofdteelt met een vanggewas uiterlijk 15 september. Zware kleigronden: ja, maar na de oogst alleen als er uiterlijk 15 september een nateelt komt."},
+  {"type": 2, "grond": "akkerland", "pagina": 3, "van": "09-01", "tot": "10-15", "mag": "voorwaarden", "uitleg": "Andere dan zware kleigronden: neen. Zware kleigronden: ja, met een nateelt uiterlijk 14 dagen na het opbrengen, max. 100 kg werkzame N/ha."},
+  {"type": 2, "grond": "akkerland", "pagina": 3, "van": "10-16", "tot": "02-15", "mag": "nee", "uitleg": "Neen."},
+  {"type": 3, "grond": "grasland", "pagina": 4, "van": "02-16", "tot": "08-31", "mag": "ja", "uitleg": "Ja."},
+  {"type": 3, "grond": "grasland", "pagina": 4, "van": "09-01", "tot": "02-15", "mag": "nee", "uitleg": "Neen."},
+  {"type": 3, "grond": "akkerland", "pagina": 4, "van": "02-16", "tot": "03-15", "mag": "voorwaarden", "uitleg": "Op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen. Op akkers met een andere teelt: ja."},
+  {"type": 3, "grond": "akkerland", "pagina": 4, "van": "03-16", "tot": "08-31", "mag": "voorwaarden", "uitleg": "Ja, maar na de oogst van de hoofdteelt alleen met een nateelt uiterlijk 31 juli, een specifieke teelt uiterlijk 31 augustus, of een vanggewas na 31 juli en uiterlijk 15 september na een niet-nitraatgevoelige hoofdteelt (max. 36 kg werkzame N/ha)."},
+  {"type": 3, "grond": "akkerland", "pagina": 4, "van": "09-01", "tot": "02-15", "mag": "nee", "uitleg": "Neen."}
+ ],
+ "types": {"1": "stalmest, champost en traagwerkende meststoffen", "2": "alle meststoffen die niet tot type 1 of 3 behoren, bv. vloeibare dierlijke mest (drijfmest) die geen effluent is", "3": "kunstmest, spuistroom en effluenten"}
+}
