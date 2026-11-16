@@ -1,7 +1,7 @@
 // POST /api/perceel {teelt, grond, mest, klasse, datum, oppervlakte, model} → een ingevulde fiche
 // voor één perceel, elk veld met zijn bron (lib/fiche.mjs). Heeft een eigen, kleiner dagbudget.
 import { budget, json, modelFout } from "./lib/budget.mjs";
-import { MODELLEN, vraagAan } from "./lib/agent.mjs";
+import { beantwoord } from "./lib/antwoord.mjs";
 import { FICHE, perceelVraag } from "./lib/fiche.mjs";
 
 export default async (req, context) => {
@@ -14,11 +14,11 @@ export default async (req, context) => {
   if (nee) return nee;
   const start = Date.now();
   try {
-    const uit = await vraagAan(model, vraag, { maxRondes: 4, taak: FICHE });
+    const uit = await beantwoord(model, vraag, { maxRondes: 4, taak: FICHE });
     if (!uit.formulier) return json({ fout: "Het model vulde de fiche niet in. Probeer het opnieuw." }, 502);
-    return json({ model: model === "open" ? `gpt-oss-120b (open model, via ${uit.via})` : MODELLEN.claude.naam, ms: Date.now() - start, vraag, ...uit });
+    return json({ ms: Date.now() - start, vraag, ...uit });
   } catch (e) {
-    return modelFout(e, model);
+    return modelFout(e);
   }
 };
 

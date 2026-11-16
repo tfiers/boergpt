@@ -123,7 +123,22 @@ vermelding dat het bewaard is.
 Per dag hoogstens 300 vragen in totaal en 30 per bezoeker, geteld in Netlify
 Blobs (`netlify/functions/vraag.mjs`); van het IP-adres wordt alleen een hash
 bewaard die elke dag verandert. Netlify weigert daarnaast wie meer dan 10
-vragen per minuut stuurt.
+vragen per minuut stuurt. Een perceelfiche heeft een eigen teller (60 per dag,
+10 per bezoeker), de MCP-server ook (3.000 en 300).
+
+Claude kost per token (± $0,025 per vraag), dus Claude heeft daarbovenop een
+dagbudget in dollar: `CLAUDE_DOLLAR_PER_DAG`, standaard $0,50 (± 20 vragen,
+hoogstens ± $15 per maand), geteld na elk antwoord (`lib/budget.mjs`). Is het
+op, of antwoordt de Claude API niet (bijvoorbeeld omdat de maandlimiet van de
+sleutel bereikt is), dan antwoordt het open model in de Claude-kaart, en de
+kaart zegt dat erbij (`lib/antwoord.mjs`). Zo werkt de demo altijd.
+
+Metingen gebruiken dezelfde Claude-sleutel. Elke meting toont daarom vooraf
+wat ze ongeveer kost en heeft een plafond (`KOST_MAX`, standaard $1,
+`test/kost.mjs`): ligt de schatting hoger, dan start ze niet, en bij het
+plafond stopt ze. De bewaarde metingen staan in `metingen/`; `node
+test/rechter.mjs metingen/*.json` oordeelt alleen waar het oordeel nog
+ontbreekt.
 
 ## Zelf draaien
 

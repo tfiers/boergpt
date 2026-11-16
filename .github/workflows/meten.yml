@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       wat:
-        description: "zoek (alleen het zoeken, geen sleutels nodig), open, claude, aanval-… (20 aanvallen, red team), of modellen (welke modellen de aanbieders hebben)"
+        description: "zoek (alleen het zoeken), open, claude, aanval-… (20 aanvallen, red team), rechter (opnieuw oordelen over metingen/*.json waar het oordeel ontbreekt), of modellen (welke modellen de aanbieders hebben)"
         type: choice
-        options: [zoek, open, claude, aanval-open, aanval-claude, modellen]
+        options: [zoek, open, claude, aanval-open, aanval-claude, rechter, modellen]
         default: zoek
       deel:
         description: "oefen, apart (alleen op het einde) of echt (vragen van echte boeren en adviseurs)"
@@ -25,6 +25,14 @@ on:
         description: "Laat Claude ook oordelen over elk antwoord"
         type: boolean
         default: false
+      kost_max:
+        description: "Plafond in dollar voor deze meting (test/kost.mjs); de geschatte kost staat bovenaan het verslag"
+        type: string
+        default: "1"
+      rechter_model:
+        description: "Rechter: leeg voor Claude Sonnet 5.5, of een model op Cloudflare, bv. @cf/meta/llama-3.3-70b-instruct-fp8-fast"
+        type: string
+        default: ""
       opties:
         description: "Andere instelling van het zoeken, als JSON, bv. {\"aantal\":8}"
         type: string
@@ -53,11 +61,19 @@ jobs:
           MODEL: ${{ inputs.model }}
           MAX: ${{ inputs.max }}
           OPTIES: ${{ inputs.opties }}
+          KOST_MAX: ${{ inputs.kost_max }}
+          RECHTER_MODEL: ${{ inputs.rechter_model }}
           RECHTER: ${{ inputs.rechter && '--rechter' || '' }}
         run: |
           if [ "$WAT" = modellen ]; then
             curl -s https://api.groq.com/openai/v1/models -H "Authorization: Bearer $GROQ_API_KEY" | jq -r '.data[].id' | sort | sed 's/^/groq:/'
             curl -s "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/models/search?task=Text%20Generation&per_page=100" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result[].name' | sort | sed 's/^/cloudflare:/'
+            exit 0
+          fi
+          [ -z "$RECHTER_MODEL" ] && unset RECHTER_MODEL
+          if [ "$WAT" = rechter ]; then
+            node test/rechter.mjs metingen/*.json | tee uitslag.txt
+            { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
           if [ -n "$MODEL" ]; then export OPEN_VIA="${MODEL%%:*}" OPEN_MODEL="${MODEL#*:}"; fi
@@ -78,4 +94,6 @@ jobs:
         if: inputs.wat != 'modellen'
         with:
           name: uitslag
-          path: test/uitslag-*.json
+          path: |
+            test/uitslag-*.json
+            metingen/*.json

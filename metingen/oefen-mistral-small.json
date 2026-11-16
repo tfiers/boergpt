@@ -1,0 +1,1398 @@
+{
+ "r": [
+  {
+   "nr": 1,
+   "vraag": "Tot wanneer moet een vanggewas blijven staan op een perceel in de leemstreek?",
+   "antwoord": "Een vanggewas moet in de leemstreek aangehouden worden tot en met 30 november [S2673]. Controleer de huidige regel bij de Mestbank of het Departement, want dit stuk is van 2026.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3650,
+    "uit": 111,
+    "aanroepen": 2
+   },
+   "ms": 4266,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2673,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 3,
+     "tekst": "vanggewas moet aangehouden worden tot en met 15 okt op zware kleigronden, 30 nov op percelen in de leemstreek en tot 31 jan op de overige percelen. *** Als er zowel type 2 als type 3 meststoffen worden opgebracht na de oogst, en het vanggewas wordt na 31 juli ingezaaid, dan geldt een dosisbeperking voor de som van de type 2 en type 3 meststoffen.\nDie som is beperkt tot 36 kg werkzame stikstof/ha."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct 30 november voor percelen in de leemstreek, wat letterlijk in stuk S2673 staat, en wijst terecht op controle van de geldende regel bij de Mestbank of het Departement."
+   }
+  },
+  {
+   "nr": 2,
+   "vraag": "Hoeveel werkzame stikstof mag ik na de oogst nog geven als het vanggewas na 31 juli wordt ingezaaid?",
+   "antwoord": "Je mag na de oogst nog 36 kg werkzame stikstof per hectare geven als het vanggewas na 31 juli wordt ingezaaid [S2658] [S2693] [S2682] [S2676] [S2661] [S2691].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3722,
+    "uit": 124,
+    "aanroepen": 2
+   },
+   "ms": 4332,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2658,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "uiterlijk op 31 juli een nateelt ingezaaid (kan een vanggewas* zijn). Er geldt in dat geval geen dosisbeperking voor bemesting tot en met 31 juli. 2. Er wordt na 31 juli en uiterlijk op 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt in dat geval een dosisbeperking van 36 kg werkzame stikstof per hectare.*** Alleen na oogst van een nietnitraatgevoelige hoofdteelt en mits een vanggewas** ingezaaid uiterlijk 15 sept. Er geldt altijd een beperking van 36 kg werkzame stikstof/ha. Neen Neen\nZware kleigrond"
+    },
+    {
+     "id": 2693,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 9,
+     "tekst": "dat de hoeveelheid die in deze periode opgebracht wordt, beperkt wordt tot 40 kg werkzame stikstof per ha. 1 november t.e.m. 15 januari Neen * Als de nateelt een vanggewas is (ten laatste ingezaaid op 31 juli), is er geen aanhoudplicht van toepassing, behalve als het gaat om de basismaatregel vanggewassen. **Bemesting is alleen toegelaten als er uiterlijk op 15 september een vanggewas ingezaaid wordt. Het vanggewas moet aangehouden worden tot en met 15 oktober op zware kleigronden, 30 november op percelen in de leemstreek en tot 31 januari op de overige percelen. *** Als er zowel type 2 als type 3 meststoffen worden opgebracht na de oogst, en het vanggewas wordt na 31 juli ingezaaid, dan geldt een dosisbeperking voor de som van de type 2 en type 3 meststoffen. Die som is beperkt tot 36 kg werkzame stikstof/ha."
+    },
+    {
+     "id": 2682,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 6,
+     "tekst": "daarop volgende periode vanaf 16 januari tot en met 15 februari opgebracht wordt, is beperkt tot 30 kg N/ha waarvan maximaal 10 kg minerale stikstof. 1 november t.e.m. 15 januari Neen * Als de nateelt een vanggewas is (ten laatste ingezaaid op 31 juli), is er geen aanhoudplicht van toepassing, behalve als het gaat om de basismaatregel vanggewassen. ** Bemesting is alleen toegelaten als er uiterlijk op 15 september een vanggewas ingezaaid wordt. Het vanggewas moet aangehouden worden tot en met 15 oktober op zware kleigronden, 30 november op percelen in de leemstreek en tot 31 januari op de overige percelen. *** Als er zowel type 2 als type 3 meststoffen worden opgebracht na de oogst, en het vanggewas wordt na 31 juli ingezaaid, dan geldt een dosisbeperking voor de som van de type 2 en type 3 meststoffen. Die som is beperkt tot 36 kg werkzame stikstof/ha."
+    },
+    {
+     "id": 2676,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 4,
+     "tekst": "hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***\n1 september t.e.m. 15 februari Neen * Als de nateelt een vanggewas is (ten laatste ingezaaid op 31 juli), is er geen aanhoudplicht van toepassing, behalve als het gaat om de basismaatregel vanggewassen. ** Bemesting is alleen toegelaten als er uiterlijk op 15 september een vanggewas ingezaaid wordt. Het vanggewas moet aangehouden worden tot en met 15 oktober op zware kleigronden, 30 november op percelen in de leemstreek en tot 31 januari op de overige percelen. *** Als er zowel type 2 als type 3 meststoffen worden opgebracht na de oogst, en het vanggewas wordt na 31 juli ingezaaid, dan geldt een dosisbeperking voor de som van de type 2 en type 3 meststoffen. Die som is beperkt tot 36 kg werkzame stikstof/ha."
+    },
+    {
+     "id": 2661,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "van 36 kg werkzame stikstof per hectare.*** Neen Neen Voor effluent met lage stikstofinhoud en kunstmest op specifieke teelten: zie volgende pagina. * Als de nateelt een vanggewas is (ten laatste ingezaaid op 31 juli), is er geen aanhoudplicht van toepassing, behalve als het gaat om de basismaatregel vanggewassen.\n** Bemesting is alleen toegelaten als er uiterlijk op 15 september een vanggewas ingezaaid wordt.\nHet vanggewas moet aangehouden worden tot en met 15 oktober op zware kleigronden, 30 november op percelen in de leemstreek en tot 31 januari op de overige percelen.\n*** Als er zowel type 2 als type 3 meststoffen worden opgebracht na de oogst, en het vanggewas wordt na 31 juli ingezaaid, dan geldt een dosisbeperking voor de som van de type 2 en type 3 meststoffen.\nDe som is beperkt tot 36 kg werkzame stikstof (N) per hectare.\nVerboden om te bemesten Toegelaten onder voorwaarden Toegelaten om te bemesten Laatst aangepast: 19/10/2026"
+    },
+    {
+     "id": 2691,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 9,
+     "tekst": "per hectare. Neen 16 februari t.e.m. 31 augustus Ja, maar na de oogst van de hoofdteelt mag niet meer bemest worden, behalve in deze drie gevallen: 1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 augustus als de nateelt uiterlijk 31 juli werd ingezaaid. 2) Er wordt uiterlijk 31 augustus een specifieke teelt ingezaaid. Er geldt geen dosisbeperking. 3) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame stikstof per hectare als het vanggewas na 31 juli wordt ingezaaid.*** 1 september t.e.m. 31 oktober Ja, als het gaat om een specifieke teelt die ten laatste 31 augustus werd ingezaaid, dit op voorwaarde dat aan de volgende voorwaarden is voldaan:"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft 36 kg werkzame stikstof per hectare, wat overeenkomt met de aangehaalde stukjes over de dosisbeperking bij een vanggewas dat na 31 juli wordt ingezaaid."
+   }
+  },
+  {
+   "nr": 3,
+   "vraag": "Wat is de fosfaatnorm voor maaigrasland in fosfaatklasse I in 2026?",
+   "antwoord": "De fosfaatnorm voor maaigrasland in fosfaatklasse I is 0 kg P2O5 per hectare per jaar. Controleer de huidige norm bij de Mestbank, want de normen kunnen veranderen. [S2740]",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3605,
+    "uit": 106,
+    "aanroepen": 2
+   },
+   "ms": 3742,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2740,
+     "titel": "Bemestingsnormen en richtwaarden 2026",
+     "datum": "2026-03",
+     "pagina": 16,
+     "tekst": "lijsten van de groenten van groep I, II en III vindt u op pagina 17.\n4.2.1.2 FOSFAATKLASSE IN COMBINATIE MET NATUUR\nTeelt Totale P2O5 (kg/ha, jaar) Klasse I Klasse II Klasse III Klasse IV Grasland Maaien 0 0 0 0 Maaien + grazen 601 601 601 601 Akker 0 0 0 0 & 1 Bemesting alleen via begrazing door maximum 2 grootvee-eenheden/ha op jaarbasis. 2 GVE/ha, jaar komt overeen met 60 kg P2O5/ha, jaar. Die hoeveelheid mag uitsluitend door begrazing afgezet worden.\n4.2.1.3 FOSFAATKLASSE IN COMBINATIE MET NATUUR EN HET KENMERK HUISKAVEL OF ONTHEFFING Voor percelen met het kenmerk ‘huiskavel’ (H) of ‘ontheffing’ (O) of beide (OH), gelden de bemestingsregimes van Fosfaatklasse: algemeen bemestingsregime."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt 0 kg P2O5/ha, maar dat is de norm voor maaigrasland in combinatie met natuur, terwijl het gewone maaigrasland in klasse I volgens de verwachte waarde 115 kg bedraagt; het stuk gaat over natuurpercelen en draagt dus het algemene antwoord niet."
+   }
+  },
+  {
+   "nr": 5,
+   "vraag": "Hoe lang moet een siertelers het register van bestrijdingen bewaren?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3549,
+    "uit": 52,
+    "aanroepen": 2
+   },
+   "ms": 2624,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt dat de informatie niet in de documenten staat, terwijl het juiste antwoord (3 jaar) wel in de Praktijkgids Gewasbescherming: module IPM sierteelt te vinden is, dus het beantwoordt de vraag niet; er worden wel geen beweringen gedaan die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 6,
+   "vraag": "Hoe groot moet de spoelwatertank van een spuittoestel minstens zijn?",
+   "antwoord": "De minimale grootte van de spoelwatertank van een spuittoestel staat niet in mijn documenten. De Mestbank of het Departement Landbouw en Visserij kan je daarover helpen.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3644,
+    "uit": 89,
+    "aanroepen": 2
+   },
+   "ms": 3230,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt dat de informatie niet in de documenten staat, terwijl die wel in de Praktijkgids Gewasbescherming staat (patroon '5 %'), dus de vraag wordt niet beantwoord; er worden geen beweringen gedaan die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 7,
+   "vraag": "Vanaf wanneer telt een grasland als permanent grasland?",
+   "antwoord": "Grasland telt vanaf vier jaar ononderbroken als permanent grasland, volgens de natuurwetgeving [S1908]. Dat staat in een praktijkgids van 2012, dus kijk na bij het Departement Landbouw en Visserij of dat nog steeds zo is.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3405,
+    "uit": 117,
+    "aanroepen": 2
+   },
+   "ms": 3697,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1908,
+     "titel": "Praktijkgids Landbouw en Natuur: graslanden",
+     "datum": "2012",
+     "pagina": 53,
+     "tekst": "graslanden hieronder voor u op een rijtje.\nEen meer gedetail­ leerde uitleg, vindt u in het onderdeel ‘algemene wetgeving’ van deze praktijkgids. 2.4.1 Enkele begrippen Voor een goed begrip van de tekst, is het belangrijk om een duidelijk onderscheid te maken tussen volgende termen: • Blijvend grasland: Blijvend grasland wordt gedefinieerd1 als grond met een natuurlijke of ingezaaide vegetatie van grassen of andere kruidachtige voedergewassen die gedurende ten minste vijf jaar niet in de vruchtwisseling van het bedrijf werd opgenomen.\nIn Vlaanderen is een kwart van het landbouwareaal blijvend grasland (ongeveer 150.000 ha).\n• Permanent grasland: Permanent grasland wordt in de natuurwetgeving gedefinieerd als: “de cultuurgrond die mini­ mum vier jaar ononderbroken grasland is”."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct vier jaar ononderbroken (natuurwetgeving), wat letterlijk in stuk S1908 staat, en de waarschuwing over de leeftijd van de bron (2012) is correct toegevoegd."
+   }
+  },
+  {
+   "nr": 9,
+   "vraag": "Bij welk vochtgehalte spreekt men van droog dorsen van graan?",
+   "antwoord": "Bij droog dorsen van graan spreekt men van een vochtgehalte van minder dan 14% [S2017]. Het vochtgehalte kan ook tussen de 14 en 16% liggen [S2017]. Het vochtgehalte kan ook 85% droge stof zijn [S2023]. De praktijkgids is van 2012, dus kijk de huidige regel na bij de Mestbank of het Departement.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3801,
+    "uit": 153,
+    "aanroepen": 2
+   },
+   "ms": 4563,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2017,
+     "titel": "Praktijkgids Landbouw en Natuur: voedergewassen",
+     "datum": "2012",
+     "pagina": 21,
+     "tekst": "van afweersystemen is de boodschap (imitatie roofvogel, scaryman, afschrikkanon, heliumbal­ lon, linten …) • bejaging: www.jachtinfo.be e. Oogst en bewaring • mogelijkheden • oogst als droog graan (14 à 16% vocht korrel) • oogst en inkuilen van de volledige plant (GehelePlantSilage, GPS) • oogst en inkuilen van deegrijp graan (25 à 40% vocht korrel) • Gemiddelde korrelopbrengsten en ruweiwitopbrengst (% t.o.v.\nDS korrel) per soort (2006) • 4.5 à 6.5 ton /ha • 24 à 30% RE op DS korrel f.\nVoederwaarde = hoogwaardig krachtvoeder!\n• hoge waarden VEM, DVE, OEB en FOS voor veldbonen • ruw eiwit • 24 à 30% RE op DS korrel • grote rasverschillen • eveneens hoog zetmeelgehalte • hoge gehalten aan sporenelementen • melkvee • ok bij begin lactatie • verder in lactatie risico op vervetting wegens hoog zetmeelgehalte • Ca/P-verhouding van ± 0,2 is te laag voor melkvee"
+    },
+    {
+     "id": 2023,
+     "titel": "Praktijkgids Landbouw en Natuur: voedergewassen",
+     "datum": "2012",
+     "pagina": 23,
+     "tekst": "Plant Silage, GPS) bij ± 35 % DS) of als harddeegrijp graan (± 75 % DS) • afrijping erwten bepaalt oogsttijdstip: niet te groen en niet te rijp. • in 1 werkgang met hakselaar uitgerust met ‘Kemperbek’ die maait en het gewas direct hakselt • indien niet beschikbaar: eerst maaien zonder kneuzen – opletten bij samenharken (laag toerental en rijsnel­ heid) – oprapen met hakselaar • oogst als droog graan (± 85 % DS) – opbrengst en voeder(eiwit)waarde sterk afhankelijk van aandeel erwten bij oogst f."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt 'minder dan 14%' en '14 tot 16%', maar de stukjes geven alleen 14 à 16% vocht voor droog graan en niet 'minder dan 14%' als definitie van droog dorsen; de 85% DS uit S2023 is een andere bewering en de bronverwijzing is deels onjuist, terwijl de datumverwijzing wel klopt."
+   }
+  },
+  {
+   "nr": 10,
+   "vraag": "Wat is de werkingscoëfficiënt van vleesvarkensmengmest?",
+   "antwoord": "De werkingscoëfficiënt van vleesvarkensmengmest is 60%. Dat betekent dat je de stikstofinhoud van de mest vermenigvuldigt met 0,6 om de werkelijke hoeveelheid bruikbare stikstof te weten. De werkingscoëfficiënt van kunstmest is 100% [S2996]. De werkingscoëfficiënt van vleesvarkensmengmest is 60%, die van kunstmest is 100% [S2939].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3752,
+    "uit": 186,
+    "aanroepen": 2
+   },
+   "ms": 5026,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2996,
+     "titel": "Toelichting bij het bemestingsplan en -register",
+     "datum": "2025-06",
+     "pagina": 17,
+     "tekst": "kg/ton ton ton\ntotale uitgevoerde bemesting met andere meststoffen (6)\ntotale uitgevoerde bemesting = (4)+(5)+(6) 128 81 0 157,8 70 Duiding: Vleesvarkensmengmest is rijk aan fosfaat waardoor de fosfaatnorm snel vervuld is. Daardoor is aan de gewasbehoefte voor stikstof niet voldaan. Daarom wordt de bemesting uit dierlijke mest aangevuld met kunstmest die louter uit stikstof bestaat. Het gehalte aan stikstof in dit voorbeeld bedraagt 27%. Hou er rekening mee dat als uw perceel in een hoge fosfaatklasse valt, u maar beperkt vleesvarkensmengmest kunt gebruiken. De werkingscoëfficiënt van vleesvarkensmengmest bedraagt 60%; die van kunstmest is 100%. Om de werkelijke hoeveelheid bruikbare stikstof te kennen, vermenigvuldigt u de stikstofinhoud met die coëfficiënten. Over de werkzame stikstof en de werkingscoëfficiënt leest u meer in op de pagina over werkzame stikstof op de website van de VLM."
+    },
+    {
+     "id": 2939,
+     "titel": "Toelichting bij het bemestingsplan en -register",
+     "datum": "2025-06",
+     "pagina": 4,
+     "tekst": "stikstofgift via de bemesting te vermenigvuldigen met een werkingscoëfficiënt die afhankelijk is van de mestsoort. De werkingscoëfficiënten bedragen: kunstmest, spuistroom en effluenten 100% vloeibare dierlijke mest en andere meststoffen (uitgezonderd spuistroom en effluenten) 60% vaste dierlijke mest, traagwerkende meststoffen met attest (uitgezonderd gecertificeerde gft- en groencompost) en boerderijcompost 30% stikstof van rechtstreekse uitscheiding bij begrazing 20% gecertificeerde gft- en groencompost 15%"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "De 60% voor vleesvarkensmengmest (en 100% voor kunstmest) staat letterlijk in S2996 en past bij S2939, maar het antwoord noemt de datum (2025-06) van de bron niet en raadt niet aan de geldende regel na te kijken, en de herhaalde zin is overbodig."
+   }
+  },
+  {
+   "nr": 11,
+   "vraag": "Aan wie worden de bemestingsrechten sinds 2025 toegekend?",
+   "antwoord": "Sinds 2025 worden de bemestingsrechten toegekend aan verwerkingseenheden voor de hoeveelheid stikstof uit dierlijke mest die ze hebben verwerkt, en aan bedrijfsgroepen die hun productie van pluimveemest of van paardenmest, geheel of gedeeltelijk, exporteren. De mestverwerkingscerti���caten zijn overdraagbaar en worden geregistreerd bij de Mestbank. De Vlaamse Regering kan nadere regels vaststellen. De Mestbank reikt eveneens mestverwerkingscerti���caten uit aan mestverzamelpunten, die pluimveemest of paardenmest die in hun mestverzamelpunt opgeslagen is, exporteren. De mestverwerkingscerti���caten worden enkel toegekend voor de verwerking of de export van dierlijke mest, die geproduceerd werd op een in het Vlaamse Gewest gelegen exploitatie [S4667] [S4668].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3638,
+    "uit": 275,
+    "aanroepen": 2
+   },
+   "ms": 7242,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 4667,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 18,
+     "tekst": "gemiddelde van de verwerkingsplicht overeenkomstig de dierlijke mestproductie in elke gemeente en de in die gemeente geldende mestverwerkingsplicht. De Vlaamse Regering kan nadere regels vaststellen.\n§ 3.\nVoor de verwerking van stikstof wordt een systeem van mestverwerkingscertiﬁcaten vastgesteld.\nDe Mestbank reikt mestverwerkingscertiﬁcaten uit aan verwerkingseenheden voor de hoeveelheid stikstof uit dierlijke mest die ze hebben verwerkt.\nDe Mestbank reikt eveneens mestverwerkingscertiﬁcaten uit aan bedrijfsgroepen die hun productie van pluimveemest of van paardenmest, geheel of gedeeltelijk, exporteren, en aan mestverzamelpunten, die pluimveemest of paardenmest die in hun mestverzamelpunt opgeslagen is, exporteren.\nDe mestverwerkingscertiﬁcaten, als vermeld in het tweede en derde lid, worden enkel toegekend voor de verwerking of de export van dierlijke mest, die geproduceerd werd op een in het Vlaamse Gewest gelegen exploitatie."
+    },
+    {
+     "id": 4668,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 18,
+     "tekst": "worden enkel toegekend voor de verwerking of de export van dierlijke mest, die geproduceerd werd op een in het Vlaamse Gewest gelegen exploitatie. De door de Mestbank uitgereikte mestverwerkingscertiﬁcaten, als vermeld in het tweede en derde lid, zijn overdraagbaar.\nDeze overdrachten van mestverwerkingscertiﬁcaten worden geregistreerd bij de Mestbank.\nDe Vlaamse Regering stelt nadere regels vast.\n76385 BELGISCH STAATSBLAD — 29.12.2006 −Ed.\n7 — MONITEUR BELGE"
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "De vraag gaat over bemestingsrechten sinds 2025 (volgens de Startersbrochure past het antwoord bij 'hoofdteelt'), maar het antwoord beschrijft mestverwerkingscertificaten uit het Mestdecreet van 2006 en dus een ander onderwerp; bovendien is de bron uit 2006 en ontbreekt de waarschuwing over de ouderdom, en de bewering 'sinds 2025' wordt door de stukjes niet gedragen."
+   }
+  },
+  {
+   "nr": 13,
+   "vraag": "Tegen wanneer moest de bijkomende bestemming OCS op het perceel staan in 2025?",
+   "antwoord": "De bijkomende bestemming OCS moest op het perceel staan uiterlijk 31 mei 2025. Dit staat in de toelichting bij de verzamelaanvraag 2025 van het Agentschap Landbouw en Zeevisserij [S4453] [S4072] [S3897].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3855,
+    "uit": 142,
+    "aanroepen": 2
+   },
+   "ms": 3925,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 4453,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 59,
+     "tekst": "worden bij de percelen uiterlijk 31 oktober 2025.\nPer perceel kunnen slechts 2 bijkomende bestemmingen van maatregel 2 (OCC, OCM, OCH) worden gezet. Voor maatregel 3 ‘bereiken van de streefwaarde %OC en pH’ moet de bijkomende bestemming ‘OCS’ gezet worden op het perceel uiterlijk 31 mei 2025.\nMaatregel verhogen organisch koolstofgehalte Bijkomende bestemming Aanbrengen van compost OCC Aanbrengen van stalmest/champost OCM Aanbrengen van houtsnippers OCH Bereiken van streefzone voor %OC en pH OCS"
+    },
+    {
+     "id": 4072,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 201,
+     "tekst": "gebeuren.\nDe subsidieaanvraag voor maatregel 2 ‘het gebruik van producten met een hoog koolstofgehalte’ verloopt ook via de verzamelaanvraag 2025. In het scherm ‘Deelnameverklaring’ onder het menu-item ‘Plant/bodem’ wordt jaarlijks aangevinkt voor welke producten (compost, stalmest/champost, houtsnippers) men wil deelnemen uiterlijk 31 mei 2025.\nBovendien moet hier ook een bijkomende bestemming opgegeven worden bij de percelen uiterlijk 31 oktober 2025.\nPer perceel kunnen slechts 2 bijkomende bestemmingen van maatregel 2 (OCC, OCM, OCH) worden gezet.\nVoor maatregel 3 ‘bereiken van de streefwaarde %OC en pH’ moet de bijkomende bestemming ‘OCS’ gezet worden op het perceel uiterlijk 31 mei 2025.\nMaatregel verhogen organisch koolstofgehalte Bijkomende bestemming Aanbrengen van compost OCC Aanbrengen van stalmest/champost OCM Aanbrengen van houtsnippers OCH Bereiken van streefzone voor %OC en pH OCS"
+    },
+    {
+     "id": 3897,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 136,
+     "tekst": "pagina 136 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nWISSELEN VAN PERCELEN MET BIJKOMENDE BESTEMMINGEN Als u een agromilieuklimaatmaatregel hebt afgesloten dan moet de maatregel op dit perceel worden toegepast tot het aflopen van de verbintenis. Agromilieukllimaatmaatregelen worden op vaste percelen afgesloten.\nNa 31 mei kunt u nog een bijkomende bestemming toevoegen op een perceel maar deze wordt niet weerhouden voor betaling.\nDit is ook zo als u eerder op een perceel met een gelijke of grotere oppervlakte de bijkomende bestemming verwijderde.\nU kunt de bijkomende bestemmingen wel nog verwijderen van percelen na 31 mei, niet verwisselen van het ene perceel naar het andere.\nEnkel voor de maatregelen ‘Precisielandbouw – plaatsspecifiek bekalken’ (PK) en het ‘toepassen van producten met hoog organisch koolstofgehalte’ (OCM, OCC, OCH) kunnen de bijkomende bestemmingen nog geplaatst worden op percelen tot respectievelijk 31 augustus 2025 en 31 oktober 2025."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "De datum 31 mei 2025 klopt en staat in S4453 en S4072, maar het antwoord zegt niet hoe oud de bron is (februari 2025) en raadt niet aan de geldende regel na te kijken, en S3897 ondersteunt de OCS-datum niet rechtstreeks."
+   }
+  },
+  {
+   "nr": 14,
+   "vraag": "Hoeveel steun krijg je per hectare voor plaatsspecifiek bekalken?",
+   "antwoord": "Je krijgt 100 euro per hectare voor plaatsspecifiek bekalken [S4294] [S4374] [S4542] [S3903].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 4081,
+    "uit": 91,
+    "aanroepen": 2
+   },
+   "ms": 3345,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 4294,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 7,
+     "tekst": "1.02.2025 Bundel steun - Perceel pagina 7 van 73\nMaatregel Jaar Inhoud maatregel Jaarlijkse vergoeding  Minstens 1 betalingsrecht activeren Bouwland /grasland Precisielandbouw: plaatsspecifiek bekalken (‘PK’) 1  Bodemscan laten uitvoeren voor aanmaak taakkaart  Perceel (min. 0,30 ha) plaatsspecifiek bekalken 100 euro/ha Bouwland /grasland\nActief gebruik van het bodempaspoort 1  Van toepassing op het volledige subsidiabele landbouwareaal  Minstens een aantal bodemstalen laten analyseren voor OC, P-, K- en pH-waarde: > Voor eerste 10 ha landbouwareaal: op minstens 2 percelen > Voor volgende begonnen schijven van 10 ha: minstens 1 perceel > Analyseresultaten ontsluiten via het bodempaspoort  Minstens 1 betalingsrecht activeren  Deelname aan één van de vooropgestelde ecoregelingen/agromilieuklimaatmaatregelen 5 - 15 euro/ha Bouwland"
+    },
+    {
+     "id": 4374,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 34,
+     "tekst": "op betreffende perceel aan te tonen, beschikt u over:  Ofwel as-applied-kaarten die aangeven waar de bekalking daadwerkelijk uitgevoerd is;  Ofwel geotagged-foto’s die genomen zijn via de LV-AgriLens-applicatie;\n Ofwel facturen van loonwerker die de precisiebekalking uitvoerde als dat het geval is.\nDe facturen op uw naam met minstens eenduidige locatiegegevens zoals X- en Y-coördinaten of perceelsnummer uit uw verzamelaanvraag.\n2 SUBSIDIEBEDRAG Het voorziene subsidiebedrag is 100 euro/ha.\n3 SUBSIDIEAANVRAAG De subsidieaanvraag voor de maatregel ‘Precisielandbouw – plaatsspecifiek bekalken’ zal via de verzamelaanvraag 2025 verlopen.\nDe subsidie wordt aangevraagd door de bijkomende bestemming ‘PK’ op te geven bij de percelen waarop u plaatsspecifieke bekalking toepast.\nIn het scherm ‘Deelnameverklaring’ onder het menu-item “Plant/bodem” duidt u uiterlijk 31 mei 2025 aan dat u wil deelnemen aan de maatregel plaatsspecifiek bekalken."
+    },
+    {
+     "id": 4542,
+     "titel": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)",
+     "datum": "2024-02",
+     "pagina": 4,
+     "tekst": "1.02.2024 Het nieuwe GLB 2023-2027 – Algemeen overzicht pagina 4 van 8\nMaatregel J a a r Inhoud maatregel Jaarlijkse vergoeding Bouwland /grasland\nPrecisielandbouw: automatische (RTK-) GPSaansturing (‘PA’) 1  Op volledig bedrijf (min. 80%) toepassen  Automatische aansturing via (RTK)-gps gebruiken bij het toedienen van gewasbeschermingsmiddelen en/of korrelmeststoffen  Minstens 1 betalingsrecht activeren 7 - 90 euro/ha, beperkt tot max. 100 ha Bouwland /grasland Precisielandbouw: plaatsspecifiek bekalken (‘PK’) 1  Bodemscan laten uitvoeren voor aanmaak taakkaart  Perceel (min. 0,30 ha) plaatsspecifiek bekalken 100 euro/ha Bouwland /grasland"
+    },
+    {
+     "id": 3903,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 138,
+     "tekst": "pagina 138 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nMaatregel Jaar Inhoud maatregel Jaarlijkse vergoeding\n Strook tussen/rond de bomen onderhouden zonder gebruik van herbiciden  Vee- en wildbescherming onderhouden Bouwland /grasland\nPrecisielandbouw: automatische (RTK- ) GPS-aansturing (‘PA’) 1  Op volledig bedrijf (min. 80%) toepassen  Automatische aansturing via (RTK)-gps gebruiken bij het toedienen van gewasbeschermingsmiddelen en/of korrelmeststoffen  Minstens 1 betalingsrecht activeren 7 - 90 euro/ha, beperkt tot max. 100 ha Bouwland /grasland Precisielandbouw: plaatsspecifiek bekalken (‘PK’) 1  Bodemscan laten uitvoeren voor aanmaak taakkaart  Perceel (min. 0,30 ha) plaatsspecifiek bekalken 100 euro/ha Bouwland /grasland"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het bedrag van 100 euro per hectare klopt en staat in alle aangehaalde stukjes, maar het antwoord zegt niet hoe oud de bronnen zijn (2024 en 2025) en raadt niet aan de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 16,
+   "vraag": "Hoe breed moet een meerjarige bloemenstrook aan de rand van een fruitboomgaard zijn?",
+   "antwoord": "Een bloemenstrook aan de rand van een fruitboomgaard moet tussen 3 en 6 meter breed zijn [S4304]. De bloemenstrook moet een mengsel van één-, twee- en meerjarige bloeiende kruiden bevatten en er mogen geen gewasbeschermingsmiddelen gebruikt worden [S4304].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 4148,
+    "uit": 137,
+    "aanroepen": 2
+   },
+   "ms": 3813,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 4304,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 9,
+     "tekst": "erosiegevoelig perceel: breedtes van grasbufferstrookerosie  Bloemenstrook verplicht maaien tussen 15/9 en 31/12 Bloemenstrook: 1.745 euro/ha, Fruit Meerjarige bloemstroken in de fruitteelt: tussen de fruitbomenrijen (‘BFB’) 5  Voor plantages met een lineair plantverband van laag- of halfstamfruitbomen en minstens 0,30 ha  Minstens om de drie bomenrijen een mengsel van één-, twee- en meerjarige bloeiende kruiden inzaaien op stroken van minstens 1 m breed  Géén gewasbeschermingsmiddelen gebruiken op de bloemenstrook 82 euro/ha boomgaard Fruit\nMeerjarige bloemstroken in de fruitteelt: aan de rand van de fruitaanplanting (BFR’) 5  Voor plantages met een lineair plantverband van laag- of halfstamfruitbomen  Aan de rand van fruitboomgaard een rij fruitbomen rooien en een bloemenstrook (tussen 3 en 6 m breed) aanleggen  Geen gewasbeschermingsmiddelen gebruiken op de bloemenstrook 10.160 euro/ha bloemenstrook Dier"
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 3 tot 6 m breed voor de randstrook (BFR), en het mengsel van één-, twee- en meerjarige kruiden en het verbod op gewasbeschermingsmiddelen staan in het aangehaalde stukje (het mengsel staat daar bij de strook tussen de rijen, maar het verbod geldt ook voor de randstrook)."
+   }
+  },
+  {
+   "nr": 17,
+   "vraag": "Hoe werkt foto-akoestische spectroscopie om ammoniak te meten?",
+   "antwoord": "Foto-akoestische spectroscopie (PAS) meet de drukveranderingen die optreden wanneer een gas licht absorbeert. Bij PAS worden korte lichtpulsen door het luchtstaal gestuurd, wat resulteert in een akoestisch signaal dat meetbaar is met een microfoon. De amplitude van de geluidsgolf is gecorreleerd aan de concentratie van het gas. De methode is gevoelig aan interferentie van andere gassen, water en organische componenten in het luchtstaal, maar dit wordt deels gecompenseerd door een filter dat specifieke golflengtes doorlaat.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3930,
+    "uit": 184,
+    "aanroepen": 2
+   },
+   "ms": 4827,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "nee",
+    "uitleg": "Het antwoord beschrijft correct het principe (lichtabsorptie, drukveranderingen, akoestisch signaal, microfoon), maar er zijn geen stukjes aangehaald, dus geen enkele bewering is onderbouwd en er is geen vermelding van de datum van de bron."
+   }
+  },
+  {
+   "nr": 18,
+   "vraag": "Waar heeft ILVO sleufsilo's met cementloos beton aangelegd?",
+   "antwoord": "ILVO heeft sleufsilo's met cementloos beton aangelegd op de Dier-site in Merelbeke-Melle [S1203] [S1204] [S1202] [S1171] [S1178].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3517,
+    "uit": 99,
+    "aanroepen": 2
+   },
+   "ms": 3134,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1203,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 129,
+     "tekst": "van cementloos beton tot 70% lager liggen.\nDe bouwheer van dit innovatief bouwproject met geopolymeergebonden of cementloos beton is ILVO. Op de Dier-site in Merelbeke-Melle zijn namelijk 12 nieuwe sleufsilo’s aangelegd voor het inkuilen van courante landbouwgewassen als maïs of gras.\nDe kwaliteit van beton voor dergelijke sleufsilo’s moet zeer hoogstaand zijn, gezien er zure sappen vrijkomen tijdens het fermentatieproces in de kuil.\nBij de aanleg van de sleufsilo’s worden 3 verschillende soorten beton naast elkaar gebruikt: het klassieke ‘benor’ beton, gerecycleerd beton en het cementloos beton.\nElk betontype heeft sensoren die gedurende meerdere jaren realtime data doorsturen naar Buildwise, het innovatiecentrum van de Belgische bouwsector die de resultaten van het cementloos beton zal valideren.\nDoor de gedurfde maar beredeneerde keuze voor dit innovatief bouwmateriaal, draagt ILVO ook als ‘testomgeving’ bij aan nieuwe kansen voor verduurzaming van de landbouwsector."
+    },
+    {
+     "id": 1204,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 129,
+     "tekst": "keuze voor dit innovatief bouwmateriaal, draagt ILVO ook als ‘testomgeving’ bij aan nieuwe kansen voor verduurzaming van de landbouwsector. Persbericht - 25/8/2025 Cementloos beton in ILVO-sleufsilo’s kan CO₂ voetafdruk tot 70% reduceren"
+    },
+    {
+     "id": 1202,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 129,
+     "tekst": "\\ 129 in de media Toekomstige Feed Pilot op PlattelandsTV In de zomer van 2025 maakte themazender PlattelandsTV een special over veevoeder.\nHierin staat ook de bouw van de Feed Pilot van ILVO centraal.\nIn deze installatie zal ILVO precisievoeders maken en testen, uitsluitend voor gebruik bij onderzoek rond landbouwhuisdieren (varkens, pluimvee en rundvee).\nNaast produceren van voeders zal ILVO ook technologisch onderzoek doen.\nVeevoederspecial - Reportage PlattelandsTV persbericht Eerste grootschalig bouwexperiment met cementloos beton in 12 ILVO-sleufsilo’s Na een reeks labo- en piloottesten wordt voor het eerst cementloos beton in een praktijkomgeving toegepast.\nDe mogelijke ecologische winst is groot: in vergelijking met klassiek beton kan de CO2-voetafdruk van cementloos beton tot 70% lager liggen.\nDe bouwheer van dit innovatief bouwproject met geopolymeergebonden of cementloos beton is ILVO."
+    },
+    {
+     "id": 1171,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 118,
+     "tekst": "beschermingsmiddelen) en het gebruiken van CBM (collectieve beschermingsmiddelen) bij werken met chemische stoffen en biologische agentia. Door blijvend in te zetten op kennis en bewustwording versterken we de veiligheidscultuur binnen ILVO.\nNaast voorzien in een adequate opleiding is ook gericht sensibiliseren noodzakelijk.\n2025 is het uitvoeringsjaar van veel infrastructuurprojecten op ILVO Op de site Dier werden de sleufsilo’s vernieuwd met cementloos beton èn beton met gerecycleerde materialen als duurzamer alternatief voor klassiek beton.\nNiet alleen wil ILVO zijn eigen voetafdruk hiermee verkleinen, maar hoopt ook een product te hebben dat beter bestand is tegen de zure werking van dierenvoeders.\nDit project verliep met ondersteuning en cofinanciering van PIO (Programma Innovatieve Overheidsopdrachten).\nOok op deze site werd het elektriciteitsnet vernieuwd van 3 x 230V naar 3 x 400V+N samen met een MS-cabine."
+    },
+    {
+     "id": 1178,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 120,
+     "tekst": "zelf 27 persberichten.\nHoeveel (en welke) grond is in jouw gemeente eigenlijk van de overheid?\nEn waarom is dat vooral voor landbouwers belangrijk? ©HLN - 30 november 2025 Zo wil men haaien aan onze kust in de toekomst beschermen: “We volgen hun routekaart” ©Nieuwsblad - 21 oktober 2025 70 procent minder CO2-uitstoot en (hopelijk) 3 keer langer houdbaar: ILVO bouwt silo's uit cementloos beton in Merelbeke-Melle ©VRT-NWS - 25 augustus 2025 ©Landbouwleven - 6 november 2025 ©Knack - 28 mei 2025 Wetenschappers willen bitterstoffen uit witloof inzetten als natuurlijk insecticide ©VILT - 18 november 2025 Communicatie"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt terecht de Dier-site van ILVO in Merelbeke-Melle, wat in de stukjes (o.a. S1203 en S1178) staat; de bronnen zijn van 2026-03 en het antwoord vermeldt geen ouderdom van de bron, maar dat is hier geen inhoudelijke bewering."
+   }
+  },
+  {
+   "nr": 20,
+   "vraag": "Mag kalk samen met ammoniumhoudende meststoffen worden uitgestrooid?",
+   "antwoord": "Kalkmeststoffen mogen niet in contact komen met andere meststoffen, zeker niet met ammoniumhoudende meststoffen [S1480]. Dit is omdat de bodem-pH stijgt bij het toepassen van kalk, en dan is er meer kans op ammoniakale vervluchtiging [S1484]. Dit betekent dat je niet tegelijkertijd of vlak na elkaar kalk en ammoniumhoudende meststoffen mag uitstrooien.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 4510,
+    "uit": 157,
+    "aanroepen": 2
+   },
+   "ms": 4091,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1480,
+     "titel": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+     "datum": "2014",
+     "pagina": 14,
+     "tekst": "meststoffen haspargiet (K2SO4 + CaSO4), patentkali (K2SO4 + MgSO4) DAP ((NH4)2HPO4), MAP (NH4H2PO4) calciumnitraat/kalksalpeter (Ca(NO3)2) 3.1.3 Aandachtspunten bij bekalking\nKeuzes bij bekalking 3.1.3.1 Bekalken is een praktijk die iedere landbouwer zou moeten toepassen. De bekalking moet integraal deel uitmaken van de bemesting om een kwaliteits- en opbrengstniveau te blijven behouden. Bij de bekalking kunnen we 2 soorten onderscheiden, namelijk de onderhoudsbekalking en de herstelbekalking.\nOpgelet! Kalkmeststoffen mogen niet in contact komen met andere meststoffen, zeker niet met ammoniumhoudende meststoffen.\nEen onderhoudsbekalking is bedoeld om in een teeltrotatie de pH op een optimaal niveau te houden. Deze bekalking compenseert de verliezen en afnames in de grond. Bij een onderhoudsbekalking wordt ongeveer 1000 tot 1500 zbw/ha aangevoerd. Deze onderhoudsbekalking gebeurt eens in de drie tot vier jaar."
+    },
+    {
+     "id": 1484,
+     "titel": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+     "datum": "2014",
+     "pagina": 15,
+     "tekst": "Ca(OH)2, CaCO3, MgO >50 >6 natte schuimaarde CaCO3 18-25 1-2 droge schuimaarde (> 80 % DS) CaCO3 35-40 1-2\nInvloed bodem-pH op N-huishouding 3.1.3.2 N-mineralisatie 3.1.3.2.1 Stikstofmineralisatie is een microbiologisch proces dat beïnvloed wordt door het humusgehalte, de temperatuur, de vochtigheid, de porositeit, bodembewerkingen maar ook door de bodem-pH. Als de pH in de bodem daalt, daalt ook de N-mineralisatie(snelheid).\nAmmoniakale vervluchtiging 3.1.3.2.2 Wanneer u ammoniumhoudende meststoffen gebruikt, zal steeds een gedeelte van de ammonium (NH4 +) vervluchtigen onder de vorm van ammoniak (NH3). Maar ook ammonium dat reeds aanwezig is in de bodem kan op dergelijke wijze vervluchtigen. Naast de temperatuur en de vochtigheid speelt de bodem-pH een belangrijke rol in dit proces: wanneer de bodem-pH stijgt, is er meer kans op ammoniakale vervluchtiging. Op gronden met een pH hoger dan 7,5 à 8 wordt bemesten met ammonium(houdende) meststoffen daarom afgeraden."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord stelt terecht dat kalk niet in contact mag komen met ammoniumhoudende meststoffen en dat een hogere pH de ammoniakvervluchtiging vergroot, maar de afgeleide regel 'niet tegelijkertijd of vlak na elkaar' staat niet in de stukjes, en er is geen vermelding van de bronleeftijd (2014) of advies de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 21,
+   "vraag": "Op hoeveel principes is geïntegreerde gewasbescherming (IPM) gebaseerd?",
+   "antwoord": "Geïntegreerde gewasbescherming (IPM) is gebaseerd op vier principes. De principes zijn: de zorgvuldige afweging van alle beschikbare gewasbeschermingsmethoden, de integratie van passende maatregelen die de ontwikkeling van populaties van schadelijke organismen tegengaan, het gebruik van gewasbeschermingsmiddelen en andere vormen van interventie tot economisch en ecologisch verantwoorde niveaus beperken, en het risico voor de gezondheid van de mens en voor het milieu tot een minimum beperken [S2566].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3730,
+    "uit": 184,
+    "aanroepen": 2
+   },
+   "ms": 4893,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2566,
+     "titel": "Praktijkgids Gewasbescherming: module IPM akkerbouw",
+     "datum": "2019-04",
+     "pagina": 6,
+     "tekst": "met ingang van 1 januari 2014, de principes van IPM toepassen. De officiële definitie van IPM in het kader van deze richtlijn luidt als volgt: “„geïntegreerde gewasbescherming”: de zorgvuldige afweging van alle beschikbare gewasbeschermingsmethoden, gevolgd door de integratie van passende maatregelen die de ontwikkeling van populaties van schadelijke organismen tegengaan, het gebruik van gewasbeschermingsmiddelen en andere vormen van interventie tot economisch en ecologisch verantwoorde niveaus beperkt houden en het risico voor de gezondheid van de mens en voor het milieu tot een minimum beperken. Bij de geïntegreerde gewasbescherming ligt de nadruk op de groei van gezonde gewassen, waarbij de landbouwecosystemen zo weinig mogelijk worden verstoord en natuurlijke plaagbestrijding wordt aangemoedigd.\nINLEIDING"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "IPM is volgens de gids gebaseerd op acht principes, niet vier; het stukje geeft alleen de officiële definitie en noemt geen aantal, dus 'vier principes' (en de opsplitsing van de definitie in vier 'principes') heeft geen steun, en het antwoord vermeldt ook de datum van de bron niet."
+   }
+  },
+  {
+   "nr": 23,
+   "vraag": "Hoeveel begeleidingstrajecten rond peilgestuurde drainage startte het OP-PEIL-project?",
+   "antwoord": "Het OP-PEIL-project startte 36 begeleidingstrajecten rond peilgestuurde drainage [S1222].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3604,
+    "uit": 81,
+    "aanroepen": 2
+   },
+   "ms": 2939,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1222,
+     "titel": "ILVO-mededeling D/2025/14: OP-PEIL, peilgestuurde drainage in Vlaanderen",
+     "datum": "2025-12",
+     "pagina": 4,
+     "tekst": "visualiseert het effect van peilsturing op gewastranspiratie, droogtestress, zuurstofstress, grondwaterstand en andere relevante parameters. Resultaten bij doelgroepondernemingen Het project startte 36 begeleidingstrajecten rond omvorming naar PGD bij unieke bedrijven verspreid over Vlaanderen.\nIn totaal werden negen effectieve omvormingen gerealiseerd, aangevuld met drie implementaties in het kader van experimenten.\nNaast concrete implementaties leidde het project tot een verhoogd bewustzijn over drainage, tot een beter zicht op de praktische haalbaarheid van peilsturing in verschillende contexten en tot het gebruik van digitale tools binnen de sector.\nDe praktijkervaringen leidden tot een ongepland product met betrekking tot de nieuwe regelgeving rond drainage: een knelpuntennota."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt 36 begeleidingstrajecten, wat overeenkomt met het verwachte getal en letterlijk in stuk S1222 staat."
+   }
+  },
+  {
+   "nr": 24,
+   "vraag": "Waar ziet Jürgen Vangeyte het meeste potentieel van AI in de landbouw?",
+   "antwoord": "Jürgen Vangeyte ziet het meeste potentieel van AI in de landbouw in het verbeteren van de beslissingsprocessen van landbouwers. AI kan complexe landbouwsituaties begrijpen en nauwkeurige suggesties geven, waardoor landbouwers sneller en efficiënter kunnen beslissen. Daarnaast biedt AI mogelijkheden voor precisielandbouw, zoals het aansturen van precisiespuitmachines en autonome robots op het veld. AI helpt ook bij het voorspellen van opbrengsten en bij het bedrijfsbeheer, zoals prijsvoorspellingen en risicoanalyse. Ook op milieuvlak biedt AI mogelijkheden, zoals duurzamer water- en nutriëntengebruik en het verminderen van emissies [S1324] [S1318] [S1009] [S1321] [S1320] [S1155].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3564,
+    "uit": 249,
+    "aanroepen": 2
+   },
+   "ms": 6441,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1324,
+     "titel": "Landbouwleven: interview met Jürgen Vangeyte over AI",
+     "datum": "2025-06",
+     "pagina": 1,
+     "tekst": "plexiteit en datakoppelingen, maar de versnelling is ingezet.\nMet Data Space creëren we de motor die AI echt zal doen doorbreken binnen de landbouw. “AI biedt enorme kansen, maar we moeten be Wat zal de impact van artificiële intelligentie (AI) zijn op de landbouwsector?\nHet is voor velen koffiedik kijken.\nJürgen Vangeyte, wetenschappelijk directeur bij het Instituut voor Landbouw­, Visserij­ en Voedingsonderzoek (ILVO), ziet alvast heel wat potentieel.\nWij blikten met hem vooruit.\nJürgen Vangeyte, wetenschappelijk directeur ILVO 28 \u001b\u001a\u0019\u0018\u0018\u0017\u0016\u0018\u0015\u0016 \u0014\u0013 \u0012\u001a\u0011\u001a\u0010\u0012\u0010 “We staan op een cruciaal momentum”, meent Jürgen Vangeyte.\n“AI en digitalise­ ring veranderen niet enkel de manier waarop we aan landbouw doen, maar ook wie aan landbouw kan doen.” Foto: Marc Wallican Jürgen Vangeyte (links) in overleg met zijn ILVO­ collega Simon Cool, coördinator Living Lab Agrifood Tech­ nology.\nFoto: AV"
+    },
+    {
+     "id": 1318,
+     "titel": "Landbouwleven: interview met Jürgen Vangeyte over AI",
+     "datum": "2025-06",
+     "pagina": 1,
+     "tekst": "19/6/2025 www.landbouwleven.be Artificiële of kunstmatige intelligentie is een ver­ zamelnaam voor technologieën die machines in staat stellen om taken uit te voeren waar normaal gespro­ ken menselijke intelligentie voor nodig is, zoals leren, redeneren en beslissingen nemen.\nMaar wat bete­ kent AI vandaag de dag voor de landbouwsector, en wat zijn de toekomstmogelijkheden?\nBinnen het IL­ VO loopt het onderzoek hieromtrent onder leiding van wetenschappelijk directeur Jürgen Vangeyte.\nWe leggen hem enkele vragen voor.\nWat verstaat u onder AI?\n— AI is software die in staat is om te leren uit data en die in staat is om zelfstandig beslissingen of voorspellingen te maken.\nIn plaats van zelf hand­ matig regels of kenmerken te definiëren, gebruik je een datagebaseerde aanpak, waarbij het algo­ ritme zelf op zoek gaat naar patronen om een taak zoals classificatie, objectdetectie of segmentatie zo goed mogelijk uit te voeren."
+    },
+    {
+     "id": 1009,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 67,
+     "tekst": "\\ 67 Precisielandbouw en data Ze zullen complexe landbouwsituaties in hun lokale context kunnen begrijpen en landbouwers bruikbare, nauwkeurige suggesties geven. Ze zullen hierdoor sneller en efficiënter beslissingen kunnen nemen, zonder overdonderd te worden door de overvloed aan data “onder de motorkap\". Jürgen Vangeyte, wetenschappelijk directeur Technologie & Voeding bij ILVO, over het potentieel van multimodale AI-modellen Uit ‘Het komt goed met ons eten’ (2025, p. 58) “ ”"
+    },
+    {
+     "id": 1321,
+     "titel": "Landbouwleven: interview met Jürgen Vangeyte over AI",
+     "datum": "2025-06",
+     "pagina": 1,
+     "tekst": "worden gebruikt voor aansturing van een precisiespuitmachine of een precisieschof­ fel, en zelfs voor het aansturen van autonome robots op het veld. Het helpt ook bij het voorspellen van de opbrengst op basis van satelliet­ of dronebeelds­ cans.\nOok voor bedrijfsbeheer biedt AI mogelijkheden, zo­ als prijsvoorspellingen, risicoanalyse en zelfs admi­ nistratieve vereenvoudiging.\nDenk aan systemen die automatisch GLB­aangiftes voorbereiden op basis van bestaande data.\nTot slot is AI ook inzetbaar op milieuvlak.\nAI onder­ steunt duurzamer water­ en nutriëntengebruik, ver­ mindert emissies en helpt bij klimaatdoelstellingen.\nToegankelijke data zijn een must Is AI al geïmplementeerd in onze landbouwsector?\n— Eerlijk?\nAI zit vandaag nog niet op zijn volle po­ tentieel in de landbouw.\nEn dat komt vooral omdat we de nodige kwalitatieve en toegankelijke data missen.\nEen AI­algoritme is maar zo goed als de da­ ta waarmee je het voedt."
+    },
+    {
+     "id": 1320,
+     "titel": "Landbouwleven: interview met Jürgen Vangeyte over AI",
+     "datum": "2025-06",
+     "pagina": 1,
+     "tekst": "situaties blijft die wel degelijk relevant.\nMogelijkheden in de landbouw Hoe kan AI ingezet worden in de verschillende takken van de landbouw? — AI vindt stilaan zijn weg in bijna alle takken van de landbouw.\nIn de veehouderij wordt AI bijvoorbeeld ingezet om diergedrag te volgen via camera’s en sensoren.\nZo kan je vroegtijdig ziektes opsporen of afwijkingen in gedrag detecteren.\nBij het ILVO werken we bijvoor­ beeld aan een ’digital twin‘ van het varken, een vir­ tuele kopie gebaseerd op data over voeding, groei, gedrag… Die digitale tweeling moet landbouwers straks helpen om hun dieren op individueel niveau optimaal te voederen en gezonder te houden.\nIn de plantaardige productie gebruiken we AI voor automatische onkruiddetectie, het herkennen van bladaantastingen, het detecteren van plagen.\nDeze resultaten kunnen worden gebruikt voor aansturing van een precisiespuitmachine of een precisieschof­ fel, en zelfs voor het aansturen van autonome robots op het veld."
+    },
+    {
+     "id": 1155,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 111,
+     "tekst": "\\ 111 Robotica en AI: SQAT Robotica en artificiële intelligentie (AI) spelen een steeds grotere rol in onze projecten rond landbouw en voeding. Door sensoren, data-analyse en autonome systemen te combineren, verhogen we efficiëntie, precisie en duurzaamheid in landbouwprocessen. AI zet grote hoeveelheden diverse data om in concrete acties, terwijl robotica arbeid efficiënter maakt en nauwkeurige monitoring economisch haalbaar houdt. Een illustratief voorbeeld is het SQAT-project, waarin samen met bedrijven en internationale onderzoeksinstellingen een slimme bodemmappingservice wordt ontwikkeld. Op basis van satellietbeelden en bodemsensordata voeren autonome robots gerichte bodemstaalnames uit. Deze worden ter plaatse geanalyseerd en vertaald naar hoge-resolutie variatiekaarten, die landbouwers ondersteunen bij plaatsspecifieke toepassingen en beter onderbouwde beslissingen."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord somt veel toepassingen op maar noemt administratieve vereenvoudiging (zoals automatisch voorbereide GLB-aangiftes) niet, terwijl dat het verwachte antwoord is; ook staat nergens in de stukjes dat beslissingsondersteuning 'het meeste' potentieel heeft, en het antwoord geeft de datum van de bronnen niet aan."
+   }
+  },
+  {
+   "nr": 26,
+   "vraag": "Welke taken heeft de Mestbank volgens het Mestdecreet?",
+   "antwoord": "De Mestbank heeft verschillende taken volgens het Mestdecreet. Ze moet land- en tuinbouwers informeren over hun mestproductie en het gebruik van meststoffen, en hen begeleiden om de milieudoelstellingen te bereiken. Daarnaast geeft de Mestbank voorlichting over de productie, opslag, vervoer, bewerking en verwerking van meststoffen. De Mestbank moet ook een internetloket aanbieden voor het melden en namelden van mesttransporten. De Mestbank moet ook toezicht houden op de naleving van de mestregels en kan administratieve geldboetes opleggen.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3548,
+    "uit": 172,
+    "aanroepen": 2
+   },
+   "ms": 4185,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt informeren en begeleiden, wat past bij het verwachte patroon, maar de overige taken (internetloket, toezicht, boetes) zijn niet gecontroleerd; er zijn geen stukjes aangehaald, dus niets wordt gesteund en er staat geen waarschuwing over de leeftijd van de bron."
+   }
+  },
+  {
+   "nr": 27,
+   "vraag": "Mag ik op 20 november drijfmest uitrijden op grasland?",
+   "antwoord": "Ik kan je niet vertellen of je op 20 november drijfmest mag uitrijden op grasland. De uitrijkalender zegt dat je dat niet mag. De uitrijkalender is een hulpmiddel, geen bindend advies. Controleer de huidige regels bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 2051,
+    "uit": 117,
+    "aanroepen": 2
+   },
+   "ms": 3353,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": "type 2 op grasland: Neen. Periode 08-15 t.e.m. 02-15 (Overzicht uitrijregeling (VLM Mestbank, augustus 2026)).",
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerst dat het het niet kan zeggen en daarna dat de uitrijkalender het niet toestaat, wat tegenstrijdig en onduidelijk is, hoewel het 'niet mogen' wel de juiste strekking is; de aangehaalde stukjes zijn leeg en de bewering over de kalender is enkel in de losse [K]-regel te vinden, niet in een aangehaald stukje."
+   }
+  },
+  {
+   "nr": 29,
+   "vraag": "Hoeveel kost een nieuwe tractor van 150 pk?",
+   "antwoord": "Dat staat niet in mijn documenten. De prijzen van tractoren kunnen sterk variëren afhankelijk van het merk, het model en de specifieke kenmerken. Voor de meest actuele informatie raad ik aan om contact op te nemen met een tractordealer of te kijken op websites van tractorfabrikanten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3819,
+    "uit": 117,
+    "aanroepen": 2
+   },
+   "ms": 3156,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat en geeft enkel algemeen advies om een dealer te raadplegen, zonder inhoudelijke beweringen die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 30,
+   "vraag": "Wat is deze week de prijs van bintjes op de beurs van Roeselare?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3903,
+    "uit": 50,
+    "aanroepen": 2
+   },
+   "ms": 2212,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat, wat klopt met wat we weten, en er worden geen beweringen gedaan die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 31,
+   "vraag": "Hoe behandel ik kreupelheid bij een paard?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3450,
+    "uit": 50,
+    "aanroepen": 2
+   },
+   "ms": 2424,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat, wat klopt, en doet geen beweringen die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 33,
+   "vraag": "Wat is het btw-tarief op kunstmest in België?",
+   "antwoord": "Dat staat niet in mijn documenten. Het btw-tarief op kunstmest in België kan je vinden op de website van de FOD Financiën.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3628,
+    "uit": 92,
+    "aanroepen": 2
+   },
+   "ms": 2994,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat het niet in de documenten staat en verwijst naar de FOD Financiën zonder een inhoudelijke bewering over het tarief te doen."
+   }
+  },
+  {
+   "nr": 35,
+   "vraag": "Hoe lang moet een groenbedekker na de oogst blijven staan op leemgrond?",
+   "antwoord": "De praktijkgidsen geven geen specifieke duur voor een groenbedekker op leemgrond. Ze beschrijven wel dat groenbedekkers helpen om verslemping of dichtslaan van de bodem te voorkomen en de waterinfiltratie te verbeteren. De praktijkgidsen geven ook aan dat de ontwikkeling van de groenbedekker belangrijk is om de positieve invloeden te maximaliseren. De lezer kan de Mestbank raadplegen voor specifieke aanbevelingen.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3721,
+    "uit": 160,
+    "aanroepen": 2
+   },
+   "ms": 4710,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord beweert dat de praktijkgidsen geen duur geven, terwijl het juiste antwoord (tot 30 november, volgens het Overzicht uitrijregeling) bestaat, en er zijn geen stukjes aangehaald die de beweringen over verslemping en waterinfiltratie ondersteunen."
+   }
+  },
+  {
+   "nr": 36,
+   "vraag": "Hoeveel fosfor mag ik geven op weiland dat gemaaid wordt, in de laagste klasse?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3800,
+    "uit": 48,
+    "aanroepen": 2
+   },
+   "ms": 2008,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat volgens de referentie wel in de documenten (Bemestingsnormen en richtwaarden 2026, norm 115), dus beweren dat het er niet in staat is fout, al bevat het antwoord zelf geen beweringen die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 37,
+   "vraag": "Hoe lang moet ik bijhouden welke pesticiden ik spoot in de sierteelt?",
+   "antwoord": "Je moet de bestrijdingen van pesticiden in de sierteelt drie jaar bijhouden. Dit register moet de naam van het product, het gewas, de plaats en de dosis vermelden. Het is ook aan te raden om de monitoringsmethode, de niet-chemische gewasbescherming en het resultaat van de bestrijding te registreren. De huidige regels kun je nakijken bij de Mestbank of het Departement [S2653].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3147,
+    "uit": 162,
+    "aanroepen": 2
+   },
+   "ms": 5227,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2653,
+     "titel": "Praktijkgids Gewasbescherming: module IPM sierteelt",
+     "datum": "2019-04",
+     "pagina": 21,
+     "tekst": "18.04.2019 Praktijkgids gewasbescherming/katern sierteelt pagina 21 van 22\nAfbeelding 12 : Poster 'Erkende middelen in de sierteelt' van het PCS met de verschillende resistentiegroepen (Proefcentrum voor Sierteelt) REGISTRATIE 8 In het kader van de sectorgids primaire plantaardige productie (FAVV) moeten alle bestrijdingen genoteerd worden. Hierbij dient u de naam van het product, het gewas, de plaats en de dosis te vermelden. Dit register moet 3 jaar bewaard worden. Het is aangewezen om ook de monitoringsmethode, de niet chemische gewasbescherming en het resultaat van de bestrijding te registreren. CHECKLIST IPM-RICHTLIJNEN 9 Om na te gaan of de professionele gebruiker van gewasbeschermingsmiddelen voldoet aan de toepassing van de richtlijnen, werd een checklist opgesteld waarbij snel nagegaan kan worden of er voldoende inspanningen geleverd werden."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 3 jaar en de bijkomende registratie-inhoud staat in het stukje; de verwijzing naar Mestbank of Departement om de geldende regel na te kijken is een toegestane zin zonder bron nodig."
+   }
+  },
+  {
+   "nr": 38,
+   "vraag": "Welk deel van de stikstof uit varkensdrijfmest kan het gewas echt gebruiken?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3479,
+    "uit": 55,
+    "aanroepen": 2
+   },
+   "ms": 2741,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat volgens de referentie wel in de documenten (60 %), dus beweren dat het er niet in staat is fout, al bevat het antwoord zelf geen onderbouwde beweringen."
+   }
+  },
+  {
+   "nr": 39,
+   "vraag": "Hoeveel proper water moet ik meenemen op de veldspuit om ze daar te kunnen spoelen?",
+   "antwoord": "Je moet minstens 5% van het volume van de spuitvloeistoftank aan proper water meenemen om de veldspuit te kunnen spoelen. Het is beter om 10% te nemen, zodat je het toestel goed kunt reinigen en door te spoelen op het veld. Dat voorkomt problemen of verstoppingen [S2405].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3575,
+    "uit": 141,
+    "aanroepen": 2
+   },
+   "ms": 3657,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2405,
+     "titel": "Praktijkgids Gewasbescherming (algemeen deel)",
+     "datum": "2019-04",
+     "pagina": 48,
+     "tekst": "18.04.2019 Praktijkgids gewasbescherming pagina 47 van 92\nAfbeelding 29: Fustreiniger • een spoelwatertank (minimaal 5% van volume spuitvloeistoftank, bij voorkeur 10%): men heeft te velde steeds een reserve zuiver water nodig om het toestel op het veld te reinigen en door te spoelen. Op die manier hoeft u niet voor elke reiniging terug te keren en voorkomt u problemen of verstoppingen. Het vullen van de spoelwatertank mag NIET met dezelfde pomp gebeuren als waarmee u spuit. De pomp behoort immers tot het 'vervuilde' circuit van het spuittoestel en zou bij gebruik ervan voor het vullen van de spoelwatertank, deze laatste vervuilen. Het reinigen van het toestel gebeurt in 3 stappen, telkens met 1/3 van het volume van de spoelwatertank. • een handenwastankje (15 à 25 liter): bevat eveneens ‘schoonwater’ maar dan bedoeld om de handen te wassen. Dit tankje kan enkel extern gevuld worden."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct minimaal 5% van het volume van de spuitvloeistoftank (bij voorkeur 10%) en dit wordt volledig door het aangehaalde stukje gedragen."
+   }
+  },
+  {
+   "nr": 40,
+   "vraag": "Mag ik kalk en ammonitraat samen strooien?",
+   "antwoord": "Dat staat niet in mijn documenten. De praktijkgidsen geven wel aan dat je kalk en ammoniumsulfaat samen kan strooien, maar niet of je dat ook mag met ammonitraat. De mestregels en het Mestdecreet zeggen niets over het samen strooien van kalk en ammonitraat. De Mestbank kan je daarover meer vertellen.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3430,
+    "uit": 141,
+    "aanroepen": 2
+   },
+   "ms": 3735,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het juiste antwoord is 'niet/nee' en staat in de Praktijkgids Bemesting, maar het systeem beweert dat het niet in de documenten staat, terwijl er bovendien geen stukjes zijn aangehaald om beweringen over ammoniumsulfaat of het Mestdecreet te dragen."
+   }
+  },
+  {
+   "nr": 41,
+   "vraag": "Hoeveel kost het gemiddeld om een nieuw bestrijdingsmiddel toegelaten te krijgen?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3548,
+    "uit": 52,
+    "aanroepen": 2
+   },
+   "ms": 1923,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat volgens ons wel in de Praktijkgids Gewasbescherming (circa 190 miljoen), dus beweren dat het niet in de documenten staat is fout, al bevat het antwoord zelf geen beweringen die bron nodig hebben."
+   }
+  },
+  {
+   "nr": 43,
+   "vraag": "Hoeveel bomen per hectare mogen er hoogstens staan op een perceel met boslandbouw?",
+   "antwoord": "Dat staat niet in mijn documenten.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3819,
+    "uit": 48,
+    "aanroepen": 2
+   },
+   "ms": 1847,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord (maximaal 200 bomen per hectare) staat wel in de Toelichting bij de verzamelaanvraag 2025, dus beweren dat het niet in de documenten staat is onjuist, al doet het antwoord zelf geen beweringen die een bron nodig hebben."
+   }
+  },
+  {
+   "nr": 45,
+   "vraag": "Hoeveel stikstof uit dierlijke mest mocht er onder derogatie op grasland?",
+   "antwoord": "In 2025 mocht er onder derogatie 250 kg stikstof uit dierlijke mest per hectare op grasland. Dat staat in de praktijkgids en in de toelichting bij het bemestingsplan en -register. De derogatievoorwaarden staan in de jaarlijkse brochure ‘Derogatievoorwaarden’ van het Departement Landbouw en Visserij. De derogatievoorwaarden kunnen veranderen, kijk daarom de huidige voorwaarden na bij de Mestbank of het Departement [S1395] [S2957] [S2959].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3867,
+    "uit": 200,
+    "aanroepen": 2
+   },
+   "ms": 5026,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1395,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 19,
+     "tekst": "13 5.4.1 Derogatie toepassen? Derogatie (2011-2014) laat toe om voor een aantal gewassen meer dierlijke mest op te brengen dan de algemeen geldende bemestingsnorm van 170 kg N/ha, namelijk: Tabel 2 Maximale hoeveelheid N uit dierlijke mest voor derogatieteelten Gewas Maximale hoeveelheid N uit dierlijke mest, inclusief begrazing (in kg N/ha) Grasland 250 Maïs voorafgegaan door één snede gemaaid en afgevoerd gras 250 Maïs voorafgegaan door één snede geoogste en afgevoerde snijrogge 250 Wintertarwe gevolgd door een niet-vlinderbloemig vanggewas 200 Triticale gevolgd door een niet-vlinderbloemig vanggewas 200 Suikerbieten 200 Voederbieten 200\nIn de jaarlijkse brochure ‘Derogatievoorwaarden’ vindt u de (extra) voorwaarden die nageleefd moeten worden met betrekking tot de aanvraag, mestsoort, uitrijregeling, beheer van grasland, mest- en bodemanalyses, Bemestingsplan en -register."
+    },
+    {
+     "id": 2957,
+     "titel": "Toelichting bij het bemestingsplan en -register",
+     "datum": "2025-06",
+     "pagina": 8,
+     "tekst": "9 2250 2250\n1800 2200,5\n630 655,2\nmais zonder derogatie 7 1190 896\n945 956,2\n490 490\nvoederbieten met derogatie 1 200 198,8\n235 59,6\n85 40,6 aardappelen 1 170 168\n190 165,6\n70 49\nmaaiweide met derogatie 7 1750 1747,2\n2100 2088,1\n665 509,6\ntriticale 4 680 192\n720 692,4\n300 84\nhuiskavel met derogatie 9 2250 2169\n2115 1640,7\n630 783\ngraasweide met derogatie 4 1000 1007,6\n940 987,6\n380 334\ntotale bedrijfsnorm\n4 Nu kunnen de totale bedrijfsnormen van uw bedrijf berekend worden voor stikstof uit dierlijke mest, werkzame stikstof en fosfaat, telkens volgens de normen van het decreet en zoals u het ingepland hebt. De som van de wettelijke bemestingsnormen geeft uw totale bedrijfsnormen weer. Dat totaal mag u niet overschrijden, niet voor stikstof uit dierlijke mest, niet voor de werkzame stikstof en niet voor fosfaat. Als het totaal van de geplande bemesting voor een van die parameters toch hoger is dan de respectieve bedrijfsnorm, moet u uw bemestingsplan bijsturen."
+    },
+    {
+     "id": 2959,
+     "titel": "Toelichting bij het bemestingsplan en -register",
+     "datum": "2025-06",
+     "pagina": 8,
+     "tekst": "9 2250 2169\n2115 1640,7\n630 783\ngraasweide met derogatie 4 1000 1007,6\n940 987,6\n380 334\ntotale bedrijfsnorm 42 9490 8628,6\n9045 8790,7\n3250 2945,4 In het voorbeeldbedrijf liggen de totaal geplande hoeveelheden nutriënten lager dan de totale bedrijfsnormen, zowel voor stikstof uit dierlijke mest, voor werkzame stikstof als voor fosfaat."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "De 250 kg N/ha klopt volgens de praktijkgids (2011-2014), maar het antwoord zegt dat dit \"in 2025\" gold terwijl de gids uit 2014 komt, en de toelichting uit 2025 noemt dat cijfer niet en de derogatiebrochure staat enkel als verwijzing in S1395."
+   }
+  },
+  {
+   "nr": 47,
+   "vraag": "Hoe hoog worden maïsplanten?",
+   "antwoord": "Maïsplanten worden meestal 2 tot 4 meter hoog. De hoogte hangt af van het ras en de groeiomstandigheden. [S1966]",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3909,
+    "uit": 82,
+    "aanroepen": 2
+   },
+   "ms": 2531,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1966,
+     "titel": "Praktijkgids Landbouw en Natuur: maïs",
+     "datum": "2012",
+     "pagina": 14,
+     "tekst": "67 Praktijkgids Landbouw en Natuur 3.4 Landschappelijke integratie maïsteelt In Nederland wordt er onderzoek gedaan naar ‘landschapsmaïs’.\nDe bedoeling van ’landschapsmaïs’ is om het land­ schapsonvriendelijke aspect van de gangbare maïsrassen te verbeteren.\nMaïsplanten kunnen afhankelijk van hun ras 2 tot 4 m hoog worden.\nHierdoor wordt het zicht vooral ontnomen in de maanden juli, augustus en september.\nDe openheid van het landschap en de verkeersveiligheid komen hierbij in het gedrang.\nLandschapsmaïs is zeer korte maïs (1,5 tot 1,7 m) met relatief veel kolf en een zeer kort groeiseizoen die een hoogwaardig ruwvoeder oplevert met een goede verteerbaarheid.\nDoor de hoge kwaliteit kan er ook voor gekozen worden de maïs te gebruiken als krachtvoer.\nDoor het korte seizoen waar­ bij het de bedoeling is dat een DS-gehalte van 32 à 33 % bereikt wordt omstreeks half augustus, is het nog mogelijk om een nateelt te zetten.\nOok de keuze van een mogelijke groenbemester wordt groter."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord '2 tot 4 meter' klopt en staat in het stuk, maar de toevoeging dat de hoogte ook van de groeiomstandigheden afhangt staat er niet in (alleen het ras wordt genoemd), en er is geen vermelding van de leeftijd van de bron (2012) of advies om dit na te kijken."
+   }
+  },
+  {
+   "nr": 49,
+   "vraag": "Om de hoeveel jaar moet ik minstens een bodemanalyse laten doen volgens de IPM-richtlijnen?",
+   "antwoord": "Volgens de richtlijnen moet je minstens om de 4 jaar een bodemanalyse laten doen. [S2717]",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3493,
+    "uit": 74,
+    "aanroepen": 2
+   },
+   "ms": 2299,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2717,
+     "titel": "Bemestingsnormen en richtwaarden 2026",
+     "datum": "2026-03",
+     "pagina": 8,
+     "tekst": "in de landbouwstreken Kempen en Vlaamse zandstreek, behalve de percelen in Vlaams-Brabant. Alle andere percelen behoren tot de niet-zandbodems. De fosfaatnormen worden gekoppeld aan het plantbeschikbaar fosfaatgehalte in de bodem. Op basis daarvan worden de percelen opgedeeld in 4 klassen (I, II, III en IV). Met een bodemanalyse kan een landbouwer aantonen in welke fosfaatklasse een perceel valt. Vanaf 2017 worden alle percelen die niet beschikken over een bodemanalyse standaard ingedeeld in klasse IV. Alleen de percelen van maximaal 0,5 ha in gebiedstype 0 en 1 en de percelen in gebiedstypes 2 en 3 van maximaal 0,3 ha blijven in de referentieklasse III als er geen analyse beschikbaar is. Een fosfaatanalyse vraagt u aan via SNapp op het Mestbankloket."
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt 4 jaar, wat binnen het verwachte '4 tot 5 jaar' valt maar onvolledig is, en het aangehaalde stukje over bemestingsnormen noemt helemaal geen termijn voor bodemanalyses volgens de IPM-richtlijnen, dus de bron draagt het antwoord niet."
+   }
+  },
+  {
+   "nr": 51,
+   "vraag": "Hoeveel drijfmest per hectare geef je best aan aardappelen zodat je het nog kunt onderwerken?",
+   "antwoord": "Je geeft best 30-35 m³ drijfmest per hectare aan aardappelen zodat je het nog kunt onderwerken. De dosis wordt beperkt om voldoende ondergewerkt te kunnen worden [S3492].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3873,
+    "uit": 103,
+    "aanroepen": 2
+   },
+   "ms": 3017,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 3492,
+     "titel": "Goede praktijken voor de bemesting (klimaatadaptief)",
+     "datum": "2021-03",
+     "pagina": 20,
+     "tekst": "pagina 20 van 25 Praktijkgids-Goede praktijken voor de bemesting van aardappelen en maïs 20.01.2021\nRijenbemesting met organische mest wordt met het oog op capaciteitsproblemen best los gezien van de zaai. Door gebruik te maken van RTK-GPS bij het bemesten en zaaien kan de mest worden toegediend waar de maïs zal gezaaid worden. Er moet vermeden worden dat het maïszaad in de drijfmest terechtkomt. Dit resulteert immers in een slechtere opkomst. Met minerale meststoffen kan tot ca. 50 kg N/ha worden toegediend in de rij. Om zoutschade te vermijden wordt best niet meer dan 200 kg meststof/ha in de rij toegediend. De dosis drijfmest wordt best beperkt tot 30-35 m³/ha om voldoende ondergewerkt te kunnen worden."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "De waarde van 30-35 m³/ha komt overeen met het verwachte antwoord, maar het aangehaalde stukje gaat over rijenbemesting bij maïs en noemt aardappelen niet, dus die toepassing op aardappelen is niet door de tekst gedekt."
+   }
+  },
+  {
+   "nr": 53,
+   "vraag": "Hoeveel stikstof had maïs nodig in een ruime vruchtwisseling, tegenover maïs na maïs?",
+   "antwoord": "Maïs in een ruime vruchtwisseling heeft minder stikstof nodig dan maïs na maïs. Bij maïs na maïs is de stikstofbehoefte hoger omdat de bodem minder stikstof heeft opgebouwd. De exacte hoeveelheden stikstof staan niet in mijn documenten. De mestregels van de VLM geven de maximale hoeveelheden stikstof die je mag uitbrengen, maar niet de hoeveelheden die je nodig hebt. De praktijkgidsen geven geen exacte hoeveelheden, maar zeggen dat maïs na maïs meer stikstof nodig heeft.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 5716,
+    "uit": 223,
+    "aanroepen": 2
+   },
+   "ms": 5812,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt geen cijfers (het juiste antwoord bevat 102), beweert zonder enig aangehaald stukje dat maïs na maïs meer stikstof nodig heeft en wat de VLM-regels en praktijkgidsen zeggen, en geeft geen bronleeftijd of advies om de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 55,
+   "vraag": "Tot wanneer worden de nitraatstalen in het najaar genomen volgens het nieuwe mestactieplan?",
+   "antwoord": "Nitraatstalen worden in het najaar genomen van 1 oktober tot 15 november. Dit is nodig om te kijken of er te veel nitraat achterblijft in de bodem na het teeltseizoen. Dit helpt om de waterkwaliteit te verbeteren door de nitraatuitspoeling naar het grond- en oppervlaktewater te verminderen. [S3454]",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3932,
+    "uit": 157,
+    "aanroepen": 2
+   },
+   "ms": 4001,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 3454,
+     "titel": "Goede praktijken voor de bemesting (klimaatadaptief)",
+     "datum": "2021-03",
+     "pagina": 8,
+     "tekst": "pagina 8 van 25 Praktijkgids-Goede praktijken voor de bemesting van aardappelen en maïs 20.01.2021\nAARDAPPELEN EN MAÏS IN HET MESTACTIEPLAN In Vlaanderen wordt op het einde van het teeltseizoen (1/10-15/11) het nitraatresidu gemeten om in te schatten of er te veel nitraat is achtergebleven in de bodem.\nAls er veel nitraat achterblijft na het teeltseizoen, neemt de nitraatuitspoeling naar het grond- en oppervlaktewater tijdens de wintermaanden toe.\nDe landbouwers worden daarom aangezet om scherp op de snee te bemesten, de nitraatrest te beperken en zo mee te zorgen voor een goede waterkwaliteit.\nIn sommige situaties en voor sommige teelten is het een hele uitdaging om een voldoende laag residu te behalen.\nPercelen met aardappelen of groenten tonen gemiddeld de hoogste nitraatresidu’s, gevolgd door maïs (Figuur 4).\nZeker in jaren gekarakteriseerd door atypische weersomstandigheden wordt vaak een hoger nitraatresidu gemeten in gewassen zoals maïs, aardappelen, groenten en sierteelt."
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt 15 november als einddatum (uit een document van 2021), terwijl het nieuwe mestactieplan (MAP 7) 30 november aangeeft; de stukjes ondersteunen de periode 1/10-15/11 wel, maar niet dat dit voor het nieuwe plan geldt, en er is geen vermelding van de ouderdom van de bron of advies om de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 57,
+   "vraag": "Hoeveel vergoeding per hectare krijg je als het bemestingsverbod op je perceel ingaat in 2027?",
+   "antwoord": "Dat staat niet in mijn documenten. De documenten zijn ook al drie jaar oud. Kijk de huidige regel na bij het Agentschap Landbouw en Zeevisserij.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3958,
+    "uit": 81,
+    "aanroepen": 2
+   },
+   "ms": 2763,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt dat het niet in de documenten staat, terwijl het juiste antwoord (rond 13.125 euro per hectare) wel in de Toelichting PAS 2026 te vinden is, dus de claim dat het ontbreekt is fout; er worden geen inhoudelijke beweringen gedaan die bron nodig hebben."
+   }
+  },
+  {
+   "nr": 59,
+   "vraag": "Wat krijg ik per hectare als ik onkruid wegschoffel in plaats van te spuiten?",
+   "antwoord": "Je kunt onkruid mechanisch bestrijden door te schoffelen, te wieden, te aanaarden of door gebruik te maken van specifieke toestellen zoals kooirollen, hoekschoffels, hydraulisch aangedreven horizontale schijven, kleine freesjes, torsiewieders, wiedharken of vingerwieders. Het is belangrijk om de ontwikkeling van onkruid en gewas continu op te volgen om op het juiste moment in te kunnen grijpen. De weersomstandigheden spelen hierbij een cruciale rol. Het is ook mogelijk om thermische onkruidbestrijding toe te passen, zoals borstelen of branden met een vlam of infraroodstraling. Het is belangrijk om de huidige praktijkgids te raadplegen voor de meest actuele informatie, omdat de gids uit 2019 dateert.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3680,
+    "uit": 241,
+    "aanroepen": 2
+   },
+   "ms": 5499,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt geen bedrag per hectare (verwacht ca. 310 euro) en somt alleen mechanische technieken op, terwijl er geen enkel stukje is aangehaald dat deze beweringen ondersteunt."
+   }
+  },
+  {
+   "nr": 61,
+   "vraag": "Hoe lang duurt het om het fosforgehalte van mijn grond één punt te verhogen als ik 20 kg extra fosfaat geef?",
+   "antwoord": "Dat staat niet in mijn documenten. De tijd die het kost om het fosforgehalte van de grond te verhogen, hangt af van verschillende factoren zoals de bodemsoort, de huidige fosforgehalte, en de manier waarop het fosfaat wordt toegevoegd. Het is het beste om een bodemanalyse te laten uitvoeren en advies in te winnen bij de Mestbank.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3656,
+    "uit": 130,
+    "aanroepen": 2
+   },
+   "ms": 3498,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt dat het niet in de documenten staat, terwijl het wel in de Praktijkgids fosforbemesting staat (16 jaar), dus het is fout; bovendien noemt het factoren (bodemsoort, toedieningswijze) zonder steun in aangehaalde stukjes, al is de verwijzing naar de Mestbank wel toegestaan."
+   }
+  },
+  {
+   "nr": 63,
+   "vraag": "Ik heb drie paarden op anderhalve hectare: moet ik dan aangifte doen bij de Mestbank?",
+   "antwoord": "Ja, je moet aangifte doen bij de Mestbank. Je hebt drie paarden op anderhalve hectare. Paarden produceren 21 kg P2O5 per dier per jaar. Je paarden produceren samen 63 kg P2O5 per jaar. Je mag je aangifte bij de Mestbank vrijstellen omdat je minder dan 300 kg fosfaat produceert. Maar je moet wel aangifte doen om je vrijstelling te vragen. [S2868] [S2878]",
+   "stappen": 1,
+   "gebruik": {
+    "in": 4613,
+    "uit": 155,
+    "aanroepen": 2
+   },
+   "ms": 4201,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 2868,
+     "titel": "Brochure voor landbouwers met vrijstelling van aangifteplicht",
+     "datum": "2025-08",
+     "pagina": 5,
+     "tekst": "Daarin vindt u de uitscheiding per diersoort terug in kg per dier per jaar. Met die gegevens kunt u berekenen hoeveel fosfaat uw dieren produceren. Voorbeeld: U hebt 3 gewone rijpaarden. Die dieren vallen in de categorie ‘paarden en pony’s van 200 tot 600 kg’. Elk paard uit die categorie produceert jaarlijks 21 kg P2O5 en 50 kg N. Jaarlijks produceren die paarden 63 kg P2O5 en 150 kg N. U kunt bijgevolg een vrijstelling van de aangifteplicht aanvragen omwille van de jaarlijkse fosfaatproductie van minder dan 300 kg fosfaat, op voorwaarde dat u ook aan de andere voorwaarden voor de vrijstelling voldoet."
+    },
+    {
+     "id": 2878,
+     "titel": "Brochure voor landbouwers met vrijstelling van aangifteplicht",
+     "datum": "2025-08",
+     "pagina": 9,
+     "tekst": "5.08.2025 Startersbrochure pagina 9 van 12 Voorbeeld: U wilt uw gronden bemesten met drijfmest. Een naburige landbouwer kan u die mest leveren. Volgens het overzicht van de bemestingsnormen, mag u uw gronden bemesten met 255 kg stikstof en 105 kg fosfaat. De mest van uw paarden komt ook terecht op uw gronden. Zij produceren 150 kg stikstof en 63 kg fosfaat. U kunt dus nog 105 kg stikstof en 42 kg fosfaat ontvangen om uw gras te bemesten."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord begint met 'Ja, je moet aangifte doen' en spreekt zichzelf tegen, want de bron zegt dat je een vrijstelling van de aangifteplicht kunt aanvragen (mits je aan de andere voorwaarden voldoet), terwijl de bewering dat je 'wel aangifte moet doen om vrijstelling te vragen' niet in de stukjes staat, en er ontbreekt een verwijzing naar de ouderdom van de bron en een advies om de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 65,
+   "vraag": "Hoeveel minder ammoniak gaf het vernevelen van een ureaseremmer op de stalvloer?",
+   "antwoord": "Het vernevelen van 10 mg/m² ureaseremmer op de stalvloer gaf een ammoniakemissiereductie van 11%, en 25 mg/m² van 21% [S759]. Het vernevelen van 2,5 mg/m² Inhibitor K op de stalvloer gaf een ammoniakemissiereductie van 40-68% [S756].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3851,
+    "uit": 149,
+    "aanroepen": 2
+   },
+   "ms": 3613,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 759,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 7,
+     "tekst": "ventilatie (Schulte et al., 2022).\nDe experimenten werden uitgevoerd in 5 identieke afdelingen met 4 hokken per afdeling en 10 varkens per hok. In totaal waren er 4 test periodes van 32 dagen (bestaande uit 14 dagen referentie, 4 dagen applicatie en 14 dagen uitloopperiode), verspreid over 3 afmestrondes en alle seizoenen in de periode 2019-2020.\nHierdoor was het mogelijk om zowel een case-control doorheen de tijd als een directe case-control over de verschillende compartimenten uit te voeren.\nIn 3 afdelingen werd tijdens de applicatieperiode dagelijks respectievelijk 10, 25 of 50 mg/m² ureaseremmer op de roosters verdeeld via een ruggedragen drukspuit.\nIn 1 van de afdelingen werd enkel met water gespoten, in de laatste afdeling werd niets toegepast (controle).\nHieruit bleek dat het vernevelen van water geen effect had op de ammoniakemissies, 10 mg/m² ureaseremmer zorgde voor een ammoniakemissiereductie van 11% en 25 mg/m² voor 21%.\nHet verder verhogen van de toegediende"
+    },
+    {
+     "id": 756,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 7,
+     "tekst": "herhaalde toediening op de stalvloer kan de invloed van deze factoren beperkt worden.\nIn een onderzoek door Hagenkamp-Korth, Haeussermann, et al. (2015) met dagelijkse toepassingen van 2,5mg/m² PPDA-inhibitor op drie verschillende melkveestallen gedurende 3 seizoenen kon de urease-activiteit gemiddeld met 80% verminderd worden, met een lagere graad van inhibitie in de zomer (66-78%) dan in de winter (96%).\nIn een recent praktijkonderzoek met PPDA werd de jaarlijkse ammoniakemissiereductie ingeschat op 10-31% in melkveestallen met mechanische ventilatie en een roostervloer (Bobrowski, van Dooren, et al., 2021).\nBij een gelijkaardige studie bij 2 praktijkstallen met een volle vloer en natuurlijke ventilatie werd een ammoniakemissiereductie van 40-68% bekomen, met een geschatte jaarlijkse emissiereductie tot 58% (Bobrowski, Willink, et al., 2021) wanneer dagelijks 2,5 mg Inhibitor K verneveld werd op de stalvloer."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "De cijfers 11% en 21% en de 40-68% staan in de stukjes, maar het verwachte antwoord (58%, de geschatte jaarlijkse reductie bij 2,5 mg Inhibitor K) ontbreekt, en de 10 en 25 mg/m² gelden voor varkensstallen, wat het antwoord niet vermeldt, terwijl er geen bronleeftijd of advies om de geldende regel na te kijken wordt gegeven."
+   }
+  },
+  {
+   "nr": 67,
+   "vraag": "Welk land is het grootst in de visserij in dat Noordzeegebied dat ILVO onderzocht?",
+   "antwoord": "In het Belgisch deel van de Noordzee zijn Nederland en België de belangrijkste spelers in de visserij. Nederland is het grootste land in de visserij in dat gebied, met 66% van de visuren en 80% van de aanvoer [S1063].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3653,
+    "uit": 103,
+    "aanroepen": 2
+   },
+   "ms": 2852,
+   "via": "Cloudflare",
+   "bronnen": [
+    {
+     "id": 1063,
+     "titel": "ILVO Activiteitenverslag 2025",
+     "datum": "2026-03",
+     "pagina": 85,
+     "tekst": "adviesraden gaven maatschappelijke prioriteiten aan.\nSoortspecifieke en klimaatgevoelige modellen bestudeerden klimaateffecten op visbestanden. Ook gemengde visserijen, bodemimpact, gebiedssluitingen en inspanningsbeheer werden onderzocht om spanningen tussen visserij- en milieudoelstellingen in kaart te brengen.\nDe resultaten zijn relevant voor het regionale, Vlaamse en Europese visserij en marien beleid, vooral voor de afstemming tussen het GVB en de Kaderrichtlijn Mariene Strategie.\ncontact: jochen.depestele@ilvo.vlaanderen.be project: SEAWISE SEAwise has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101000318 resultaat Visserijmaatregelen in het Belgisch deel van de Noordzee ondersteunen Het Belgisch deel van de Noordzee (BPNS) kent een intensieve visserijactiviteit met Nederland (66% van de visuren en 80% van de aanvoer) en België (resp.\n31% en 17%) als belangrijkste spelers."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het stukje noemt Nederland met 66% van de visuren en 80% van de aanvoer, tegenover België met 31% en 17%, dus Nederland is het grootst, zoals het antwoord zegt."
+   }
+  },
+  {
+   "nr": 69,
+   "vraag": "Hoeveel van de input van een gft-compostering mag bedrijfsafval zijn?",
+   "antwoord": "Composteerbare bedrijfsafvalstoffen mogen maximaal 25% van de input uitmaken in een gft-compostering, als de installatie hiervoor vergund is. Dit komt in de praktijk nauwelijks voor. De huidige regelgeving moet je nakijken bij de Mestbank.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 3596,
+    "uit": 127,
+    "aanroepen": 2
+   },
+   "ms": 3471,
+   "via": "Cloudflare",
+   "bronnen": [],
+   "kalender": null,
+   "bron": false,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "nee",
+    "uitleg": "Het genoemde maximum van 25% komt overeen met het juiste antwoord, maar er zijn geen stukjes aangehaald, dus noch dit cijfer noch de beweringen over de vergunning en het zeldzame voorkomen worden door een bron gedragen."
+   }
+  }
+ ],
+ "samen": {
+  "juiste bron geciteerd": "22/41 (54%)",
+  "antwoord klopt": "21/41 (51%)",
+  "zegt eerlijk 'weet ik niet'": "4/4 (100%)",
+  "fouten": 0,
+  "tokens in": 3742.7,
+  "tokens uit": 128.2,
+  "modelaanroepen": 2,
+  "seconden": 3.8,
+  "rechter": "claude-sonnet-5-5",
+  "rechter: klopt": "21/45 (47%)",
+  "rechter: half": "8/45 (18%)",
+  "rechter: bronnen dragen het": "20/45 (44%)"
+ },
+ "wat": "open",
+ "deel": "oefen",
+ "model": "cloudflare:@cf/mistralai/mistral-small-3.1-24b-instruct",
+ "datum": "2026-11-16",
+ "stukjes": 5039
+}
