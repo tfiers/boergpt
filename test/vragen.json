@@ -1196,15 +1196,15 @@
  {
   "nr": 117,
   "vraag": "Mag de beschermingsstrook gebruikt worden als wendakker?",
-  "bron": null,
-  "sleutel": null,
+  "bron": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+  "sleutel": "\\bja\\b|mag .*wendakker|als wendakker",
   "deel": "echt",
   "herkomst": {
    "url": "https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank/bemesting/aanwenden-van-mest/afstandsregels-tot-waterlopen/vragen_beschermingsstroken/Paginas/default.aspx",
    "wie": "FAQ Mestbank: beschermingsstroken",
    "datum": "2026-09"
   },
-  "nota": "Wendakker komt alleen in teeltadvies voor, niet bij beschermingsstroken."
+  "nota": "Staat in het ontwerp van MAP 7 (p. 71): de beschermingsstrook mag als wendakker gebruikt worden."
  },
  {
   "nr": 118,
