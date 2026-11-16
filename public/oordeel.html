@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>BoerGPT: oordeel van een expert</title>
+<link rel="stylesheet" href="stijl.css">
+<script defer src="oordeel.js"></script>
+</head>
+<body class="oordeel">
+<main>
+  <header>
+    <h1>BoerGPT <span class="demo">oordeel</span></h1>
+    <p class="sub" id="intro">Antwoorden van een taalmodel op echte vragen van boeren en adviseurs. Per antwoord twee vragen: klopt het, en staat het in de aangehaalde tekst? Je ziet niet welk model het schreef. Je kunt stoppen en later verdergaan met dezelfde link.</p>
+  </header>
+
+  <form id="naam" hidden>
+    <label for="wie">Je voornaam (zo vinden we je oordelen terug)</label>
+    <div class="rij"><input id="wie" autocomplete="given-name" required pattern="[A-Za-z0-9 -]{2,30}"><button type="submit" id="stel">Begin</button></div>
+  </form>
+
+  <section id="item" class="kaart" hidden aria-live="polite"></section>
+  <section id="klaar" class="kaart" hidden></section>
+  <p id="melding" class="fout" hidden></p>
+
+  <nav class="balk" id="balk" hidden>
+    <button type="button" id="vorige">◀ Vorige</button>
+    <span id="teller" class="klein"></span>
+    <button type="button" id="volgende">Volgende ▶</button>
+  </nav>
+  <footer class="klein">Gemaakt door Tomas Fiers, met Claude Code. <a href="/">Naar BoerGPT</a></footer>
+</main>
+</body>
+</html>

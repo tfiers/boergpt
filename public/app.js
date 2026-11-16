@@ -50,7 +50,7 @@ function laden(doos, model) {
   const t0 = performance.now();
   const zet = () => {
     const s = Math.round((performance.now() - t0) / 1000);
-    doos.innerHTML = `<p class="laden">Zoekt en schrijft… ${s} s${s >= 15 && model === "open" ? "<br>Het open model wacht op Groq (gratis laag, enkele vragen per minuut)." : ""}</p>`;
+    doos.innerHTML = `<p class="laden">Zoekt en schrijft… ${s} s${s >= 15 && model === "open" ? "<br>Het open model wacht op zijn aanbieder (Groq, of Cloudflare als Groq te druk is)." : ""}</p>`;
   };
   zet();
   const klok = setInterval(zet, 1000);
