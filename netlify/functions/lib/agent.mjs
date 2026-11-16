@@ -145,20 +145,25 @@ const openAanbieder = (naam, url, sleutel, id) => ({
       parameters: { type: "object", properties: g.velden, required: g.verplicht } } }));
     const kies = moet === "gereedschap" ? "required"
       : moet === "schrijven" ? (taak.formulier ? { type: "function", function: { name: taak.formulier.naam } } : "none") : "auto";
-    let m, j;
-    // Groq keurt zelf na of het model zich aan tool_choice hield, en geeft anders een fout met wat
-    // het model schreef ("tool_use_failed"). Schreef het tekst waar een gereedschap moest, dan is
-    // dat zijn antwoord; riep het een gereedschap waar het moest schrijven, dan vragen we nog eens.
+    let m, j, extra = [];
+    // Niet elke aanbieder dwingt tool_choice af. Cloudflare laat het model soms meteen antwoorden
+    // waar het moest zoeken; Groq geeft dan een fout met wat het model schreef ("tool_use_failed").
+    // Zo'n model krijgt één herinnering om eerst te zoeken; doet het het weer niet, dan telt de tekst.
+    // Riep het een gereedschap waar het moest schrijven, dan vragen we het nog eens.
     for (let poging = 0; !m; poging++) {
       try {
         j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
-          { model: id(), max_tokens: taak.formulier ? 2500 : 1200, temperature: 0.2, tools, messages: berichten, tool_choice: kies }, geduld);
+          { model: id(), max_tokens: taak.formulier ? 2500 : 1200, temperature: 0.2, tools, messages: [...berichten, ...extra], tool_choice: kies }, geduld);
         m = j.choices[0].message;
       } catch (e) {
         const mislukt = e.json?.error?.code === "tool_use_failed" ? e.json.error.failed_generation : null;
         if (mislukt == null) throw e;
         if (kies === "required" && !mislukt.trim().startsWith("{")) { m = { content: mislukt }; j = {}; }
         else if (poging >= 1) { m = { content: "" }; j = {}; }
+      }
+      if (m && kies === "required" && !m.tool_calls?.length && poging === 0) {
+        m = undefined;
+        extra = [{ role: "user", content: "Zoek eerst in de documenten met zoek_documenten; antwoord daarna." }];
       }
     }
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
