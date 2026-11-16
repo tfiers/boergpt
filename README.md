@@ -81,7 +81,7 @@ De vragen zijn geschreven met de documenten ernaast, dus deze scores zijn
 eerder te hoog dan te laag.
 
 Zelf meten: `node test/meet.mjs zoek` (alleen het zoeken, geen sleutels nodig;
-`--alleen-woorden` zonder vectoren, `--apart` op de apart gehouden vragen)
+`--alleen-woorden` zonder vectoren, `--deel apart` op de apart gehouden vragen)
 of `node test/meet.mjs open|claude`, of op GitHub › Actions › Meten › Run
 workflow.
 

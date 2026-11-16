@@ -4,21 +4,25 @@ on:
   workflow_dispatch:
     inputs:
       wat:
-        description: "zoek (alleen het zoeken, geen sleutels nodig), open of claude"
+        description: "zoek (alleen het zoeken, geen sleutels nodig), open, claude, of modellen (welke modellen de aanbieders hebben)"
         type: choice
-        options: [zoek, open, claude]
+        options: [zoek, open, claude, modellen]
         default: zoek
-      apart:
-        description: "De apart gehouden vragen meten (alleen op het einde)"
-        type: boolean
-        default: false
-      via:
-        description: "Aanbieder van het open model: groq, cloudflare, of eerst Groq en dan Cloudflare"
+      deel:
+        description: "oefen, apart (alleen op het einde) of echt (vragen van echte boeren en adviseurs)"
         type: choice
-        options: [beide, groq, cloudflare]
-        default: beide
+        options: [oefen, apart, echt]
+        default: oefen
+      model:
+        description: "Open model als aanbieder:model, bv. groq:qwen/qwen3-32b of cloudflare:@cf/openai/gpt-oss-120b (leeg: eerst Groq, dan Cloudflare)"
+        type: string
+        default: ""
       max:
         description: "Hoogstens zoveel vragen (leeg: allemaal)"
+        type: string
+        default: ""
+      opties:
+        description: "Andere instelling van het zoeken, als JSON, bv. {\"aantal\":8}"
         type: string
         default: ""
 permissions:
@@ -26,7 +30,7 @@ permissions:
 jobs:
   meet:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -40,13 +44,25 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           WACHT_MAX: 90
           WAT: ${{ inputs.wat }}
-          APART: ${{ inputs.apart && '--apart' || '' }}
-          OPEN_VIA: ${{ inputs.via != 'beide' && inputs.via || '' }}
-          MAX: ${{ inputs.max && format('--max {0}', inputs.max) || '' }}
+          DEEL: ${{ inputs.deel }}
+          MODEL: ${{ inputs.model }}
+          MAX: ${{ inputs.max }}
+          OPTIES: ${{ inputs.opties }}
         run: |
-          node test/meet.mjs "$WAT" $APART $MAX | tee uitslag.txt
+          if [ "$WAT" = modellen ]; then
+            curl -s https://api.groq.com/openai/v1/models -H "Authorization: Bearer $GROQ_API_KEY" | jq -r '.data[].id' | sort | sed 's/^/groq:/'
+            curl -s "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/models/search?task=Text%20Generation&per_page=100" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result[].name' | sort | sed 's/^/cloudflare:/'
+            exit 0
+          fi
+          if [ -n "$MODEL" ]; then export OPEN_VIA="${MODEL%%:*}" OPEN_MODEL="${MODEL#*:}"; fi
+          set -- "$WAT" --deel "$DEEL"
+          [ -n "$MAX" ] && set -- "$@" --max "$MAX"
+          [ -n "$OPTIES" ] && set -- "$@" --opties "$OPTIES"
+          node test/meet.mjs "$@" | tee uitslag.txt
           { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          echo "UITSLAG-JSON-BEGIN"; cat test/uitslag-*.json | jq -c .; echo "UITSLAG-JSON-EINDE"
       - uses: actions/upload-artifact@v4
+        if: inputs.wat != 'modellen'
         with:
           name: uitslag
           path: test/uitslag-*.json

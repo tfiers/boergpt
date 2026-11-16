@@ -1,7 +1,8 @@
 // Meet hoe goed BoerGPT is, op de vragen in test/vragen.json.
 //   node test/meet.mjs zoek            alleen het zoeken: zit de juiste bron bij de 6 stukjes?
 //   node test/meet.mjs open|claude     de hele agent: juiste bron, antwoord klopt, "weet ik niet"
-// Voeg --apart toe om de apart gehouden vragen te meten (alleen op het einde, één keer).
+// Voeg --deel apart toe om de apart gehouden vragen te meten (alleen op het einde, één keer),
+// of --deel echt voor de vragen die echte boeren en adviseurs stelden.
 // Voeg --alleen-woorden toe om zonder zoeken op betekenis te meten.
 // Voeg --opties '{"aantal":8,"kop":true}' toe om een andere instelling van het zoeken
 // te meten (zie STANDAARD in netlify/functions/lib/zoek.mjs).
@@ -12,7 +13,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { bronnen, stukjes, zoek, STAPELS, STANDAARD } from "../netlify/functions/lib/zoek.mjs";
 
 const wat = process.argv[2];
-const deel = process.argv.includes("--apart") ? "apart" : "oefen";
+const deel = process.argv.includes("--deel") ? process.argv[process.argv.indexOf("--deel") + 1] : "oefen";
 const max = process.argv.includes("--max") ? Number(process.argv[process.argv.indexOf("--max") + 1]) : Infinity;
 const vragen = JSON.parse(readFileSync("test/vragen.json", "utf8")).filter(v => v.deel === deel).slice(0, max);
 // Vraagvectoren die vooraf met bge-m3 berekend zijn (pipeline/vectoren.py --vragen); zo meet het zoeken
@@ -84,10 +85,10 @@ async function meetAgent(model) {
   } };
 }
 
-if (!["zoek", "open", "claude"].includes(wat)) { console.log("Gebruik: node test/meet.mjs zoek|open|claude [--apart]"); process.exit(1); }
+if (!["zoek", "open", "claude"].includes(wat)) { console.log("Gebruik: node test/meet.mjs zoek|open|claude [--deel oefen|apart|echt]"); process.exit(1); }
 const uit = wat === "zoek" ? await meetZoek() : await meetAgent(wat);
-uit.wat = wat; uit.deel = deel; uit.datum = new Date().toISOString().slice(0, 10); uit.stukjes = stukjes.length;
-writeFileSync(`test/uitslag-${wat}${deel === "apart" ? "-apart" : ""}${woorden ? "-woorden" : ""}.json`, JSON.stringify(uit, null, 1));
+uit.wat = wat; uit.deel = deel; uit.model = process.env.OPEN_VIA ? `${process.env.OPEN_VIA}:${process.env.OPEN_MODEL || "gpt-oss-120b"}` : undefined; uit.datum = new Date().toISOString().slice(0, 10); uit.stukjes = stukjes.length;
+writeFileSync(`test/uitslag-${wat}${deel === "oefen" ? "" : `-${deel}`}${woorden ? "-woorden" : ""}.json`, JSON.stringify(uit, null, 1));
 for (const x of uit.r) if (x.raak === false || x.bron === false || x.klopt === false || x.weetNiet === false || x.fout)
   console.log(`  ✗ ${x.nr}. ${x.vraag}${x.fout ? `  (${x.fout})` : ""}`);
 console.log(uit.samen);
