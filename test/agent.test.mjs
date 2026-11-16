@@ -53,10 +53,16 @@ test("een leeg laatste antwoord wordt nog één keer gevraagd", async t => {
   assert.equal(uit.antwoord, "Ja, dat mag.");
 });
 
-test("Groq's tool_use_failed: tekst waar een gereedschap moest, is het antwoord", async t => {
+test("open model dat niet zoekt waar het moest: één herinnering, daarna telt de tekst", async t => {
   process.env.GROQ_API_KEY ||= "test";
-  t.mock.method(globalThis, "fetch", async () => Response.json({ error: { message: "Tool choice is required, but model did not call a tool",
-    type: "invalid_request_error", code: "tool_use_failed", failed_generation: "Dat staat niet in mijn documenten." } }, { status: 400 }));
+  const vragen = [];
+  t.mock.method(globalThis, "fetch", async (url, init) => {
+    vragen.push(JSON.parse(init.body));
+    return Response.json({ error: { message: "Tool choice is required, but model did not call a tool",
+      type: "invalid_request_error", code: "tool_use_failed", failed_generation: "Dat staat niet in mijn documenten." } }, { status: 400 });
+  });
   const uit = await vraagAan("open", "Hoeveel kost een tractor?");
+  assert.equal(vragen.length, 2);
+  assert.match(vragen[1].messages.at(-1).content, /Zoek eerst/);
   assert.equal(uit.antwoord, "Dat staat niet in mijn documenten.");
 });
