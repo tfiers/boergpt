@@ -91,3 +91,22 @@ sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
 .balk button{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;cursor:pointer}
 .balk button:disabled{opacity:.4;cursor:default}
 #wie{font:inherit;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);flex:1;background:var(--panel);color:var(--ink)}
+.perceelform{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:640px}
+.perceelform>label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
+.perceelform input:not([type=radio]),.perceelform select{font:inherit;font-size:16px;font-weight:400;min-height:44px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}
+.perceelform .rij,.modelkeuze{grid-column:1/-1}
+.modelkeuze{border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:4px 16px;font-size:14px}
+.modelkeuze legend{font-weight:600;padding:0;margin-bottom:4px}
+.modelkeuze label{display:flex;align-items:center;gap:6px;min-height:44px}
+#stel:disabled{opacity:.5;cursor:default}
+.concept{background:var(--geel);padding:8px 10px;border-radius:8px;font-size:14px}
+.velden{margin:0;display:flex;flex-direction:column;gap:2px}
+.veld{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.veld dt{font-size:13px;font-weight:600;color:var(--muted)}
+.veld dd{margin:0;grid-column:1}
+.veld .nagekeken{grid-column:2;grid-row:1/3;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);min-height:44px;white-space:nowrap}
+.veld .nagekeken input{width:20px;height:20px}
+.veld.ok dt{color:var(--groen)}
+.kopieer{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--accent);background:none;color:var(--accent);font:inherit}
+.kaart h3{font-size:15px;margin:4px 0 0}
+[hidden]{display:none !important}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BoerGPT: perceelfiche</title>
+<meta name="description" content="Een agent vult een fiche in voor één perceel: uitrijperiode, stikstof, fosfor, vanggewas en steun, met de bron bij elk veld. Een concept dat de boer zelf nakijkt.">
+<link rel="stylesheet" href="stijl.css">
+<script defer src="https://tomasfiers.net/p/count.js"></script>
+<script type="module" src="perceel.js"></script>
+</head>
+<body>
+<main>
+  <header>
+    <h1>BoerGPT <span class="demo">perceelfiche</span></h1>
+    <p class="demotekst">Een demo, geen echt product: gemaakt om te tonen hoe een agent papierwerk kan voorbereiden.</p>
+    <p class="sub">Vul één perceel in. De agent zoekt in dezelfde 37 documenten en de uitrijkalender, en vult een fiche in met de bron bij elk veld. Het blijft een concept: jij kijkt elk veld na. <a href="/">Een losse vraag stellen</a></p>
+  </header>
+
+  <form id="perceel" class="perceelform">
+    <label>Teelt
+      <input name="teelt" list="teelten" maxlength="60" required placeholder="Bv. silomaïs">
+      <datalist id="teelten"><option>grasland (maaien)</option><option>silomaïs</option><option>wintertarwe</option><option>aardappelen</option><option>suikerbieten</option></datalist>
+    </label>
+    <label>Grond
+      <select name="grond" required><option value="akkerland">akkerland</option><option value="grasland">grasland</option></select>
+    </label>
+    <label>Meststof
+      <select name="mest" required><option value="2">drijfmest</option><option value="1">stalmest of champost</option><option value="3">kunstmest</option></select>
+    </label>
+    <label>Fosfaatklasse
+      <select name="klasse" required><option>weet ik niet</option><option>I</option><option>II</option><option>III</option><option>IV</option></select>
+    </label>
+    <label>Geplande datum
+      <input name="datum" type="date" required>
+    </label>
+    <label>Oppervlakte (ha)
+      <input name="oppervlakte" inputmode="decimal" pattern="[0-9]{1,3}([.,][0-9]{1,2})?" required placeholder="Bv. 2,5">
+    </label>
+    <fieldset class="modelkeuze">
+      <legend>Model</legend>
+      <label><input type="radio" name="model" value="claude" checked> Claude</label>
+      <label><input type="radio" name="model" value="open"> open model</label>
+    </fieldset>
+    <div class="rij">
+      <span id="bewaard" class="klein"></span>
+      <button type="submit" id="stel">Vul de fiche in</button>
+    </div>
+  </form>
+
+  <section id="fiche" class="kaart" hidden aria-live="polite"></section>
+
+  <footer class="klein">
+    Gemaakt door Tomas Fiers, met Claude Code. Geen officieel advies: kijk regels na bij de <a href="https://www.vlm.be/nl/themas/waterkwaliteit/Mestbank">Mestbank</a>.
+    <span id="versie"></span>
+  </footer>
+  <button type="button" id="nieuw" class="nieuw" hidden>↻ Nieuwe versie</button>
+</main>
+</body>
+</html>
