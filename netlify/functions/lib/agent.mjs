@@ -84,9 +84,12 @@ export async function voerUit(naam, args, gezien = { stukjes: new Map(), kalende
 // Bij "te druk" (429) wacht dit zo lang als de aanbieder vraagt, maar niet langer dan `geduld`
 // seconden (live 15, zodat de functie binnen haar minuut blijft; de meting zet WACHT_MAX hoger).
 const WACHT_MAX = Number(process.env.WACHT_MAX || 15);
+// Hoe lang één antwoord van een model mag duren (live 45 s; de meting zet TIJD_MAX hoger,
+// want Cloudflare doet er soms langer over).
+const TIJD_MAX = Number(process.env.TIJD_MAX || 45);
 async function vraagModel(naam, url, headers, body, geduld = WACHT_MAX) {
   for (let poging = 0; ; poging++) {
-    const r = await fetch(url, { method: "POST", signal: AbortSignal.timeout(45000),
+    const r = await fetch(url, { method: "POST", signal: AbortSignal.timeout(TIJD_MAX * 1000),
       headers: { ...headers, "content-type": "application/json" }, body: JSON.stringify(body) });
     if (r.ok) return r.json();
     const wacht = Number(r.headers.get("retry-after")) || 10;
