@@ -67,27 +67,42 @@ function toon(doos, d, sec) {
   const stappen = d.stappen.map(s => s.wat === "zoek"
     ? `<li>Zocht <q>${esc(s.zoekvraag)}</q> in ${esc([].concat(s.stapels || []).map(x => STAPEL[x] || x).join(", "))} (${esc(s.manier)})</li>`
     : `<li>Keek de uitrijkalender na: type ${esc(s.type)}, ${esc(s.grond)}, ${esc(s.datum)} → ${esc(s.mag || "?")}</li>`).join("");
-  const bronnen = d.bronnen.map(b => `<li id="b-${b.id}" class="bron" data-id="${b.id}">
-      <button class="kop" aria-expanded="false"><span class="ref">${nr.get(b.id)}</span> ${esc(b.titel)} <span class="klein">${esc(b.uitgever)} · ${maand(b.datum)} · p. ${b.pagina}</span></button>
+  // Bronnen per document, en binnen een document per pagina: de titel staat één keer,
+  // elke pagina is een knop met de nummers die het antwoord ernaar gebruikt.
+  const docs = new Map(), naarPagina = new Map();
+  for (const b of d.bronnen) {
+    if (!docs.has(b.titel)) docs.set(b.titel, { b, paginas: new Map() });
+    const pag = docs.get(b.titel).paginas;
+    const sleutel = `${[...docs.keys()].indexOf(b.titel)}-${b.pagina}`;
+    if (!pag.has(b.pagina)) pag.set(b.pagina, { sleutel, stukjes: [] });
+    pag.get(b.pagina).stukjes.push(b);
+    naarPagina.set(String(b.id), sleutel);
+  }
+  const knop = (sleutel, refs, label) => `<button class="pag" data-pag="${sleutel}" aria-expanded="false">${refs}<span>${label}</span></button>`;
+  const paneel = (sleutel, tekst, url, pagina) => `<blockquote id="p-${sleutel}" hidden>${tekst}<br><a href="${esc(url)}#page=${pagina}" rel="noopener">Open de pdf op pagina ${pagina}</a></blockquote>`;
+  const bronnen = [...docs.values()].map(({ b, paginas }) => `<li class="bron">
+      <p class="doc">${esc(b.titel)} <span class="klein">${esc(b.uitgever)} · ${maand(b.datum)}</span></p>
       ${b.oud ? `<p class="oud">Deze bron is ouder dan drie jaar: kijk na of de regel nog geldt.</p>` : ""}
-      <blockquote hidden>${esc(b.tekst)}<br><a href="${esc(b.url)}#page=${b.pagina}" rel="noopener">Open de pdf op pagina ${b.pagina}</a></blockquote>
+      <div class="paginas">${[...paginas].map(([pagina, p]) => knop(p.sleutel, p.stukjes.map(s => `<span class="ref">${nr.get(s.id)}</span>`).join(""), `p. ${pagina}`)).join("")}</div>
+      ${[...paginas].map(([pagina, p]) => paneel(p.sleutel, p.stukjes.map(s => esc(s.tekst)).join("<br>…<br>"), b.url, pagina)).join("")}
     </li>`).join("");
-  const kal = d.kalender ? `<li id="b-K" class="bron"><button class="kop" aria-expanded="false"><span class="ref">K</span> Uitrijkalender <span class="klein">${esc(d.kalender.bron)} · p. ${d.kalender.pagina}</span></button>
-      <blockquote hidden>${esc(d.kalender.uitleg)} (${esc(d.kalender.van)} t.e.m. ${esc(d.kalender.tot)})<br><a href="${esc(d.kalender.url)}#page=${d.kalender.pagina}" rel="noopener">Open de pdf op pagina ${d.kalender.pagina}</a></blockquote></li>` : "";
+  if (d.kalender) naarPagina.set("K", "K");
+  const kal = d.kalender ? `<li class="bron"><p class="doc">Uitrijkalender <span class="klein">${esc(d.kalender.bron)}</span></p>
+      <div class="paginas">${knop("K", `<span class="ref">K</span>`, `p. ${d.kalender.pagina}`)}</div>
+      ${paneel("K", `${esc(d.kalender.uitleg)} (${esc(d.kalender.van)} t.e.m. ${esc(d.kalender.tot)})`, d.kalender.url, d.kalender.pagina)}</li>` : "";
   doos.innerHTML = `<p class="antwoord">${zinnen || "Geen antwoord."}</p>
     <ol class="bronnen">${bronnen}${kal}</ol>
     <details class="stappen"><summary>${d.stappen.length} stappen · ${sec} s</summary><ol>${stappen}</ol></details>`;
-  doos.querySelectorAll("button.ref").forEach(b => b.addEventListener("click", () => open(doos, b.dataset.ref)));
-  doos.querySelectorAll(".bron .kop").forEach(k => k.addEventListener("click", () => open(doos, k.closest(".bron").id.slice(2), true)));
+  doos.querySelectorAll("button.ref").forEach(b => b.addEventListener("click", () => open(doos, naarPagina.get(b.dataset.ref))));
+  doos.querySelectorAll("button.pag").forEach(k => k.addEventListener("click", () => open(doos, k.dataset.pag, true)));
 }
 
-function open(doos, id, wissel) {
-  const li = doos.querySelector(`#b-${id}`);
-  if (!li) return;
-  const bq = li.querySelector("blockquote"), k = li.querySelector(".kop");
+function open(doos, sleutel, wissel) {
+  const bq = doos.querySelector(`#p-${sleutel}`), k = doos.querySelector(`button.pag[data-pag="${sleutel}"]`);
+  if (!bq) return;
   const nu = wissel ? bq.hidden : true;
   bq.hidden = !nu; k.setAttribute("aria-expanded", nu);
-  if (nu && !wissel) li.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  if (nu && !wissel) bq.scrollIntoView({ block: "nearest", behavior: "smooth" });
 }
 
 // --- De lijst documenten -----------------------------------------------------
