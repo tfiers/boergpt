@@ -118,7 +118,7 @@ const anthropic = {
         ...(invullen ? { output_config: { format: { type: "json_schema", schema: schema(taak.formulier) } } } : {}) }, geduld);
     berichten.push({ role: "assistant", content: j.content });
     // Weigert Claude's veiligheidsfilter de vraag, dan komt er geen tekst: zeg het dan zelf.
-    if (j.stop_reason === "refusal") return { oproepen: [], tekst: "Daarbij help ik niet.", gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
+    if (j.stop_reason === "refusal") return { oproepen: [], tekst: "Daarbij help ik niet. Ik beantwoord alleen vragen over landbouw in Vlaanderen, uit mijn documenten.", gebruik: { in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 } };
     const tekst = j.content.filter(c => c.type === "text").map(c => c.text).join("");
     const oproepen = invullen ? [{ id: "formulier", naam: taak.formulier.naam, args: JSON.parse(tekst) }]
       : j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
