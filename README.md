@@ -125,9 +125,12 @@ python pipeline/ophalen.py && python pipeline/knippen.py && python pipeline/vect
 
 ## Wie maakte het
 
-Tomas Fiers, met [Claude Code](https://claude.com/claude-code). Claude
-schreef de code; Tomas koos wat de demo moest doen, welke soorten
-documenten erin gaan en hoe hij gemeten wordt.
+Tomas Fiers, met [Claude Code](https://claude.com/claude-code). Tomas
+plande het werk: wat de demo moet doen, welke soorten documenten erin gaan,
+de naam en hoe hij gemeten wordt. Hij test de demo en stuurt hem bij met zijn
+feedback, zoals de bronnen per document, de pdf-pagina met gemarkeerde
+regels en de bewaarde antwoorden bij de voorbeeldvragen. Claude schreef de
+code en de testvragen.
 
 De documenten zijn van de VLM, het Departement Landbouw en Visserij, ILVO en
 het Belgisch Staatsblad; elk antwoord linkt naar het origineel.
