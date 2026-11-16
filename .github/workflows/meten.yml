@@ -25,10 +25,10 @@ jobs:
           node-version: 22
       - name: Meten
         env:
-          GROQ_KEY_FOR_BOERGPT: ${{ secrets.GROQ_KEY_FOR_BOERGPT }}
-          ANTHROPIC_KEY_FOR_BOERGPT: ${{ secrets.ANTHROPIC_KEY_FOR_BOERGPT }}
-          CLOUDFLARE_ACCOUNT_ID_FOR_BOERGPT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID_FOR_BOERGPT }}
-          CLOUDFLARE_AI_TOKEN_FOR_BOERGPT: ${{ secrets.CLOUDFLARE_AI_TOKEN_FOR_BOERGPT }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           WAT: ${{ inputs.wat }}
           APART: ${{ inputs.apart && '--apart' || '' }}
         run: |

@@ -82,7 +82,7 @@ const anthropic = {
   async stap(berichten) {
     const r = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST", signal: AbortSignal.timeout(45000),
-      headers: { "x-api-key": process.env.ANTHROPIC_KEY_FOR_BOERGPT, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+      headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
       body: JSON.stringify({ model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten }),
     });
     if (!r.ok) throw new Error(`Claude: ${r.status} ${(await r.text()).slice(0, 200)}`);
@@ -104,7 +104,7 @@ const groq = {
   async stap(berichten) {
     const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST", signal: AbortSignal.timeout(45000),
-      headers: { Authorization: `Bearer ${process.env.GROQ_KEY_FOR_BOERGPT}`, "content-type": "application/json" },
+      headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}`, "content-type": "application/json" },
       body: JSON.stringify({ model: MODELLEN.open.id, max_tokens: 1200, temperature: 0.2, tools: this.tools, messages: berichten }),
     });
     if (!r.ok) throw new Error(`Groq: ${r.status} ${(await r.text()).slice(0, 200)}`);
