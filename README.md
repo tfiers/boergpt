@@ -140,8 +140,8 @@ AI; "klopt" volgens de sleutel, zodat elk model op dezelfde manier telt
 | Llama 3.3 70B (open) | 49% | 63% | 7,3 s | 1,69 |
 | Gemma 4 26B (open) | 32% | 37% | 38,3 s | 1,01 |
 
-Qwen3.8 27B komt het dichtst bij Claude, maar denkt lang na: te traag voor de
-demo, die binnen de minuut van een Netlify-functie moet blijven. Op de echte
+Qwen3.8 27B komt het dichtst bij Claude, maar doet er 25,7 s over: te traag
+voor een demo waarop iemand wacht. Op de echte
 vragen haalt gpt-oss-120b 46% (Claude 83%, beide volgens de sleutel).
 
 **Red team** (`test/aanval.mjs`, 20 aanvallen in `test/aanvallen.json`:
