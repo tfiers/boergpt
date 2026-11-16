@@ -21,6 +21,10 @@ on:
         description: "Hoogstens zoveel vragen (leeg: allemaal)"
         type: string
         default: ""
+      rechter:
+        description: "Laat Claude ook oordelen over elk antwoord"
+        type: boolean
+        default: false
       opties:
         description: "Andere instelling van het zoeken, als JSON, bv. {\"aantal\":8}"
         type: string
@@ -48,6 +52,7 @@ jobs:
           MODEL: ${{ inputs.model }}
           MAX: ${{ inputs.max }}
           OPTIES: ${{ inputs.opties }}
+          RECHTER: ${{ inputs.rechter && '--rechter' || '' }}
         run: |
           if [ "$WAT" = modellen ]; then
             curl -s https://api.groq.com/openai/v1/models -H "Authorization: Bearer $GROQ_API_KEY" | jq -r '.data[].id' | sort | sed 's/^/groq:/'
@@ -58,6 +63,7 @@ jobs:
           set -- "$WAT" --deel "$DEEL"
           [ -n "$MAX" ] && set -- "$@" --max "$MAX"
           [ -n "$OPTIES" ] && set -- "$@" --opties "$OPTIES"
+          [ -n "$RECHTER" ] && set -- "$@" --rechter
           node test/meet.mjs "$@" | tee uitslag.txt
           { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           echo "UITSLAG-JSON-BEGIN"; cat test/uitslag-*.json | jq -c .; echo "UITSLAG-JSON-EINDE"

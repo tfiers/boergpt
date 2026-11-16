@@ -7,6 +7,7 @@ def bestandsnaam(url):
     return hashlib.sha1(url.encode()).hexdigest()[:12] + ".pdf"
 
 def main():
+    (DATA / "pdf").mkdir(exist_ok=True)
     for bron in json.loads((DATA / "bronnen.json").read_text()):
         doel = DATA / "pdf" / bestandsnaam(bron["url"])
         if doel.exists():

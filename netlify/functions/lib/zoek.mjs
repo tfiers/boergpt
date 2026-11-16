@@ -5,7 +5,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 // Netlify zet data/ (netlify.toml included_files) naast de functie; lokaal is het de map van de site.
-const MAP = [process.env.LAMBDA_TASK_ROOT, process.cwd()].filter(Boolean)
+// DATA_MAP kiest een andere map, om een andere manier van knippen te meten (pipeline/knippen.py --map).
+const MAP = process.env.DATA_MAP || [process.env.LAMBDA_TASK_ROOT, process.cwd()].filter(Boolean)
   .map(r => join(r, "data")).find(m => existsSync(join(m, "bronnen.json")));
 export const lees = naam => readFileSync(join(MAP, naam));
 

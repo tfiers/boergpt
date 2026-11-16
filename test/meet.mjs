@@ -6,6 +6,7 @@
 // Voeg --alleen-woorden toe om zonder zoeken op betekenis te meten.
 // Voeg --opties '{"aantal":8,"kop":true}' toe om een andere instelling van het zoeken
 // te meten (zie STANDAARD in netlify/functions/lib/zoek.mjs).
+// Voeg --rechter toe om ook een model te laten oordelen over elk antwoord (test/rechter.mjs).
 // Voeg --max 5 toe om alleen de eerste 5 vragen te meten (een snelle proef).
 // OPEN_VIA=groq of cloudflare kiest de aanbieder van het open model (zie agent.mjs).
 // Draai vanuit de map van de site. De uitslag komt in test/uitslag-<wat>.json.
@@ -36,7 +37,7 @@ async function meetZoek() {
   for (const v of vragen.filter(v => v.bron && v.bron !== "kalender")) {
     const { manier, stukjes: top } = await zoek(v.vraag, STAPELS, { ...opties, vector: woorden ? false : vv[v.vraag] });
     const plaats = top.findIndex(s => isBron(bronnen[s.bron], v.bron)) + 1;
-    r.push({ nr: v.nr, vraag: v.vraag, manier, raak: plaats > 0, plaats: plaats || null });
+    r.push({ nr: v.nr, vraag: v.vraag, bron: v.bron, manier, raak: plaats > 0, plaats: plaats || null, stukjes: top.map(s => s.id) });
   }
   const raak = r.filter(x => x.raak).length;
   const n = { ...STANDAARD, ...opties }.aantal;
@@ -58,18 +59,25 @@ const gemiddeld = rs => {
 
 async function meetAgent(model) {
   const { vraagAan } = await import("../netlify/functions/lib/agent.mjs");
+  // --rechter: een model oordeelt ook over elk antwoord (test/rechter.mjs), naast de sleutel.
+  const rechter = process.argv.includes("--rechter") ? await import("./rechter.mjs") : null;
   const r = [];
   for (const v of vragen) {
     let a; const t0 = Date.now();
     try { a = await vraagAan(model, v.vraag); } catch (e) { r.push({ nr: v.nr, vraag: v.vraag, fout: String(e.message).slice(0, 200) }); continue; }
     const zegtWeetNiet = WEET_NIET.test(a.antwoord);
-    const rij = { nr: v.nr, vraag: v.vraag, antwoord: a.antwoord, stappen: a.stappen.length, gebruik: a.gebruik, ms: Date.now() - t0 };
+    const rij = { nr: v.nr, vraag: v.vraag, antwoord: a.antwoord, stappen: a.stappen.length, gebruik: a.gebruik, ms: Date.now() - t0,
+      via: a.via, bronnen: a.bronnen.map(b => ({ id: b.id, titel: b.titel, pagina: b.pagina, tekst: b.tekst })), kalender: a.kalender?.uitleg };
     if (v.bron) {
       rij.bron = v.bron === "kalender" ? !!a.kalender : a.bronnen.some(b => isBron(b, v.bron));
       // NFKC maakt van een smalle harde spatie ("60\u202f%") een gewone, zoals de sleutels verwachten.
       rij.klopt = new RegExp(v.sleutel, "i").test(a.antwoord.normalize("NFKC")) && !zegtWeetNiet;
     } else {
       rij.weetNiet = zegtWeetNiet;
+    }
+    if (rechter) {
+      try { rij.rechter = await rechter.oordeel({ ...rij, verwacht: rechter.verwacht(v) }); }
+      catch (e) { rij.rechter = { fout: String(e.message).slice(0, 200) }; }
     }
     r.push(rij);
     process.stdout.write(".");
@@ -81,6 +89,11 @@ async function meetAgent(model) {
     "antwoord klopt": pct(met.filter(x => x.klopt).length, met.length),
     "zegt eerlijk 'weet ik niet'": pct(zonder.filter(x => x.weetNiet).length, zonder.length),
     "fouten": r.filter(x => x.fout).length,
+    ...(r.some(x => x.rechter?.klopt) ? {
+      "rechter: klopt": pct(r.filter(x => x.rechter?.klopt === "ja").length, r.filter(x => x.rechter?.klopt).length),
+      "rechter: half": pct(r.filter(x => x.rechter?.klopt === "half").length, r.filter(x => x.rechter?.klopt).length),
+      "rechter: bronnen dragen het": pct(r.filter(x => x.rechter?.bron === "ja").length, r.filter(x => x.rechter?.bron).length),
+    } : {}),
     ...gemiddeld(r.filter(x => x.gebruik)),
   } };
 }

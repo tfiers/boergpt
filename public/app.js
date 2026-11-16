@@ -1,6 +1,6 @@
 // BoerGPT: stelt de vraag aan beide modellen tegelijk en toont
 // elk antwoord met zijn stappen en bronnen.
-const VERSIE = "v1 · 13 nov 2026";
+const VERSIE = 3;   // hoger bij elke versie die bezoekers merken; public/versies.json zegt wat er veranderde
 const $ = s => document.querySelector(s);
 const HTTP = { 400: "Bad Request", 405: "Method Not Allowed", 429: "Too Many Requests", 500: "Internal Server Error", 502: "Bad Gateway", 503: "Service Unavailable", 504: "Gateway Timeout" };
 const STAPEL = { regels: "mestregels (VLM)", praktijk: "praktijkgidsen", onderzoek: "ILVO-onderzoek", subsidies: "GLB-subsidies", wet: "Mestdecreet" };
@@ -163,4 +163,16 @@ fetch("meting.json").then(r => r.json()).then(tabellen => {
     <tbody>${t.rijen.map(r => `<tr><th>${esc(r[0])}</th>${r.slice(1).map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`).join("");
 }).catch(() => { $("#meting").hidden = true; });
 
-$("#versie").textContent = VERSIE;
+// --- Versie: label met geschiedenis, en een knop als er een nieuwere live staat ---
+const datum = d => new Date(d).toLocaleDateString("nl-BE", { day: "numeric", month: "short", year: "numeric" });
+async function kijkVersie() {
+  const lijst = await fetch("versies.json", { cache: "no-store" }).then(r => r.json()).catch(() => null);
+  if (!lijst) return;
+  const deze = lijst.find(v => v.versie === VERSIE);
+  if (deze && !$("#versie").childElementCount) $("#versie").innerHTML = `<details><summary>versie ${VERSIE} · ${datum(deze.datum)}</summary><ul>${
+    lijst.filter(v => v.versie <= VERSIE).reverse().map(v => `<li><b>v${v.versie}</b> ${datum(v.datum)}: ${esc(v.wat)}</li>`).join("")}</ul></details>`;
+  $("#nieuw").hidden = !(lijst.at(-1).versie > VERSIE);
+}
+$("#nieuw").addEventListener("click", () => location.reload());
+document.addEventListener("visibilitychange", () => { if (!document.hidden) kijkVersie(); });
+kijkVersie();

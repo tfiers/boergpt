@@ -108,7 +108,7 @@ vragen per minuut stuurt.
 ```sh
 npm install
 node dev/server.mjs .          # de pagina op http://localhost:8787, met een nep-model
-node --test test/teller.test.mjs
+node --test test/*.test.mjs
 ```
 
 Online: een Netlify-site met deze map, en als omgevingsvariabelen
