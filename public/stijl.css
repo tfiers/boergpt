@@ -116,10 +116,7 @@ sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
 .balken{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;font-size:14px}
 .balken li{display:flex;flex-direction:column;gap:4px}
 .open{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;padding:1px 6px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
-.balk-rij{display:flex;gap:2px;height:12px;background:var(--soft);border-radius:0 4px 4px 0}
+.balk-rij{display:flex;height:12px;background:var(--soft);border-radius:0 4px 4px 0}
 .balk-rij span{display:block;height:100%}
-.balk-rij .klopt,.vlak.klopt{background:var(--accent)}
-.balk-rij .half,.vlak.half{background:color-mix(in srgb,var(--accent) 40%,var(--panel))}
+.balk-rij .klopt{background:var(--accent)}
 .balk-rij span:last-child{border-radius:0 4px 4px 0}
-.legende{display:flex;align-items:center;gap:6px;margin:4px 0 0}
-.vlak{display:inline-block;width:12px;height:12px;border-radius:3px;margin-left:6px}
