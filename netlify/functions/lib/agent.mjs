@@ -94,8 +94,10 @@ async function vraagModel(naam, url, headers, body, geduld = WACHT_MAX) {
     if (r.ok) return r.json();
     const wacht = Number(r.headers.get("retry-after")) || 10;
     if (r.status === 429 && poging < 3 && wacht <= geduld) { await new Promise(k => setTimeout(k, wacht * 1000)); continue; }
-    const fout = new Error(`${naam}: ${r.status} ${(await r.text()).slice(0, 200)}`);
+    const tekst = await r.text();
+    const fout = new Error(`${naam}: ${r.status} ${tekst.slice(0, 200)}`);
     fout.status = r.status;
+    try { fout.json = JSON.parse(tekst); } catch {}
     throw fout;
   }
 }
@@ -143,9 +145,22 @@ const openAanbieder = (naam, url, sleutel, id) => ({
       parameters: { type: "object", properties: g.velden, required: g.verplicht } } }));
     const kies = moet === "gereedschap" ? "required"
       : moet === "schrijven" ? (taak.formulier ? { type: "function", function: { name: taak.formulier.naam } } : "none") : "auto";
-    const j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
-      { model: id(), max_tokens: taak.formulier ? 2500 : 1200, temperature: 0.2, tools, messages: berichten, tool_choice: kies }, geduld);
-    const m = j.choices[0].message;
+    let m, j;
+    // Groq keurt zelf na of het model zich aan tool_choice hield, en geeft anders een fout met wat
+    // het model schreef ("tool_use_failed"). Schreef het tekst waar een gereedschap moest, dan is
+    // dat zijn antwoord; riep het een gereedschap waar het moest schrijven, dan vragen we nog eens.
+    for (let poging = 0; !m; poging++) {
+      try {
+        j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
+          { model: id(), max_tokens: taak.formulier ? 2500 : 1200, temperature: 0.2, tools, messages: berichten, tool_choice: kies }, geduld);
+        m = j.choices[0].message;
+      } catch (e) {
+        const mislukt = e.json?.error?.code === "tool_use_failed" ? e.json.error.failed_generation : null;
+        if (mislukt == null) throw e;
+        if (kies === "required" && !mislukt.trim().startsWith("{")) { m = { content: mislukt }; j = {}; }
+        else if (poging >= 1) { m = { content: "" }; j = {}; }
+      }
+    }
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
     const oproepen = (m.tool_calls || []).map(t => {
       let args = t.function.arguments || {};
