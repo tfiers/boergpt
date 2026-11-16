@@ -93,15 +93,21 @@ async function vraagModel(naam, url, headers, body, geduld = WACHT_MAX) {
   }
 }
 
+// Een taak: de opdracht, het gereedschap, en eventueel een formulier dat het model op het einde
+// invult in plaats van een antwoord te schrijven (zie fiche.mjs).
+export const VRAAG = { opdracht: SYSTEEM, gereedschap: GEREEDSCHAP, formulier: null };
+const metFormulier = taak => taak.formulier ? [...taak.gereedschap, taak.formulier] : taak.gereedschap;
+
 const anthropic = {
   naam: "Anthropic",
-  tools: GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
-    input_schema: { type: "object", properties: g.velden, required: g.verplicht } })),
-  async stap(berichten, geduld, moet) {
+  async stap(berichten, geduld, moet, taak) {
+    const tools = metFormulier(taak).map(g => ({ name: g.naam, description: g.uitleg,
+      input_schema: { type: "object", properties: g.velden, required: g.verplicht } }));
+    const kies = moet === "gereedschap" ? { type: "any" }
+      : moet === "schrijven" ? (taak.formulier ? { type: "tool", name: taak.formulier.naam } : { type: "none" }) : { type: "auto" };
     const j = await vraagModel("Claude", "https://api.anthropic.com/v1/messages",
       { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
-      { model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten,
-        tool_choice: { type: { zoeken: "any", schrijven: "none" }[moet] || "auto" } }, geduld);
+      { model: MODELLEN.claude.id, max_tokens: taak.formulier ? 2500 : 1200, system: taak.opdracht(), tools, messages: berichten, tool_choice: kies }, geduld);
     berichten.push({ role: "assistant", content: j.content });
     const oproepen = j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
     return { oproepen, tekst: j.content.filter(c => c.type === "text").map(c => c.text).join(""),
@@ -115,15 +121,16 @@ const anthropic = {
 
 // Het open model, bij een aanbieder met de OpenAI-vorm van API. De berichten hebben bij
 // beide dezelfde vorm, dus een vraag kan halverwege van aanbieder wisselen.
-const openTools = GEREEDSCHAP.map(g => ({ type: "function", function: { name: g.naam, description: g.uitleg,
-  parameters: { type: "object", properties: g.velden, required: g.verplicht } } }));
 const openAanbieder = (naam, url, sleutel, id) => ({
   naam,
   klaar: () => Boolean(sleutel()),
-  async stap(berichten, geduld, moet) {
+  async stap(berichten, geduld, moet, taak) {
+    const tools = metFormulier(taak).map(g => ({ type: "function", function: { name: g.naam, description: g.uitleg,
+      parameters: { type: "object", properties: g.velden, required: g.verplicht } } }));
+    const kies = moet === "gereedschap" ? "required"
+      : moet === "schrijven" ? (taak.formulier ? { type: "function", function: { name: taak.formulier.naam } } : "none") : "auto";
     const j = await vraagModel(naam, url(), { Authorization: `Bearer ${sleutel()}` },
-      { model: id(), max_tokens: 1200, temperature: 0.2, tools: openTools, messages: berichten,
-        tool_choice: { zoeken: "required", schrijven: "none" }[moet] || "auto" }, geduld);
+      { model: id(), max_tokens: taak.formulier ? 2500 : 1200, temperature: 0.2, tools, messages: berichten, tool_choice: kies }, geduld);
     const m = j.choices[0].message;
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
     const oproepen = (m.tool_calls || []).map(t => {
@@ -136,7 +143,7 @@ const openAanbieder = (naam, url, sleutel, id) => ({
   antwoorden(berichten, uit) {
     for (const u of uit) berichten.push({ role: "tool", tool_call_id: u.id, content: u.tekst });
   },
-  start: vraag => [{ role: "system", content: SYSTEEM() }, { role: "user", content: vraag }],
+  start: (vraag, taak) => [{ role: "system", content: taak.opdracht() }, { role: "user", content: vraag }],
 });
 // OPEN_VIA + OPEN_MODEL kiezen een ander model bij één aanbieder, om modellen te vergelijken.
 const gekozen = (via, standaard) => () => (process.env.OPEN_VIA === via && process.env.OPEN_MODEL) || standaard;
@@ -161,26 +168,29 @@ function aanbieders(model) {
 // de laatste ronde moet het schrijven (zo eindigt een vraag nooit zonder antwoord).
 // Hoogstens 4 modelaanroepen per vraag en 3 gereedschappen per ronde: zo blijft een
 // vraag goedkoop, ook als iemand het model vraagt om twintig keer tegelijk te zoeken.
-export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {}) {
+export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3, taak = VRAAG } = {}) {
   const rij = aanbieders(model);
   let a = rij.shift();
-  const berichten = a.start(vraag);
+  const berichten = a.start(vraag, taak);
+  let formulier = null;
   const gezien = { stukjes: new Map(), kalender: null };
   const stappen = [];
   let tekst = "";
   const gebruik = { in: 0, uit: 0, aanroepen: 0 };  // tokens, om de kost per vraag te meten
   for (let ronde = 0; ronde <= maxRondes; ronde++) {
     let s;
-    const moet = ronde === 0 ? "zoeken" : ronde === maxRondes ? "schrijven" : null;
-    try { s = await a.stap(berichten, rij.length ? 0 : WACHT_MAX, moet); }
+    // Met een formulier moet elke ronde een gereedschap gebruiken: zoeken of het formulier invullen.
+    const moet = ronde === maxRondes ? "schrijven" : ronde === 0 || taak.formulier ? "gereedschap" : null;
+    try { s = await a.stap(berichten, rij.length ? 0 : WACHT_MAX, moet, taak); }
     catch (e) {
       if (e.status !== 429 || !rij.length) throw e;
       a = rij.shift();
-      s = await a.stap(berichten, WACHT_MAX, moet);
+      s = await a.stap(berichten, WACHT_MAX, moet, taak);
     }
     gebruik.in += s.gebruik.in; gebruik.uit += s.gebruik.uit; gebruik.aanroepen++;
     tekst = s.tekst;
-    if (!s.oproepen.length) break;
+    formulier = s.oproepen.find(o => o.naam === taak.formulier?.naam)?.args || null;
+    if (formulier || !s.oproepen.length) break;
     if (ronde === maxRondes) { tekst ||= "Dat staat niet in mijn documenten."; break; }
     const uit = [];
     for (const [i, o] of s.oproepen.entries()) {
@@ -192,11 +202,22 @@ export async function vraagAan(model, vraag, { maxRondes = 3, perRonde = 3 } = {
     }
     a.antwoorden(berichten, uit);
   }
+  if (formulier) {
+    // Elk veld van het formulier krijgt dezelfde controle van de bronnen als een antwoord.
+    const b = bronControle(gezien);
+    const velden = Object.fromEntries(Object.entries(formulier).map(([k, v]) => [k, b.schoon(String(v))]));
+    return { formulier: velden, stappen, bronnen: b.lijst(), kalender: gezien.kalender, gebruik, via: a.naam };
+  }
   return { ...opmaak(tekst, gezien, stappen), gebruik, via: a.naam };
 }
 
 // Alleen bronnen die het model echt kreeg, worden getoond; een verzonnen nummer valt weg.
 export function opmaak(tekst, gezien, stappen) {
+  const b = bronControle(gezien);
+  return { antwoord: b.schoon(tekst), stappen, bronnen: b.lijst(), kalender: gezien.kalender };
+}
+
+function bronControle(gezien) {
   const jaar = new Date().getFullYear();
   const geciteerd = new Map();
   const bewaar = id => {
@@ -208,9 +229,8 @@ export function opmaak(tekst, gezien, stappen) {
     return ` [S${id}]`;
   };
   // Modellen schrijven het niet altijd netjes: "[ S12 ]", "[S12, S13]", "【S12】" of "[12]" tellen ook.
-  const schoon = tekst.replace(/\s*[\[【]\s*(K|S[^\]】]*|\d+(?:\s*,\s*S?\d+)*)\s*[\]】]/g, (heel, wat) => {
+  return { schoon: tekst => tekst.replace(/\s*[\[【]\s*(K|S[^\]】]*|\d+(?:\s*,\s*S?\d+)*)\s*[\]】]/g, (heel, wat) => {
     if (wat.trim() === "K") return gezien.kalender ? " [K]" : "";
     return (wat.match(/\d+/g) || []).map(n => bewaar(Number(n))).join("");
-  });
-  return { antwoord: schoon.trim(), stappen, bronnen: [...geciteerd.values()], kalender: gezien.kalender };
+  }).trim(), lijst: () => [...geciteerd.values()] };
 }

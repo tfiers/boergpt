@@ -3,7 +3,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 process.env.DAGLIMIET = "5"; process.env.PER_PERSOON = "3";
-const { telOp } = await import("../netlify/functions/vraag.mjs");
+const { telOp } = await import("../netlify/functions/lib/budget.mjs");
 
 const nepStore = () => {
   const m = new Map();

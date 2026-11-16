@@ -1,0 +1,42 @@
+// Wat de functies delen: een JSON-antwoord, en het dagbudget dat de kosten vasthoudt.
+// Per dag hoogstens DAGLIMIET vragen in totaal en PER_PERSOON per IP-adres, geteld in Netlify Blobs.
+import { createHash, randomUUID } from "node:crypto";
+import { getStore } from "@netlify/blobs";
+
+const DAGLIMIET = Number(process.env.DAGLIMIET || 300);
+const PER_PERSOON = Number(process.env.PER_PERSOON || 30);
+export const json = (data, status = 200) => Response.json(data, { status, headers: { "cache-control": "no-store" } });
+
+// Elke vraag schrijft eerst een eigen sleutel en telt daarna. Zo telt een vraag
+// die tegelijk met andere binnenkomt toch mee, en geraakt niemand over de grens
+// door veel vragen tegelijk te sturen. Een geweigerde vraag haalt zijn sleutel
+// weer weg, zodat één bezoeker het dagbudget van de anderen niet kan opmaken.
+// Het IP-adres wordt niet bewaard, alleen een hash ervan die elke dag verandert.
+export async function telOp(store, ip, dag = new Date().toISOString().slice(0, 10)) {
+  const wie = createHash("sha256").update(`${dag} ${ip}`).digest("hex").slice(0, 16);
+  const sleutel = `${dag}/${wie}/${randomUUID()}`;
+  await store.set(sleutel, "");
+  const weiger = async tekst => { await store.delete(sleutel); return tekst; };
+  const { blobs: eigen } = await store.list({ prefix: `${dag}/${wie}/` });
+  if (eigen.length > PER_PERSOON) return weiger("Je hebt vandaag al veel vragen gesteld. Probeer het morgen opnieuw.");
+  const { blobs } = await store.list({ prefix: `${dag}/` });
+  if (blobs.length > DAGLIMIET) return weiger("De demo heeft zijn vragen voor vandaag op. Probeer het morgen opnieuw.");
+  return null;
+}
+
+// Telt de vraag mee in het budget. Geeft een antwoord terug als de vraag geweigerd wordt, anders null.
+// Lukt het tellen niet, dan geen vraag: zonder teller is er geen grens aan de kosten.
+export async function budget(context) {
+  const nee = await telOp(getStore({ name: "budget", consistency: "strong" }), context.ip || "onbekend")
+    .catch(e => { console.error(e); return "De teller werkt even niet. Probeer het zo opnieuw."; });
+  return nee ? json({ fout: nee }, 429) : null;
+}
+
+// Een fout van het model als antwoord voor de pagina.
+export function modelFout(e, model) {
+  console.error(e);
+  if (e.status === 429) return json({ fout: model === "open"
+    ? "Het open model is even te druk of heeft zijn gratis portie voor vandaag op. Vraag het Claude, of probeer het later opnieuw."
+    : "Claude is even te druk. Probeer het over een minuut opnieuw." }, 503);
+  return json({ fout: "Het model antwoordde niet. Probeer het zo opnieuw." }, 502);
+}

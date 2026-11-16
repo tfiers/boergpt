@@ -6,11 +6,11 @@
 //   POST /api/oordeel {wie, item, klopt, bron, opmerking}
 import { getStore } from "@netlify/blobs";
 import { lees } from "./lib/zoek.mjs";
+import { json } from "./lib/budget.mjs";
 
 const ronde = JSON.parse(lees("oordeel.json"));
 const items = new Set(ronde.items.map(i => i.id));
 const KLOPT = ["ja", "half", "nee", "weet niet"], BRON = ["ja", "deels", "nee", "weet niet"];
-const json = (data, status = 200) => Response.json(data, { status, headers: { "cache-control": "no-store" } });
 const geldigeNaam = w => typeof w === "string" && /^[a-z0-9-]{2,30}$/.test(w);
 
 export default async req => {
