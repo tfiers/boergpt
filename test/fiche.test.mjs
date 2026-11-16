@@ -37,3 +37,18 @@ test("zoekt, vult in, en houdt alleen echte bronnen", async t => {
   assert.equal(uit.formulier.stikstof, `Iets over stikstof [S${echt}].`);
   assert.deepEqual(uit.bronnen.map(b => String(b.id)), [echt]);
 });
+
+test("een leeg laatste antwoord wordt nog één keer gevraagd", async t => {
+  const vragen = [];
+  t.mock.method(globalThis, "fetch", async (url, init) => {
+    vragen.push(JSON.parse(init.body));
+    if (vragen.length === 1) return Response.json({ content: [{ type: "tool_use", id: "a", name: "zoek_documenten", input: { zoekvraag: "bemesten gras voor 16 maart" } }], usage: {} });
+    if (vragen.length === 2) return Response.json({ content: [], usage: {} });
+    return Response.json({ content: [{ type: "text", text: "Ja, dat mag." }], usage: {} });
+  });
+  const uit = await vraagAan("claude", "Mag ik gras bemesten voor 16 maart?", { maxRondes: 1 });
+  assert.equal(vragen.length, 3);
+  // Het lege antwoord komt niet in het gesprek; de vraag staat bij de antwoorden van het zoeken.
+  assert.deepEqual(vragen[2].messages.at(-1).content.map(c => c.type), ["tool_result", "text"]);
+  assert.equal(uit.antwoord, "Ja, dat mag.");
+});
