@@ -4,7 +4,7 @@ Een herrangschikker leest vraag en stukje samen en geeft een nauwkeurige score, 
 traag om alle 5.039 stukjes te lezen. Dus: eerst de 30 beste kandidaten zoeken zoals de demo
 dat doet, dan die 30 opnieuw sorteren, en kijken of het juiste document vaker bij de 6 zit.
 
-  node test/meet.mjs zoek --deel oefen --opties '{"aantal":30}'
+  node test/meet.mjs zoek --deel oefen --opties '{"aantal":30,"herrangschik":false}'
   python test/herrangschik.py test/uitslag-zoek.json [model]
 
 Standaardmodel: BAAI/bge-reranker-v2-m3 (open, meertalig, ± 2 GB).

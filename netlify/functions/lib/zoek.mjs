@@ -105,11 +105,12 @@ function dichtbij(v, mag, vectoren) {
 
 // --- Samen ------------------------------------------------------------------
 export const STAPELS = ["regels", "praktijk", "onderzoek", "subsidies", "wet"];
-export const STANDAARD = { aantal: 6, kop: false, gewicht: 1, vectoren: "vectoren.i8", herrangschik: false };
+export const STANDAARD = { aantal: 6, kop: false, gewicht: 1, vectoren: "vectoren.i8", herrangschik: true };
 
 // `vector`: de vraagvector als die al bekend is, `false` om alleen op woorden te zoeken.
 // `gewicht`: hoe zwaar de lijst op betekenis telt tegenover die op woorden.
-// `herrangschik`: de 30 beste kandidaten laten herschikken door bge-reranker-base op Cloudflare.
+// `herrangschik`: de 30 beste kandidaten laten herschikken door bge-reranker-base op Cloudflare
+// (op de echte vragen: juiste bron bij de 6 van 30 naar 35 van 41, ± 0,6 s per zoekopdracht).
 export async function zoek(vraag, stapels = STAPELS, { vector, ...opties } = {}) {
   const { aantal, kop, gewicht, vectoren, herrangschik } = { ...STANDAARD, ...opties };
   const ok = new Set([].concat(stapels || []).filter(s => STAPELS.includes(s)));

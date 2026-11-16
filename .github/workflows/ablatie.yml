@@ -55,5 +55,5 @@ jobs:
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r pipeline/requirements.txt
       - name: Meten
         run: |
-          node test/meet.mjs zoek --deel ${{ matrix.deel }} --opties '{"aantal":30}' > /dev/null
+          node test/meet.mjs zoek --deel ${{ matrix.deel }} --opties '{"aantal":30,"herrangschik":false}' > /dev/null
           python test/herrangschik.py test/uitslag-zoek*.json | tee -a "$GITHUB_STEP_SUMMARY"

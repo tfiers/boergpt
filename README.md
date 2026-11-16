@@ -17,7 +17,7 @@ Geen officieel advies: kijk een regel altijd na bij de
 ```mermaid
 flowchart LR
   V[vraag] --> A[agent<br/>kiest stappen]
-  A -->|zoek_documenten| Z[zoeken<br/>betekenis + woorden]
+  A -->|zoek_documenten| Z[zoeken<br/>betekenis + woorden<br/>+ herrangschikken]
   A -->|uitrijkalender| K[kalender<br/>uitrijregeling VLM]
   Z --> A
   K --> A
@@ -32,8 +32,10 @@ flowchart LR
 2. **Zoeken** (`netlify/functions/lib/zoek.mjs`). Twee lijsten: op betekenis
    (de vector van de vraag tegen die van elk stukje, zodat "groenbedekker" ook
    "vanggewas" vindt) en op woorden (BM25, voor namen, nummers en vaktermen).
-   Reciprocal rank fusion voegt ze samen. Stukjes uit een inhoudstafel tellen
-   niet mee.
+   Reciprocal rank fusion voegt ze samen. Daarna leest een herrangschikker
+   (reranker, `bge-reranker-base` op Cloudflare) de vraag en elk van de 30
+   beste stukjes samen, en geeft de 6 beste aan het model. Stukjes uit een
+   inhoudstafel tellen niet mee.
 3. **Agent** (`netlify/functions/lib/agent.mjs`). Het model krijgt twee
    gereedschappen en beslist zelf wat het gebruikt: `zoek_documenten` (met de
    stapels die bij de vraag passen) en `uitrijkalender`, de uitrijregeling als
