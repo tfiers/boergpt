@@ -62,7 +62,8 @@ async function meetAgent(model) {
     const rij = { nr: v.nr, vraag: v.vraag, antwoord: a.antwoord, stappen: a.stappen.length, gebruik: a.gebruik, ms: Date.now() - t0 };
     if (v.bron) {
       rij.bron = v.bron === "kalender" ? !!a.kalender : a.bronnen.some(b => isBron(b, v.bron));
-      rij.klopt = new RegExp(v.sleutel, "i").test(a.antwoord) && !zegtWeetNiet;
+      // NFKC maakt van een smalle harde spatie ("60\u202f%") een gewone, zoals de sleutels verwachten.
+      rij.klopt = new RegExp(v.sleutel, "i").test(a.antwoord.normalize("NFKC")) && !zegtWeetNiet;
     } else {
       rij.weetNiet = zegtWeetNiet;
     }
