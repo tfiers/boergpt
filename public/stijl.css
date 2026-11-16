@@ -110,3 +110,8 @@ sup.ref{font-size:11px;color:var(--accent);font-weight:600;margin-left:2px}
 .kopieer{min-height:44px;padding:0 16px;border-radius:22px;border:1px solid var(--accent);background:none;color:var(--accent);font:inherit}
 .kaart h3{font-size:15px;margin:4px 0 0}
 [hidden]{display:none !important}
+#wie{min-width:0}
+.balk button,#teller{white-space:nowrap}
+.balk button{padding:0 14px}
+.stukjes summary::before{content:"▸";margin-right:6px}
+.stukjes[open] summary::before{content:"▾"}
