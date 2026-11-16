@@ -70,7 +70,7 @@ jobs:
             curl -s "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/ai/models/search?task=Text%20Generation&per_page=100" -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" | jq -r '.result[].name' | sort | sed 's/^/cloudflare:/'
             exit 0
           fi
-          [ -z "$RECHTER_MODEL" ] && unset RECHTER_MODEL
+          if [ -z "$RECHTER_MODEL" ]; then unset RECHTER_MODEL; fi
           if [ "$WAT" = rechter ]; then
             node test/rechter.mjs metingen/*.json | tee uitslag.txt
             { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
