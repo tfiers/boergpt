@@ -56,12 +56,17 @@ async function vraagAan(kaart, vraag, live = false) {
   }
   const t0 = performance.now();
   const data = await haal(doos, "/api/vraag", { vraag, model }, stop);
-  if (data) toon(doos, data, Math.round((performance.now() - t0) / 100) / 10);
+  if (!data) return;
+  // Antwoordde het open model in Claude's plaats, dan zegt de kop dat ook.
+  const naam = kaart.querySelector("[data-naam]");
+  naam.dataset.vast ??= naam.textContent;
+  naam.textContent = data.vervanger ? "nu niet beschikbaar" : naam.dataset.vast;
+  toon(doos, data, Math.round((performance.now() - t0) / 100) / 10);
 }
 
 function toon(doos, d, sec) {
   const nr = nummers(d), b = bronnenHtml(d, nr);
-  doos.innerHTML = `<p class="antwoord">${refs(d.antwoord, d, nr) || "Geen antwoord."}</p>${b.html}${stappenHtml(d, sec)}`;
+  doos.innerHTML = `${d.vervanger ? `<p class="bewaard">${esc(d.vervanger)}</p>` : ""}<p class="antwoord">${refs(d.antwoord, d, nr) || "Geen antwoord."}</p>${b.html}${stappenHtml(d, sec)}`;
   b.koppel(doos);
 }
 

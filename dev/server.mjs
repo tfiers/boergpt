@@ -11,6 +11,8 @@ globalThis.fetch = async (url, opt) => {
   const b = JSON.parse(opt.body), isA = String(url).includes("anthropic");
   const laatste = JSON.stringify(b.messages.at(-1));
   const vraag = isA ? b.messages[0].content : b.messages[1].content;
+  // Een vraag met "limiet" doet alsof de Claude-sleutel zijn maandlimiet bereikte.
+  if (isA && JSON.stringify(b.messages).includes("limiet")) return new Response(JSON.stringify({ error: { message: "usage limits" } }), { status: 400 });
   if (b.messages.length <= 2 && !isA || b.messages.length === 1) {
     const calls = [{ n: "zoek_documenten", a: { zoekvraag: vraag, stapels: ["regels", "praktijk", "onderzoek"] } }];
     if (/uitrij|mest/i.test(vraag)) calls.push({ n: "uitrijkalender", a: { type: 2, grond: "grasland", datum: "11-25" } });
@@ -28,7 +30,7 @@ globalThis.fetch = async (url, opt) => {
   const txt = `Nepantwoord voor de test, uit het eerste stukje [S${ids[0]}]. Een tweede zin uit een ander stukje [S${ids[1]}].` + (/K\]/.test(laatste) ? " Volgens de uitrijkalender mag het niet [K]." : "");
   return new Response(JSON.stringify(isA ? { content: [{ type: "text", text: txt }] } : { choices: [{ message: { content: txt } }] }));
 };
-const { vraagAan, MODELLEN } = await import(join(process.cwd(), "netlify/functions/lib/agent.mjs"));
+const { beantwoord } = await import(join(process.cwd(), "netlify/functions/lib/antwoord.mjs"));
 const { FICHE, perceelVraag } = await import(join(process.cwd(), "netlify/functions/lib/fiche.mjs"));
 const { opslag } = await import(join(process.cwd(), "netlify/functions/lib/budget.mjs"));
 const { nepStore } = await import(join(process.cwd(), "test/nep.mjs"));
@@ -42,12 +44,12 @@ http.createServer(async (req, res) => {
   if (req.url === "/api/vraag") {
     const { vraag, model } = await lees(req);
     if (vraag.includes("429")) return stuur(res, { fout: "De demo heeft zijn vragen voor vandaag op. Probeer het morgen opnieuw." }, 429);
-    return stuur(res, { model: MODELLEN[model].naam, ...await vraagAan(model, vraag) });
+    return stuur(res, await beantwoord(model, vraag));
   }
   if (req.url === "/api/perceel") {
     const p = await lees(req), vraag = perceelVraag(p);
     if (!vraag) return stuur(res, { fout: "Vul elk veld in." }, 400);
-    return stuur(res, { model: MODELLEN[p.model === "open" ? "open" : "claude"].naam, vraag, ...await vraagAan(p.model === "open" ? "open" : "claude", vraag, { maxRondes: 4, taak: FICHE }) });
+    return stuur(res, { vraag, ...await beantwoord(p.model === "open" ? "open" : "claude", vraag, { maxRondes: 4, taak: FICHE }) });
   }
   if (req.url.startsWith("/api/oordeel")) {
     const body = req.method === "POST" ? JSON.stringify(await lees(req)) : undefined;

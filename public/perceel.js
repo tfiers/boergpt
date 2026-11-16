@@ -43,7 +43,7 @@ form.addEventListener("submit", async e => {
 function toon(doos, d, sec) {
   const nr = nummers(d), b = bronnenHtml(d, nr);
   doos.innerHTML = `<p class="concept"><b>Concept.</b> Een taalmodel vulde dit in. Kijk elk veld na in zijn bron voor je er iets mee doet, en vink het dan aan.</p>
-    <h2>Fiche <span class="klein">${esc(d.model)}</span></h2>
+    <h2>Fiche <span class="klein">${esc(d.model)}</span></h2>${d.vervanger ? `<p class="bewaard">${esc(d.vervanger)}</p>` : ""}
     <dl class="velden">${Object.entries(VELDEN).map(([k, naam]) => `<div class="veld">
       <dt>${naam}</dt>
       <dd>${refs(d.formulier[k] || "", d, nr) || "Niet ingevuld."}</dd>
