@@ -43,6 +43,9 @@ export default async (req, context) => {
     return json({ model: MODELLEN[model].naam, ms: Date.now() - start, ...uit });
   } catch (e) {
     console.error(e);
+    if (e.status === 429) return json({ fout: model === "open"
+      ? "Het open model is even te druk: de gratis laag van Groq laat zo'n anderhalve vraag per minuut toe. Probeer over een minuut, of vraag het Claude."
+      : "Claude is even te druk. Probeer het over een minuut opnieuw." }, 503);
     return json({ fout: "Het model antwoordde niet. Probeer het zo opnieuw." }, 502);
   }
 };
