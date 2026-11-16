@@ -76,17 +76,30 @@ async function voerUit(naam, args, gezien) {
 }
 
 // --- Twee aanbieders, één lus ----------------------------------------------
+// Groq's gratis laag geeft 8000 tokens per minuut, zo'n anderhalve vraag. Bij "te druk" (429)
+// wacht dit zo lang als de aanbieder vraagt, maar niet langer dan WACHT_MAX seconden
+// (live 15, zodat de functie binnen haar minuut blijft; de meting zet het hoger).
+const WACHT_MAX = Number(process.env.WACHT_MAX || 15);
+async function vraagModel(naam, url, headers, body) {
+  for (let poging = 0; ; poging++) {
+    const r = await fetch(url, { method: "POST", signal: AbortSignal.timeout(45000),
+      headers: { ...headers, "content-type": "application/json" }, body: JSON.stringify(body) });
+    if (r.ok) return r.json();
+    const wacht = Number(r.headers.get("retry-after")) || 10;
+    if (r.status === 429 && poging < 3 && wacht <= WACHT_MAX) { await new Promise(k => setTimeout(k, wacht * 1000)); continue; }
+    const fout = new Error(`${naam}: ${r.status} ${(await r.text()).slice(0, 200)}`);
+    fout.status = r.status;
+    throw fout;
+  }
+}
+
 const anthropic = {
   tools: GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
     input_schema: { type: "object", properties: g.velden, required: g.verplicht } })),
   async stap(berichten) {
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST", signal: AbortSignal.timeout(45000),
-      headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({ model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten }),
-    });
-    if (!r.ok) throw new Error(`Claude: ${r.status} ${(await r.text()).slice(0, 200)}`);
-    const j = await r.json();
+    const j = await vraagModel("Claude", "https://api.anthropic.com/v1/messages",
+      { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01" },
+      { model: MODELLEN.claude.id, max_tokens: 1200, system: SYSTEEM(), tools: this.tools, messages: berichten });
     berichten.push({ role: "assistant", content: j.content });
     const oproepen = j.content.filter(c => c.type === "tool_use").map(c => ({ id: c.id, naam: c.name, args: c.input }));
     return { oproepen, tekst: j.content.filter(c => c.type === "text").map(c => c.text).join(""),
@@ -102,13 +115,9 @@ const groq = {
   tools: GEREEDSCHAP.map(g => ({ type: "function", function: { name: g.naam, description: g.uitleg,
     parameters: { type: "object", properties: g.velden, required: g.verplicht } } })),
   async stap(berichten) {
-    const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-      method: "POST", signal: AbortSignal.timeout(45000),
-      headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}`, "content-type": "application/json" },
-      body: JSON.stringify({ model: MODELLEN.open.id, max_tokens: 1200, temperature: 0.2, tools: this.tools, messages: berichten }),
-    });
-    if (!r.ok) throw new Error(`Groq: ${r.status} ${(await r.text()).slice(0, 200)}`);
-    const j = await r.json();
+    const j = await vraagModel("Groq", "https://api.groq.com/openai/v1/chat/completions",
+      { Authorization: `Bearer ${process.env.GROQ_API_KEY}` },
+      { model: MODELLEN.open.id, max_tokens: 1200, temperature: 0.2, tools: this.tools, messages: berichten });
     const m = j.choices[0].message;
     berichten.push({ role: "assistant", content: m.content || "", ...(m.tool_calls ? { tool_calls: m.tool_calls } : {}) });
     const oproepen = (m.tool_calls || []).map(t => {
