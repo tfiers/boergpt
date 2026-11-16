@@ -38,11 +38,31 @@ flowchart LR
    gereedschappen en beslist zelf wat het gebruikt: `zoek_documenten` (met de
    stapels die bij de vraag passen) en `uitrijkalender`, de uitrijregeling als
    tabel (type meststof, grasland of akkerland, datum → ja, nee of onder
-   voorwaarden). Hoogstens 4 modelaanroepen per vraag.
+   voorwaarden). Hoogstens 4 modelaanroepen per vraag; in de laatste moet het
+   schrijven. Claude Sonnet 5.5 laat zich niet dwingen een gereedschap te
+   gebruiken (`tool_choice` any of tool geeft een fout); de opdracht zegt dat
+   het eerst zoekt, en het formulier komt als structured output
+   (`output_config.format`).
 4. **Bronnen controleren** (`opmaak` in `agent.mjs`). Het model zet achter
    elke zin `[S123]`. Een nummer dat het model niet echt kreeg, valt weg. Is
    een bron ouder dan drie jaar, dan staat dat erbij. Staat het antwoord niet
    in de documenten, dan zegt het model dat.
+
+De agent heeft een tweede taak: een **perceelfiche** (`public/perceel.html`,
+`netlify/functions/perceel.mjs`, `lib/fiche.mjs`). Je geeft teelt, grond,
+meststof, fosfaatklasse, datum en oppervlakte; de agent zoekt en vult zeven
+velden in (uitrijperiode, mag het op die datum, stikstof, fosfor, vanggewas,
+ecoregelingen, wat na te kijken), elk met zijn bron. Het blijft een concept:
+bij elk veld vink je af dat je het nakeek. Dezelfde lus, met een andere
+opdracht en een formulier als JSON-schema in plaats van vrije tekst.
+
+**MCP-server** (`netlify/functions/mcp.mjs`): elk programma dat
+[MCP](https://modelcontextprotocol.io) spreekt, kan op `/mcp` dezelfde twee
+gereedschappen gebruiken, zonder ons taalmodel:
+
+```sh
+claude mcp add --transport http boergpt https://boergpt.netlify.app/mcp
+```
 
 De modellen: `gpt-oss-120b` (open gewichten, Apache 2.0, via Groq; is Groq te druk of
 zijn gratis portie op, dan via Cloudflare Workers AI) en Claude
