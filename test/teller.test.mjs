@@ -4,15 +4,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 process.env.DAGLIMIET = "5"; process.env.PER_PERSOON = "3";
 const { telOp } = await import("../netlify/functions/lib/budget.mjs");
-
-const nepStore = () => {
-  const m = new Map();
-  return {
-    set: async (k, v) => { await null; m.set(k, v); },
-    delete: async k => { await null; m.delete(k); },
-    list: async ({ prefix }) => { await null; return { blobs: [...m.keys()].filter(k => k.startsWith(prefix)).map(key => ({ key })) }; },
-  };
-};
+import { nepStore } from "./nep.mjs";
 
 test("per persoon en per dag", async () => {
   const s = nepStore();

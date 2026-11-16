@@ -4,15 +4,15 @@ const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 const KLOPT = [["ja", "Ja"], ["half", "Half"], ["nee", "Nee"], ["weet niet", "Weet ik niet"]];
 const BRON = [["ja", "Ja"], ["deels", "Deels"], ["nee", "Nee"], ["weet niet", "Weet ik niet"]];
 const url = new URL(location.href);
-const wie = (url.searchParams.get("wie") || "").toLowerCase().trim().replace(/\s+/g, "-");
+const wie = url.searchParams.get("wie") || "", sleutel = url.searchParams.get("sleutel") || "";
 let items = [], oordelen = new Map(), nu = 0;
 
 function melding(tekst) { $("#melding").hidden = !tekst; $("#melding").textContent = tekst || ""; }
 
 async function laad() {
-  if (!/^[a-z0-9-]{2,30}$/.test(wie)) { $("#naam").hidden = false; return; }
+  if (!wie || !sleutel) return melding("Open de link die je kreeg: hij bevat je naam en je sleutel.");
   let r, d;
-  try { r = await fetch(`/api/oordeel?wie=${encodeURIComponent(wie)}`, { cache: "no-store" }); d = await r.json(); }
+  try { r = await fetch(`/api/oordeel?wie=${encodeURIComponent(wie)}&sleutel=${encodeURIComponent(sleutel)}`, { cache: "no-store" }); d = await r.json(); }
   catch { return melding("Geen verbinding. Ververs de pagina als je weer online bent."); }
   if (!r.ok) return melding(`${r.status}: ${d.fout || "er liep iets mis."}`);
   items = d.items;
@@ -68,7 +68,7 @@ function toon() {
 async function bewaar() {
   const it = items[nu];
   const kies = v => document.querySelector(`[data-veld="${v}"] [aria-checked="true"]`)?.dataset.w;
-  const o = { wie, item: it.id, klopt: kies("klopt"), bron: kies("bron"), opmerking: $("#opm").value.trim() };
+  const o = { wie, sleutel, item: it.id, klopt: kies("klopt"), bron: kies("bron"), opmerking: $("#opm").value.trim() };
   if (!o.klopt || !o.bron) return;
   try {
     const r = await fetch("/api/oordeel", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(o) });
@@ -80,9 +80,4 @@ async function bewaar() {
 
 $("#vorige").addEventListener("click", () => { if (nu > 0) { nu--; toon(); } });
 $("#volgende").addEventListener("click", () => { nu++; toon(); });
-$("#naam").addEventListener("submit", e => {
-  e.preventDefault();
-  url.searchParams.set("wie", $("#wie").value.toLowerCase().trim().replace(/\s+/g, "-"));
-  location.href = url;
-});
 laad();

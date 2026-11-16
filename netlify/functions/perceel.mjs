@@ -1,5 +1,5 @@
 // POST /api/perceel {teelt, grond, mest, klasse, datum, oppervlakte, model} → een ingevulde fiche
-// voor één perceel, elk veld met zijn bron (lib/fiche.mjs). Telt mee in het dagbudget.
+// voor één perceel, elk veld met zijn bron (lib/fiche.mjs). Heeft een eigen, kleiner dagbudget.
 import { budget, json, modelFout } from "./lib/budget.mjs";
 import { MODELLEN, vraagAan } from "./lib/agent.mjs";
 import { FICHE, perceelVraag } from "./lib/fiche.mjs";
@@ -10,7 +10,7 @@ export default async (req, context) => {
   const vraag = perceelVraag(body);
   if (!vraag) return json({ fout: "Vul elk veld in: teelt, grond, meststof, fosfaatklasse, datum en oppervlakte." }, 400);
   const model = body?.model === "open" ? "open" : "claude";
-  const nee = await budget(context);
+  const nee = await budget(context, "perceel");
   if (nee) return nee;
   const start = Date.now();
   try {

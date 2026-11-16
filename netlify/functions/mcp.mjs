@@ -2,9 +2,10 @@
 // kan hier de documenten doorzoeken en de uitrijkalender raadplegen, zonder ons taalmodel.
 // Zelfde gereedschap als de agent (lib/agent.mjs). Stateless "Streamable HTTP": elk verzoek
 // is één JSON-RPC-bericht met één JSON-antwoord. Kost geen tokens; alleen de vraagvector
-// komt van Cloudflare, zoals bij de demo.
+// komt van Cloudflare, zoals bij de demo; daarom heeft het een eigen dagbudget (lib/budget.mjs).
 //   claude mcp add --transport http boergpt https://boergpt.netlify.app/mcp
 import { GEREEDSCHAP, voerUit } from "./lib/agent.mjs";
+import { budget } from "./lib/budget.mjs";
 
 const VERSIES = ["2025-06-18", "2025-03-26", "2024-11-05"];
 const tools = GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
@@ -13,13 +14,14 @@ const tools = GEREEDSCHAP.map(g => ({ name: g.naam, description: g.uitleg,
 const antwoord = (id, result) => Response.json({ jsonrpc: "2.0", id, result });
 const fout = (id, code, message, status = 200) => Response.json({ jsonrpc: "2.0", id, error: { code, message } }, { status });
 
-export default async req => {
+export default async (req, context) => {
   if (req.method === "GET") return new Response("BoerGPT MCP-server: stuur JSON-RPC met POST.", { status: 405, headers: { allow: "POST" } });
   if (req.method !== "POST") return new Response(null, { status: 405, headers: { allow: "POST" } });
   let bericht;
   try { bericht = await req.json(); } catch { return fout(null, -32700, "Geen geldige JSON.", 400); }
   if (Array.isArray(bericht)) return fout(null, -32600, "Eén bericht per verzoek.", 400);
-  const { id, method, params = {} } = bericht;
+  if (!bericht || typeof bericht !== "object") return fout(null, -32600, "Een bericht is een JSON-object.", 400);
+  const { id, method } = bericht, params = bericht.params ?? {};
   if (id === undefined) return new Response(null, { status: 202 });   // een melding, bv. notifications/initialized
   switch (method) {
     case "initialize":
@@ -37,6 +39,11 @@ export default async req => {
       const args = params.arguments || {};
       const mist = g.verplicht.filter(v => args[v] === undefined);
       if (mist.length) return antwoord(id, { isError: true, content: [{ type: "text", text: `Ontbreekt: ${mist.join(", ")}` }] });
+      // Zoals bij /api/vraag: korte tekst en korte lijsten, zodat één oproep weinig kost.
+      if (Object.values(args).some(v => (typeof v === "string" && v.length > 400) || (Array.isArray(v) && v.length > 10)))
+        return antwoord(id, { isError: true, content: [{ type: "text", text: "Te lang: hoogstens 400 tekens per veld." }] });
+      const nee = await budget(context, "mcp");
+      if (nee) return antwoord(id, { isError: true, content: [{ type: "text", text: (await nee.json()).fout }] });
       try {
         const { tekst } = await voerUit(g.naam, args);
         return antwoord(id, { content: [{ type: "text", text: tekst }] });
