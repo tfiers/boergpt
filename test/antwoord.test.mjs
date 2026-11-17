@@ -7,6 +7,7 @@ import { beantwoord } from "../netlify/functions/lib/antwoord.mjs";
 import { nepStore } from "./nep.mjs";
 
 process.env.GROQ_API_KEY ||= "test";
+process.env.CLAUDE_DOLLAR_PER_DAG = "0.5";
 const winkels = {};
 opslag.open = naam => (winkels[naam] ??= nepStore());
 
