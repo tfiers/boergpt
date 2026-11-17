@@ -8,7 +8,7 @@ export async function beantwoord(model, vraag, opties) {
   let reden = null;
   if (model === "claude") {
     // Werkt de teller niet, dan liever het open model dan een kost zonder grens.
-    if (await claudeOp().catch(e => { console.error(e); return true; })) reden = "Claude heeft zijn budget voor vandaag op";
+    if (await claudeOp().catch(e => { console.error(e); return true; })) reden = "Claude staat uit of heeft zijn budget voor vandaag op";
     else {
       try {
         const uit = await vraagAan("claude", vraag, opties);

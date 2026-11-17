@@ -183,8 +183,9 @@ vragen per minuut stuurt. Een perceelfiche heeft een eigen teller (60 per dag,
 10 per bezoeker), de MCP-server ook (3.000 en 300).
 
 Claude kost per token (± $0,025 per vraag), dus Claude heeft daarbovenop een
-dagbudget in dollar: `CLAUDE_DOLLAR_PER_DAG`, standaard $0,50 (± 20 vragen,
-hoogstens ± $15 per maand), geteld na elk antwoord (`lib/budget.mjs`). Is het
+dagbudget in dollar: `CLAUDE_DOLLAR_PER_DAG` in Netlify, geteld na elk antwoord
+(`lib/budget.mjs`). Standaard is het $0: Claude staat uit. Met 0,5 antwoordt
+Claude ± 20 vragen per dag (hoogstens ± $15 per maand). Is het
 op, of antwoordt de Claude API niet (bijvoorbeeld omdat de maandlimiet van de
 sleutel bereikt is), dan antwoordt het open model in de Claude-kaart, en de
 kaart zegt dat erbij (`lib/antwoord.mjs`). Zo werkt de demo altijd.
