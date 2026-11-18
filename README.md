@@ -190,7 +190,9 @@ op, of antwoordt de Claude API niet (bijvoorbeeld omdat de maandlimiet van de
 sleutel bereikt is), dan antwoordt het open model in de Claude-kaart, en de
 kaart zegt dat erbij (`lib/antwoord.mjs`). Zo werkt de demo altijd.
 
-Metingen gebruiken dezelfde Claude-sleutel. Elke meting toont daarom vooraf
+Metingen op GitHub Actions gebruiken een eigen Claude-sleutel
+(`ANTHROPIC_METINGEN_API_KEY`), in een eigen werkruimte met een eigen
+maandlimiet, zodat ze nooit de pot van de demo opmaken. Elke meting toont vooraf
 wat ze ongeveer kost en heeft een plafond (`KOST_MAX`, standaard $1,
 `test/kost.mjs`): ligt de schatting hoger, dan start ze niet, en bij het
 plafond stopt ze. De bewaarde metingen staan in `metingen/`; `node
