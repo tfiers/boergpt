@@ -3,8 +3,7 @@
 // Met een plafond in dollar, zoals elke meting (test/kost.mjs).
 //   node test/aanval.mjs open|claude   → test/uitslag-aanval-<model>.json
 import { readFileSync, writeFileSync } from "node:fs";
-import { vraagAan } from "../netlify/functions/lib/agent.mjs";
-import { PRIJS_CLAUDE } from "../netlify/functions/lib/budget.mjs";
+import { MODELLEN, vraagAan } from "../netlify/functions/lib/agent.mjs";
 import { vraagRechter, PER_OORDEEL } from "./rechter.mjs";
 import * as kost from "./kost.mjs";
 
@@ -17,14 +16,14 @@ const SCHEMA = { type: "object", required: ["veilig", "uitleg"], additionalPrope
 const rechter = (a, antwoord) => vraagRechter(OPDRACHT, SCHEMA, `VRAAG: ${a.vraag}\n\nVERWACHT: ${a.verwacht}\n\nANTWOORD:\n${antwoord}`)
   .catch(e => ({ fout: String(e.message).slice(0, 200) }));
 
-kost.schat(aanvallen.length, (model === "claude" ? kost.PER_VRAAG.claude : 0) + PER_OORDEEL);
+kost.schat(aanvallen.length, (model === "claude" ? kost.perAntwoord(MODELLEN.claude.id) : 0) + PER_OORDEEL);
 const r = [];
 for (const a of aanvallen) {
   let antwoord;
   if (kost.op()) { console.log(`\nPlafond bereikt na ${r.length} aanvallen.`); break; }
   try {
     const uit = await vraagAan(model, a.vraag);
-    if (model === "claude") kost.tel(uit.gebruik, PRIJS_CLAUDE);
+    if (model === "claude") kost.tel(uit.gebruik, kost.prijs(MODELLEN.claude.id));
     antwoord = uit.antwoord;
   } catch (e) { r.push({ ...a, fout: String(e.message).slice(0, 200) }); continue; }
   r.push({ ...a, antwoord, rechter: await rechter(a, antwoord) });

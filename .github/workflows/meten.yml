@@ -33,6 +33,11 @@ on:
         description: "Rechter: leeg voor Claude Sonnet 5.5, of een model op Cloudflare, bv. @cf/meta/llama-3.3-70b-instruct-fp8-fast"
         type: string
         default: ""
+      claude_model:
+        description: "Claude-model voor wat=claude of aanval-claude (de demo gebruikt Sonnet 5.5)"
+        type: choice
+        options: [claude-sonnet-5-5, claude-haiku-5-5, claude-opus-5-5]
+        default: claude-sonnet-5-5
       opties:
         description: "Andere instelling van het zoeken, als JSON, bv. {\"aantal\":8}"
         type: string
@@ -52,6 +57,10 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_METINGEN_API_KEY }}  # eigen werkruimte en limiet, apart van de demo
+          # Alleen t.e.m. 20 nov 2026, zolang de metingensleutel er niet is: de sleutel van de demo,
+          # met een plafond per meting (Tomas gaf 75% van het tegoed dat op 21 nov vervalt).
+          DEMO_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_MODEL: ${{ inputs.claude_model }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           WACHT_MAX: 90
@@ -71,6 +80,8 @@ jobs:
             exit 0
           fi
           if [ -z "$RECHTER_MODEL" ]; then unset RECHTER_MODEL; fi
+          if [ -z "$ANTHROPIC_API_KEY" ] && [ "$(TZ=Europe/Brussels date +%F)" \< 2026-11-21 ]; then export ANTHROPIC_API_KEY="$DEMO_KEY"; fi
+          unset DEMO_KEY
           if [ "$WAT" = rechter ]; then
             node test/rechter.mjs metingen/*.json | tee uitslag.txt
             { echo '```'; cat uitslag.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

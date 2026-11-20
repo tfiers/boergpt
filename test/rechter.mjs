@@ -9,14 +9,15 @@
 //
 // Opnieuw oordelen over bewaarde metingen, alleen waar het oordeel ontbreekt of mislukte:
 //   node test/rechter.mjs metingen/<uitslag>.json [...]
+// Met RECHTER_MODEL komt dat oordeel in een eigen veld ("rechter:<model>"), naast dat van de
+// standaardrechter: zo meet test/statistiek.py hoe vaak twee rechters het eens zijn.
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { PRIJS_CLAUDE } from "../netlify/functions/lib/budget.mjs";
 import * as kost from "./kost.mjs";
 
 export const RECHTER = process.env.RECHTER_MODEL || "claude-sonnet-5-5";
 const opCloudflare = RECHTER.startsWith("@cf/");
-export const PER_OORDEEL = opCloudflare ? kost.PER_VRAAG.rechterOpen : kost.PER_VRAAG.rechterClaude;
+export const PER_OORDEEL = opCloudflare ? kost.PER_OORDEEL_OPEN : kost.perOordeel(RECHTER);
 const PRIJS_CF = { in: 0.35, uit: 0.75 };  // dollar per miljoen tokens, gpt-oss-120b op Workers AI; de andere zijn goedkoper
 
 // Eén oordeel als JSON volgens `schema`. Claude geeft structured output; een model op Cloudflare
@@ -38,7 +39,7 @@ export async function vraagRechter(opdracht, schema, inhoud) {
     if (!r.ok) throw new Error(`rechter: ${r.status} ${(await r.text()).slice(0, 200)}`);
     const j = await r.json();
     if (!opCloudflare) {
-      kost.tel({ in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 }, PRIJS_CLAUDE);
+      kost.tel({ in: j.usage?.input_tokens || 0, uit: j.usage?.output_tokens || 0 }, kost.prijs(RECHTER));
       return JSON.parse(j.content.find(c => c.type === "text").text);
     }
     kost.tel({ in: j.usage?.prompt_tokens || 0, uit: j.usage?.completion_tokens || 0 }, PRIJS_CF);
@@ -93,15 +94,16 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   // Alleen metingen van antwoorden (test/meet.mjs open|claude), niet die van het red team.
   const bestanden = process.argv.slice(2).map(pad => [pad, JSON.parse(readFileSync(pad, "utf8"))])
     .filter(([, u]) => ["open", "claude"].includes(u.wat));
-  const open = u => u.r.filter(x => x.antwoord && !x.rechter?.klopt);
+  const veld = process.env.RECHTER_MODEL ? `rechter:${RECHTER}` : "rechter";
+  const open = u => u.r.filter(x => x.antwoord && !x[veld]?.klopt);
   kost.schat(bestanden.reduce((n, [, u]) => n + open(u).length, 0), PER_OORDEEL);
   for (const [pad, u] of bestanden) {
     for (const x of open(u)) {
-      try { x.rechter = await oordeel({ ...x, verwacht: verwacht(vragen.find(v => v.nr === x.nr)) }); }
-      catch (e) { x.rechter = { fout: String(e.message).slice(0, 200) }; }
+      try { x[veld] = await oordeel({ ...x, verwacht: verwacht(vragen.find(v => v.nr === x.nr)) }); }
+      catch (e) { x[veld] = { fout: String(e.message).slice(0, 200) }; }
       process.stdout.write(".");
     }
-    u.samen = { ...Object.fromEntries(Object.entries(u.samen).filter(([k]) => !k.startsWith("rechter"))), ...samenRechter(u.r) };
+    if (veld === "rechter") u.samen = { ...Object.fromEntries(Object.entries(u.samen).filter(([k]) => !k.startsWith("rechter"))), ...samenRechter(u.r) };
     writeFileSync(pad, JSON.stringify(u, null, 1));
     console.log(`\n${pad}`, u.samen);
   }

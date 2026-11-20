@@ -10,13 +10,12 @@
 // Voeg --max 5 toe om alleen de eerste 5 vragen te meten (een snelle proef).
 // Wat Claude kost, heeft een plafond (KOST_MAX, test/kost.mjs): vooraf staat de geschatte kost,
 // en bij het plafond stopt de meting.
-// OPEN_VIA=groq of cloudflare kiest de aanbieder van het open model (zie agent.mjs).
+// OPEN_VIA=groq of cloudflare kiest de aanbieder van het open model, CLAUDE_MODEL het Claude-model (zie agent.mjs).
 // Draai vanuit de map van de site. De uitslag komt in test/uitslag-<wat>.json.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { pct } from "./rechter.mjs";
 import { bronnen, stukjes, zoek, STAPELS, STANDAARD } from "../netlify/functions/lib/zoek.mjs";
-import { PRIJS_CLAUDE } from "../netlify/functions/lib/budget.mjs";
-import { periode } from "../netlify/functions/lib/agent.mjs";
+import { MODELLEN, periode } from "../netlify/functions/lib/agent.mjs";
 import * as kost from "./kost.mjs";
 
 const wat = process.argv[2];
@@ -69,13 +68,13 @@ async function meetAgent(model) {
   const { vraagAan } = await import("../netlify/functions/lib/agent.mjs");
   // --rechter: een model oordeelt ook over elk antwoord (test/rechter.mjs), naast de sleutel.
   const rechter = process.argv.includes("--rechter") ? await import("./rechter.mjs") : null;
-  kost.schat(vragen.length, (model === "claude" ? kost.PER_VRAAG.claude : 0) + (rechter ? rechter.PER_OORDEEL : 0));
+  kost.schat(vragen.length, (model === "claude" ? kost.perAntwoord(MODELLEN.claude.id) : 0) + (rechter ? rechter.PER_OORDEEL : 0));
   const r = [];
   for (const v of vragen) {
     if (kost.op()) { console.log(`\nPlafond bereikt na ${r.length} vragen.`); break; }
     let a; const t0 = Date.now();
     try { a = await vraagAan(model, v.vraag); } catch (e) { r.push({ nr: v.nr, vraag: v.vraag, fout: String(e.message).slice(0, 200) }); continue; }
-    if (model === "claude") kost.tel(a.gebruik, PRIJS_CLAUDE);
+    if (model === "claude") kost.tel(a.gebruik, kost.prijs(MODELLEN.claude.id));
     const zegtWeetNiet = WEET_NIET.test(a.antwoord);
     const rij = { nr: v.nr, vraag: v.vraag, antwoord: a.antwoord, stappen: a.stappen.length, gebruik: a.gebruik, ms: Date.now() - t0,
       via: a.via, bronnen: a.bronnen.map(b => ({ id: b.id, titel: b.titel, datum: b.datum, pagina: b.pagina, tekst: b.tekst })), kalender: kalenderTekst(a.kalender) };
@@ -108,7 +107,8 @@ async function meetAgent(model) {
 
 if (!["zoek", "open", "claude"].includes(wat)) { console.log("Gebruik: node test/meet.mjs zoek|open|claude [--deel oefen|apart|echt]"); process.exit(1); }
 const uit = wat === "zoek" ? await meetZoek() : await meetAgent(wat);
-uit.wat = wat; uit.deel = deel; uit.model = process.env.OPEN_VIA ? `${process.env.OPEN_VIA}:${process.env.OPEN_MODEL || "gpt-oss-120b"}` : undefined; uit.datum = new Date().toISOString().slice(0, 10); uit.stukjes = stukjes.length;
+uit.wat = wat; uit.deel = deel;
+uit.model = wat === "claude" ? MODELLEN.claude.id : process.env.OPEN_VIA ? `${process.env.OPEN_VIA}:${process.env.OPEN_MODEL || "gpt-oss-120b"}` : undefined; uit.datum = new Date().toISOString().slice(0, 10); uit.stukjes = stukjes.length;
 writeFileSync(`test/uitslag-${wat}${deel === "oefen" ? "" : `-${deel}`}${woorden ? "-woorden" : ""}.json`, JSON.stringify(uit, null, 1));
 for (const x of uit.r) if (x.raak === false || x.bron === false || x.klopt === false || x.weetNiet === false || x.fout)
   console.log(`  ✗ ${x.nr}. ${x.vraag}${x.fout ? `  (${x.fout})` : ""}`);

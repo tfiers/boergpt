@@ -5,9 +5,11 @@ import { bronnen, lees, zoek, STAPELS } from "./zoek.mjs";
 
 const kalender = JSON.parse(lees("uitrijkalender.json"));
 
+// CLAUDE_MODEL kiest een ander Claude-model, voor een meting (bv. claude-haiku-5-5).
+const CLAUDE = process.env.CLAUDE_MODEL || "claude-sonnet-5-5";
 export const MODELLEN = {
   open: { naam: "gpt-oss-120b (open model)" },
-  claude: { naam: "Claude Sonnet 5.5", id: process.env.CLAUDE_MODEL || "claude-sonnet-5-5" },
+  claude: { naam: CLAUDE.replace(/^claude-(\w+)-(\d+)-(\d+)$/, (_, m, a, b) => `Claude ${m[0].toUpperCase()}${m.slice(1)} ${a}.${b}`), id: CLAUDE },
 };
 
 const vandaag = () => new Date().toLocaleDateString("nl-BE", { timeZone: "Europe/Brussels", day: "numeric", month: "long", year: "numeric" });
