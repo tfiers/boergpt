@@ -115,16 +115,34 @@ Wat nog misloopt: "fosfor" vindt de tabel met "fosfaat"-normen niet,
 de uitrijregeling, en "drie paarden op anderhalve hectare" vindt de brochure
 over vrijstelling niet.
 
-**Antwoorden van Claude Sonnet 5.5** (zonder herrangschikker, rechter Claude):
+**Antwoorden van Claude Sonnet 5.5**, de demo (met herrangschikker, 6 stukjes,
+rechter Claude Sonnet 5.5; 20 nov 2026, oefen 2 keer en echt 3 keer gemeten):
 
-| | juiste bron | klopt | half | zegt "weet ik niet" | tijd |
-|---|---|---|---|---|---|
-| oefen (45) | 93% | 98% | 2% | 4 van 4 | 5,4 s |
-| echt (50) | 90% | 80% | 16% | 7 van 9 | 7,6 s |
+| | juiste bron | klopt (sleutel) | klopt (rechter) | half (rechter) | zegt "weet ik niet" | tijd |
+|---|---|---|---|---|---|---|
+| oefen (45) | 95% | 95–98% | 96–98% | 2–4% | 4 van 4 | 5,9 s |
+| echt (50) | 95% | 88–95% | 88–92% | 6–12% | 7–8 van 9 | 9,1 s |
 
 Op de echte vragen is "half" vooral een antwoord dat klopt maar een deel van
-de vraag laat liggen. Twee antwoorden waren fout; bij beide vond het zoeken het
-juiste document niet, en het antwoord zei dat eerlijk.
+de vraag laat liggen. Over de drie runs oordeelde de rechter één antwoord fout.
+
+**Welk Claude-model?** Dezelfde vragen en instellingen, 20 nov 2026; "klopt"
+volgens de sleutel, de rechter op de echte vragen ernaast, de kost voor het
+antwoord alleen:
+
+| model | oefen klopt | echt klopt | echt, rechter: klopt / half | tijd (echt) | $ per 1000 vragen (echt) |
+|---|---|---|---|---|---|
+| Haiku 5.5 | 88% | 85% | 70% / 26% | 8,2 s | 1,64 |
+| Sonnet 5.5 | 95–98% | 88–95% | 88–92% / 6–12% | 9,1 s | 32,58 |
+| Opus 5.5 | 95% | 85% | 78% / 20% | 9,9 s | 59,05 |
+
+Opus doet het hier niet beter dan Sonnet. Haiku kost twintig keer minder; de
+rechter vindt zijn antwoorden vaker half, maar volgens de sleutel is het
+verschil met Sonnet geen significant verschil (zie "Hoe zeker" hieronder).
+
+**Hoeveel stukjes?** Sonnet op de echte vragen: met 3 stukjes klopt 83%
+(rechter 78%, half 22%), met 6 stukjes 88–95%, met 10 stukjes 88% (rechter 90%)
+voor 15% meer tokens. 3 is te weinig; boven 6 wint het niets.
 
 **Welk model?** Dezelfde 41 oefenvragen met een antwoord, via Cloudflare Workers
 AI; "klopt" volgens de sleutel, zodat elk model op dezelfde manier telt
@@ -155,6 +173,25 @@ vragen, van Claude en gpt-oss-120b door elkaar, zonder het model. Elke expert
 krijgt een eigen link met een code (`node test/oordeel.mjs code <naam>`);
 `node test/oordeel.mjs vergelijk` zet hun oordeel naast de sleutel en de
 rechter.
+
+**Hoe zeker zijn de cijfers?** `python3 test/statistiek.py metingen/echt-*.json`
+rekent het uit op de bewaarde metingen, zonder nieuwe modelaanroepen.
+
+- Met 41 vragen is één vraag 2,4 punten. Het 95%-interval (Wilson) rond 93%
+  (38 van 41) loopt van 81% tot 97%.
+- Ruis tussen runs: drie keer Sonnet op dezelfde 41 echte vragen gaf 39, 36 en
+  38 juist; 9 vragen wisselden tussen juist en fout. Op de oefenvragen wisselde
+  1 vraag. Een verschil van een paar vragen tussen twee runs zegt dus weinig.
+- Verschil tussen modellen: McNemar (exact) per paar, op de vragen waar ze
+  verschillen, met Holm-correctie over alle paren (9 modellen op de oefenvragen
+  zijn 36 paren). Haiku, Sonnet en Opus 5.5 en Qwen3.8 27B verschillen niet
+  significant van elkaar; gpt-oss-120b, gpt-oss-20b, Llama, Mistral en Gemma
+  liggen significant lager dan Sonnet en Opus. Op de echte vragen ligt
+  gpt-oss-120b significant lager dan elk Claude-model.
+- Sleutel en rechter: Cohen's kappa 0,2–0,5 op de antwoorden van Claude. Bijna
+  alles klopt, dus er zijn te weinig foute antwoorden om de overeenkomst
+  goed te meten; de rechter telt "half" waar de sleutel alleen een getal of
+  woord zoekt.
 
 De oefen- en apart gehouden vragen zijn geschreven met de documenten ernaast,
 dus die scores zijn eerder te hoog. De metingen staan in `metingen/`.
