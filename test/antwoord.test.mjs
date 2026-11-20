@@ -2,7 +2,8 @@
 // Claude niet antwoordt (de maandlimiet van de sleutel). node --test test/antwoord.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { opslag, kost } from "../netlify/functions/lib/budget.mjs";
+import { opslag } from "../netlify/functions/lib/budget.mjs";
+import { kost } from "../netlify/functions/lib/prijzen.mjs";
 import { beantwoord } from "../netlify/functions/lib/antwoord.mjs";
 import { nepStore } from "./nep.mjs";
 
