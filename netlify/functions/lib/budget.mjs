@@ -45,7 +45,13 @@ export async function budget(context, soort = "vraag") {
 // (± 20 vragen). Met 0 staat Claude uit.
 // Geteld in dollar na elk antwoord: elk antwoord schrijft een sleutel met zijn kost in de naam.
 // Is het budget op, dan antwoordt het open model in Claude's plaats (lib/antwoord.mjs).
-export const PRIJS_CLAUDE = { in: 2, uit: 10 };  // dollar per miljoen tokens, Claude Sonnet 5.5
+// Dollar per miljoen tokens, prijslijst van Anthropic (Haiku: voor een prompt tot 100.000 tokens).
+export const PRIJZEN = {
+  "claude-sonnet-5-5": { in: 2, uit: 10 },
+  "claude-opus-5-5": { in: 4, uit: 20 },
+  "claude-haiku-5-5": { in: 0.1, uit: 0.5 },
+};
+export const PRIJS_CLAUDE = PRIJZEN["claude-sonnet-5-5"];  // de demo
 export const kost = (gebruik, prijs = PRIJS_CLAUDE) => (gebruik.in * prijs.in + gebruik.uit * prijs.uit) / 1e6;
 const dagVan = () => new Date().toISOString().slice(0, 10);
 
