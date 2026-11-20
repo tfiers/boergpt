@@ -39,17 +39,18 @@ export async function budget(context, soort = "vraag") {
   return nee ? json({ fout: nee }, 429) : null;
 }
 
-// Claude kost geld per token, en de API-sleutel heeft een maandlimiet die ook de metingen gebruiken.
-// Daarom hoogstens CLAUDE_DOLLAR_PER_DAG per dag. Standaard $0: Claude staat uit en het open model
-// antwoordt (Tomas, 17 nov 2026: "stop it all"). Met 0,5 antwoordt Claude ± 20 vragen per dag,
-// geteld in dollar na elk antwoord: elk antwoord schrijft een sleutel met zijn kost in de naam.
+// Claude kost per token, en de API-sleutel van de demo heeft een maandlimiet.
+// Daarom hoogstens CLAUDE_DOLLAR_PER_DAG per dag. Zonder die
+// variabele: $2 per dag (± 80 vragen) t.e.m. 4 dec 2026, daarna $0,50
+// (± 20 vragen). Met 0 staat Claude uit.
+// Geteld in dollar na elk antwoord: elk antwoord schrijft een sleutel met zijn kost in de naam.
 // Is het budget op, dan antwoordt het open model in Claude's plaats (lib/antwoord.mjs).
 export const PRIJS_CLAUDE = { in: 2, uit: 10 };  // dollar per miljoen tokens, Claude Sonnet 5.5
 export const kost = (gebruik, prijs = PRIJS_CLAUDE) => (gebruik.in * prijs.in + gebruik.uit * prijs.uit) / 1e6;
 const dagVan = () => new Date().toISOString().slice(0, 10);
 
 export async function claudeOp() {
-  const perDag = Number(process.env.CLAUDE_DOLLAR_PER_DAG ?? 0);
+  const perDag = Number(process.env.CLAUDE_DOLLAR_PER_DAG ?? (dagVan() <= "2026-12-04" ? 2 : 0.5));
   if (!(perDag > 0)) return true;
   const { blobs } = await opslag.open("budget-claude").list({ prefix: `${dagVan()}/` });
   return blobs.reduce((s, b) => s + Number(b.key.split("/")[1]) / 1e6, 0) >= perDag;
