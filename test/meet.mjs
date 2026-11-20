@@ -66,6 +66,8 @@ const kalenderTekst = k => k && `type ${k.type} op ${k.grond}: ${k.uitleg} ${per
 
 async function meetAgent(model) {
   const { vraagAan } = await import("../netlify/functions/lib/agent.mjs");
+  // --opties geldt ook voor het zoeken van de agent: die zoekt met STANDAARD.
+  Object.assign(STANDAARD, opties);
   // --rechter: een model oordeelt ook over elk antwoord (test/rechter.mjs), naast de sleutel.
   const rechter = process.argv.includes("--rechter") ? await import("./rechter.mjs") : null;
   kost.schat(vragen.length, (model === "claude" ? kost.perAntwoord(MODELLEN.claude.id) : 0) + (rechter ? rechter.PER_OORDEEL : 0));
@@ -102,6 +104,7 @@ async function meetAgent(model) {
     ...(rechter ? rechter.samenRechter(r) : {}),
     ...gemiddeld(r.filter(x => x.gebruik)),
     "besteed (dollar)": kost.besteedTot(),
+    opties,
   } };
 }
 
