@@ -1,0 +1,1919 @@
+{
+ "r": [
+  {
+   "nr": 71,
+   "vraag": "Mag er met een sleepslang mest uitgereden worden op wintertarwe?",
+   "antwoord": "Ja, op beteelde akkerland dat geen grasland is, zoals wintertarwe, is sleepslangtechniek toegelaten als emissiearme toedieningsmethode voor dierlijke mest [S4633]. Het ontwerp van het zevende Mestactieprogramma zegt dat die techniek op beteelde akkers toegelaten blijft [S3344]. Dat is een ontwerp uit 2025, dus de definitieve regel kan afwijken. Let ook op de uitrijperiode: voor drijfmest op akkerland geldt van 10-16 tot 02-15 een verbod, dus op 20 november mag u niet uitrijden [K]. Controleer de huidige regel bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 3,
+   "gebruik": {
+    "in": 16378,
+    "uit": 1340,
+    "aanroepen": 3
+   },
+   "ms": 9661,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4633,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 10,
+     "tekst": "afspoelen;\n2° andere meststoffen en dierlijke mest dienen : a) op grasland opgebracht te worden door middel van zode-injectie of sleepslangtechniek; b) op niet-beteelde landbouwgrond opgebracht te worden door middel van mestinjectie of door middel van het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie.\nOp zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken;\nc) op beteelde landbouwgronden andere dan grasland opgebracht te worden door middel van mestinjectie of door middel van sleepslangtechniek;\n3° in afwijking van 2° moeten andere meststoffen die arm zijn aan ammoniakale stikstof, champost die arm is aan ammoniakale stikstof en stalmest die arm is aan ammoniakale stikstof binnen 24 uur na de opbrenging worden ingewerkt;"
+    },
+    {
+     "id": 3344,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter. • Invoer van voorschriften voor het emissiearm aanwenden van ureum-houdende kunstmeststoffen door verplicht gebruik van een ureaseremmer, injectie, direct onderwerken of een alternatieve methode die minstens even efficiënt is als voorgaande methodes.\nEr wordt onderzocht in welke mate er alternatieve technieken kunnen zijn voor de injectie van mest in grasland, die minstens een even grote emissiebeperking realiseren op niveau van de landbouwsector.\nOp het terrein gebeurt er veel onderzoek naar nieuwe emissiebeperkende methodes.\nOm innovatie te bevorderen, wordt de mogelijkheid voorzien om andere opbrengingsmethodes toe te laten, op voorwaarde dat deze een even grote emissiebeperking realiseren."
+    }
+   ],
+   "kalender": "type 2 op akkerland: Neen. Deze regel geldt van 10-16 t.e.m. 02-15 (MM-DD): in die hele periode is het verboden. (Overzicht uitrijregeling (VLM Mestbank, augustus 2026))",
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord 'ja, toegelaten' op beteelde akkers zoals wintertarwe klopt en wordt gedragen door S4633 en S3344, maar de uitrijperiode wordt aan 'drijfmest' gekoppeld terwijl bron K alleen 'type 2' noemt, en het voorbeeld '20 november' staat niet in de stukjes."
+   }
+  },
+  {
+   "nr": 72,
+   "vraag": "Mag een sleepslang niet meer worden gebruikt op grasland in 2028?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma mag sleepslangtechniek op grasland nog tot en met 2027 gebruikt worden, dus vanaf 2028 niet meer [S3144]. Op grasland blijven zodeninjectie, zodenbemester en sleufkouter toegelaten [S3343]. Dit is nog een ontwerp uit maart 2025, en de huidige regel staat in de fiche van de Mestbank uit 2025, waar sleepslang op grasland nog als emissiearm geldt [S3020]. Controleer daarom de definitieve regel bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9065,
+    "uit": 858,
+    "aanroepen": 2
+   },
+   "ms": 7012,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3144,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 10,
+     "tekst": "pagina 10 van 101 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn 18.03.2025\nvoortaan onmiddellijk ingewerkt worden.\nAlternatieven zijn toedienen via injectie of gebruikmaken van ureaseremmers.\nOp grasland is de sleepslangtechniek nog toegelaten tot en met 2027.\n2.3 WIJZIGINGEN AAN HET MESTBELEID ALS GEVOLG VAN HET LANDBOUWAKKOORD Onder impuls van de boerenprotesten begin 2024 sloten de Vlaamse Regering en de landbouworganisaties op 15 februari 2024 een landbouwakkoord.\nDit akkoord bevat een aantal maatregelen en engagementen voor op de korte en langere termijn m.b.t.\nhet aankoopbeleid van landbouwgronden, het stikstofbeleid en het mestbeleid.\nZo trachtte de Vlaamse Regering tegemoet te komen aan de zorgen van de landbouwers omtrent administratieve lasten, rendabiliteit en haalbaar beleid."
+    },
+    {
+     "id": 3343,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "uitgebreid voor biologische pluimveemest voor de toepassing op gras of graan, mits op graan de mest wordt ingewerkt in de bodem met een wiedeg. Daarnaast zal de verstrenging van de voorschriften voor de emissiearme aanwending van meststoffen zoals voorzien in het luchtbeleidsplan en in uitvoering gebracht via het Stikstofdecreet, ook een bijdrage hebben aan de realisatie van de doelen van het ontwerp-MAP 7: • Strengere voorschriften voor het emissiearm aanwenden van vloeibare dierlijke en andere meststoffen: • Injectie of direct onderwerken na spreiden op niet-beteelde landbouwgrond;\n• Zode-injectie, zodenbemester of sleufkouter op grasland.\nDe sleepslangtechniek is nog toegelaten tot en met 2027.\nOp grasland dat gescheurd zal worden, mogen de meststoffen ook via het direct inwerken na spreiden worden opgebracht.\n• Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter."
+    },
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct weer dat het ontwerp-MAP 7 sleepslang op grasland nog tot en met 2027 toelaat (dus daarna niet meer), met zode-injectie, zodenbemester en sleufkouter als alternatieven, en vermeldt de ouderdom van het ontwerp en de huidige regel met het advies die bij de Mestbank of het Departement na te kijken."
+   }
+  },
+  {
+   "nr": 73,
+   "vraag": "Moeten er ureaseremmers toegevoegd worden aan dierlijke mest?",
+   "antwoord": "Uit mijn documenten blijkt geen verplichting om ureaseremmers aan dierlijke mest toe te voegen. Een ILVO-studie uit 2023 onderzoekt ureaseremmers in melkveestallen als middel om ammoniakuitstoot te beperken, en die is nog niet in de praktijk getoetst [S748] [S791]. Het effect in melkveestallen wordt eerder beperkt geschat, omdat het grootste deel van de ammoniak van de vloer komt [S804]. Een ontwerp van het 7de Mestactieprogramma (2025) verplicht een ureaseremmer alleen voor ureumhoudende kunstmest op grasland, niet voor dierlijke mest [S3344]. Of dit geldt en wat nu precies de regel is, moet u nakijken bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8697,
+    "uit": 954,
+    "aanroepen": 2
+   },
+   "ms": 6149,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 748,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 5,
+     "tekst": "maakt.\nDoor dit chronische gebruik moet er extra gelet worden op de toxiciteit van de gebruikte producten voor mens, dier, plant en milieu. In 2008 werd een verkennend onderzoek uitgevoerd rond het gebruik van ureaseremmers in melkveestallen in Nederland (Smits & Bokma, 2008).\nUreaseremmers leken toen een veelbelovende methode om de ammoniakemissies in de stal te verminderen, maar er was een gebrek aan onderzoek in Nederlandse praktijkomstandigheden.\nOok de kosteneffectiviteit was onduidelijk.\nDeze wordt grotendeels bepaald door de prijs van de ureaseremmer, het mestverwijderingssysteem en de doseerinstallatie.\nDaarnaast is de veiligheid van de ureaseremmers voor het gebruik bij dieren een cruciaal punt om de toepassing ervan te laten slagen.\nOok Byrne et al.\n(2020) onderzochten het potentieel van ureaseremmers in de veeteelt.\nHet toepassingsgebied was hierbij het gebruik van commercieel beschikbare ureaseremmers in begraasde weides."
+    },
+    {
+     "id": 791,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 16,
+     "tekst": "\\16\n5.3 Huidige status en verdere onderzoeksmogelijkheden Ureaseremmers lijken een groot potentieel te hebben voor het verminderen van ammoniakemissies in de Vlaamse melkveestallen.\nToch lijkt de status van de ureaseremmers in dit toepassingsgebied niet veel geëvolueerd ten opzichte van wat werd geconcludeerd door Smits & Bokma in 2008 (Smits & Bokma, 2008).\nHieronder bespreken we de huidige status van en de onderzoeksmogelijkheden rond de verschillende ureaseremmers die aan bod kwamen in de voorgaande secties.\n5.4 Huidige status 5.4.1 NBPT NBPT-houdende producten zijn commercieel beschikbaar als bemestingsadditief.\nIn het ideale geval kunnen deze producten rechtstreeks in de stal toegepast worden.\nVoor deze producten mist echter praktijkgericht onderzoek in situaties die van belang zijn in Vlaanderen.\nOok de nodige dosis voor gebruik op de roostervloer of in de mestput zou nog verder onderzocht moeten worden."
+    },
+    {
+     "id": 804,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 18,
+     "tekst": "in meststoffen en mag de totale gebruikte hoeveelheid in de mestput niet hoger zijn dan de maximale concentratie zoals aangegeven in Tabel 2. PPDA staat momenteel niet in deze lijst.\nHet gebruik van ureaseremmers in een praktijkstal onder de roosters lijkt praktisch wel haalbaar.\nEchter, in een melkveestal komt het grootste gedeelte van de ammoniakuitstoot van de vloer en minder uit de mestput.\nDaarom kunnen we verwachten dat de effectiviteit van het gebruik van ureaseremmers voor het verminderen van de ammoniakuitstoot onder de roosters in melkveestallen eerder beperkt zal zijn.\nIn varkensstallen, waar er in verhouding meer uitstoot is uit de mestput, zou dit onderzoek relevanter zijn."
+    },
+    {
+     "id": 3344,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter. • Invoer van voorschriften voor het emissiearm aanwenden van ureum-houdende kunstmeststoffen door verplicht gebruik van een ureaseremmer, injectie, direct onderwerken of een alternatieve methode die minstens even efficiënt is als voorgaande methodes.\nEr wordt onderzocht in welke mate er alternatieve technieken kunnen zijn voor de injectie van mest in grasland, die minstens een even grote emissiebeperking realiseren op niveau van de landbouwsector.\nOp het terrein gebeurt er veel onderzoek naar nieuwe emissiebeperkende methodes.\nOm innovatie te bevorderen, wordt de mogelijkheid voorzien om andere opbrengingsmethodes toe te laten, op voorwaarde dat deze een even grote emissiebeperking realiseren."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt terecht dat er geen verplichting is voor dierlijke mest en noemt ureumhoudende kunstmest, maar de bron S3344 vermeldt geen 'grasland' bij de ureaseremmer (dat staat er niet voor ureum) en zegt niet dat het niet voor dierlijke mest geldt; ook is 'nog niet in de praktijk getoetst' een lichte verruiming en wordt de ontwerpstatus slechts deels benoemd."
+   }
+  },
+  {
+   "nr": 74,
+   "vraag": "Welke ureaseremmers zijn oké en aan welke dosis?",
+   "antwoord": "Mijn documenten bevatten geen officiële lijst van toegelaten ureaseremmers en ook geen wettelijke dosis, dus ik kan niet zeggen welke \"oké\" zijn [S754]. Het ILVO-onderzoek uit 2023 bespreekt NBPT, NPPT, PPDA en 2-NPT, en NBPT is al commercieel verkrijgbaar als bemestingsadditief [S765] [S791]. Als dosis noemt het onderzoek 2,5 mg ureaseremmer in 50 ml water per m² stalvloer, een dosis die haalbaar is met mestrobots [S788]. Voor de roostervloer of de mestput is de juiste dosis nog niet onderzocht [S791]. Deze bron is ouder dan drie jaar en geeft geen bindend advies, dus controleer de huidige regels en toegelaten producten bij de Mestbank of het Depart",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9474,
+    "uit": 1757,
+    "aanroepen": 2
+   },
+   "ms": 10226,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 754,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 6,
+     "tekst": "als ureaseremmer vermeld.\nDeze lijken echter niet verder onderzocht te zijn en/of werden niet commercieel beschikbaar gemaakt als ureaseremmer. Sommige van deze stoffen worden wel gebruikt als nematocide, fungicide of bacteriocide.\n2.2 Toepassingen op mest en in de stal Het meeste onderzoek naar ureaseremmers is gebeurd in de context van het gebruik in de bodem.\nWanneer enkel gekeken wordt naar onderzoek op mest of in de stal zijn NBPT, PPDA en CHPT de meest voorkomende stoffen.\nIn een laboproef op runderdrijfmest door Varel et al.\n(1997) werd aangetoond dat PPDA beter presteerde dan NBPT en NBPT beter dan CHPT bij een dosering van 10 mg ureaseremmer per liter drijfmest.\nOok in een praktijkonderzoek in feedlots in de Verenigde Staten kon aangetoond worden dat bij applicatie van NBPT meer resterend ureum in de mest aanwezig was na 4 dagen dan bij applicatie van CHPT (Varel et al., 1999).\nBij onderzoek op"
+    },
+    {
+     "id": 765,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 8,
+     "tekst": "1.\nOverzicht van gekende ureaseremmers en hun ammoniakreducerend potentieel vastgesteld in praktijkproeven bij bemesting op het veld en bij rundvee. Verminderde NH3-emissies in praktijkomstandigheden Ureaseremmer Bij rundvee Op veld NBPT (N-(n-butyl) thiophosphoric triamide) 49-66% in lab-simulatie van feedlots voor vleesvee (Parker et al., 2005) 53% (Cantarella et al., 2018) NPPT (N-(propyl) thiophosphoric triamide) / 50% (S. Li et al., 2015) NBPT+NPPT / 83% (Q. Li et al., 2015) 2-NPT (N-(2-nitrophenyl) phosphoric triamide) / 26-83% (Ni et al., 2014) PPDA (phenyl phosphorodiamidate) Roostervloer: 10-31% (Bobrowski, van Dooren, et al., 2021) Volle vloer: 40-68% Enkele bemesting: 97% 3-voudige bemesting: 51% (Rodgers et al. (1987))"
+    },
+    {
+     "id": 791,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 16,
+     "tekst": "\\16\n5.3 Huidige status en verdere onderzoeksmogelijkheden Ureaseremmers lijken een groot potentieel te hebben voor het verminderen van ammoniakemissies in de Vlaamse melkveestallen.\nToch lijkt de status van de ureaseremmers in dit toepassingsgebied niet veel geëvolueerd ten opzichte van wat werd geconcludeerd door Smits & Bokma in 2008 (Smits & Bokma, 2008).\nHieronder bespreken we de huidige status van en de onderzoeksmogelijkheden rond de verschillende ureaseremmers die aan bod kwamen in de voorgaande secties.\n5.4 Huidige status 5.4.1 NBPT NBPT-houdende producten zijn commercieel beschikbaar als bemestingsadditief.\nIn het ideale geval kunnen deze producten rechtstreeks in de stal toegepast worden.\nVoor deze producten mist echter praktijkgericht onderzoek in situaties die van belang zijn in Vlaanderen.\nOok de nodige dosis voor gebruik op de roostervloer of in de mestput zou nog verder onderzocht moeten worden."
+    },
+    {
+     "id": 788,
+     "titel": "ILVO-mededeling D/2023/02: Ureaseremmers in melkveestallen",
+     "datum": "2023-01",
+     "pagina": 15,
+     "tekst": "sommige gevallen is er naast het bevochtigingswater aan de voorkant van de mestrobot ook een sproeier die achteraan de mestrobot gemonteerd is. Een optie zou kunnen zijn om ureaseremmers aan dit water toe te voegen voor de automatische verdeling van ureaseremmers op de loopgedeeltes in de stal.\nIn de onderzoeken door Bobrowski werd de ureaseremmer inhibitor K één keer per dag over de roosters verdeeld.\nIn het geval van de mestrobot zou bekeken moeten worden wat de beste toepassingsmethode is: de ureaseremmer verder verdunnen en tijdens elke schoonmaakbeurt vernevelen of slechts één keer per dag de ureaseremmer toevoegen aan het reinigingswater.\nIn dat laatste geval zal ook onderzocht moeten worden wat het effect is van de andere reinigingsbeurten op de werking en aanwezigheid van het verdeelde ureaseremmend product.\nIn het onderzoek door Bobrowski, Willink, et al.\n(2021) werd 2,5mg ureaseremmer toegevoegd in 50 ml water per vierkante meter.\nDeze dosering is haalbaar met mestrobots."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt terecht NBPT, NPPT en 2-NPT en de dosis van 2,5 mg per 50 ml water per m² uit S788, maar het stelt dat er geen lijst van toegelaten ureaseremmers is en de aangehaalde stukjes tonen niet dat NBPT, NPPT en 2-NPT 'oké' zijn, terwijl het ook claimt dat de bron ouder is dan drie jaar zonder dat dit uit de stukjes volgt (hoewel de datum 2023-01 erbij staat) en de dosis uit S788 komt van één onderzoek naar PPDA/inhibitor K, niet van een algemene norm."
+   }
+  },
+  {
+   "nr": 75,
+   "vraag": "Mag stalmest worden gespreid op grasland?",
+   "antwoord": "Nee, op grasland mag je stalmest nu niet uitrijden. Volgens de uitrijkalender is het van 1 november tot en met 15 januari verboden, en het is dus ook op 20 november verboden [K]. De enige uitzondering is het aanbrengen van mest rond de stam van fruitbomen [K]. De VLM-kalender voor 2027 wijkt op enkele punten af, dus controleer de huidige regel bij de Mestbank of het Departement [K].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 6333,
+    "uit": 845,
+    "aanroepen": 2
+   },
+   "ms": 5137,
+   "via": "Anthropic",
+   "bronnen": [],
+   "kalender": "type 1 op alle: Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten. Deze regel geldt van 11-01 t.e.m. 01-15 (MM-DD): in die hele periode is het verboden. (Overzicht uitrijregeling (VLM Mestbank, augustus 2026))",
+   "bron": false,
+   "klopt": true,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt categorisch dat stalmest op grasland niet mag, terwijl de vraag algemeen is en het antwoord volgens de referentie 'ja, toegelaten' (buiten het verbod van 1 november tot 15 januari) hoort te zijn, en de bron noemt enkel die periode (11-01 t.e.m. 01-15), niet de datum 20 november of 'VLM-kalender 2027' die in het antwoord worden gebruikt."
+   }
+  },
+  {
+   "nr": 76,
+   "vraag": "Is er een verschil in de regels tussen beteelde en niet-beteelde landbouwgrond?",
+   "antwoord": "Ja, de regels verschillen. Op beteelde landbouwgrond die geen grasland is, moet dierlijke mest met mestinjectie of sleepslangtechniek worden opgebracht [S3020]. Op niet-beteelde landbouwgrond kan dat met mestinjectie, of door de mest in twee opeenvolgende werkgangen uit te spreiden en binnen twee uur in te werken; op zaterdag moet de dierlijke mest meteen worden ingewerkt [S3020]. Op grasland gelden zode-injectie, sleepslangtechniek of sleufkouter [S3020]. Een ontwerp van het zevende Mestactieprogramma wil de regels voor niet-beteelde grond strenger maken, maar dat is nog een ontwerp, dus controleer de huidige regel bij de Mestbank of het Departement [S3343].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9178,
+    "uit": 1644,
+    "aanroepen": 2
+   },
+   "ms": 8842,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3020,
+     "titel": "Fiche: emissiearme aanwending van type 1 en type 3 meststoffen",
+     "datum": "2025-09",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 emissiearme aanwending\n§5. 24° vaste dierlijke mest: champost, stalmest, vaste fractie na het scheiden van dierlijke mest of dierlijke mest met een drogestofgehalte van minimum 20 %;\nArt. 22. § 1. Bij bemesting mogen de opgebrachte meststoffen niet afspoelen.\nBij bemesting worden dierlijke mest en andere meststoffen emissiearm als volgt opgebracht: 1° op grasland met zode-injectie, sleepslangtechniek of sleufkouter; 2° op beteelde landbouwgronden die geen grasland zijn, met mestinjectie of sleepslangtechniek; 3° op niet-beteelde landbouwgrond met mestinjectie of met het in twee opeenvolgende werkgangen uitspreiden en inwerken van de mest, waarbij de mest binnen twee uur na het uitspreiden moet zijn ingewerkt op het perceel in kwestie. Op zaterdagen is het verplicht om de dierlijke mest onmiddellijk in te werken."
+    },
+    {
+     "id": 3343,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 75,
+     "tekst": "uitgebreid voor biologische pluimveemest voor de toepassing op gras of graan, mits op graan de mest wordt ingewerkt in de bodem met een wiedeg. Daarnaast zal de verstrenging van de voorschriften voor de emissiearme aanwending van meststoffen zoals voorzien in het luchtbeleidsplan en in uitvoering gebracht via het Stikstofdecreet, ook een bijdrage hebben aan de realisatie van de doelen van het ontwerp-MAP 7: • Strengere voorschriften voor het emissiearm aanwenden van vloeibare dierlijke en andere meststoffen: • Injectie of direct onderwerken na spreiden op niet-beteelde landbouwgrond;\n• Zode-injectie, zodenbemester of sleufkouter op grasland.\nDe sleepslangtechniek is nog toegelaten tot en met 2027.\nOp grasland dat gescheurd zal worden, mogen de meststoffen ook via het direct inwerken na spreiden worden opgebracht.\n• Op beteelde landbouwgronden die geen grasland zijn, blijven injectie en sleepslangtechniek toegelaten, evenals zodenbemester en sleufkouter."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft het verschil tussen beteelde en niet-beteelde grond juist weer (sleepslang/injectie versus injectie of inwerken binnen twee uur), maar de bewering dat de dierlijke mest op beteelde grond 'moet' met injectie of sleepslang gaat verder dan de bron (die ook over 'dierlijke mest en andere meststoffen' spreekt), de zaterdagregel is deels onduidelijk samengevat, en de verwijzing naar een strengere regel voor niet-beteelde grond in MAP 7 wordt niet echt als 'ontwerp' met leeftijd/datum benoemd."
+   }
+  },
+  {
+   "nr": 77,
+   "vraag": "Mag er in de fruitteelt nog stalmest aan de stammen gegeven worden in de winter?",
+   "antwoord": "Ja, maar alleen op een beperkte manier: van 1 november tot en met 15 januari is het uitrijden van stalmest verboden, behalve het aanbrengen van mest rond de stam van fruitbomen [S2668]. Dat is de regel voor 2026 en ook volgens de uitrijkalender geldt de uitzondering alleen rond de stam [K]. Een ontwerp van het 7de Mestactieprogramma schrapt de meldingsplicht voor deze uitzondering, maar dat is nog een ontwerp [S3428]. Controleer daarom de huidige regel bij de Mestbank of het Departement Landbouw en Visserij voordat je dit toepast.",
+   "stappen": 3,
+   "gebruik": {
+    "in": 15721,
+    "uit": 1291,
+    "aanroepen": 3
+   },
+   "ms": 8145,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2668,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 2,
+     "tekst": "2\nMESTSTOFFEN VAN TYPE 1: STALMEST, CHAMPOST EN TRAAGWERKENDE MESTSTOFFEN Periode Mag u bemesten met type 1 meststof? 16 januari t.e.m. 31 augustus Ja 1 september t.e.m. 31 oktober Ja, maar de maximale dosis is beperkt tot 50 kg werkzame N/ha over de hele periode. 1 november t.e.m. 15 januari Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten."
+    },
+    {
+     "id": 3428,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 97,
+     "tekst": "sterk vereenvoudigd.\nEnkel nog de gebruiker van de hoofdteelt moet een verzamelaanvraag indienen zowel voor het GLB als voor het Mestdecreet. 8.6.4 Administratieve vereenvoudiging en digitalisering Waar mogelijk worden administratieve vereenvoudigingen doorgevoerd: • Door de verruimde toepassing van de AGR-GPS plicht is de verplichting om vervoer in het kader een burenregeling van en naar mestverwerking de dag voorafgaand te melden aan de Mestbank, niet langer vereist.\n• Er is geen meldingsplicht meer voor het pleksgewijs aanbrengen van type 1 meststoffen rond de stam van fruitbomen in de winter (1 november tot en met 15 januari).\nDeze uitzonderingsmogelijkheid op de uitrijperiode is voorzien ter bescherming van de bomen tegen vorst, maar het moest verplicht gemeld worden bij de Mestbank.\nDe mogelijkheid blijft behouden, maar de verplichte melding wordt geschrapt.\nHiermee wordt een administratieve vereenvoudiging gerealiseerd, met slechts een beperkte impact op de controleerbaarheid."
+    }
+   ],
+   "kalender": "type 1 op alle: Neen, alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten. Deze regel geldt van 11-01 t.e.m. 01-15 (MM-DD): in die hele periode is het verboden. (Overzicht uitrijregeling (VLM Mestbank, augustus 2026))",
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord is juist (alleen rond de stam van fruitbomen, 1 november t.e.m. 15 januari, melding in het ontwerp geschrapt), maar de bewering dat dit 'de regel voor 2026' is en dat de uitzondering volgens de kalender alleen rond de stam geldt is slechts deels gedragen, want [K] noemt de periode 11-01 t.e.m. 01-15 en de melding bij de huidige regel wordt niet vermeld."
+   }
+  },
+  {
+   "nr": 78,
+   "vraag": "Voor maïs en late aardappelen zonder voorteelt mag er pas bemest worden vanaf 16 maart. Ik heb nu gras (als groenbemester ingezaaid tijdens vorig najaar) staan op een perceel en wil er na het onderwerken van het gras later dit jaar als hoofdteelt aardappelen planten. Mag er dan op dit gras voor 16 maart bemest worden? Het gras zal pas ondergewerkt worden na 16 maart.",
+   "antwoord": "Volgens de uitrijregeling geldt het verbod op bemesting van 16 februari tot 15 maart alleen voor akkers met hoofdteelt maïs of late aardappelen zonder voorteelt. Op andere akkers is bemesting in die periode wel toegelaten onder voorwaarden [S2670] [K]. De documenten zeggen niet expliciet of een groenbemester zoals uw gras als voorteelt telt, dus ik kan niet met zekerheid zeggen of u vóór 16 maart mag bemesten [S2680]. Voor de 2027-regeling, die op enkele punten afwijkt van 2026, geldt de VLM-kalender van 2027 [S2657]. Controleer de huidige regel en uw precieze situatie bij de Mestbank of het Departement.",
+   "stappen": 4,
+   "gebruik": {
+    "in": 33226,
+    "uit": 2796,
+    "aanroepen": 4
+   },
+   "ms": 19704,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2670,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 3,
+     "tekst": "respecteren.\nPeriode Mag u bemesten met type 2 meststoffen op grasland?\n16 februari t.e.m. 14 augustus Ja\n15 augustus t.e.m. 15 februari Neen AKKERLAND Periode Mag u bemesten met type 2 meststoffen op akkerland? 16 februari t.e.m. 15 maart - op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen - op akkers met andere teelt dan hoofdteelt maïs of late aardappelen zonder voorteelt: ja 16 maart t.e.m. 31 juli - op akkerland - andere dan zware kleigronden: ja, maar na de oogst van de hoofdteelt mag niet meer worden bemest, behalve in twee gevallen: 1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 juli als de nateelt uiterlijk 31 juli werd ingezaaid. 2) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***"
+    },
+    {
+     "id": 2680,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 6,
+     "tekst": "voorafgegaan wordt door een voorteelt. 16 februari t.e.m. 15 maart - op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen - op akkers met andere teelt dan hoofdteelt maïs of late aardappelen zonder voorteelt: ja 16 maart t.e.m. 31 augustus ja, maar na de oogst van de hoofdteelt mag niet meer bemest worden, behalve in deze drie gevallen:\n1) Er wordt uiterlijk op 31 juli een nateelt ingezaaid. Die nateelt kan ook een vanggewas* zijn. Er geldt geen dosisbeperking voor bemesting t.e.m. 31 augustus als de nateelt uiterlijk 31 juli werd ingezaaid.\n2) Er wordt uiterlijk 31 augustus een specifieke teelt ingezaaid. Er geldt geen dosisbeperking.\n3) Er wordt na 31 juli en uiterlijk 15 september een vanggewas** ingezaaid: bemesten kan alleen na een niet-nitraatgevoelige hoofdteelt. Er geldt een dosisbeperking van 36 kg werkzame N/ha als het vanggewas na 31 juli wordt ingezaaid.***"
+    },
+    {
+     "id": 2657,
+     "titel": "Uitrijregeling 2027 (kalender per type meststof)",
+     "datum": "2026-10",
+     "pagina": 1,
+     "tekst": "www.vlm.be\nUitrijregeling 2027\nType 1 Stalmest, champost en traagwerkende meststoffen JANUARI |16 JAN FEBRUARI |16 FEB MAART |16 MAA APRIL MEI JUNI JULI AUGUSTUS |15 AUG SEPTEMBER OKTOBER |16 OKT NOVEMBER DECEMBER Neen Ja De maximale dosis is beperkt tot 50 kg werkzame stikstof per hectare over de hele periode. Neen. Alleen het aanbrengen van mest rond de stam van fruitbomen is toegelaten.\nType 2 Alle meststoffen die niet tot type 1 of 3 behoren Grasland\nJa Neen\nAkkerland\nNiet-zware kleigrond\nNeen Ja, uitgezonderd op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt Ja, maar na de oogst van de hoofdteelt mag er niet meer worden bemest, behalve in twee gevallen:\n1. Er wordt uiterlijk op 31 juli een nateelt ingezaaid (kan een vanggewas* zijn). Er geldt in dat geval geen dosisbeperking voor bemesting tot en met 31 juli."
+    }
+   ],
+   "kalender": "type 2 op akkerland: Op akkers met hoofdteelt maïs of late aardappelen zonder voorteelt: neen. Op akkers met een andere teelt: ja. Deze regel geldt van 02-16 t.e.m. 03-15 (MM-DD): in die hele periode is het toegelaten onder voorwaarden. (Overzicht uitrijregeling (VLM Mestbank, augustus 2026))",
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft terecht aan dat het verbod van 16 februari tot 15 maart alleen geldt voor maïs en late aardappelen zonder voorteelt, maar het beantwoordt de vraag niet: het zegt niet dat een groenbemester als voorteelt telt en bemesting dus toegelaten is. Daarnaast is de bewering dat de 2027-regeling op enkele punten afwijkt van 2026 niet te vinden in de aangehaalde stukjes."
+   }
+  },
+  {
+   "nr": 79,
+   "vraag": "Geldt de boete voor het te hoge nitraatresidu (250 euro/ha) voor de percelen waarop het nitraatresidu is genomen of voor het volledige bedrijfsareaal?",
+   "antwoord": "De boete van 250 euro per hectare geldt alleen voor de percelen die het probleem veroorzaken, niet voor het hele bedrijfsareaal. Het gaat om percelen die behoren tot het nitraatresidutype waarvoor het nitraatresidu boven de tweede drempelwaarde ligt, in het jaar waarin die overschrijding voor de tweede keer wordt vastgesteld [S3411]. Die sanctie volgt pas als het resultaat van de bedrijfsevaluatie twee keer binnen 5 jaar boven de tweede drempelwaarde ligt [S3411]. Dit staat in het ontwerp van het 7de Mestactieprogramma uit maart 2025, dus het is nog geen definitieve tekst [S3411]. Controleer de huidige regel bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8691,
+    "uit": 849,
+    "aanroepen": 2
+   },
+   "ms": 5408,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3411,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 93,
+     "tekst": "het resultaat van de bedrijfsevaluatie twee maal boven de 2de drempelwaarde ligt in een periode van 5 jaar, volgt bovendien een financiële sanctie. De boete bedraagt 250 euro per ha en wordt opgelegd voor die percelen die (in het jaar waar voor de tweede maal een overschrijding vastgesteld werd) behoren tot het nitraatresidutype waarvoor het nitraatresidu boven de tweede drempelwaarde van dat nitraatresidutype ligt."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct aan dat de boete van 250 euro/ha alleen geldt voor percelen van het nitraatresidutype dat boven de tweede drempelwaarde ligt, en alle beweringen steunen op S3411, inclusief de vermelding dat het een ontwerp uit 2025 is."
+   }
+  },
+  {
+   "nr": 80,
+   "vraag": "Mag je zelf als landbouwer nog vloeibare dierlijke mest voeren met AGR-GPS in burenregeling naar percelen in gebiedstype 2 en 3?",
+   "antwoord": "Nee, dat mag niet. Vervoer van vloeibare dierlijke mest naar percelen in gebiedstype 2 of 3 kan niet met een burenregeling, en vanaf 1 juli moet het gebeuren door een erkende mestvoerder [S2810]. Dat geldt niet voor grasland of blijvende teelten [S2810]. Een landbouwer met een geldige vrijstelling van de gebiedsgerichte maatregelen hoeft deze regel niet toe te passen [S2810]. Het ontwerp van het 7de Mestactieprogramma wil de regels verstrengen, maar dat is nog een ontwerp [S3370]. Controleer de huidige regel bij de Mestbank of het Departement [S2810].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9146,
+    "uit": 1314,
+    "aanroepen": 2
+   },
+   "ms": 7691,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2810,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 22,
+     "tekst": "aantal uitzonderingen: - eigen mest op eigen grond - burenregeling - transporten met een klein laadvermogen - grensboerregeling - erkende verzender Opgelet! Er geldt een gebiedsgerichte maatregel. Daardoor moet jaarlijks vanaf 1 juli elk vervoer van vloeibare dierlijke mest naar een perceel in gebiedstype 2 of gebiedstype 3 gebeuren door een erkende mestvoerder. Die verplichting geldt niet als het gaat om een perceel grasland of om een blijvende teelt. Het vervoer van vloeibare dierlijke mest naar percelen in gebiedstype 2 of gebiedstype 3, kan dus niet met een burenregeling en ook niet volgens de regeling van eigen mest op eigen grond, zonder transportdocumenten. Ook het vervoer in het kader van een grensboerregeling naar die percelen moet gebeuren door een erkende mestvoerder. U hoeft als landbouwer die maatregel niet toe te passen, als u een geldige vrijstelling hebt van de gebiedsgerichte maatregelen."
+    },
+    {
+     "id": 3370,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 84,
+     "tekst": "pagina 84 van 101 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn 18.03.2025\nNaast de bemestingsreductie of de goede bodem-, teelt- en bemestingspraktijken in gebiedstype 1, 2 of 3, moet elk vervoer van vloeibare dierlijke mest naar percelen (uitgezonderd met blijvende teelten en grasland) in gebiedstype 2 en 3 vanaf 1 juli gebeuren door een erkend mestvoerder met AGR-GPS.\nDat is een verstrenging van de gebiedsgerichte vervoersmaatregel vanaf 1 augustus uit MAP 6.\nNet zoals bij MAP 6 kunnen landbouwers vrijgesteld worden van deze twee gebiedsgerichte maatregelen op basis van een positieve evaluatie van het nitraatresidu op bedrijfsniveau.\nDe gebiedsgerichte vanggewasregeling in gebiedstype 2 en 3 uit MAP 6, waarbij een doelareaal moest ingezaaid worden met vanggewassen, wordt geschrapt.\nDe basis vanggewasmaatregel uit MAP 6, waarbij een vanggewas moet ingezaaid worden na de oogst van de hoofdteelt in gebiedstype 1, 2 en 3, blijft wel behouden."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord is inhoudelijk juist (geen burenregeling, vanaf 1 juli erkende mestvoerder, uitzonderingen voor grasland/blijvende teelten en vrijstelling), maar de bewering dat dit vanaf 1 juli geldt staat in S2810 zonder jaartal en het antwoord vermeldt de datum van de bron niet, en 'wil de regels verstrengen' is slechts deels gedragen (MAP 7 beschrijft verstrenging t.o.v. 1 augustus in MAP 6, wat het antwoord niet duidelijk maakt)."
+   }
+  },
+  {
+   "nr": 81,
+   "vraag": "Hoe diep moet er bemonsterd worden in kader van nitraatresidu?",
+   "antwoord": "Het nitraatresidu wordt bemonsterd tot op 0,90 m diepte, in de periode van 1 oktober tot 15 november [S4609]. Uit de praktijkgids worden die lagen gemeten als 0-30, 30-60 en 60-90 cm [S1412]. Die gids dateert van 2014 en het Mestdecreet van 2006, dus de lezer moet de huidige werkwijze nakijken bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8701,
+    "uit": 713,
+    "aanroepen": 2
+   },
+   "ms": 7291,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4609,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 7,
+     "tekst": "en van de artikelen 61 tot en met 72, stelt de Vlaamse Regering, met het oog op de handhaving van onderhavig decreet, een nitraatresiduwaarde vast. Naast een nitraatresiduwaarde wordt er ook een nitraatresidu-richtwaarde vastgesteld, die geldt als criterium voor het toekennen van bepaalde bijkomende ﬁnanciële stimuli aan landbouwers.\nDe nitraatresiduwaarde en de nitraatresidu-richtwaarde worden uitgedrukt in kg N/ha in de landbouwgrond tot op een diepte van 0,90 m in de periode van 1 oktober tot 15 november.\n§ 2.\nTot uiterlijk 31 december 2008 wordt de nitraatresiduwaarde vastgesteld op 90 kg N/ha en de nitraatresidu-richtwaarde op 45 kg N/ha.\nTen laatste vanaf 1 januari 2009 gelden de door de Vlaamse Regering vastgestelde nitraatresiduwaarde en de nitraatresidu-richtwaarde."
+    },
+    {
+     "id": 1412,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 24,
+     "tekst": "18 Met de informatie die voortvloeit uit de bepaling van het nitraatresidu kan een landbouwer enerzijds terugkoppelen met het voorbije seizoen om na te gaan wat beter had gekund.\nDe hoeveelheid nitraat in de 3 bodemlagen 0-30, 30-60 en 60-90 is namelijk een tijdspiegel: afhankelijk van het bodemtype, de weersomstandigheden, teeltopbrengsten en toegepaste bemesting in de loop van het afgelopen teeltseizoen, kan de hoeveelheid nitraat in elke laag meestal toegewezen worden.\nAnderzijds levert het nitraatresidu een eerste indicatie op hoe groot de bodemvoorraad aan nitraat kan zijn bij de start van het volgende seizoen.\nHet bodemtype speelt daarbij een belangrijke rol: hoe zwaarder het bodemtype, des te meer er beschikbaar blijft."
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt terecht een bemonsteringsdiepte van 0,90 m (lagen 0-30, 30-60, 60-90 cm), dit wordt door beide stukjes gesteund, en het wijst correct op de ouderdom van de bronnen en op het nakijken van de huidige regel."
+   }
+  },
+  {
+   "nr": 82,
+   "vraag": "Moet ik op een klein perceel ook 5 meter laten liggen bij nitraatgevoelige teelten? Of zijn er hiervoor uitzonderingen?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma geldt vanaf 2026 een strook van 5 meter voor nitraatgevoelige teelten in gebiedstype 2 en 3 langs VHA-waterlopen [S3324]. Voor nitraatgevoelige teelten in gebiedstype 0 en 1 is de strook 3 meter, en voor niet-nitraatgevoelige teelten ook 3 meter, behalve in natuurgebied (5 meter) en langs hellingen of in het VEN (10 meter) [S3324]. Voor percelen waar de strook meer dan 4% van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte tot 3 meter kan worden beperkt [S3324]. Ik vond in mijn documenten geen aparte uitzondering voor kleine percelen, en de strook telt niet mee in de mestgebruiksruimte [S3323]. Dit is een ontwerp uit maart 2025, dus controleer de huidige regel bij de Mest",
+   "stappen": 3,
+   "gebruik": {
+    "in": 19410,
+    "uit": 1993,
+    "aanroepen": 3
+   },
+   "ms": 12595,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    },
+    {
+     "id": 3323,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 71 van 101 maaisel toegelaten (behalve in de periode van 15/3 t.e.m.\n15/7).\nGrondbewerking is niet toegelaten tenzij het nodig is het meerjarig buffergewas te vernieuwen (waarbij dit beperkt wordt tot maximum 1 maal per 3 jaar) of om probleemonkruiden mechanisch pleksgewijs aan te pakken.\nDe beschermingsstrook mag gebruikt worden als wendakker;\n• Deze beschermingsstroken tellen niet mee in de mestgebruiksruimte van het perceel.\nDe maximale bemestingsnormen gelden dus voor het deel van het perceel, zonder de oppervlakte van de te respecteren bemestingsvrije beschermingsstrook.\nDe beschermingsstroken worden gefaseerd ingevoerd via een aanpassing van het waterwetboek.\nIn 2025 wordt een beschermingsstrook van 5 m breedte ingevoerd op percelen met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct de 4%-regel (waarbij de strook mogelijk tot 3 m beperkt wordt) en de 3 m-breedtes, geeft eerlijk aan dat er geen aparte uitzondering voor kleine percelen is gevonden, en alle beweringen steunen op de aangehaalde stukjes."
+   }
+  },
+  {
+   "nr": 83,
+   "vraag": "Waarom zijn de uitscheidingsnormen voor zoogkoeien nu plots verhoogd?",
+   "antwoord": "De uitscheidingscijfers voor zoogkoeien worden niet in één keer verhoogd, maar gefaseerd over drie jaar [S3308]. Volgens het ontwerp van het 7de Mestactieprogramma gebeurt dat omdat de mestproductie nauwkeuriger moet worden bepaald, op basis van wetenschappelijk onderzoek, onder meer van ILVO [S3308]. Voor 2026 staan de normen op 72 kg N en 29 kg P2O5 per dier per jaar, en vanaf 2027 op 75 kg N en 31 kg P2O5 [S2705]. Dat is nog een ontwerp uit maart 2025, dus de definitieve cijfers kunnen afwijken [S3308]. Controleer de huidige norm bij de Mestbank of het Departement Landbouw en Visserij [S2705].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9101,
+    "uit": 1428,
+    "aanroepen": 2
+   },
+   "ms": 8662,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3308,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 67,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 67 van 101\nFiguur 39 Exploitaties met dieren met een impactscore van meer dan 5% 8.2.2 Correcte bepaling mestproductie Een correcte bepaling van de mestproductie is belangrijk. Op basis van wetenschappelijk onderzoek, door het ILVO en andere wetenschappelijke instellingen, kunnen de uitscheidingscijfers aangepast worden. De uitscheidingscijfers voor zoogkoeien en melkkoeien met een melkproductie hoger dan 10.000 kg melk/koe/jaar worden verhoogd. Voor zoogkoeien betekent dit een stijging van de uitscheiding van 65 kg N/dier per jaar naar 75 kg N/dier per jaar en van 25 kg P2O5/dier per jaar naar 31 kg P2O5/dier per jaar. Deze stijging wordt gradueel doorgevoerd over een periode van 3 jaar (Tabel 3). Tabel 3 Gefaseerde invoer van aangepaste uitscheidingscijfers voor zoogkoeien\nkg P2O5/dier/jaar kg N/dier/jaar MAP 6 2024 25 65 MAP 7 2025 27 69\n2026 29 72\n2027 31 75"
+    },
+    {
+     "id": 2705,
+     "titel": "Bemestingsnormen en richtwaarden 2026",
+     "datum": "2026-03",
+     "pagina": 4,
+     "tekst": "pagina 4 van 18 Normen en richtwaarden 2026\nhoger dan 12500 tot en met 12750 50,5 151 127\nhoger dan 12750 tot en met 13000 51 153 127\nhoger dan 13000 tot en met 13250 52 155 127\nhoger dan 13250 tot en met 13500 52,5 157 127\nhoger dan 13500 tot en met 13750 53,5 159 127\nhoger dan 13750 tot en met 14000 54 161 127\nhoger dan 14000 tot en met 14250 55 163 127\nhoger dan 14250 tot en met 14500 55,5 165 127\nhoger dan 14500 tot en met 14750 56,5 167 127\nhoger dan 14750 57 169 127 Vervangingsvee jonger dan 1 jaar 10 33 43 Vervangingsvee van 1 jaar tot 2 jaar 19,2 58 73 Mestvee Zoogkoeien 2025 27 69 127 2026 29 72 127 Vanaf 2027 31 75 127 Mestkalveren 3,6 10,5 14,1 Runderen jonger dan 1 jaar 7 22,3 31,7 Runderen van 1 tot 2 jaar 19,2 58 83 Andere runderen 29,5 77 106,5"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt ILVO, wetenschappelijk onderzoek en de 75 kg N correct, maar zegt niet dat de eerdere cijfers (65 kg N en 25 kg P2O5) te laag waren, en voegt zonder steun in de stukjes toe dat het ontwerp 'uit maart 2025' komt en dat 'de definitieve cijfers kunnen afwijken'."
+   }
+  },
+  {
+   "nr": 84,
+   "vraag": "Hoe breed moet de beschermingsstrook zijn als het perceel zowel in SBZ-H ligt als in een groene bestemming?",
+   "antwoord": "Mijn documenten geven geen breedte voor een perceel dat tegelijk in SBZ-H en in een groene bestemming ligt, dus die specifieke vraag kan ik niet beantwoorden. Het ontwerp van het 7de Mestactieprogramma noemt wel een beschermingsstrook van 5 m in natuurgebied langs VHA-waterlopen vanaf 2026, en bredere stroken, zoals 10 m langs hellingen en in VEN, blijven gelden waar ze al golden [S3324]. Voor percelen in een groene bestemming binnen SBZ-H wordt nulbemesting verplicht vanaf 1 januari 2028 [S3100]. Omdat dit een ontwerp is en het om regels gaat, kijk je de huidige breedte best na bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9173,
+    "uit": 1463,
+    "aanroepen": 2
+   },
+   "ms": 9115,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3324,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025. Vanaf 2026 gelden volgende breedtes van de beschermingsstrook, die worden bepaald door het gewas, het gebiedstype en de eventuele ligging in natuurgebied: • 5 m in natuurgebied;\n• 3 m voor niet-nitraatgevoelige teelten (uitgezonderd in natuurgebied);\n• 3 m voor nitraatgevoelige teelten in gebiedstype 0 en 1 (uitgezonderd in natuurgebied);\n• 5 m voor nitraatgevoelige teelten in gebiedstype 2 en 3 (voor percelen waar de 5 m beschermingsstrook meer dan 4 % van de perceelsoppervlakte inneemt, wordt binnen het opvolgingsorgaan bekeken of de breedte van de strook beperkt kan worden tot 3 m;\ndit wordt bekeken in 2025).\nEen nieuwe ecoregeling bufferstroken vanaf 2026 wordt voorbereid.\nWaar in de huidige regelgeving bredere breedtes gelden voor de bemestingsvrije strook, blijven die van toepassing (bv.\n10 m langs hellingen en in VEN)."
+    },
+    {
+     "id": 3100,
+     "titel": "Toelichting PAS 2026: snellere en ruimere nulbemesting",
+     "datum": "2026-08",
+     "pagina": 19,
+     "tekst": "waarop het bemestingsverbod ingaat op 1 januari 2024;\n→ 14.375 euro per hectare voor percelen waarop het bemestingsverbod ingaat op 1 januari 2025; → 13.750 euro per hectare voor percelen waarop het bemestingsverbod ingaat op 1 januari 2026;\n→ 13.125 euro per hectare voor percelen waarop het bemestingsverbod ingaat op 1 januari 2027;\n→ 12.500 euro per hectare voor percelen waarop het bemestingsverbod ingaat op 1 januari 2028.\nGeen aanvraag tot vergoeding meer mogelijk na 30 september 2027 Vanaf 1 januari 2028 vallen percelen gelegen in een groene bestemming binnen SBZ-H sowieso onder de nulbemestingsregeling.\nWenst u niet vervroegd in te stappen, maar de vergoeding van 12.500 euro per hectare aan te vragen ter compensatie van deze verplichte nulbemestingsregeling vanaf 1 januari 2028?\nDien dan uw ingevulde aanvraag uiterlijk op 30 september 2027 in."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de combinatie SBZ-H en groene bestemming niet expliciet wordt behandeld en noemt de 5 m in natuurgebied uit S3324, maar het koppelt die 5 m niet als antwoord aan de vraag, en de bewering dat nulbemesting 'verplicht' wordt vanaf 2028 en de 'VHA-waterlopen' bij 5 m in natuurgebied zijn niet volledig gedragen door de stukjes."
+   }
+  },
+  {
+   "nr": 85,
+   "vraag": "Wat is de definitie van een hoofdteelt? Is dit de teelt die er staat op 30 mei of 1 juni?",
+   "antwoord": "Volgens de documenten is de hoofdteelt de teelt die volgens de gangbare teeltpraktijk overwegend aanwezig is op een perceel van 15 mei tot en met 31 augustus [S3607]. Aardappelen en wintergewassen gelden altijd als hoofdteelt, behalve onrijp geoogste wintergranen [S3607]. Groenten die in die periode aanwezig zijn, zijn steeds hoofdteelt, behalve voorjaarspinazie, tenzij er aardappelen, zomergranen of wintergewassen staan [S3610].\n\nOf de hoofdteelt op 30 mei of 1 juni wordt bepaald, staat niet in mijn documenten; de documenten noemen alleen de periode 15 mei tot 31 augustus [S3608]. Controleer de huidige regel bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9220,
+    "uit": 1216,
+    "aanroepen": 2
+   },
+   "ms": 6902,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3607,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 30,
+     "tekst": "pagina 30 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nTEELT, TEELTCODES EN GESPECIALISEERDE PRODUCTIEMETHODE\nIedere gebruiker van een perceel moet in zijn verzamelaanvraag steeds het volledige teeltplan (voor-, hoofd- en nateelt) van het perceel opgeven.\n Hoofdteelt: De teelt die volgens de gangbare teeltpraktijk overwegend aanwezig is op een perceel in de periode van 15 mei tot en met 31 augustus.\nAardappelen en wintergewassen2, met uitzondering van onrijp geoogste wintergranen en onrijp geoogste wintergranen met vlinderbloemigen, worden altijd beschouwd als hoofdteelt.\n Voorteelt: de teelt die in 2025 geoogst/ingewerkt wordt voor de inzaai van de hoofdteelt 2025.\n Eerste nateelt: de teelt die in 2025 nog ingezaaid/geplant wordt na het oogsten van de hoofdteelt 2025.\n Tweede nateelt: de teelt die in 2025 nog ingezaaid/geplant wordt na het oogsten van de eerste nateelt.\nIedere teelt heeft een specifieke teeltcode."
+    },
+    {
+     "id": 3610,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 31,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 31 van 277\ngeoogst wintergranen met vlinderbloemigen wordt aangegeven als voorteelt ‘wintermeteil’ (teeltcode 398).\nOok andere groen geoogste granen geeft u aan als voorteelt, bv snijrogge (teeltcode 639).\nGroenten die aanwezig zijn in de periode van 15 mei tot en met 31 augustus zijn steeds de hoofdteelt (uitgezonderd voorjaarspinazie) voor zover er geen aardappelen, zomergranen of wintergewassen aanwezig zijn (met uitzondering van wintergranen en wintergranen met vlinderbloemigen die onrijp geoogst worden).\nAls er twee groenten na elkaar staan, is de eerste groente de hoofdteelt (uitgezonderd voorjaarspinazie).\n De hoofdteelt is de teelt die de primaire gebruiksdoelstelling van het perceel weerspiegelt.\nBv.\neen wijngaard met veel gras wordt aangegeven als ‘Wijnstokken’, niet als ‘Gras’."
+    },
+    {
+     "id": 3608,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 30,
+     "tekst": "Tweede nateelt: de teelt die in 2025 nog ingezaaid/geplant wordt na het oogsten van de eerste nateelt.\nIedere teelt heeft een specifieke teeltcode. Hieronder leest u een bijkomende toelichting over een aantal bijzondere teeltcodes.\nVoor de volledige lijst van teeltcodes zie tabel ‘Teeltcodes’ op de webpagina ‘Tabellen’.\nVoor sommige percelen kunt u bijkomende informatie opgeven wat teelttechniek of teeltomstandigheden betreft.\nDeze info kunt u toevoegen onder het veld ‘Gespecialiseerde productiemethode’.\n1 HOOFDTEELT DEFINITIE HOOFDTEELT Definitie Hoofdteelt: De teelt die volgens de gangbare teeltpraktijk overwegend aanwezig is op een perceel in de periode van 15 mei tot en met 31 augustus.\nAardappelen en wintergewassen2, met uitzondering van onrijp geoogste wintergranen en onrijp geoogste wintergranen met vlinderbloemigen, worden altijd beschouwd als hoofdteelt.\nHet komt voor dat gewassen zoals bv."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft de juiste definitie (overwegend aanwezig van 15 mei tot en met 31 augustus), zegt eerlijk dat 30 mei of 1 juni niet in de documenten staat, en alle beweringen worden gedragen door de aangehaalde stukjes, met het advies de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 86,
+   "vraag": "Wat is het verschil tussen een 'bufferstrook' en 'beschermstrook'? Waarom worden beide gebruikt?",
+   "antwoord": "Een beschermingsstrook is de term die het ontwerp van het 7de Mestactieprogramma (MAP 7) gebruikt voor een strook langs VHA-waterlopen. Daar mag geen bemesting en geen gewasbeschermingsmiddel op, behalve bemesting door begrazers in specifieke gevallen [S3321]. De naam is bewust gekozen om ze te onderscheiden van bufferstroken in ecoregelingen of beheerovereenkomsten [S3321]. Bufferstroken zijn vaak vrijwillig en vergoed, en langs waterlopen gelden ze ook als verplichting onder de conditionaliteit (GLMC 4): 1 m teeltvrij, 3 m pesticidevrij en 5 m bemestingsvrij, gemeten vanaf de bovenrand van het talud [S3743]. Beide strokenvormen beperken de afspoeling van meststoffen en gewasbeschermingsmiddelen naar het oppervlaktewater [S3743] [S3321]. MAP 7 is in mijn documenten nog een ontwerp, dus de huidige regel moet je nakijken bij de Mestbank of het Departement [S3321].",
+   "stappen": 3,
+   "gebruik": {
+    "in": 12295,
+    "uit": 1813,
+    "aanroepen": 2
+   },
+   "ms": 13108,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3321,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 70,
+     "tekst": "de regeling eenvoudiger, effectiever en beter handhaafbaar te maken, worden aangepaste beschermingsstroken ingevoerd langs VHA-waterlopen in MAP 7. Om een duidelijk onderscheid te bewerkstelligen met bufferstroken in het kader van ecoregelingen of beheerovereenkomsten, worden deze stroken ‘beschermingsstroken’ genoemd, omwille van hun beschermingsfunctie van de waterlopen: • Er mag geen bemesting toegepast worden in de beschermingsstrook (met uitzondering van bemesting door directe uitscheiding van begrazers op beschermingsstroken langs grasland of bij tijdelijke begrazing voor onderhoud);\n• Er mogen geen gewasbeschermingsmiddelen toegepast worden in de beschermingsstrook;\n• Er mag enkel spontane vegetatie aanwezig zijn in de beschermingsstrook, of een meerjarig buffergewas (gras, meerjarige vlinderbloemigen of meerjarige mengsels met vlinderbloemigen of houtige gewassen) vanaf 1 meter landinwaarts vanaf de bovenste rand van het talud;"
+    },
+    {
+     "id": 3743,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 78,
+     "tekst": "pagina 78 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nCONDITIONALITEIT –BUFFERSTROKEN LANGS WATERLOPEN (GLMC 4)\nBufferstroken spelen een belangrijke rol in het voorkomen van verontreiniging van waterlopen. Ze beperken de afspoeling van meststoffen en gewasbeschermingsmiddelen van het perceel naar de waterlopen.\n1 NORM Langs alle waterlopen moet u, landinwaarts vanaf de bovenste rand van het talud, de volgende bufferstroken respecteren:  1 m teeltvrije strook (geen grondbewerking, bovenop de hierna vermelde beperkingen op het gebruik van pesticiden en bemesting);\n 3 m pesticidevrije strook;\n 5 m bemestingsvrije strook (10 m langs hellingen en in gebieden die behoren tot het Vlaams Ecologisch Netwerk).\nBemesting is verboden, met uitzondering van bemesting door rechtstreekse uitscheiding bij begrazing."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft het verschil juist weer (beschermingsstrook in MAP 7 versus bufferstroken in ecoregelingen/beheerovereenkomsten en GLMC 4), maar de bewering dat bufferstroken 'vaak vrijwillig en vergoed' zijn staat niet in de stukjes, en de 'bemestingsvrij 5 m' laat de uitzondering van 10 m langs hellingen en VEN weg.}"
+   }
+  },
+  {
+   "nr": 87,
+   "vraag": "Mogen stroken worden aangelegd voor spontane begrazing van bijvoorbeeld schapen?",
+   "antwoord": "Voor bufferstroken onder de ecoregeling 'Bufferstroken' is begrazing niet toegestaan, en bemesting ook niet [S4490]. Of spontane begrazing door schapen specifiek is toegestaan, staat niet in mijn documenten [S4490]. Het ontwerp van het 7de Mestactieprogramma laat voor 'beschermingsstroken' langs VHA-waterlopen wel tijdelijke begrazing voor onderhoud toe, maar dat is nog een ontwerp uit 2025 [S3321]. Controleer de huidige regel daarom bij de Mestbank of het Departement Landbouw en Visserij [S3321].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9030,
+    "uit": 1444,
+    "aanroepen": 2
+   },
+   "ms": 8406,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4490,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 69,
+     "tekst": "langs waterlopen: BUW;\n Actie 3: Bufferstrook met graskruidenmengsel: BUK/BUKN;  Actie 4: Bufferstrook met bloemenmengsel: BUB/BUBN. BUEN/BUKN/BUBN gebruikt u als de strook niet onderaan het afhellend gedeelte van een erosiegevoelig perceel aangelegd wordt. Hier gelden andere minimale en maximale breedtes. 4 SUBSIDIE COMBINEREN MET ANDERE SUBSIDIES In bepaalde gevallen kunnen de subsidies voor ecoregelingen en agromilieuklimaatmaatregelen gecombineerd worden met elkaar of met andere subsidies. Zie combinatietabellen voor welke combinaties mogelijk zijn. Een ecoregeling voor bufferstroken is niet combineerbaar met de bufferstroken/akkerranden binnen de nietproductieve elementen in de conditionaliteit. 5 AANDACHTSPUNTEN  Gebruik codes BUEN/BUKN/BUBN als de strook niet onderaan het afhellend gedeelte van een erosiegevoelig perceel aangelegd wordt. Hier gelden andere minimale en maximale breedtes.  Bemesting en begrazing van de bufferstroken zijn niet toegestaan.  Chemische bestrijding van de akkerdistel is niet toegestaan."
+    },
+    {
+     "id": 3321,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 70,
+     "tekst": "de regeling eenvoudiger, effectiever en beter handhaafbaar te maken, worden aangepaste beschermingsstroken ingevoerd langs VHA-waterlopen in MAP 7. Om een duidelijk onderscheid te bewerkstelligen met bufferstroken in het kader van ecoregelingen of beheerovereenkomsten, worden deze stroken ‘beschermingsstroken’ genoemd, omwille van hun beschermingsfunctie van de waterlopen: • Er mag geen bemesting toegepast worden in de beschermingsstrook (met uitzondering van bemesting door directe uitscheiding van begrazers op beschermingsstroken langs grasland of bij tijdelijke begrazing voor onderhoud);\n• Er mogen geen gewasbeschermingsmiddelen toegepast worden in de beschermingsstrook;\n• Er mag enkel spontane vegetatie aanwezig zijn in de beschermingsstrook, of een meerjarig buffergewas (gras, meerjarige vlinderbloemigen of meerjarige mengsels met vlinderbloemigen of houtige gewassen) vanaf 1 meter landinwaarts vanaf de bovenste rand van het talud;"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt correct de tijdelijke begrazing voor onderhoud in het ontwerp-MAP 7 (S3321), maar zegt ten onrechte dat het niet in de documenten staat of spontane begrazing mag, en de claim dat het gaat om 'toegelaten begrazing' is slechts een uitzondering op de bemestingsregel, terwijl 'uit 2025' en de aanbeveling om na te kijken wel kloppen."
+   }
+  },
+  {
+   "nr": 88,
+   "vraag": "Welke verbodsbepalingen moet ik altijd respecteren?",
+   "antwoord": "Het Mestdecreet verbiedt het op of in de bodem brengen van dierlijke mest, andere meststoffen en kunstmest op landbouwgrond van 1 september tot en met 15 februari, op zon- en feestdagen, en voor zonsopgang en na zonsondergang (kunstmest is van het zon- en feestdagenverbod uitgezonderd) [S4588] [S4589].\nStalmest en champost mogen niet van 15 november tot 15 januari, en dierlijke mest niet van 15 oktober tot 15 februari op de zware kleigronden in de polders [S4589].\nBemesten is verboden op drassig, ondergelopen, bevroren of met sneeuw bedekt land, en op percelen met een gemiddeld stijgingspercentage van 18 % of meer [S4631].\nBinnen 5 meter landinwaarts vanaf de bovenkant van een waterloop mag je niet bemesten",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9218,
+    "uit": 1757,
+    "aanroepen": 2
+   },
+   "ms": 9892,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4588,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 4,
+     "tekst": "van de actieprogramma’s;\n2° de opstelling en uitvoering van controleprogramma’s;\n3° de opstelling van een code of codes van goede landbouwpraktijken; 4° het opzetten van een programma, dat opleiding en voorlichting voor landbouwers omvat, om de toepassing van de code(s) van goede landbouwpraktijken te bevorderen;\n5° de informatie die aan de Europese Commissie dient meegedeeld te worden, alsook de wijze waarop dit dient te gebeuren.\nHOOFDSTUK III.\n— Maatregelen van bijlage II en bijlage III van de nitraatrichtlijn Afdeling I.\n— Periodes die niet geschikt zijn voor het op of in de bodem brengen van meststoffen Art.\n8.\n§ 1.\nHet op of in de bodem brengen van dierlijke mest, andere meststoffen en kunstmest op landbouwgronden is verboden vanaf 1 september tot en met 15 februari.\n§ 2.\nHet op of in de bodem brengen van dierlijke mest, andere meststoffen en kunstmest is tevens verboden : 1° op alle zon- en feestdagen.\nDeze verbodsbepaling geldt niet voor kunstmest;"
+    },
+    {
+     "id": 4589,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 4,
+     "tekst": "dierlijke mest, andere meststoffen en kunstmest is tevens verboden : 1° op alle zon- en feestdagen.\nDeze verbodsbepaling geldt niet voor kunstmest; 2° voor zonsopgang en na zonsondergang.\n§ 3.\nIn afwijking van § 1 is het verboden : 1° stalmest of champost op of in de bodem te brengen vanaf 15 november tot en met 15 januari;\n2° dierlijke mest op of in de bodem te brengen op de zware kleigronden in de polders, zoals aangeduid door de Vlaamse Regering, vanaf 15 oktober tot en met 15 februari.\n§ 4.\nIn afwijking van § 1 is het op of in de bodem brengen van andere meststoffen en bewerkte dierlijke mest die stikstof in dusdanige vorm bevatten, dat slechts een beperkt gedeelte van de totale stikstof vrijkomt in het jaar van opbrenging of waarvan de stikstoﬁnhoud laag is, steeds toegelaten.\nDe Vlaamse Regering kan nadere regels vaststellen en kan inzonderheid de andere meststoffen en bewerkte dierlijke mest bepalen die voor deze afwijking in aanmerking komen.\n§ 5."
+    },
+    {
+     "id": 4631,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 10,
+     "tekst": "Het op of in de bodem brengen van kunstmest of van dierlijke mest, met uitzondering van rechtstreekse uitscheiding door beweiding, is verboden op percelen landbouwgrond met een gemiddeld stijgingspercentage hoger of gelijk aan 18 %.\nOnderafdeling V.\n— Het op of in de bodem brengen van meststoffen op drassig, ondergelopen, bevroren of met sneeuw bedekt land Art.\n20.\nHet is verboden meststoffen op of in de bodem te brengen op drassig, ondergelopen, bevroren of met sneeuw bedekt land.\nOnderafdeling VI.\n— Het op of in de bodem brengen van meststoffen in de nabijheid van waterlopen Art.\n21.\nHet is verboden meststoffen op of in de bodem te brengen, met uitzondering van bemesting door rechtstreekse uitscheiding bij beweiding : 1° tot 5 m landinwaarts vanaf de bovenste rand van een waterloop;\n2° tot 10 m landinwaarts vanaf de bovenste rand van het talud van een waterloop die gelegen is in het Vlaams Ecologisch Netwerk;"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft de kernverboden uit het Mestdecreet (periode, zon- en feestdagen, zonsopgang/zonsondergang, drassig of bevroren land) grotendeels juist weer, maar het breekt midden in een zin af, laat de 10 m-regel in het Vlaams Ecologisch Netwerk weg, noemt de uitzonderingen op het verbod van 1 september tot 15 februari niet (§ 4: bepaalde andere meststoffen steeds toegelaten), zegt niet hoe oud de bron (2006) is en raadt niet aan de geldende regel na te kijken, en 'op percelen met een gemiddeld stijgingspercentage van 18 % of meer' geldt alleen voor kunstmest en dierlijke mest, niet voor alle bemesting."
+   }
+  },
+  {
+   "nr": 89,
+   "vraag": "Stalen voor OC en ph, 1 per 5 ha, jaarlijks of voor hoeveel jaar geldig?",
+   "antwoord": "Volgens de toelichting bij de verzamelaanvraag 2025 is een bodemanalyse vijf jaar geldig, gerekend vanaf de datum van de staalname [S3751]. Een analyseresultaat is dus geen jaarlijkse zaak, maar blijft vijf jaar gelden [S3736]. Over de regel van één staal per 5 ha vond ik in mijn documenten niets, dus die kan ik niet bevestigen [S3751]. Omdat dit om subsidieregels gaat, kijk je de huidige regel best na bij het Departement Landbouw en Visserij of de Mestbank.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6520,
+    "uit": 622,
+    "aanroepen": 2
+   },
+   "ms": 4819,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3751,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 81,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 81 van 277\nDe monsterneming en analyse van het bodemstaal wordt uitgevoerd door een erkend laboratorium in de discipline bodem, deeldomein bodembescherming.\nBodemtype Optimale zone zuurtegraad (pH KCl) Zand 5,0 - 6,0 Zandleem 5,5 - 6,5 Leem 6,5 - 7,5 Klei 7,0 - 8,0 Tabel 1: Optimale pH-zone volgens bodemtype.\nDe bodemanalyse heeft een geldigheidsduur van vijf jaar vanaf de datum waarop de staalname heeft plaatsgevonden.\nDe herklassering van een perceel loopt per kalenderjaar: ze vangt aan op 1 januari van het jaar waarin de aanvraag voor herklassering wordt goedgekeurd en eindigt op 31 december van het jaar dat voorafgaat aan de einddatum van de maximale geldigheidsduur van de bodemanalyse.\nAls het perceel van vorm verandert, blijft de herklassering geldig voor zover het perceel voor minstens 80% overlapt met het oorspronkelijk perceel waarop de staalname die aan de basis lag voor de herklassering, is uitgevoerd."
+    },
+    {
+     "id": 3736,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 76,
+     "tekst": "pagina 76 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nanalysemethoden, kunnen voorleggen.\nBovendien zorgt u over de jaren heen dat de ontleding gebeurt voor alle percelen van uw bedrijf door middel van een rotatiesysteem.\nElk analyseresultaat is vijf jaar geldig.\nWanneer het organische koolstofgehalte onder de limietwaarde/actiegrens ligt, moet u op dat perceel voor de komende vijf jaar ieder jaar minstens de minimale dosis effectieve organische koolstof toedienen zoals beschreven in het analyseresultaat dat zich baseert op de code van goede praktijk bodembescherming.\nIn het analyseresultaat staat dit advies voor het organische koolstofgehalte gerapporteerd onder de vorm van een minimale jaarlijkse aanbreng van effectieve organische koolstof (kg C/ha).\nU moet zelf jaarlijks bijhouden en kunnen aantonen hoe u dit advies op het betrokken perceel heeft opgevolgd."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct vijf jaar geldigheid, wat in beide stukjes staat ([S3751] en [S3736]), en zegt eerlijk dat de regel van één staal per 5 ha niet in de stukjes staat en verwijst naar het Departement of de Mestbank."
+   }
+  },
+  {
+   "nr": 90,
+   "vraag": "Voor het winterploegen van zware gronden; is dit op basis van de landbouwstreek of de grondsoort op een analyseverslag of de bodemkaart?",
+   "antwoord": "Mijn documenten zeggen niet of winterploegen op zware gronden aan de landbouwstreek, een analyseverslag of de bodemkaart wordt gekoppeld; dat staat niet in mijn documenten. Wettelijk geldt landbouwgrond als zware kleigrond als het in de landbouwstreek Polders ligt [S1403]. De afbakening van die zware kleigronden staat op een kaart op de VLM-website onder Bodemtype [S1403]. Een textuuranalyse uit een erkend laboratorium is in de documenten vooral bedoeld om een perceel als niet-zandgrond te laten erkennen [S1402]. Omdat dit om regels gaat en de bron van 2014 is, kijk je de huidige regel na bij de Mestbank of het Departement [S1403].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6426,
+    "uit": 1419,
+    "aanroepen": 2
+   },
+   "ms": 8261,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 1403,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 21,
+     "tekst": "van het Departement Leefmilieu, Natuur en Energie erkend zijn voor textuuranalyse (manueel en granulomestrisch) mogen deze analyse doen. U vindt de lijst terug op www.lne.be (Thema's > Bodembescherming > Erkenning laboratoria).\nDe erkenning als niet-zandgrond gaat in vanaf de eerstvolgende 1e januari als de aanvraag ten laatste op 31 augustus is ingediend.\nVoor aanvragen ingediend van 1 september tot en met 31 december, moet u een jaar extra geduld hebben.\n5.4.4.2 Zware kleigrond De mestwetgeving beschouwt landbouwgrond als zware kleigrond als die gelegen is in de landbouwstreek Polders.\nOp www.vlm.be (Land- & tuinbouwers > Mestbank > Kwetsbare gebieden > Bodemtype > Zware kleigronden) kunt u een kaart met de afbakening van de zware kleigronden raadplegen.\nEen perceel dat in zware kleigrond gelegen is heeft enkele voordelen: - er mag tot en met 14 oktober vloeibare dierlijke mest opgebracht worden."
+    },
+    {
+     "id": 1402,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 21,
+     "tekst": "15 5.4.4.1 Zandgronden De mestwetgeving beschouwt landbouwgrond als zandgrond als die in de landbouwstreek Vlaamse Zandstreek en Kempen ligt, met uitzondering van gronden in de provincie Vlaams-Brabant.\nDeze laatste wordt uitzonderlijk als niet-zandgrond bekeken.\nOp www.vlm.be (Land- & tuinbouwers > Mestbank > Kwetsbare gebieden > Bodemtype > Zandgronden) kunt u een kaart met de afbakening van de zandgronden raadplegen.\nDe bemestingsnorm voor N op zandgrond is lager (10 tot 30 kg teeltafhankelijk), Ook geldt voor een aantal gewassen een lagere drempelwaarde voor het nitraatresidu (0 tot 55).\nDit hangt af van teelt, bodemtype en focusgebied).\nDoor middel van een textuuranalyse kunt u een perceel laten erkennen als niet-zandgrond.\nEnkel laboratoria die door de dienst Land en Bodembescherming van het Departement Leefmilieu, Natuur en Energie erkend zijn voor textuuranalyse (manueel en granulomestrisch) mogen deze analyse doen."
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt dat het niet in de documenten staat, terwijl het juiste antwoord (bodemkaart/bodemstaal/code, uit de Toelichting bij de verzamelaanvraag 2025) wel bestaat en dus niet wordt gegeven; de beweringen zelf worden wel door S1402 en S1403 gedragen en de bronleeftijd wordt vermeld."
+   }
+  },
+  {
+   "nr": 91,
+   "vraag": "Aardappelen (geen pootgoed) telen; rotatie - minimum 2 jaar tussen teelten of 3 jaar?",
+   "antwoord": "Voor aardappelen (geen pootgoed) moet je minstens twee jaar een ander gewas telen voordat je opnieuw aardappelen op hetzelfde perceel zet, dus één op drie. [S3796] Voor gecertificeerd pootgoed is dat minstens drie jaar. [S3796] Een rotatie die enger is dan 1 op 3 is niet toegestaan, behalve bij primeuraardappelen die voor 20 juni worden gerooid. [S2580] Bij besmetting met aardappelcystenaaltje geldt 1 op 6, tenzij er specifieke maatregelen worden genomen. [S2581] Een rotatie van 1 op 4 of minder vaak is volgens de VLM nog beter voor de opbrengst. [S3503] Deze regels kunnen gewijzigd zijn, dus controleer de huidige regel bij het Departement Landbouw en Visserij of de Mestbank. [S3796]",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9641,
+    "uit": 1723,
+    "aanroepen": 2
+   },
+   "ms": 10128,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3796,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 95,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 95 van 277\npercelen of te laat aangemelde bio-percelen moeten net als de gangbare percelen van het bedrijf wel voldoen aan gewasrotatie.\nPercelen van CSA-bedrijven of pluktuinen met veel verschillende teelten op 1 perceel in het voorgaande jaar en die in de opeenvolgende jaren (ruimtelijk) roteren.\nDe percelen zijn aangegeven met volgende teeltcodes: > Rotatieteelt van groentegewassen (teeltcode ‘899’) > Rotatieteelt van snijbloemen andere dan rozen (teeltcode ‘9755’) 5 SPECIFIEKE NORM VOOR AARDAPPELEN Op een perceel waar u aardappelen teelt, moet u minstens twee jaar een ander gewas telen alvorens u opnieuw aardappelen op dat perceel kunt telen.\nDeze verplichting geldt niet voor de teelt van aardappelen onder niet verplaatsbare serres.\nBij de teelt van gecertificeerd pootgoed is dit minstens drie jaar."
+    },
+    {
+     "id": 2580,
+     "titel": "Praktijkgids Gewasbescherming: module IPM akkerbouw",
+     "datum": "2019-04",
+     "pagina": 11,
+     "tekst": "niet voldoen aan IPM.\nDeze percelen komen wel in aanmerking om te voldoen aan de nodige vruchtafwisseling Monoculturen zijn algemeen af te raden. Vruchtafwisseling geldt niet voor meerjarige teelten.\nEen vruchtafwisseling van minimum 1 op 2 is algemeen sterk aanbevolen voor de akkerbouwteelten die hieronder niet specifiek zijn vermeld.\nSuikerbieten mogen bij voorkeur niet in een rotatie van enger dan 1/3 jaar geteeld worden.\nAls uit een bodemanalyse blijkt dat er schadelijke aaltjes Heterodera schachtii in de bodem aanwezig zijn, moeten aaltjesresistente of –tolerante rassen verbouwd worden.\nDe teelt van aardappelen kan niet in een rotatie van enger dan 1 op 3 jaar met uitzondering van primeuraardappelen (oogst voor 20 juni).\nVoor de teelt van pootgoed geldt een rotatie van 1 op 4 jaar.\nIndien uit een bodemanalyse blijkt dat er een besmetting is met aardappelcystenaaltje (Globodera) geldt een rotatie van 1 op 6 jaar, tenzij er specifieke maatregelen genomen worden."
+    },
+    {
+     "id": 2581,
+     "titel": "Praktijkgids Gewasbescherming: module IPM akkerbouw",
+     "datum": "2019-04",
+     "pagina": 11,
+     "tekst": "dat er een besmetting is met aardappelcystenaaltje (Globodera) geldt een rotatie van 1 op 6 jaar, tenzij er specifieke maatregelen genomen worden. Een rotatie van 2 op 3 voor granen is aanvaardbaar.\nVoor vlas een rotatie van 1 op 6 en voor koolzaad moet een rotatie van minimaal 1 op 3 zoveel mogelijk gerespecteerd worden.\nDe keuze van de groenbedekkers wordt bij voorkeur afgestemd op teelten in de rotatie, waar mogelijk gebruik maken van aaltjesreducerende groenbedekkers.\nBEMESTING 1.4 Bemesting is bij voorkeur gebaseerd op een chemische bodem- of gewasanalyse die op regelmatige tijdstippen minstens om de 4-5 jaar uitgevoerd wordt.\nHet gebruik van aangepaste technieken om de voedingsbehoefte te bepalen is aangeraden.\nDe MAP normen moeten"
+    },
+    {
+     "id": 3503,
+     "titel": "Goede praktijken voor de bemesting (klimaatadaptief)",
+     "datum": "2021-03",
+     "pagina": 23,
+     "tekst": "20.01.2021 Praktijkgids-Goede praktijken voor de bemesting van aardappelen en maïs pagina 23 van 25 ROTATIE Maïs in vruchtwisseling biedt ten opzichte van maïs in monocultuur meer mogelijkheden om het gebruik van stikstofmeststoffen te beperken zonder belangrijke opbrengstverliezen.\nGewassen geteeld in monocultuur zijn gevoeliger voor stress. Hierdoor komen negatieve gevolgen, zoals lagere opbrengsten en hogere onkruid- en ziektedruk, te wijten aan suboptimale teeltomstandigheden, in een monocultuur sneller tot uiting. Deze effecten werden in het verleden al eens verdoezeld door overbemesting. Dit is uiteraard niet de juiste oplossing. Op deze manier worden enkel bijkomende verliezen naar het milieu gerealiseerd maar wordt de oorzaak niet aangepakt.\nSpecifiek voor aardappelen is in het GLB een verplichte rotatie van maximaal één op drie opgenomen. Een rotatie van één op vier of minder frequent is echter nog beter en vertaalt zich onmiddellijk in een betere opbrengst."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord is juist (minstens twee jaar ander gewas, dus 1 op 3), maar enkele beweringen wijken af van de stukjes: de uitzondering voor serres ontbreekt, het pootgoed in S2580 (1 op 4) wordt genegeerd, 'volgens de VLM' staat niet in S3503 (dat zegt GLB-praktijkgids) en 'enger dan 1 op 3 niet toegestaan' komt uit een IPM-gids over aanbevelingen."
+   }
+  },
+  {
+   "nr": 92,
+   "vraag": "Wat zijn de sancties als niet aan de 80% voldaan is?",
+   "antwoord": "Ik vind in mijn documenten geen 80%-drempel, dus ik kan niet met zekerheid zeggen waar je naar verwijst. Wel staat in de toelichting bij de verzamelaanvraag 2025 dat bij niet-naleving van de conditionaliteit de steun wordt verlaagd, met een verlagingspercentage dat in het kalenderjaar oploopt tot maximaal 5% (geen ernstige gevolgen) of 10% (wel ernstige gevolgen of een risico voor volks- of diergezondheid) [S3715]. Een eerste herhaling van dezelfde niet-naleving krijgt een verlaging van 10% [S3715]. Bij opzettelijke niet-naleving is het uitgangspunt 15%, en dat kan oplopen tot 100% afhankelijk van ernst, omvang of duur [S3717]. Controleer de huidige regels bij de Mestbank of het Departement, want dit zijn regels die kunnen wijzigen [S3715] [S3717].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 12056,
+    "uit": 911,
+    "aanroepen": 3
+   },
+   "ms": 7997,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3715,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 68,
+     "tekst": "niet-naleving geen of slechts onbeduidende gevolgen heeft, kan in bepaalde gevallen geoordeeld worden om geen administratieve sanctie toe te passen. De verlagingspercentages van alle niet-nalevingen worden vervolgens bij elkaar opgeteld, maar met een maximum tot 5% binnen eenzelfde kalenderjaar indien geen van de niet-nalevingen ernstige gevolgen heeft of met een maximum tot 10% binnen eenzelfde kalenderjaar indien minstens één van de niet-nalevingen ernstige gevolgen heeft of een direct risico vormt voor de volksgezondheid of diergezondheid.\nHERHALING VAN EEN NIET-NALEVING Bij een eerste herhaling van dezelfde niet-naleving wordt een verlagingspercentage van 10 % toegepast."
+    },
+    {
+     "id": 3717,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 68,
+     "tekst": "van één van de voorwaarden van de conditionaliteit het gevolg is van opzet, wordt in principe een verlagingspercentage toegepast van 15%. Dit percentage kan, afhankelijk van de ernst, de omvang of het permanente karakter van deze opzettelijke niet-naleving, verhoogd worden tot maximaal 100%.\nDe verlagingspercentages van alle opzettelijke niet-nalevingen worden vervolgens bij elkaar opgeteld met een maximum tot 100% binnen eenzelfde kalenderjaar."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft eerlijk aan dat er geen 80%-drempel in de stukjes staat en noemt de sancties 10% en 15% (passend bij het verwachte patroon), maar die gaan over conditionaliteit en niet over een 80%-voorwaarde, dus het is deels naast de vraag; de bronnen ondersteunen de percentages, maar de zin dat dit 'regels zijn die kunnen wijzigen' en de verwijzing naar de Mestbank zijn niet uit de stukjes gehaald, en de datum (2025-02) wordt niet vermeld."
+   }
+  },
+  {
+   "nr": 93,
+   "vraag": "In de polder wordt er veelal nog eens geploegd voor 15/10. Mag dit dan niet meer?",
+   "antwoord": "Nee, volgens mijn documenten geldt in de polders op kleibodem geen 15 oktober-grens: daar is winterploegen altijd toegestaan [S3777]. De 15 oktober-datum geldt voor kleibodems in bijvoorbeeld de Zandstreek, en voor leembodems pas vanaf 1 december [S3777]. Wel moet de bodem na de hoofdteelt bedekt blijven, bijvoorbeeld door een groenbedekker, nateelt, stoppels of plantenresten [S3777]. Omdat dit een GLB-voorwaarde is, controleer de huidige regel best bij het Departement Landbouw en Visserij of de Mestbank.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9087,
+    "uit": 1803,
+    "aanroepen": 2
+   },
+   "ms": 10206,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3777,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 89,
+     "tekst": "vanaf 1 december op de leembodems Voor percelen met een kleibodem gelegen in de landbouwstreek Polders en Duinen is winterploegen altijd toegestaan. Landbouwstreek Vroegste ploegdatum op kleibodem Vroegste ploegdatum op leembodem Polders en Duinen - 1 december Zandstreek, Kempen, Zandleemstreek, Leemstreek, Weidestreek (Luik) 15 oktober 1 december Hierbij houdt u de bodem na de oogst van de hoofdteelt tot de aanvang van het winterploegen bedekt door:  ofwel de inzaai van een groenbedekker of een nateelt na de oogst van de hoofdteelt,  ofwel het behouden van de stoppels en opslag,  ofwel het aan de oppervlakte laten liggen van de plantenresten na de oogst van de hoofdteelt.\nWanneer u op de klei- of leembodem een nateelt inzaait die voor een bodembedekking in de winter zorgt, is ook aan deze GLMC-voorwaarde voldaan."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft terecht aan dat winterploegen op kleibodem in de Polders en Duinen altijd is toegestaan, noemt de 15 oktober-datum voor klei in o.a. de Zandstreek en 1 december voor leem, en de bodembedekking, wat allemaal in S3777 staat."
+   }
+  },
+  {
+   "nr": 94,
+   "vraag": "Als je 2 ha blijvend grasland ploegt, en je zaait een ander perceel van 2ha bouwland in met gras, heb je dan nog voldaan of moet dat andere perceel eerst blijvend worden?",
+   "antwoord": "Volgens de documenten moet omgezet blijvend grasland in principe opnieuw worden aangelegd. Als dat op de oorspronkelijke percelen niet kan, mag je een even grote oppervlakte met gras inzaaien, en die percelen gelden dan als blijvend grasland en moeten vijf opeenvolgende jaren grasland blijven [S3722]. Dat gaat over de verzamelaanvraag 2025, dus controleer de huidige regel bij het Departement Landbouw en Visserij of de Mestbank [S3722]. Ploegen is op zich toegestaan zolang de Vlaamse ratio blijvend grasland niet met meer dan 3% daalt, maar je moet ook het Natuurdecreet naleven [S3726].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9313,
+    "uit": 1753,
+    "aanroepen": 2
+   },
+   "ms": 10464,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3722,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 71,
+     "tekst": "1.02.2025 Toelichting bij de verzamelaanvraag 2025 pagina 71 van 277\n De administratie zal actieve landbouwers die in 2025 beschikken over een perceel dat volgens de verzamelaanvraag in 2024 of 2023 nog blijvend grasland was, verplichten om het omgezette areaal gedeeltelijk of volledig her aan te leggen.\nAls heraanleg op de oorspronkelijke percelen niet mogelijk is, mag u een overeenkomstige oppervlakte als grasland inzaaien of een perceel dat u al in de voorgaande jaren met gras ingezaaid heeft, aanduiden.\nIn deze gevallen zullen de percelen vanaf 2026 als ‘blijvend grasland’ beschouwd worden en moeten ze ook voor de volgende vijf opeenvolgende jaren als blijvend grasland behouden blijven wanneer het een nieuw met gras ingezaaid perceel betreft.\nEen perceel dat al als grasland was aangegeven, moet u minstens zo lang als grasland behouden tot de termijn van vijf jaar is volgemaakt."
+    },
+    {
+     "id": 3726,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 72,
+     "tekst": "de laagkiezer (linksboven) op de kaart.\n3 OMZETTEN PERCEEL BLIJVEND GRASLAND Allereerst moet u omzichtig omspringen met uw areaal blijvend grasland. Door het omzetten van blijvend grasland kan de Vlaamse ratio blijvend grasland met meer dan 3% dalen waardoor een algemeen omzettingsverbod van kracht wordt en u verplicht zal worden om opnieuw blijvend grasland aan te leggen.\nEen perceel blijvend grasland dat niet aangeduid is als EKBG, zou dus zolang de daling van de Vlaamse ratio blijvend grasland minder dan 3% bedraagt, mogen geploegd worden, maar naast de verplichtingen in het kader van deze GLMC-norm moet u ook rekening houden met de bepalingen van het Natuurdecreet.\nNiet alle graslanden die onder de bescherming van het Natuurdecreet vallen, zijn immers aangeduid als EKBG.\nWanneer u een perceel dat geen EKBG is, toch zou willen omzetten, moet u dus steeds nagaan of dit ook volgens de natuur- of andere wetgeving mogelijk is."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft juist dat een even grote oppervlakte met gras ingezaaid mag worden, dat die percelen als blijvend grasland gelden en vijf jaar gras moeten blijven, maar de bewering 'in principe opnieuw aanleggen' en de bewering dat het Departement of Mestbank gecontroleerd moet worden vallen deels buiten de bron, en de bron noemt alleen 'verplichten' voor percelen die in 2023 of 2024 nog blijvend grasland waren, terwijl het antwoord dit te algemeen formuleert."
+   }
+  },
+  {
+   "nr": 95,
+   "vraag": "Vroeger waren percelen met bomen(rijen) met 100+/ha NIET-subsidiabel... hoe zit het nu met deze subsidiabele status, kunnen deze bomenrijen meetellen voor de niet productieve oppervlakte?",
+   "antwoord": "In de toelichting bij de verzamelaanvraag 2025 staan bomenrijen en geïsoleerde bomen op de lijst van landschapselementen op subsidiabel areaal [S3668]. Over een grens van 100 bomen per hectare vind ik in mijn documenten niets, dus ik kan die oude regel niet bevestigen of weerleggen [S3668]. De subsidiabele-hectaredefinitie die ik vond, gaat over hakhout met minimaal 1000 bomen per hectare, en dat is een ander geval [S3661]. Vanaf 2025 hoeft voor de conditionaliteit geen niet-productief areaal meer aangeduid te worden [S4253]. Of een specifieke bomenrij vandaag meetelt, moet je nakijken bij het Departement Landbouw en Visserij, dit is geen bindend advies [S3668].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9609,
+    "uit": 1647,
+    "aanroepen": 2
+   },
+   "ms": 9373,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3668,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 49,
+     "tekst": "Toelichting bij de verzamelaanvraag 2025 pagina 49 van 277 Bedrijfsareaal - Subsidiabel Landbouwareaal (bouwland, blijvend grasland, permanente teelten) Bedrijfsareaal - Nietsubsidiabel Landbouwareaal (bouwland, blijvend grasland, permanente teelten) Bedrijfsareaal - Nietlandbouwareaal Geen bedrijfsareaal dit maximum geldt voor percelen waarvoor een afwijking van dit maximum werd goedgekeurd bij de toekenning van de subsidie voor de aanleg van boslandbouwsystemen  Begraasde openbare plaatsen  Grondstroken die langs waterlopen, wegen, bossen, serres en gebouwen liggen en die niet geschikt zijn voor landbouwactiviteiten vanwege hun onverenigbaarheid met de gangbare landbouw op basis van historische achtergrond, de ligging of het gebruik ervan bebouwde delen van het landbouwerf Containers in volle grond Container- en substraatteelt Gebouwen Gazons Landschapselementen gelegen op subsidiabel areaal:  Poelen ≤ 0,10 ha  Houtkanten ≤ 10 m breed  Akkerranden  Heggen en hagen ≤ 2 m breed  Sloten ≤ 2 m breed  Geïsoleerde bomen  Bomenrijen  Bomengroepen ≤ 0,01 ha  Hoogstamboomgaarden - Sloten > 2 m en ≤ 6 m breed Brandgangen"
+    },
+    {
+     "id": 3661,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 46,
+     "tekst": "productiemethode’ (‘GPM’).\nU vindt meer uitleg over deze codes in de tabel ‘Gebruikte codes in de verzamelaanvraag’ (zie webpagina ‘Tabellen’). 6 ‘SUBSIDIABELE OPPERVLAKTE’ Een subsidiabele hectare of subsidiabele oppervlakte is:  Ieder landbouwareaal van het bedrijf dat wordt gebruikt voor een landbouwactiviteit, met inbegrip van hakhout met korte omlooptijd dat aan de volgende voorwaarden voldoet: > De omlooptijd is maximaal acht jaar > De minimale aanplantplantdichtheid bedraagt 1000 bomen per hectare > De aanplant uit één of meerdere van de volgende boomsoorten:  zwarte els;\n fladderolm;\n gladde olm;\n hazelaar;\n gewone esdoorn;\n gewone es;\n alle populieren- en wilgensoorten;\n zomerlinde;\n winterlinde;\n Amerikaanse eik;\n zomereik;\n wintereik;\n lijsterbes;\n haagbeuk;"
+    },
+    {
+     "id": 4253,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 276,
+     "tekst": "pagina 276 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\ndat maximaal twee jaar wordt aangehouden. Vul in dit geval als hoofdteelt van het perceel ‘mengsel van vlinderbloemigen’ (744) in.  Vanaf 2025 moet geen niet-productief areaal (NPE) meer aangeduid worden voor de conditionaliteit. Bijgevolg vervallen ook de toegelaten combinaties tussen NPE en beheerovereenkomsten en zijn er geen verlaagde beheervergoedingen meer van toepassing bij combinatie van NPE met beheerovereenkomsten. 7 AANDACHTSPUNTEN  Indien u een beheerovereenkomst voor het onderhoud van kleine landschapselementen hebt, respecteer dan het verbod om werken uit te voeren van 15 maart tot 15 juni om broedende vogels niet te verstoren.  Indien u een beheerovereenkomst ‘jaarlijks snoeien’ hebt, snoei dan jaarlijks beide zijden van elke haag alsook de bovenkant van de hagen"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de grens van 100 bomen per hectare niet in de stukjes staat en dat vanaf 2025 geen niet-productief areaal meer aangeduid hoeft te worden, maar het mist het verwachte antwoord (200) en beweert dat bomenrijen op de lijst van landschapselementen op subsidiabel areaal staan, terwijl die lijst in S3668 ook onder niet-landbouwareaal valt en de context onduidelijk is, en het adviseert wel navragen bij het Departement."
+   }
+  },
+  {
+   "nr": 96,
+   "vraag": "Teeltrotatie: meerdere jaren mais mag indien er een nateelt (groenbemester) gezaaid wordt die langer dan 12 weken op het veld blijft?",
+   "antwoord": "Dat staat niet in mijn documenten: ik vind geen regel die meerdere jaren mais toestaat als de nateelt langer dan 12 weken op het veld blijft. Wel staat er dat een nateelt na maïs mogelijk is als de maïs tijdig geoogst wordt, en dat een groenbedekker minimaal twee maanden moet groeien om goed te slagen [S1967] [S1642]. Maïs in vruchtwisseling met tijdelijk gras en granen wordt aanbevolen [S2526]. Voor de exacte voorwaarden moet u de huidige regel nakijken bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9284,
+    "uit": 760,
+    "aanroepen": 2
+   },
+   "ms": 5418,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 1967,
+     "titel": "Praktijkgids Landbouw en Natuur: maïs",
+     "datum": "2012",
+     "pagina": 14,
+     "tekst": "33 % bereikt wordt omstreeks half augustus, is het nog mogelijk om een nateelt te zetten.\nOok de keuze van een mogelijke groenbemester wordt groter. Afbeelding 26 Maïsstoppel op het veld (Bron: beleidsdomein Landbouw en Visserij) Het grootste te verwachten nadeel is de opbrengstreduc­ tie.\nDeze kan mogelijk gecompenseerd worden door het positieve vruchtwisselingseffect en de extra opbrengst van een mogelijke nateelt of het volggewas.\nVerder onder­ zoek is nodig naar het optimale teeltsysteem (rijafstand en plantafstand) en bij welke de optimale verhouding tussen opbrengst en kwaliteit bekomen wordt.\nDaarnaast zijn kor­ tere rassen minder vochtbehoeftig en hebben ze mogelijk een lagere nutriëntenbehoefte.\nDoordat landschapsmaïs een kort groeiseizoen heeft, zijn er ruime mogelijkheden voor een nateelt.\nEr zal naar schatting nog 5 à 10 jaar onder­ zoek en veredelingswerk nodig zijn om op een optimaal haalbare manier landschapsmaïs te kunnen telen."
+    },
+    {
+     "id": 1642,
+     "titel": "Praktijkgids Bemesting: meststoffen en groenbedekkers",
+     "datum": "2014",
+     "pagina": 63,
+     "tekst": "62 zogenaamde inkuileffect) ontstaan. Dit kan een nadelig effect hebben op de volgteelt omdat de wortels deze laag moeilijk zullen doordringen. De meest gebruikelijke methode is daarom de groenbedekker te vernietigen in een aparte werkgang alvorens de bodem om te keren (van Geel et al., 2010). Het tijdstip en de meest geschikte methode van vernietiging zijn afhankelijk van de soort groenbedekker. Algemeen kan gesteld worden dat voor een goed geslaagde groenbedekker een groeiduur van minimaal 2 maand nodig is."
+    },
+    {
+     "id": 2526,
+     "titel": "Praktijkgids Gewasbescherming (algemeen deel)",
+     "datum": "2019-04",
+     "pagina": 86,
+     "tekst": "preventieve maatregelen nemen: Vruchtwisseling Teeltrotatie is noodzakelijk om bodemmoeheid en teeltspecifieke ziekteverwekkers te voorkomen. De basisvruchtwisseling op een biologisch gemend bedrijf voor akkerbouw en groenten is 1 op 6.\nDit betekent dat op hetzelfde perceel slechts om de zes jaar een bepaalde teelt wordt geproduceerd.\nHierbij worden gewassen uit eenzelfde familie, b.v.\nprei en uien die beide lookachtigen zijn, als eenzelfde teelt beschouwd.\nIn de rotatie kan u ook één of meerdere extensieve gewassen opnemen.\nDeze laten toe dat de bodem tot rust komt en in optimale conditie is voor een intensief groentegewas.\nIn de glasgroenteteelt zijn de mogelijkheden voor vruchtwisseling beperkter, maar ook hier is een minimale afwisseling van teelten aanbevolen.\nMelkveehouders plaatsen maïs in rotatie met tijdelijke gras-klaver en granen.\nOp die manier kunnen ze de typische maïsonkruiden beter beheersen."
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de regel niet in de documenten staat, wat past omdat de gezochte info in de Toelichting bij de verzamelaanvraag 2025 staat die niet is aangehaald; de bijzaken over nateelt en groeiduur steunen op S1967 en S1642, maar de bewering dat maïs 'tijdig geoogst' moet worden en dat dit 'aanbevolen' wordt in S2526 is slechts deels onderbouwd (S2526 noemt rotatie met gras-klaver en granen, niet 'tijdelijk gras' of een aanbeveling, en S1967 gaat over landschapsmaïs)."
+   }
+  },
+  {
+   "nr": 97,
+   "vraag": "Gewasrotatie: Is graszaad een afzonderlijk gewas die niet beschouwd wordt als weidegras? Gecertificeerd graszaad is dit gras of een afzonderlijke akkerbouwteelt?",
+   "antwoord": "In de teeltcodetabel van de verzamelaanvraag 2025 valt zaaizaad gras (teeltcode 601) onder de grassen en andere kruidachtige voedergewassen, samen met gewoon gras (60) [S3791]. Voor de basisnorm gewasrotatie worden percelen met grassen en andere kruidachtige voedergewassen vrijgesteld, en zaaizaad gras telt mee als grasland voor de status blijvend grasland [S3791] [S3724]. De documenten zeggen niets specifieks over gecertificeerd graszaad, dus of dat in de rotatie anders wordt behandeld, staat er niet in [S3791]. Kijk de huidige regel na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9611,
+    "uit": 1185,
+    "aanroepen": 2
+   },
+   "ms": 8214,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3791,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 94,
+     "tekst": "pagina 94 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nVolgende percelen bouwland van de voorgaande campagne zijn vrijgesteld van de basisnorm voor gewasrotatie, deze vrijstellingen gelden dus niet bij de alternatieve invulling via gewasdiversificatie:  Percelen met meerjarige gewassen, grassen en andere kruidachtige voedergewassen of braakliggend land.\n> Onder de meerjarige gewassen vallen o.a.\nde teeltcodes meerjarige klaver (722), rode klaver (723), meerjarige luzerne (732), artisjok (8586, 9586) en bieslook (865 en 965) > Onder de grassen en andere kruidachtige voedergewassen vallen de teeltcodes gras (60), graskruiden (63), festulolium (638) grasluzerne (660), grasklaver (700), mengsel gras en vlinderbloemigen (745), zaaizaad gras (601), graszoden (955), weiland met oogstbare bomen (9827) en natuurlijk grasland met onderhoud (9828).\n> Onder braak vallen de teeltcodes braak met onderhoud (82), faunabraak (98) en bloemenmengsels (9831)."
+    },
+    {
+     "id": 3724,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 71,
+     "tekst": "zal u hiervan op de hoogte brengen in het laatste kwartaal van 2025.\n2 WELKE INFORMATIE VIND IK TERUG OP DE VERZAMELAANVRAAG OF HET E-LOKET? Elk perceel dat u gedurende een periode van vijf opeenvolgende jaren aanhoudt als ‘Grassen en andere kruidachtige voedergewassen’, wordt ‘Blijvend grasland’ (BG).\nDe administratie kent de status ‘BG’ toe aan een perceel, op basis van de gewascodes die u de voorbije jaren in de verzamelaanvraag aan dat perceel heeft toegekend.\nEen perceel krijgt de status ‘BG’ als het gedurende vijf opeenvolgende jaren (onafhankelijk van wie het perceel aangeeft,) wordt aangegeven met een teeltcode voor grassen en andere kruidachtige voedergewassen.\nHet gaat om volgende codes:  9 onverharde landingsbaan of veiligheidszones op vliegvelden  60 grasland  601 zaaizaad grassen  63 graskruidenmengsel  638 festulolium  660 grasluzerne  700 grasklaver"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft correct aan dat zaaizaad gras (601) onder grassen en andere kruidachtige voedergewassen valt en vrijgesteld is van de basisnorm gewasrotatie, en het zegt eerlijk dat gecertificeerd graszaad niet apart wordt behandeld; de bewering dat zaaizaad gras meetelt voor blijvend grasland steunt op S3724, maar 'gewoon gras (60)' is in S3724 'grasland', en 'telt mee als grasland voor de status blijvend grasland' is een lichte herformulering, terwijl 'voedergewassen vrijgesteld' pas bij 'bouwland van de voorgaande campagne' hoort, wat niet vermeld wordt."
+   }
+  },
+  {
+   "nr": 98,
+   "vraag": "Wat is de definitie van oogstresten? Zijn de oogstresten van aardappelen voldoende om aan de 80% bedekking te voldoen?",
+   "antwoord": "Mijn documenten geven geen formele definitie van oogstresten. Ze beschrijven wel wat na de aardappeloogst achterblijft: loof, overblijvende krielaardappelen en wortelresten [S504]. Na de oogst van aardappelen blijven er meestal weinig gewasresten over die tot en met 31 januari voor bodembedekking kunnen zorgen [S3784]. Daarom is een groenbedekker of nateelt nodig, zodat het perceel meetelt voor de minimale bodembedekking van 80% van het bouwlandareaal [S3784]. Tot de veldwerkzaamheden van die groenbedekker of nateelt moet je de stoppels behouden of de plantenresten aan het oppervlak laten liggen [S3784]. Dit komt uit de toelichting bij de verzamelaanvraag 2025, dus controleer de huidige regel bij de Mestbank of het Departement [S3774].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9904,
+    "uit": 1586,
+    "aanroepen": 2
+   },
+   "ms": 8890,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 504,
+     "titel": "ILVO-mededeling D/2025/11: Effectieve organische koolstofinput aan bodems",
+     "datum": "2025-11",
+     "pagina": 46,
+     "tekst": "EOC-rapport /36\nIII.\nWortel- en knolgewassen A.\nAardappel Gewasresten die na de oogst van aardappelen achterblijven zijn het loof, overblijvende krielaardappelen en wortelresten, maar er moet ook rekening gehouden worden met rhizodepositie.\nNet zoals bij granen of maïs (Hoofdstuk4.I en II) kan de aanvoer van koolstof via deze bovengrondse en ondergrondse gewasresten ook voor aardappelen bepaald worden via de allocatiemethode van Bolinder (Bolinder et al., 2007).\nVoor aardappelen maakten we hiervoor gebruik van de allocatiefactoren zoals gepubliceerd in Dechow et al.\n(2019) die zich op hun beurt baseerden op de studie van Bolinder et al.\n(2015) (zie ook Tabel 7).\nBij de berekeningen vertrekken we vanaf de gewasopbrengst.\nVoor aardappelen gebruikten we de referentieopbrengst, die voor niet-vroege aardappelen 40,76 ton/ha15 bedraagt."
+    },
+    {
+     "id": 3784,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 91,
+     "tekst": "u ook een maatregel uit het keuzepakket bufferstroken kiezen (zie keuzepakketten vermeld bij GLMC 5).\n4 AANDACHTSPUNTEN  Na het oogsten van o.a. aardappelen, bieten,… blijven er meestal weinig gewasresten achter op het perceel die voor een bodembedekking tot en met 31 januari kunnen zorgen.\nDaarom is de inzaai van een groenbedekker of nateelt hier nodig om een minimale bodembedekking te verzekeren tot en met 31 januari als u het perceel wil laten meetellen voor de realisatie van een minimale bodembedekking op minstens 80% van het totale bouwlandareaal..\n Bij het inzaaien van groenbedekkers of nateelt moet u tot aan de veldwerkzaamheden hiervan de stoppels behouden of plantenresten aan de oppervlakte laten liggen om zo de bodem bedekt te houden.\n Indien u een kerende bodembewerking toepast na de oogst van korrelmaïs, is de bodem niet langer bedekt."
+    },
+    {
+     "id": 3774,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 88,
+     "tekst": "aan de oppervlakte liggen om voor een bedekking van de bodem te zorgen;\n ofwel behoudt u de stoppels en opslag na de oogst van de hoofdteelt;  ofwel laat u de plantenresten van de hoofdteelt aan de oppervlakte liggen om voor een bedekking van de bodem te zorgen  ofwel behoudt u de teelt tijdens de winterperiode.\n Een kerende bodembewerking waarbij de plantenresten worden ondergewerkt zoals ploegen, spitten, frezen of diepfrezen is niet toegestaan tot de start van de veldwerkzaamheden voor de inzaai van de groenbedekker of de nateelt die als voorteelt of hoofdteelt zal dienen in de volgende campagne.\nMet opslag wordt het kiemen bedoeld van zaden die na de oogst op het veld zijn achtergebleven, dus zowel oogstverliezen als andere kruiden kunnen voor opslag zorgen.\nAls na de oogst onvoldoende oogstresten achterblijven of te verwachten is dat die oogstresten snel verteerd zullen zijn om nog te zorgen voor een bodembedekking tot en met 31 januari, dan is de inzaai van een"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat er geen formele definitie is en stelt terecht dat aardappelresten onvoldoende bedekking geven en een groenbedekker of nateelt nodig is, maar de opsomming 'loof, krielaardappelen, wortelresten' komt uit een ILVO-koolstofrapport en niet uit de toelichting, en de bewering dat dit 'uit de toelichting bij de verzamelaanvraag 2025' komt, dekt dat deel niet."
+   }
+  },
+  {
+   "nr": 99,
+   "vraag": "Mogen de ecoregeling-bufferstroken begraasd worden in plaats van te maaien?",
+   "antwoord": "Nee, begrazing is niet toegestaan op de bufferstroken van de ecoregeling. Bemesting en begrazing zijn daar verboden [S4109]. Maaien met afvoer is wel toegestaan [S4109]. Bij bloemenstroken moet je maaien tussen 15/9 en 31/12 [S4303]. Mijn documenten gaan over de campagne 2025, dus controleer de regels voor 2026 bij de Mestbank of het Departement.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9581,
+    "uit": 784,
+    "aanroepen": 2
+   },
+   "ms": 5448,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4109,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 215,
+     "tekst": "In bepaalde gevallen kunnen de subsidies voor ecoregelingen en agromilieuklimaatmaatregelen gecombineerd worden met elkaar of met andere subsidies. Zie combinatietabellen voor welke combinaties mogelijk zijn.\nEen ecoregeling voor bufferstroken is niet combineerbaar met de bufferstroken/akkerranden binnen de nietproductieve elementen in de conditionaliteit.\n5 AANDACHTSPUNTEN  Gebruik codes BUEN/BUKN/BUBN als de strook niet onderaan het afhellend gedeelte van een erosiegevoelig perceel aangelegd wordt.\nHier gelden andere minimale en maximale breedtes.\n Bemesting en begrazing van de bufferstroken zijn niet toegestaan.\n Chemische bestrijding van de akkerdistel is niet toegestaan.\n Maaien met afvoer is toegestaan.\n Zowel de minimale breedte van een bufferstrook, maar ook de maximale breedte moeten gerespecteerd worden.\nDeze breedtes moeten overal gehaald worden, te smalle of te brede stukken geeft u beter niet aan als bufferstrook onder ecoregeling."
+    },
+    {
+     "id": 4303,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 9,
+     "tekst": "naast een waterloop  Breedte strook 3 – 6 m  Géén gebruik van gewasbeschermingsmiddelen en bemesting op de strook 945 euro/ha Bouwland Aanleg van een bufferstrook plus: graskruidenmengsel (‘BUK’/’BUKN’) 1  Strook bestaat uit graskruidenmengsel met specifieke samenstelling  Breedte strook standaard 6 – 18 m, indien onderaan afhellend gedeelte erosiegevoelig perceel: breedtes van grasbufferstrookerosie Géén gebruik van gewasbeschermingsmiddelen en bemesting op de strook 1.095 euro/ha Bouwland\nAanleg van een bufferstrook plus: bloemenmengsel (‘BUB’/’BUBN’) * 1  Strook bestaat uit bloemenmengsel met specifieke samenstelling  Niet op percelen met zeer hoge (paars), hoge (rood) en medium (oranje) erosiegevoeligheidsklasse  Breedte strook standaard 6 – 18 m, indien onderaan afhellend gedeelte erosiegevoelig perceel: breedtes van grasbufferstrookerosie  Bloemenstrook verplicht maaien tussen 15/9 en 31/12 Bloemenstrook: 1.745 euro/ha, Fruit"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat begrazing niet toegestaan is op de ecoregeling-bufferstroken, en alle beweringen (verbod op bemesting en begrazing, maaien met afvoer toegestaan, verplicht maaien van bloemenstroken tussen 15/9 en 31/12) worden door S4109 en S4303 gedragen."
+   }
+  },
+  {
+   "nr": 100,
+   "vraag": "Tellen ecoregelingen ook mee als niet-productieve elementen (NPE)?",
+   "antwoord": "Nee, de documenten zeggen dat ecoregelingen niet als verplichte niet-productieve elementen (NPE) tellen. Sinds 2025 is de verplichting om NPE aan te houden weggevallen, en de ecoregelingen zijn een vrijwillige vergoeding voor niet-productieve arealen zoals ecoteelten of bufferstroken [S3802]. Een ecoregeling voor bufferstroken is bovendien niet combineerbaar met de bufferstroken binnen de NPE van de conditionaliteit [S4109]. De documenten zijn van de verzamelaanvraag 2025, dus controleer de huidige regels bij het Departement Landbouw en Visserij of via het Agentschap Landbouw en Zeevisserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9879,
+    "uit": 1028,
+    "aanroepen": 2
+   },
+   "ms": 7721,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3802,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 99,
+     "tekst": "graad van besmetting (oppervlakte in m²) en of het gaat om een haard of diffuse besmetting.\nDit kan via de Agrilens app of via info@lv.vlaanderen.be. Wanneer uw perceel besmet is met knolcyperus, neemt u best contact op met een praktijkcentrum met ervaring in de bestrijding van knolcyperus voor verdere begeleiding, zoals Inagro, Proefhoeve Bottelare, Hooibeekhoeve of PVL Bocholt.\n4 NIEUW IN 2025 Vanaf 2025 valt de verplichting weg om 4% van het bouwland (of 3% aan te vullen met vanggewassen tot 7%) te bestemmen als niet productieve elementen en arealen (NPE).\nWel kunt u op vrijwillige basis niet-productieve arealen en elementen aanleggen en onderhouden.\nHiervoor kunt u, zoals ook al in 2023 en 2024 het geval was, een vergoeding ontvangen via de volgende maatregelen:  Ecoregeling ‘ecoteelten’: inzaai van tagetes, gele mosterd, bladrammenas en het faunamengsel."
+    },
+    {
+     "id": 4109,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 215,
+     "tekst": "In bepaalde gevallen kunnen de subsidies voor ecoregelingen en agromilieuklimaatmaatregelen gecombineerd worden met elkaar of met andere subsidies. Zie combinatietabellen voor welke combinaties mogelijk zijn.\nEen ecoregeling voor bufferstroken is niet combineerbaar met de bufferstroken/akkerranden binnen de nietproductieve elementen in de conditionaliteit.\n5 AANDACHTSPUNTEN  Gebruik codes BUEN/BUKN/BUBN als de strook niet onderaan het afhellend gedeelte van een erosiegevoelig perceel aangelegd wordt.\nHier gelden andere minimale en maximale breedtes.\n Bemesting en begrazing van de bufferstroken zijn niet toegestaan.\n Chemische bestrijding van de akkerdistel is niet toegestaan.\n Maaien met afvoer is toegestaan.\n Zowel de minimale breedte van een bufferstrook, maar ook de maximale breedte moeten gerespecteerd worden.\nDeze breedtes moeten overal gehaald worden, te smalle of te brede stukken geeft u beter niet aan als bufferstrook onder ecoregeling."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord 'nee' past bij de bronnen: de NPE-verplichting is in 2025 weggevallen en de ecoregeling voor bufferstroken is niet combineerbaar met de NPE-bufferstroken, maar de bewering dat de ecoregelingen 'bufferstroken' als vergoeding voor niet-productieve arealen omvatten en de formulering 'documenten zeggen dat ecoregelingen niet als verplichte NPE tellen' gaan iets verder dan de stukjes zelf, die dit niet letterlijk stellen."
+   }
+  },
+  {
+   "nr": 101,
+   "vraag": "Wat is de minimale oppervlakte van een bufferstrook?",
+   "antwoord": "Mijn documenten geven geen vaste minimale oppervlakte, maar wel een minimale breedte van 6 meter en een maximale breedte van 18 meter [S4483]. Een strook mag smaller dan 6 meter zijn als de oppervlakte meer dan 0,30 hectare is [S4483]. Bij een erosiegevoelig afhellend perceel gelden andere minima, namelijk 9 meter bij zeer hoge of hoge erosiegevoeligheid en 6 meter bij de lagere klassen [S4097]. Deze regels komen uit de verzamelaanvraag 2025, dus controleer de huidige regel bij de Mestbank of het Departement [S4483].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8930,
+    "uit": 1415,
+    "aanroepen": 2
+   },
+   "ms": 8463,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4483,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 67,
+     "tekst": "of wanneer de strook opnieuw wordt aangelegd.\n De bufferstrook heeft een minimale breedte van 6 meter en een maximale breedte van 18 meter. De strook mag minder dan 6 meter breed zijn als de oppervlakte van de strook meer dan 0,30 hectare is."
+    },
+    {
+     "id": 4097,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 211,
+     "tekst": "mag deze niet ingezaaid worden met het graskruidenmengsel en moet de bufferstrook met graskruidenmengsel aansluiten op deze teeltvrije zone. De 1m teeltvrije zone moet wel mee ingetekend worden in het perceel van de bufferstrook.\nHierdoor wordt de breedte van de in te tekenen bufferstrook in de verzamelaanvraag minimaal 7m en maximaal 19m..\n Wanneer de strook onderaan een afhellend gedeelte van een erosiegevoelig perceel ligt, gelden deze afmetingen.\nErosiegevoeligheid Zeer hoog (paars) Hoog (rood) Medium (oranje) Laag (geel) Heel laag (lichtgroen) Minimale breedte (m) 9 9 6 6 6 Maximale breedte (m) 30 30 24 24 24  Wanneer onderaan het afhellend gedeelte van het erosiegevoelig perceel ook een waterloop gelegen is, moet rekening gehouden worden met de 1m teeltvrije zone.\nAangezien in deze eerste meter geen bodembewerking is toegestaan, mag deze niet ingezaaid worden met het graskruidenmengsel en moet de bufferstrook met graskruidenmengsel aansluiten op deze teeltvrije zone."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft terecht aan dat er geen vaste minimale oppervlakte is, maar wel een minimale breedte van 6 m (en 9 m bij erosiegevoelige percelen), wat past bij het verwachte antwoord, en alle cijfers staan in de stukjes; de zin dat een strook smaller mag zijn bij een oppervlakte boven 0,30 ha is ook gedekt, maar de bewering 'controleer bij de Mestbank of het Departement' is prima, terwijl de stelling dat de 6 m bij lagere klassen en 'andere minima' gelden slechts deels bij de bron aansluit omdat S4097 alleen voor strook onderaan een afhellend gedeelte geldt en de zinsnede 'deze regels komen uit de verzamelaanvraag 2025' ook S4483 (ecoregelingen) betreft, niet strikt de verzamelaanvraag."
+   }
+  },
+  {
+   "nr": 102,
+   "vraag": "Wat is het verschil tussen een waterloop bij de ecoregeling-bufferstrook langs waterlopen tegenover die langs kwetsbare landschapselementen?",
+   "antwoord": "Een grasbufferstrook langs een waterloop (BUW) moet 3 tot 6 meter breed zijn en levert maximaal 945 euro per hectare op [S4302]. Een strook langs een kwetsbaar landschapselement (BUE), zoals een houtkant, heg, poel of holle weg, is standaard 6 tot 12 meter breed en levert 1.025 euro per hectare op [S4302]. In beide gevallen mag op de strook geen gewasbeschermingsmiddel en geen bemesting worden gebruikt [S4302]. Een waterloop telt ook als kwetsbaar landschapselement, en bij strepen met een graskruid- of bloemenmengsel langs een waterloop moet een teeltvrije zone van 1 meter worden aangehouden [S4476]. Deze cijfers komen uit de documenten van 2024 en 2025, dus controleer de huidige regels bij de Mestbank of het Departement Landbouw en Visserij [S4465].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9782,
+    "uit": 1746,
+    "aanroepen": 2
+   },
+   "ms": 10583,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4302,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 9,
+     "tekst": "1.02.2025 Bundel steun - Perceel pagina 9 van 73\nMaatregel Jaar Inhoud maatregel Jaarlijkse vergoeding  Géén gebruik van gewasbeschermingsmiddelen en bemesting op de strook  Niet mogelijk als aanleg bufferstrook al verplicht is in conditionaliteit Bouwland\nAanleg van een bufferstrook: grasbufferstrook langs kwetsbare landschapselement en (‘BUE’/’BUEN’) 1  Grasbufferstrook naast waterloop, houtkant, heg, poel, holle weg,…  Breedte strook standaard 6 – 12 m, indien onderaan afhellend gedeelte erosiegevoelig perceel: breedtes van grasbufferstrookerosie  Géén gebruik van gewasbeschermingsmiddelen en bemesting op de strook 1.025 euro/ha Bouwland\nAanleg van een bufferstrook: grasbufferstrook langs waterlopen (‘BUW’) 1  Grasbufferstrook naast een waterloop  Breedte strook 3 – 6 m  Géén gebruik van gewasbeschermingsmiddelen en bemesting op de strook 945 euro/ha Bouwland"
+    },
+    {
+     "id": 4476,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 66,
+     "tekst": "wordt aangelegd.\nUitzondering 2025 (onder voorbehoud van goedkeuring): De bufferstrook wordt zo snel mogelijk aangelegd en uiterlijk voor 1 mei 2025. Let op: Ook wanneer de strook in het begin van 2025 wordt aangelegd, geldt het verbod op het gebruik van gewasbeschermingsmiddelen en bemesting ook al vanaf 1 januari 2025.\n De bufferstrook heeft een minimale breedte van 6 meter en een maximale breedte van 18 meter.\nDe strook mag minder dan 6 meter breed zijn als de oppervlakte van de strook meer dan 0,3 hectare is.\n Wanneer de strook langs een waterloop wordt aangelegd, moet rekening gehouden worden met de 1m teeltvrije zone.\nAangezien in deze eerste meter geen bodembewerking is toegestaan, mag deze niet ingezaaid worden met het graskruidenmengsel en moet de bufferstrook met graskruidenmengsel aansluiten op deze teeltvrije zone.\nDe 1m teeltvrije zone moet wel mee ingetekend worden in het perceel van de bufferstrook."
+    },
+    {
+     "id": 4465,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 63,
+     "tekst": "2.\nGrasbufferstrook langs kwetsbare landschapselementen 2bis.\nGrasbufferstrook langs waterlopen 3.\nBufferstrook met een graskruidenmengsel 4. Bufferstrook met een bloemenmengsel 1 SUBSIDIEVOORWAARDEN 1.1 ALGEMENE VOORWAARDEN  U leeft de voorwaarden na die vermeld zijn in de algemene fiche over ecoregelingen en agromilieuklimaatmaatregelen (zie fiche ‘Subsidies voor ecoregelingen en agromilieuklimaatmaatregelen – algemeen’).\n U bent actieve landbouwer in het kader van het gemeenschappelijk landbouwbeleid (GLB) (zie fiche ‘GLB – Actieve landbouwer’ op de webpagina ‘Actieve landbouwer’).\n Enkel percelen subsidiabel landbouwareaal gelegen in het Vlaams Gewest of Brussels Hoofdstedelijk Gewest komen in aanmerking voor de subsidie.\n1.2 ACTIE 1: GRASBUFFERSTROOK IN HET KADER VAN EROSIEBESTRIJDING  De grasbufferstrook bestaat uit een strook met gras – hoofdteelt 60 - grasland  Het aangrenzende perceel is bouwland in gebruik door uzelf, dat geen grasachtige is."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "De kern (BUW 3–6 m en 945 euro/ha tegenover BUE 6–12 m en 1.025 euro/ha) klopt en staat in S4302, maar de bewering dat een waterloop ook als kwetsbaar landschapselement telt wordt niet expliciet gesteund (S4302 noemt de waterloop enkel in de opsomming bij BUE), de 'maximaal' bij 945 euro en het 'standaard' bij BUE zijn ook losjes geformuleerd, en de teeltvrije zone van 1 meter in S4476 hoort bij een andere bufferstrook (graskruidenmengsel)."
+   }
+  },
+  {
+   "nr": 103,
+   "vraag": "Wat met de gemengde rassen die ook melk geven?",
+   "antwoord": "Ik neem aan dat je het over dubbeldoelrunderen hebt, dus dieren voor melk én vlees. Het Belgisch wit-blauw dubbeldoelras hoort bij de lokale rundveerassen waarvoor het GLB behoudssteun geeft van 250 tot 280 euro per dier per jaar, gedurende vijf jaar, voor 5 tot 225 dieren [S4306]. Voor de extra toelage voor melkproductieregistratie moet je minimaal 10 runderen van het dubbeldoeltype van een lokaal ras houden en het hele kalenderjaar melkproductieregistratie doen [S4172]. De aantallen verschillen per document: de overzichten van 2023 en 2024 noemen 10 tot 125 dieren [S4556], dus controleer de huidige voorwaarden bij het Departement Landbouw en Visserij of de Mestbank [S4306].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9145,
+    "uit": 1779,
+    "aanroepen": 2
+   },
+   "ms": 9996,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4306,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 10,
+     "tekst": "pagina 10 van 73 Bundel steun - Perceel 1.02.2025\nMaatregel Jaar Inhoud maatregel Jaarlijkse vergoeding Dier\nBehoud van lokale rundveerassen * 5  5 - 225 runderen van een lokaal ras houden  Rassen: rood, wit-rood, Belgisch wit-blauw dubbeldoel, Kempens roodbont  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 250 - 280 euro/dier Dier\nBehoud van lokale schapen/geitenrass en 5  10 - 500 schapen of geiten van een lokaal ras houden  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 40 euro/dier Dier\nBehoud van lokale varkensrassen 5  5 - 125 varkens van een lokaal ras houden  Rassen: Piétrain, Belgisch landras  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 100 euro/dier"
+    },
+    {
+     "id": 4172,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 239,
+     "tekst": "fiche over ecoregelingen en agromilieuklimaatmaatregelen (zie fiche ‘Subsidies voor ecoregelingen en agromilieuklimaatmaatregelen – algemeen’).  Voor het behoud van lokale rundveerassen moet u geen actieve landbouwer in het kader van het gemeenschappelijk landbouwbeleid (GLB) zijn (zie fiche ‘GLB – Actieve landbouwer’ op de webpagina ‘Actieve landbouwer’).\n U houdt gedurende de vijf opeenvolgende jaren van de verbintenis minstens het aantal subsidiabele runderen dat is vastgelegd in het verbintenisaantal.\n U kunt subsidie aanvragen voor minimaal 5 en maximaal 225 dieren van de volgende lokale rundveerassen:  het rode ras;\n het wit-rode ras;\n het Belgische wit-blauwe dubbeldoelras;\n Kempens roodbont  Om in aanmerking te komen voor de extra toelage voor melkproductieregistratie moet u minimaal 10 subsidiabele runderen houden van het dubbeldoeltype van een lokaal rundveeras en moet het bedrijf het volledige kalenderjaar aan melkproductieregistratie doen."
+    },
+    {
+     "id": 4556,
+     "titel": "Het nieuwe GLB 2023-2027: algemeen overzicht (campagne 2024)",
+     "datum": "2024-02",
+     "pagina": 7,
+     "tekst": "nt bij rundvee * 1  Voederadditief met methaanreducerend effect toevoegen aan rantsoen voor rundvee 0,10 - 0,24 euro/dier/d ag Dier Behoud van lokale rundveerassen 5  10 - 125 runderen van een lokaal ras houden  Rassen: rood, wit-rood, Belgisch wit-blauw dubbeldoel, Kempens roodbont  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 250 - 280 euro/dier Dier\nBehoud van lokale schapen/geitenras sen 5  10 - 500 schapen of geiten van een lokaal ras houden  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 40 euro/dier Dier\nBehoud van lokale varkensrassen 5  5 - 125 varkens van een lokaal ras houden  Rassen: Piétrain, Belgisch landras  Geregistreerd in stamboek  Voorwaarde ‘actieve landbouwer’ niet vereist voor deelname aan deze maatregel. 100 euro/dier"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt terecht de extra toelage voor melkproductieregistratie bij dubbeldoelrunderen van lokale rassen (min. 10 dieren, volledig kalenderjaar), maar vermeldt niet het patroon 'gemolken'/'vleesvee' en voegt beweringen toe die niet kloppen met de stukjes: de overzichten van 2023 en 2024 worden niet allebei genoemd (S4556 is alleen campagne 2024), en de Mestbank wordt als bron voor controle aangehaald bij S4306 terwijl die daar niet in staat."
+   }
+  },
+  {
+   "nr": 104,
+   "vraag": "Kan de eenjarige ecoteelt faunamengsel aangevraagd worden op een perceel blijvend grasland?",
+   "antwoord": "Nee, volgens de documenten niet. De eenjarige ecoregeling faunamengsel (EEF) geldt voor bouwland, en het perceel mag in 2023 en 2024 geen blijvend grasland zijn geweest [S4386]. Een perceel dat in die jaren blijvend grasland was, komt dus niet in aanmerking [S4386]. De voorwaarden in de bron stammen uit 2025, dus controleer de huidige regel bij het Departement Landbouw en Visserij voordat je iets aanvraagt [S4386].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9896,
+    "uit": 1152,
+    "aanroepen": 2
+   },
+   "ms": 8361,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4386,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 38,
+     "tekst": "teelten eventueel in de beheergebieden voor akkervogelsoorten. Daarop aansluitend volgt een laatste groep met faunavriendelijke nateelten. (klik op de vierkanten om de bijhorende uitleg te lezen)  Actieve landbouwer  Eenjarige ecoregeling, jaarlijks aan te vragen  Voor percelen bouwland van minimum 0,30 ha behalve voor eenjarige eiwitteelten waar minimum 0,50 ha per bedrijf nodig is  Subsidiebedrag afhankelijk van de teelt van 60 tot 1.500 euro/ha 1 SUBSIDIEVOORWAARDEN 1.1 ALGEMENE VOORWAARDEN  U leeft de voorwaarden na die vermeld zijn in de algemene fiche over ecoregelingen en agromilieuklimaatmaatregelen (zie fiche ‘Subsidies voor ecoregelingen en agromilieuklimaatmaatregelen – algemeen’).\n U bent actieve landbouwer in het kader van het gemeenschappelijke landbouwbeleid (GLB) (zie fiche ‘GLB – Actieve landbouwer’ op de webpagina ‘Actieve landbouwer’).\n Het perceel was in 2023 en 2024 bouwland of een blijvende teelt, geen blijvend grasland."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht nee: de eenjarige ecoregeling geldt voor percelen bouwland en het perceel mag in 2023 en 2024 geen blijvend grasland zijn geweest, wat het stukje bevestigt, en het wijst ook op de ouderdom van de bron en het nakijken van de geldende regel."
+   }
+  },
+  {
+   "nr": 105,
+   "vraag": "Kan de maatregel ‘Aanbreng organische koolstof via stalmest’ ook op weiland?",
+   "antwoord": "Nee, volgens de documenten is de maatregel voor stalmest alleen bedoeld voor bouwland en blijvende teelt, niet voor weiland. De voorwaarde is minstens 10 ton stalmest of champost per ha op percelen die ook de twee voorgaande jaren bouwland of blijvende teelt waren [S4299]. Het subsidiebedrag van 50 euro/ha geldt dus voor die percelen [S4070]. Of grasland op een andere manier in aanmerking komt, staat niet in mijn documenten. Controleer de huidige voorwaarden bij het Departement Landbouw en Visserij of de Mestbank, want het gaat om subsidieregels die kunnen wijzigen [S4072].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9633,
+    "uit": 896,
+    "aanroepen": 2
+   },
+   "ms": 6158,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4299,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 8,
+     "tekst": "bouwland van het bedrijf (min. 0,5 ha)  Voor sommige teelten moet een foto worden aangeleverd via LV-Agrilens (korrelmaïs) 70 - 160 euro/ha Bouwland Verhogen organische koolstofgehalte: aanvoer van producten met een hoog koolstofgehalte (‘OCC’/’OCM’/’OCH ’) * 1  Voor percelen bouwland of blijvende teelt die ook de twee voorgaande jaren al bouwland/blijvende teelt waren  Minstens 10 ton/ha compost (boerderij- of extern aangekocht) aanbrengen,  Minstens 10 ton/ha stalmest of champost (van eigen bedrijf of extern aangekocht) aanbrengen,  Minstens 10 ton/ha houtsnippers van eigen bedrijf aanbrengen en onderwerken, één maal per vijf jaar op perceel  Foto nemen van aanbreng stalmest en houtsnippers 50 – 602.5 euro/ha\nBouwland"
+    },
+    {
+     "id": 4070,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 200,
+     "tekst": "op het e-loket Landbouw en Zeevisserij.\nMeer informatie over het bodempaspoort vindt u terug op de website www.vlaanderen.be/landbouw/bodempaspoort. 2 SUBSIDIEBEDRAG MAATREGEL 1: TEELTPLAN Het voorziene subsidiebedrag is afhankelijk van de hoeveelheid effectieve organische koolstof die wordt toegediend op het volledige areaal bouwland dat in aanmerking komt voor deze maatregel: Gemiddelde hoeveelheid per hectare toegediende effectieve organische koolstof op volledige areaal dat in aanmerking komt Voorziene subsidiebedrag per ha Minstens 1.250 kg 70 euro/ha Minstens 1.300 kg 100 euro/ha Minstens 1.350 kg 130 euro/ha Minstens 1.400 kg 160 euro/ha MAATREGEL 2: GEBRUIK VAN PRODUCTEN MET HOOG KOOLSTOF- GEHALTE Het voorziene subsidiebedrag is afhankelijk van het soort product dat wordt toegediend op het perceel bouwland of blijvende teelt: Gemiddelde hoeveelheid per hectare toegediende aanvoer producten met een hoge C-inhoud op het perceel Voorziene subsidiebedrag per ha Minstens 10 ton compost per ha 130 euro/ha Minstens 10 ton stalmest of champost per ha 50 euro/ha"
+    },
+    {
+     "id": 4072,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 201,
+     "tekst": "gebeuren.\nDe subsidieaanvraag voor maatregel 2 ‘het gebruik van producten met een hoog koolstofgehalte’ verloopt ook via de verzamelaanvraag 2025. In het scherm ‘Deelnameverklaring’ onder het menu-item ‘Plant/bodem’ wordt jaarlijks aangevinkt voor welke producten (compost, stalmest/champost, houtsnippers) men wil deelnemen uiterlijk 31 mei 2025.\nBovendien moet hier ook een bijkomende bestemming opgegeven worden bij de percelen uiterlijk 31 oktober 2025.\nPer perceel kunnen slechts 2 bijkomende bestemmingen van maatregel 2 (OCC, OCM, OCH) worden gezet.\nVoor maatregel 3 ‘bereiken van de streefwaarde %OC en pH’ moet de bijkomende bestemming ‘OCS’ gezet worden op het perceel uiterlijk 31 mei 2025.\nMaatregel verhogen organisch koolstofgehalte Bijkomende bestemming Aanbrengen van compost OCC Aanbrengen van stalmest/champost OCM Aanbrengen van houtsnippers OCH Bereiken van streefzone voor %OC en pH OCS"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord (alleen bouwland en blijvende teelt, geen weiland) past bij de bronnen [S4299] en [S4070], maar de zin dat weiland 'niet' in aanmerking komt gaat verder dan wat de stukjes zeggen, en [S4072] onderbouwt de aanbeveling om de actuele voorwaarden na te kijken niet inhoudelijk, ook al wordt het jaar 2025 niet duidelijk als leeftijd van de bron vermeld."
+   }
+  },
+  {
+   "nr": 106,
+   "vraag": "Moet ik een bodemanalyse laten doen voor maatregel ‘Aanbreng organische koolstof via stalmest’?",
+   "antwoord": "Volgens de verzamelaanvraag 2025 is een bodemanalyse geen voorwaarde voor het aanbrengen van stalmest of champost. Goede bodemanalyse-resultaten leveren wel een extra vergoeding op [S4437]. Die stalmestmaatregel vraag je aan via de deelnameverklaring, met een bijkomende bestemming per perceel [S4452]. De verplichting om bodemstalen te nemen (minstens één staal per eerste 10 ha, daarna per volgende 10 ha, met analyse van organische koolstof, fosfor, kalium en zuurtegraad) hoort bij een aparte duurzaamheidsmaatregel [S3993]",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9535,
+    "uit": 1772,
+    "aanroepen": 2
+   },
+   "ms": 9163,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4437,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 55,
+     "tekst": "1.02.2025 Bundel steun - Perceel pagina 55 van 73 VERHOGEN ORGANISCHE KOOLSTOFGEHALTE\nBodems met een goed gehalte aan organische koolstof zijn beter bestand tegen erosie, zijn vruchtbaarder en kennen een betere waterhuishouding waardoor ze beter gewapend zijn tegen droogte of wateroverlast. Met verschillende maatregelen worden landbouwers gestimuleerd het organische koolstofgehalte in de bodem van hun percelen te verhogen. Dit kan door het gebruik van producten met een hoog koolstofgehalte, zoals stalmest, champost, compost of houtsnippers op percelen of via een aangepast teeltplan. Bij een aangepast teeltplan wordt door het gericht inzetten van teelten en teeltcombinaties een organische koolstoftoename gerealiseerd die op het volledige bedrijf aan een minimumdrempel moet voldoen. Indien u naast deze maatregelen ook goede bodemanalyse-resultaten kan voorleggen, wordt een extra vergoeding voorzien."
+    },
+    {
+     "id": 4452,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 59,
+     "tekst": "voor maatregel 1 ‘verhogen van het effectieve organische koolstofgehalte van bouwland via het teeltplan’ zal via de verzamelaanvraag 2025 verlopen. In het scherm ‘Verhogen organisch koolstofgehalte teeltplan’ onder het menu-item ‘Plant/bodem’ wordt jaarlijks aangevinkt dat men wil deelnemen aan de subsidiemaatregel.\nHet aanvinken van de maatregel moet uiterlijk 31 mei 2025 gebeuren.\nDe subsidieaanvraag voor maatregel 2 ‘het gebruik van producten met een hoog koolstofgehalte’ verloopt ook via de verzamelaanvraag 2025.\nIn het scherm ‘Deelnameverklaring’ onder het menu-item ‘Plant/bodem’ wordt jaarlijks aangevinkt voor welke producten (compost, stalmest/champost, houtsnippers) men wil deelnemen uiterlijk 31 mei 2025.\nBovendien moet hier ook een bijkomende bestemming opgegeven worden bij de percelen uiterlijk 31 oktober 2025.\nPer perceel kunnen slechts 2 bijkomende bestemmingen van maatregel 2 (OCC, OCM, OCH) worden gezet."
+    },
+    {
+     "id": 3993,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 172,
+     "tekst": "bodenanalyses uitvoeren op de eerste 10 hectare en op iedere volgende 10 hectare minstens een bodemanalyse uitvoeren, met spreiding over de percelen. In het scherm ‘Bodempaspoort’ onder het menu-item Plant/bodem in de verzamelaanvraag vindt u het aantal bodemstalen dat minimaal nodig is.\n De bodemanalyse omvat minstens de bepaling van het organische koolstof-, fosfor- en kaliumgehalte en de zuurtegraad.\nHet subsidiebedrag en de voorwaarde met betrekking tot het aantal te nemen stalen heeft alleen betrekking op:  De subsidiabele hectaren die in eigen gebruik zijn gedurende de teeltperiode van de hoofdteelt;\n De subsidiabele hectaren die gelegen zijn in het Vlaams Gewest of Brussels Hoofdstedelijk Gewest.\nDUURZAAMHEIDSMAATREGEL Naast het nemen van bodemstalen neemt u ook een maatregel in het kader van een duurzame landbouwpraktijk."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt terecht dat een bodemanalyse niet nodig lijkt voor de basisvergoeding en dat goede resultaten extra opleveren, maar het noemt de streefzone en de bestemming OCS niet, waar het juiste antwoord om draait, en de stelling dat het 'geen voorwaarde' is wordt in de stukjes niet uitdrukkelijk bevestigd."
+   }
+  },
+  {
+   "nr": 107,
+   "vraag": "Moet de stalmest van je eigen bedrijf afkomstig zijn voor de maatregel 'Aanbreng organische koolstof via stalmest'?",
+   "antwoord": "Nee, de stalmest hoeft niet van je eigen bedrijf te komen: de maatregel laat ook stalmest of champost toe die extern is aangekocht [S4299]. Voor de maatregel gelden wel een minimum van 10 ton per hectare en een foto van de aanbreng van de stalmest [S3909]. Die voorwaarden staan in de documenten van 2025, dus controleer de huidige regels bij het Departement Landbouw en Visserij of bij de Mestbank.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6326,
+    "uit": 539,
+    "aanroepen": 2
+   },
+   "ms": 3743,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4299,
+     "titel": "Ecoregelingen en agromilieuklimaatmaatregelen: steun per perceel 2025",
+     "datum": "2025-02",
+     "pagina": 8,
+     "tekst": "bouwland van het bedrijf (min. 0,5 ha)  Voor sommige teelten moet een foto worden aangeleverd via LV-Agrilens (korrelmaïs) 70 - 160 euro/ha Bouwland Verhogen organische koolstofgehalte: aanvoer van producten met een hoog koolstofgehalte (‘OCC’/’OCM’/’OCH ’) * 1  Voor percelen bouwland of blijvende teelt die ook de twee voorgaande jaren al bouwland/blijvende teelt waren  Minstens 10 ton/ha compost (boerderij- of extern aangekocht) aanbrengen,  Minstens 10 ton/ha stalmest of champost (van eigen bedrijf of extern aangekocht) aanbrengen,  Minstens 10 ton/ha houtsnippers van eigen bedrijf aanbrengen en onderwerken, één maal per vijf jaar op perceel  Foto nemen van aanbreng stalmest en houtsnippers 50 – 602.5 euro/ha\nBouwland"
+    },
+    {
+     "id": 3909,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 139,
+     "tekst": "bouwland van het bedrijf (min. 0,5 ha)  Voor sommige teelten moet een foto worden aangeleverd via LV-Agrilens (korrelmaïs) 70 - 160 euro/ha Bouwland Verhogen organische koolstofgehalte: aanvoer van producten met een hoog koolstofgehalte (‘OCC’/’OCM’/’OCH ’) * 1  Voor percelen bouwland of blijvende teelt die ook de twee voorgaande jaren al bouwland/blijvende teelt waren  Minstens 10 ton/ha compost (boerderij- of extern aangekocht) aanbrengen,  Minstens 10 ton/ha stalmest of champost (van eigen bedrijf of extern aangekocht) aanbrengen,  Minstens 10 ton/ha houtsnippers van eigen bedrijf aanbrengen en onderwerken, één maal per vijf jaar op perceel  Foto nemen van aanbreng stalmest en houtsnippers 50 – 602.5 euro/ha\nBouwland"
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat stalmest of champost van eigen bedrijf of extern aangekocht mag zijn, het minimum van 10 ton/ha en de foto staan in de stukjes, en de datumwaarschuwing is aanwezig."
+   }
+  },
+  {
+   "nr": 108,
+   "vraag": "Moet ik nog niet-productieve elementen aanleggen op mijn bedrijf?",
+   "antwoord": "Volgens de verzamelaanvraag 2025 is de verplichting om niet-productieve elementen aan te leggen weggevallen: sinds 2025 moet u geen 4% van het bouwland meer als niet-productieve elementen en arealen (NPE) bestemmen [S3802]. Vrijwillig kan dat nog wel, en voor bepaalde maatregelen, zoals de ecoregeling 'ecoteelten' met tagetes, gele mosterd, bladrammenas en het faunamengsel, krijgt u een vergoeding [S3802]. Of dit voor uw bedrijf geldt, hangt af van uw situatie. Controleer de huidige regels bij het Departement Landbouw en Visserij of via het Agentschap Landbouw en Zeevisserij [S3532].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8694,
+    "uit": 895,
+    "aanroepen": 2
+   },
+   "ms": 6912,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3802,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 99,
+     "tekst": "graad van besmetting (oppervlakte in m²) en of het gaat om een haard of diffuse besmetting.\nDit kan via de Agrilens app of via info@lv.vlaanderen.be. Wanneer uw perceel besmet is met knolcyperus, neemt u best contact op met een praktijkcentrum met ervaring in de bestrijding van knolcyperus voor verdere begeleiding, zoals Inagro, Proefhoeve Bottelare, Hooibeekhoeve of PVL Bocholt.\n4 NIEUW IN 2025 Vanaf 2025 valt de verplichting weg om 4% van het bouwland (of 3% aan te vullen met vanggewassen tot 7%) te bestemmen als niet productieve elementen en arealen (NPE).\nWel kunt u op vrijwillige basis niet-productieve arealen en elementen aanleggen en onderhouden.\nHiervoor kunt u, zoals ook al in 2023 en 2024 het geval was, een vergoeding ontvangen via de volgende maatregelen:  Ecoregeling ‘ecoteelten’: inzaai van tagetes, gele mosterd, bladrammenas en het faunamengsel."
+    },
+    {
+     "id": 3532,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 5,
+     "tekst": "de fiche ‘Gewasrotatie op bouwland (GLMC 7)’.\n Een scherm in de verzamelaanvraag geeft aan of voldaan is aan gewasrotatie en/of gewasdiversificatie. Wanneer ofwel aan de norm gewasrotatie ofwel aan de norm gewasdiversificatie is voldaan, is de voorwaarde voor gewasrotatie op bouwland binnen de conditionaliteit nageleefd.\n1.4.3 Niet productieve elementen en andere voorwaarden voor meer biodiversiteit op landbouwbedrijven (GLMC 8)  Het aanhouden van niet-productieve elementen en arealen is niet meer verplicht.\n1.4.4 Landbouwers met een landbouwareaal tot en met 10 ha  Sinds 2024 zijn landbouwers met een landbouwareaal van maximaal 10 hectare vrijgesteld van specifieke controles op de naleving van de verplichtingen binnen de conditionaliteit en zullen dan ook niet langer administratieve sancties opgelegd krijgen voor het niet-naleven van de conditionaliteitsverplichtingen."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord klopt (de NPE-verplichting is vanaf 2025 weggevallen, vrijwillig kan nog met vergoeding via de ecoregeling), maar de aanbeveling om bij het Departement of het Agentschap Landbouw en Zeevisserij te controleren wordt aan S3532 toegeschreven, dat dit niet zegt, en de bronleeftijd wordt niet vermeld."
+   }
+  },
+  {
+   "nr": 109,
+   "vraag": "Wanneer kan ik mestrechten krijgen voor een perceel?",
+   "antwoord": "Je krijgt bemestingsrechten op een perceel voor een jaar als je in dat kalenderjaar de hoofdteelt op het perceel in gebruik hebt, en je geeft dat aan via de verzamelaanvraag [S2773]. Sinds het gewijzigde Mestdecreet (vanaf 2025) gaan de rechten naar de gebruiker van de hoofdteelt, en je vult code 'P' in voor hoofdteelt, al dan niet gevolgd door nateelt [S3597]. Start je pas na de hoofdteelt of neem je het perceel over na de hoofdteelt, dan heb je dat jaar geen bemestingsrechten en ben je aangewezen op een transportregeling met de vorige gebruiker, zoals een burenregeling, mestafzetdocument of inscharingscontract [S2773]. Voor de huidige regels kijk je best na bij de Mestbank of het Departement [S2773].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8384,
+    "uit": 1513,
+    "aanroepen": 2
+   },
+   "ms": 9107,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2773,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 11,
+     "tekst": "29.10.2025 Startersbrochure pagina 11 van 38 3 BEMESTING PERCELEN 3.1 BEMESTINGSRECHTEN U mag een perceel bemesten (inclusief rechtstreekse beweiding) als u op dat perceel bemestingsrechten hebt.\nU hebt bemestingsrechten op een perceel voor een bepaald jaar indien u de hoofdteelt op het perceel in gebruik hebt in dat kalenderjaar (en dit dus aangeeft via de verzamelaanvraag).\nStart u na de hoofdteelt of neemt u het perceel over na de hoofdteelt? Dan hebt u voor dat jaar op dat perceel geen bemestingsrechten. Als u het perceel toch wilt bemesten, dan bent u als overnemer voor de bemesting van het perceel aangewezen op een transportregeling met de overlater (burenregeling, mestafzetdocument of inscharingscontract). Het Mestdecreet geeft aan landbouwers die in de loop van het jaar een exploitatie overnemen of overlaten, de mogelijkheid een ‘globale mestbalans’ aan te vragen. Zie item 8. ‘Globale mestbalans’."
+    },
+    {
+     "id": 3597,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 26,
+     "tekst": "pagina 26 van 277 Toelichting bij de verzamelaanvraag 2025 1.02.2025\nGEBRUIK\nVoor elk perceel dat u aangeeft via de verzamelaanvraag, moet u het gebruik invullen in de kolom ‘Code gebruik’.\nZowel voor-, hoofd-, als nateelt moeten opgegeven worden, ook als u deze niet zelf verbouwt.\nDoor de wijzigingen aan het Mestdecreet worden de bemestingsrechten voortaan toegekend aan de gebruiker van de hoofdteelt en niet langer aan de gebruiker op 1 januari.\nHierdoor vallen de codes voor gebruik ‘M’ (perceel in gebruik voor bemesting) en ‘H’ (perceel in gebruik voor de hoofdteelt) weg!\nEnkel deze twee codes kunnen gebruikt worden: - Code ‘P’: perceel in gebruik voor de hoofdteelt en mestrechten - Code ‘N’: perceel uitsluitend in gebruik voor de nateelt 1 GEBRUIK Voor elk perceel moet het gebruik worden opgegeven."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt de hoofdteelt als voorwaarde en dat klopt, maar de bewering dat code 'P' 'al dan niet gevolgd door nateelt' wordt ingevuld staat niet in de stukjes en 'vanaf 2025' is een afleiding uit de datum van de toelichting."
+   }
+  },
+  {
+   "nr": 110,
+   "vraag": "Kan ik graslanden scheuren?",
+   "antwoord": "Scheuren van grasland kan alleen onder voorwaarden. Wie blijvend grasland wil omzetten naar akkerland, moet elders een even grote oppervlakte opnieuw inzaaien en die minstens vijf jaar als grasland behouden [S1728]. In beschermde landschappen is het scheuren van grasland verboden [S1916]. Mijn documenten dateren uit 2012, dus controleer de huidige regels bij de Mestbank of het Departement Landbouw en Visserij voordat je iets onderneemt [S1728].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 5863,
+    "uit": 642,
+    "aanroepen": 2
+   },
+   "ms": 4342,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 1728,
+     "titel": "Praktijkgids Landbouw en Natuur: graslanden",
+     "datum": "2012",
+     "pagina": 8,
+     "tekst": "landbouwer een individueel referentieareaal blijvend grasland bepaald op basis van de percelen die in 2003 werden aangegeven als blijvend grasland. Dit betekent dat als een landbouwer een oppervlakte blijvend grasland wenst te scheuren en om te zetten naar akkerland, hij elders eenzelfde oppervlakte opnieuw dient in te zaaien, dat dan opnieuw ten minste vijf jaar op die plaats dient behouden te blijven als grasland.\nDeze maatregel heeft tot doel de achteruitgang van het organische stof (OS) in de bodem te stoppen en om in bepaalde weidestreken de omzetting van weiden naar akkerland af te remmen.\nOp de meeste rundveebedrijven worden deze graslanden even intensief uitgebaat als de tijdelijke graslanden.\nDeze gras­ landen dienen om veel en kwalitatief goed gras te produceren en ze bevatten in hoofdzaak Engels raaigras, soms in com­ binatie met timothee.\nOp droge zandgronden kan een aanvulling met veldbeemd interessant zijn om de zode gesloten te houden."
+    },
+    {
+     "id": 1916,
+     "titel": "Praktijkgids Landbouw en Natuur: graslanden",
+     "datum": "2012",
+     "pagina": 55,
+     "tekst": "53 Praktijkgids Landbouw en Natuur 2.4.3 Andere wetgeving inzake graslanden 2.4.3.1 Wetgeving uit het landschapsbeleid Heel wat graslanden liggen in gebieden met een zekere landschappelijke waarde.\nU moet zich dan ook steeds de vraag stellen of uw bedrijf zich situeert in één van de gebieden die beschermd zijn door het landschapsbeleid: beschermde land­ schappen of erfgoedlandschappen.\nIn dat geval zijn de wetgeving en de beschermingsvoorschriften die gelden voor deze gebieden van toepassing.\nEen voorbeeld: In beschermde landschappen geldt er een onderhoudsplicht.\nZo zijn de eigenaars, erfpachthouders, opstalhouders en vruchtgebruikers in beschermde landschappen onder meer verplicht om grasland te onderhouden en in stand te houden.\nBovendien is het in beschermde landschappen onder meer verboden om: * grasland te scheuren * grasland omzetten in akkerland van: a.\nhistorisch permanent grasland;\nb.\noverig grasland gelegen in bepaalde bestemmingscategorieën!"
+    }
+   ],
+   "kalender": null,
+   "bron": false,
+   "klopt": false,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt de herinzaairegel en het verbod in beschermde landschappen, maar mist het verwachte punt over ecologisch kwetsbare gebieden (EKBG); bovendien stelt S1916 het verbod alleen voor historisch permanent grasland en bepaalde bestemmingscategorieën, niet algemeen, en de herinzaairegel (referentieareaal 2003) is in het antwoord ruimer voorgesteld dan de bron."
+   }
+  },
+  {
+   "nr": 111,
+   "vraag": "Wat is een circulair stalmestbedrijf?",
+   "antwoord": "De documenten geven geen definitie van een circulair stalmestbedrijf. Ik vind alleen dat het ontwerp van het zevende Mestactieprogramma (MAP 7) het noemt als een situatie waarin voor stalmest maar 50% van de hoeveelheid P2O5 als opgebracht telt, naast fosfaatklasse I- en II-percelen en bedrijven met biologische productie [S3392]. Dat is een ontwerp uit maart 2025 en geen vastgestelde regel. Wat een circulair stalmestbedrijf precies inhoudt, moet je nakijken bij de Mestbank of het Departement Landbouw en Visserij [S3392].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6035,
+    "uit": 637,
+    "aanroepen": 2
+   },
+   "ms": 4456,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3392,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 89,
+     "tekst": "op alle landbouwgrond conform de bestaande regeling voor gecertificeerde GFT- en groencompost.\nSamengevat, ziet de regeling er als volgt uit. Het ontwerp-MAP 7 bepaalt dat bij gecertificeerde gft- of groencompost, stalmest en boerderijcompost, in de volgende situaties slechts 50% van de hoeveelheid P2O5 als opgebracht wordt beschouwd: • gecertificeerde GFT- of groencompost, of boerderijcompost: op alle landbouwgronden • stalmest: • op landbouwgronden die ingedeeld zijn als fosfaatklasse I of fosfaatklasse II • op alle landbouwgronden die behoren tot een bedrijf dat de biologische productie toepast • op alle landbouwgronden die behoren tot een circulair stalmestbedrijf.\n8.5.2 Organisch koolstofgehalte verhogen in relatie tot het nitraatresidu Er zal verder onderzoek uitgevoerd worden naar de link tussen een hoog koolstofgehalte in de bodem en het nitraatresidu (zie ook 8.6.3.2), zodat landbouwers gemotiveerd blijven om het koolstofgehalte van hun bodems te verhogen."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten geen definitie geven en geeft correct weer dat het ontwerp-MAP 7 (2025-03) het begrip alleen noemt bij de 50%-regel voor stalmest, met de datumvermelding en de verwijzing naar de Mestbank of het Departement."
+   }
+  },
+  {
+   "nr": 112,
+   "vraag": "Is het mogelijk om de criteria van de doelgerichte selectie van de nitraatresiducampagne te kennen?",
+   "antwoord": "Gedeeltelijk. Bedrijven voor een bedrijfsevaluatie worden aangeduid op basis van een risicoanalyse, en er worden enkel nog bedrijfsevaluaties uitgevoerd [S3408]. Daarnaast zijn er controlestalen op willekeurig gekozen percelen in focusgebieden en niet-focusgebieden, en een honderdtal percelen die de dienst Handhaving vermoedt overbemest te zijn [S1408]. De precieze criteria van die risicoanalyse staan niet in mijn documenten [S3408]. Controleer de huidige regels bij de Mestbank of het Departement, want de bronnen die ik vond zijn een ontwerp of ouder [S2782].",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8982,
+    "uit": 1377,
+    "aanroepen": 2
+   },
+   "ms": 9404,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3408,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 93,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 93 van 101 indicator kan zijn voor een potentieel probleem, maar niet voldoende is om de bemestingspraktijken van een volledig bedrijf te beoordelen. Om het instrument efficiënter te maken zullen er enkel nog bedrijfsevaluaties uitgevoerd worden. Bedrijven die een bedrijfsevaluatie moeten uitvoeren worden aangeduid op basis van een risicoanalyse. Een bedrijfsevaluatie betekent dat het nitraatresidu op meerdere percelen van een bedrijf bepaald wordt. Hierdoor wordt de bemestingspraktijk van een bedrijf in zijn geheel geëvalueerd. Naast de bedrijfsevaluaties op basis van risicoanalyse, kunnen bedrijven ook op eigen initiatief een bedrijfsevaluatie laten uitvoeren. Dat kan omdat ze een vrijstelling willen van de gebiedsgerichte maatregelen (zie ook 8.3.2.4) of om de maatregelen die ze ten gevolge van eerdere overschrijdingen opgelegd kregen, te kunnen stopzetten."
+    },
+    {
+     "id": 1408,
+     "titel": "Praktijkgids Bemesting: wettelijk kader",
+     "datum": "2014-01",
+     "pagina": 23,
+     "tekst": "17 6 NITRAATRESIDU In de referentieperiode 1 oktober - 15 november wordt op percelen die door de overheid worden aangeduid, het nitraatresidu bepaald.\nIn sommige gevallen is dit op kosten van de landbouwer.\nIndien het nitraatresidu bepaalde drempelwaarden overschrijdt, worden zogenaamde maatregelenpakketten opgelegd.\n6.1 Er zijn verschillende “soorten” nitraatresidu!?\nEr zijn verschillende soorten van staalnames, afhankelijk van de oorsprong of het doel: - controlestalen - opvolgstalen - derogatiestalen - stalen Beheerovereenkomst (BO-staal) - tegenstalen Bij een controlestaal wordt het nitraatresidu bepaald in opdracht en op kosten van de Mestbank.\nDit bestaat voornamelijk uit percelen die willekeurig zijn geselecteerd in focusgebieden (iets meer) en niet-focusgebieden (iets minder).\nDaarnaast zijn er ook door de dienst Handhaving een 100-tal percelen aangeduid, waarvan vermoed wordt dat ze overbemest zijn."
+    },
+    {
+     "id": 2782,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 13,
+     "tekst": "voor het bereiken van een goede waterkwaliteit. Het nitraatresidu in de bodem in het najaar is een goede maatstaf om de bemesting te beoordelen. Als uw bedrijf aangeduid wordt om een bedrijfsevaluatie van het nitraatresidu te doen, brengt de Mestbank u hiervan in september op de hoogte. U kan ook zelf vrijwillig een bedrijfsevaluatie van het nitraatresidu aanvragen als u een vrijstelling wil voor de gebiedsgerichte maatregelen 'reductie bemestingsnormen' en 'verplichting erkende mestvoerder'. In beide gevallen duidt de Mestbank de percelen aan waarop het nitraatresidu moet bepaald worden."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de precieze criteria niet in de documenten staan en geeft alleen wat de stukjes bevatten, maar de zin dat de bronnen 'een ontwerp of ouder' zijn wordt niet volledig gedragen en S2782 is een recente brochure, en de aanduiding via willekeurige selectie en handhaving komt uit een oud document uit 2014 zonder dat de datum erbij wordt vermeld."
+   }
+  },
+  {
+   "nr": 113,
+   "vraag": "Kan een loonwerker via de AGR-GPS-app verschillende klanten bedienen?",
+   "antwoord": "Dat staat niet in mijn documenten: er is niets over of een loonwerker de AGR-GPS-app voor meerdere klanten tegelijk mag gebruiken. Wel staat er dat de app verplicht is bij elk vervoer van vloeibare dierlijke mest naar eigen grond, vanaf 1 juli, [S2816]. Voor vloeibare en andere meststoffen naar landbouwgronden met een burenregeling is de app ook verplicht, [S3420]. Effluent mag na 31 augustus alleen met een AGR-GPS-systeem worden vervoerd, of door een erkende mestvoerder, [S2687]. Voor een bindend antwoord over de situatie van je loonwerk, kijk je de huidige regels na bij de Mestbank of het Departement.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6422,
+    "uit": 633,
+    "aanroepen": 2
+   },
+   "ms": 4317,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2816,
+     "titel": "Startersbrochure Mestbank",
+     "datum": "2025-10",
+     "pagina": 24,
+     "tekst": "pagina 24 van 38 Startersbrochure 29.10.2025\nNieuw vanaf 2025: gebruik van de AGR-GPS-app. In geval van eigen mest naar eigen grond is het gebruik van de AGR-GPS-app verplicht jaarlijks vanaf 1 juli tijdens elk vervoer van vloeibare dierlijke mest. Er is geen verplichting om de AGR-GPS-app te gebruiken bij vervoer met grensboerdocumenten voor Wallonië en Nederland.\nKlik hier voor meer informatie over de AGR-GPS-app.\n9.1.3 Burenregeling In de volgende gevallen kan een burenregeling worden afgesloten: 1.\nvoor het transport van dierlijke mest of andere meststoffen vanuit een exploitatie naar een opslag van een exploitatie die beide deel uitmaken van hetzelfde bedrijf.\nDat kan over een verdere afstand dan de buurgemeente, op voorwaarde dat het bedrijf maximaal drie verschillende exploitaties heeft.\nAls het bedrijf meer dan drie exploitaties heeft, kan alleen een burenregeling afgesloten worden tussen twee exploitaties als voldaan is aan de voorwaarden vermeld onder punt 2;\n2."
+    },
+    {
+     "id": 3420,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 95,
+     "tekst": "Europees Sentinel satellietnetwerk is onvoldoende nauwkeurig (pixel van 10 op 10 m) om de aanwezigheid van beschermingsstroken te detecteren. Er zal nauwkeuriger, gebiedsdekkend beeldmateriaal aangekocht, verwerkt en ontsloten worden om de aanwezigheid van effectieve beschermingsstroken in de bemestingsperiode aan te tonen.\n8.6.3.5 Versterkt gebruik van AGR-GPS bij mesttransporten MAP 6 voerde een verscherpte opvolging van bepaalde burenregelingen in.\nZo was het gebruik van een AGR- GPS app verplicht bij het vervoer van vloeibare dierlijke mest met een burenregeling naar afnemers met percelen in gebiedstype 2 of gebiedstype 3.\nDeze regeling wordt versterkt in het ontwerp-MAP 7.\nHet gebruik van een AGR-GPS app wordt verplicht voor de volgende transporten: • Elk vervoer van vloeibare dierlijke en andere meststoffen naar landbouwgronden met burenregeling;\n• Elk vervoer van dierlijke mest naar een mestzak of mestverwerking met burenregeling;"
+    },
+    {
+     "id": 2687,
+     "titel": "Overzicht uitrijregeling",
+     "datum": "2026-08",
+     "pagina": 8,
+     "tekst": "en tot maximaal 36 kg werkzame N/ha.\nDeze dosisbeperking is er niet als er na 31 augustus geen effluent meer wordt opgebracht.\n1 september t.e.m. 15 oktober Enkel op zware kleigronden: er voldaan zijn aan voorgaande voorwaarden met betrekking tot bemesten na de oogst van de hoofdteelt, en bovendien zijn volgende voorwaarden van toepassing: - Bemesten is toegelaten als een gewas aanwezig is of als het gewas ten laatste de 7de dag na opbrenging wordt ingezaaid.\nMet andere woorden: bemesten voor 16/9 mag enkel op de teelt zelf OF wanneer er binnen de 7 dagen na bemesting een vanggewas wordt ingezaaid.\nNa 15/9 mag bemesten alleen op het aanwezige gewas.\n- De hoeveelheid effluent die na 31 augustus opgebracht wordt is beperkt tot 25 ton/ha.\n- Het vervoer van het effluent moet gebeuren met een AGR-GPS-systeem.\nHet vervoer moet dus met de AGR-GPS-app gebeuren of uitgevoerd worden door een erkende mestvoerder."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niet vermelden of een loonwerker meerdere klanten via de app kan bedienen, maar de bijbehorende uitleg bevat kleine onnauwkeurigheden: S3420 betreft een ontwerp (MAP 7) dat als verplichting wordt voorgesteld en niet als geldende regel, en effluent-vervoer geldt alleen voor zware kleigronden van 1 september tot 15 oktober, niet algemeen na 31 augustus."
+   }
+  },
+  {
+   "nr": 114,
+   "vraag": "Welke regel geldt er voor aardappelen pootgoed met teeltcode 907 en 908? Worden die pootaardappelen aanzien als vroege aardappelen of als late?",
+   "antwoord": "Dat staat niet in mijn documenten: er is niets te vinden over teeltcodes 907 en 908 of over pootgoed. [S3462] Ik kan wel zeggen dat de documenten onderscheid maken tussen vroege, half-vroege, half-late en late aardappelen, afhankelijk van ras en oogsttijdstip. [S3462] Voor de indeling van deze specifieke teeltcodes en de regel die erbij hoort, kijkt u het best na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9478,
+    "uit": 636,
+    "aanroepen": 2
+   },
+   "ms": 5898,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3462,
+     "titel": "Goede praktijken voor de bemesting (klimaatadaptief)",
+     "datum": "2021-03",
+     "pagina": 10,
+     "tekst": "nitraatuitspoeling. Ze starten immers snel in het voorjaar met de stikstofopname, wat een voordeel is ten opzichte van vaak afgestorven vanggewassen. De teelt van maïs en aardappelen zijn teelten die het door hun eigenheden en de hogere nitraatresidu’s die vastgesteld worden, baat hebben bij een juiste bemestingsstrategie. Ook binnen een steeds engere bemestingsruimte, wat een grote uitdaging is voor deze teelten, is een correcte bemestingsstrategie een noodzaak. ELK ZIJN EIGENHEDEN EN PROBLEMEN AARDAPPELEN De stikstofbemesting van aardappelen is afhankelijk van:\n het teeltdoel en de bijhorende kwaliteitseisen;  het ras;  het beoogde oogsttijdstip.\nHet ras en het gewenste oogstmoment hangen grotendeels samen. Er kan onderscheid gemaakt worden tussen:  Vroege aardappelen  Half-vroege en half-late aardappelen  Late aardappelen"
+    }
+   ],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets over teeltcodes 907/908 of pootgoed bevatten, maar de bewering dat de indeling van het oogsttijdstip afhangt van 'ras en oogsttijdstip' is gedeeltelijk gesteund (het stukje zegt dat ras en oogstmoment grotendeels samenhangen), terwijl het stukje de half-vroege/half-late categorieën wel noemt; de bewering dat er niets over pootgoed te vinden is, is niet volledig verifieerbaar uit één stukje, en de oudheid van de bron (2021-03) wordt niet vermeld."
+   }
+  },
+  {
+   "nr": 115,
+   "vraag": "Wat gebeurt er als door de droogte niet tot 90 cm diep bemonsterd kan worden?",
+   "antwoord": "Mijn documenten zeggen niets over wat er gebeurt als een bodemstaal door droogte niet tot 90 cm diep genomen kan worden. Dat staat niet in mijn documenten. Het Mestdecreet noemt de 90 cm-diepte wel bij de analyse van het fosfaatbindend vermogen van een perceel in een fosfaatverzadigd gebied. Daar hangt een lagere bemestingsnorm van af, maar of en hoe de analyse bij droogte mag worden aangepast, vermeldt de tekst niet [S4627]. Voor de huidige regel en eventuele uitzonderingen kijk je na bij de Mestbank of het Departement Landbouw en Visserij.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8759,
+    "uit": 721,
+    "aanroepen": 2
+   },
+   "ms": 5264,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 4627,
+     "titel": "Mestdecreet van 22 december 2006 (Belgisch Staatsblad, oorspronkelijke tekst)",
+     "datum": "2006-12",
+     "pagina": 9,
+     "tekst": "uitgevoerd te worden en kan de nadere regels vaststellen in verband met de erkenning van de laboratoria die gemachtigd zijn deze uit te voeren.\n§ 6. Voor een perceel, gelegen in een fosfaatverzadigd gebied waarvan, op grond van een analyse, wordt bewezen dat het fosfaatbindend vermogen van 0 tot 90 cm diepte, kleiner of gelijk is aan 25 mmol P per kg luchtdroge grond, en het gehalte aan Poxalaat van 0 tot 30 cm diepte kleiner of gelijk is aan 20 mmol P per kg luchtdroge grond, gelden de bepalingen van § 1 niet en wordt de bemesting beperkt tot de volgende hoeveelheden P2O5 in kg per hectare en per jaar : 90 voor grasland, 80 voor maïs, 70 voor gewassen met lage stikstofbehoefte en 70 voor andere gewassen.\nDaartoe wordt door de Mestbank een attest afgegeven.\nIn dit geval zijn de kosten van de analyse, vermeld in het eerste lid, ten laste van de Mestbank."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": false,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets over bemonstering bij droogte vermelden, de beschrijving van de 90 cm-diepte in een fosfaatverzadigd gebied komt overeen met het aangehaalde stukje, en het verwijst naar de Mestbank of het Departement voor de geldende regel."
+   }
+  },
+  {
+   "nr": 116,
+   "vraag": "Kan ik teeltmislukking inroepen voor de nitraatresidumetingen?",
+   "antwoord": "Dat staat niet in mijn documenten: een teeltmislukking wordt nergens genoemd als reden om de nitraatresidumeting over te slaan of te laten vervallen [S3381]. Wel staat erin dat een bedrijf na een positieve bedrijfsevaluatie van het nitraatresidu vrijgesteld kan worden van bepaalde gebiedsgerichte maatregelen [S3381]. Voor 2026 loopt de staalnameperiode tot en met 30 november,",
+   "stappen": 2,
+   "gebruik": {
+    "in": 9195,
+    "uit": 1762,
+    "aanroepen": 2
+   },
+   "ms": 10260,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3381,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 86,
+     "tekst": "1 juli gebeuren door een erkend mestvoerder met AGR-GPS.\nDat is een verstrenging van de gebiedsgerichte vervoersmaatregel vanaf 1 augustus uit MAP 6. 8.3.2.4 Vrijstelling van gebiedsgerichte maatregelen via positieve bedrijfsevaluatie nitraatresidu Na een positieve bedrijfsevaluatie van het nitraatresidu, op basis van alle teelten binnen het bedrijf volgens dezelfde bepalingen van MAP 6, wordt een bedrijf vrijgesteld van de gebiedsgerichte maatregelen, zijnde de bemestingsreductie of de terugverdieneffecten door de toepassing van de goede bodem-, teelt- en bemestingspraktijken in gebiedstype 1, 2 of 3, en het verplicht vervoer door een erkend mestvoerder met AGR-GPS van vloeibare dierlijke mest naar een perceel in gebiedstype 2 of 3 vanaf 1 juli.\nOvertredingen met directe milieu-impact of het niet tijdig indienen van de Mestbankaangifte of verzamelaanvraag leiden tot het niet verlenen of intrekken van de vrijstelling."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat teeltmislukking niet in de documenten staat en de vrijstelling na positieve bedrijfsevaluatie klopt met S3381, maar de bewering over de staalnameperiode tot 30 november 2026 staat niet in het stukje, het antwoord is afgebroken en er is geen verwijzing naar de ouderdom van de bron of advies om de geldende regel na te kijken."
+   }
+  },
+  {
+   "nr": 117,
+   "vraag": "Mag de beschermingsstrook gebruikt worden als wendakker?",
+   "antwoord": "Volgens het ontwerp van het 7de Mestactieprogramma mag de beschermingsstrook gebruikt worden als wendakker [S3323]. Die strook telt niet mee in de mestgebruiksruimte, dus de bemestingsnormen gelden alleen voor het deel van het perceel zonder die strook [S3323]. Het gaat om een ontwerp uit maart 2025 en de beschermingsstroken worden gefaseerd ingevoerd, dus controleer de huidige regel bij de Mestbank of het Departement, want ik geef geen bindend advies [S3323]. Voor de grasbufferstrook in het GLB geldt een aparte voorwaarde: wendakker mag alleen als dat de erosiebestrijding niet schaadt en de strook voldoende ontwikkeld is [S4087].",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6613,
+    "uit": 1105,
+    "aanroepen": 2
+   },
+   "ms": 6319,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 3323,
+     "titel": "Ontwerp 7de Mestactieprogramma (MAP 7)",
+     "datum": "2025-03",
+     "pagina": 71,
+     "tekst": "18.03.2025 Ontwerp 7de actieprogramma in uitvoering van de Nitraatrichtlijn pagina 71 van 101 maaisel toegelaten (behalve in de periode van 15/3 t.e.m.\n15/7).\nGrondbewerking is niet toegelaten tenzij het nodig is het meerjarig buffergewas te vernieuwen (waarbij dit beperkt wordt tot maximum 1 maal per 3 jaar) of om probleemonkruiden mechanisch pleksgewijs aan te pakken.\nDe beschermingsstrook mag gebruikt worden als wendakker;\n• Deze beschermingsstroken tellen niet mee in de mestgebruiksruimte van het perceel.\nDe maximale bemestingsnormen gelden dus voor het deel van het perceel, zonder de oppervlakte van de te respecteren bemestingsvrije beschermingsstrook.\nDe beschermingsstroken worden gefaseerd ingevoerd via een aanpassing van het waterwetboek.\nIn 2025 wordt een beschermingsstrook van 5 m breedte ingevoerd op percelen met een nitraatgevoelige teelt in gebiedstype 2 en 3 langs VHA-waterlopen.\nDe huidige ecoregelingen bufferstroken kunnen ingezet worden in 2025."
+    },
+    {
+     "id": 4087,
+     "titel": "Toelichting bij de verzamelaanvraag 2025",
+     "datum": "2025-02",
+     "pagina": 208,
+     "tekst": "Afhankelijk van de erosiegevoeligheid van het aangrenzende perceel bouwland heeft de grasbufferstrook volgende minimale en maximale breedtes. Erosiegevoeligheid Zeer hoog (paars) Hoog (rood) Medium (oranje) Laag (geel) Heel laag (lichtgroen) Minimale breedte (m) 9 9 6 6 6 Maximale breedte (m) 30 30 24 24 24  De grasbufferstrook wordt minstens een keer per jaar gemaaid.\n Op de grasbufferstrook is het gebruik van gewasbeschermingsmiddelen en bemesting niet toegestaan.\n Een ploegvoor of ploegwal die aanwezig is tussen het perceel bouwland en de grasstrook wordt genivelleerd, zodat afstromend water optimaal over de grasbufferstrook kan vloeien.\n De grasbufferstrook mag gebruikt worden als wendakker, op voorwaarde dat dat gebruik geen impact heeft op de functie van erosiebestrijding en de grasbufferstrook voldoende ontwikkeld is.\n Op de grasbufferstrook mag een plantaardige dam aanwezig zijn.\n U heeft de grasbufferstrook in gebruik gedurende de verbintenistermijn."
+    }
+   ],
+   "kalender": null,
+   "bron": true,
+   "klopt": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de beschermingsstrook als wendakker mag dienen, en alle toevoegingen (geen mestgebruiksruimte, gefaseerde invoering, ontwerp van maart 2025, voorwaarde voor GLB-grasbufferstrook) staan in S3323 en S4087, terwijl het advies om de geldende regel na te kijken geen bron nodig heeft."
+   }
+  },
+  {
+   "nr": 118,
+   "vraag": "Een aantal maanden geleden diende ik een bezwaarschrift in tegen een nieuw ruimtelijk uitvoeringsplan (RUP). Dit plan voorzag onder meer in de omzetting van de agrarische bestemming van sommige van mijn weides naar natuurgebied. Momenteel hoor ik niets meer van dat RUP. Hoe verloopt deze procedure verder? En wat kan ik doen als de overheid mijn weides toch tot natuurgebied herbestemt?",
+   "antwoord": "Hoe de bezwaarprocedure voor uw RUP verder verloopt en welke beroepsmogelijkheden u heeft, staat niet in mijn documenten. In een natuurgebied geldt een bemestingsverbod; op grasland is alleen begrazing toegelaten, met maximaal 2 GVE per hectare per jaar [S2733]. Voor percelen in een Speciale Beschermingszone van de Habitatrichtlijn wordt het bemestingsverbod in groene bestemmingen vanaf 2028 ingevoerd, en tot dan geldt er nog geen verbod [S3094]. Bij een gewestelijk RUP zonder gefaseerde inwerkingtreding gaat het verbod in vanaf 1 januari van het jaar na de definitieve vaststelling van het plan [S3034]. Voor percelen in het verruimingsgebied kan een compensatievergoeding worden toegekend, mits die tijdig is aangevraagd [S3094]. Een deel van deze bronnen dateert van 2020, dus controleer de huidige regels bij de Mestbank of het Departement Landbouw en Visserij, die u ook kunnen informeren over de bezwaar- en beroepsprocedure.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 19199,
+    "uit": 3301,
+    "aanroepen": 3
+   },
+   "ms": 17333,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2733,
+     "titel": "Bemestingsnormen en richtwaarden 2026",
+     "datum": "2026-03",
+     "pagina": 14,
+     "tekst": "www.vlm.be\n4.1.2 NATUUR Onder natuur vallen: 1. De gewestplanbestemmingen ‘natuurgebieden’, ‘natuurontwikkelingsgebieden’, ‘natuurreservaten’ en ‘bosgebieden’ met verstrenging; 2. De bestemmingen ‘natuur en reservaat’ en ‘bos’ van de gewestelijke ruimtelijke uitvoeringsplannen (GRUP). In natuur geldt het bemestingsverbod. Alleen op grasland kan een bemesting gebeuren door rechtstreekse uitscheiding (begrazing) van maximaal 2 GVE/ha, jaar.\nHet Stikstofdecreet, goedgekeurd op de Vlaamse regering op 24 januari 2024, scherpt deze regeling aan op gronden die in de Speciale Beschermingszones van de Habitatrichtlijn (SBZ-H) liggen: → Het bemestingsverbod wordt vanaf 2028 versneld ingevoerd in de groene bestemmingen ‘Bos’ en ‘Natuur en reservaat’ die door gewestelijke ruimtelijke uitvoeringsplannen alsook ‘Natuurgebieden’, ‘Natuurontwikkelingsgebieden’, ‘Natuurreservaten’, ‘Bosgebieden’ die door gewestplannen zijn geclassificeerd."
+    },
+    {
+     "id": 3094,
+     "titel": "Toelichting PAS 2026: snellere en ruimere nulbemesting",
+     "datum": "2026-08",
+     "pagina": 17,
+     "tekst": "ruimtelijke uitvoeringsplannen (PRUP) of gemeentelijke ruimtelijke uitvoeringsplannen (gemRUP) zijn geclassificeerd, indien gelegen in SBZ-H. Uitzondering hierop zijn de bestemmingen Agrarisch gebied van ecologisch belang (AGEB) en Agrarisch gebied met overdruk natuurverweving (AGON).\nDe percelen in het verruimingsgebied hebben op dit moment nog de volledige bemestingsnorm.\nTot 1 januari 2028 wordt nog geen bemestingsverbod opgelegd.\nDe landbouwer kan wel kiezen om het verbod vroeger te laten ingaan.\nDe percelen in het verruimingsgebied waarop de nulbemesting vanwege het Stikstofdecreet ingaat – hetzij vervroegd door keuze, hetzij pas op 1 januari 2028 - komen in aanmerking voor een compensatievergoeding, mits deze tijdig aangevraagd werd.\n3.2.2.1 Ontheffing In de verruimingsgebieden is ontheffing niet van toepassing.\n3.2.2.2 Beheerovereenkomst 100 kg stikstof uit kunstmest In de verruimingsgebieden is deze beheerovereenkomst niet van toepassing."
+    },
+    {
+     "id": 3034,
+     "titel": "Fiche: bemesting in natuur- en bosgebieden",
+     "datum": "2020-02",
+     "pagina": 2,
+     "tekst": "pagina 2 van 3 Bemesting in natuur of bosgebied\nDit bemestingsverbod geldt:\n1° in de voor 1 januari 2009 aangeduide ruimtelijke gebieden, vanaf 1 januari 2009; 2° in de na 1 januari 2009 aangeduide ruimtelijke gebieden : a) als het gewestelijk ruimtelijk uitvoeringsplan, een gefaseerde inwerkingtreding voorziet, vanaf 1 januari van het jaar vanaf wanneer de bestemming die sorteert onder de categorie van gebiedsaanduiding “bos” of “reservaat en natuur”, gerealiseerd moet zijn;\nb) als het gewestelijk ruimtelijk uitvoeringsplan, geen gefaseerde inwerkingtreding voorziet, vanaf 1 januari van het jaar volgende op de datum van de definitieve vaststelling van het betrokken gewestelijk ruimtelijk uitvoeringsplan."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de procedure en beroepsmogelijkheden niet in de documenten staan, maar de aanvullende bemestingsinfo is niet geheel gedekt: S3094 zegt dat het bemestingsverbod voor SBZ-H-percelen in verruimingsgebied pas op 1 januari 2028 ingaat, niet dat het 'in groene bestemmingen vanaf 2028' voor alle percelen geldt, en de compensatie geldt alleen voor verruimingsgebieden met nulbemesting door het Stikstofdecreet."
+   }
+  },
+  {
+   "nr": 119,
+   "vraag": "Op de laatste grote landbouwbetoging zou de politie een tractor in beslag hebben genomen, die ze nu zouden vernietigen. Kan dit echt of is dit een gerucht dat de ronde doet en dat wettelijk gezien niet mogelijk is?",
+   "antwoord": "Dat staat niet in mijn documenten, dus ik kan niet bevestigen of ontkennen dat de politie een tractor in beslag heeft genomen op een betoging. Mijn bronnen gaan over bemesting, natuurwetgeving, gewasbescherming en het Mestdecreet, niet over politieoptreden bij betogingen. Voor een betrouwbaar antwoord kun je het best terecht bij de politie zelf of bij betrouwbare nieuwsbronnen.",
+   "stappen": 1,
+   "gebruik": {
+    "in": 6420,
+    "uit": 649,
+    "aanroepen": 2
+   },
+   "ms": 4716,
+   "via": "Anthropic",
+   "bronnen": [],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat, doet geen inhoudelijke bewering over de zaak en verwijst door naar politie en nieuwsbronnen."
+   }
+  },
+  {
+   "nr": 120,
+   "vraag": "Kan een gepensioneerde pachter worden opgezegd?",
+   "antwoord": "Dat staat niet in mijn documenten. Ik vond geen regels over opzegging van een pacht omdat de pachter met pensioen gaat. De enige passages gaan over beplantingen en de vrijheid van bebouwing onder de Pachtwet, en die zeggen niets over pensioen als reden van opzegging [S2163]. Die bron is uit 2013, dus controleer de huidige regels bij het Departement Landbouw en Visserij of via de Mestbank, en laat je voor een concreet geval adviseren door een landbouwjurist of de Pachtwet zelf na te lezen.",
+   "stappen": 2,
+   "gebruik": {
+    "in": 8361,
+    "uit": 713,
+    "aanroepen": 2
+   },
+   "ms": 5673,
+   "via": "Anthropic",
+   "bronnen": [
+    {
+     "id": 2163,
+     "titel": "Wetgeving op het raakvlak van landbouw en natuur",
+     "datum": "2013",
+     "pagina": 24,
+     "tekst": "windstoten)27.\n• Ook de pachter mag in algemene regel geen nieuwe aanplantingen verrichten, tenzij met schriftelijke toestem­ ming van de verpachter. Hierop zijn er een aantal uitzonderingen voorzien: als pachter mag u, zonder toestemming van de verpachter, aanplantin­ gen doen die noodzakelijk zijn voor de bewaring van het pachtgoed en, behalve in geval van geldige opzegging, aanplantin­ gen ter vervanging van dode of gevelde bomen en aanplanting van laagstammige fruitbomen, dit laatste onder bepaalde voorwaarden.\nDeze voorwaarde houdt in dat de aanplanting slechts is toegestaan als zij een oppervlakte beslaat van ten minste 50 are en aan een bestaande aanplanting of een vaste toegangsweg paalt en voor zover zij in de streek gebruikelijk is en beantwoordt aan de eisen van een rationele exploitatie.\nVoor dit laatste punt moet de pachter vooraf een gunstig advies van de tuinbouwkundige van de streek hebben verkregen28."
+    }
+   ],
+   "kalender": null,
+   "weetNiet": true,
+   "rechter": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten hierover niets bevatten, maar de bewering dat de passages ook over 'vrijheid van bebouwing' gaan vindt geen steun in het aangehaalde stukje, dat alleen over aanplantingen gaat."
+   }
+  }
+ ],
+ "samen": {
+  "juiste bron geciteerd": "36/41 (88%)",
+  "antwoord klopt": "35/41 (85%)",
+  "zegt eerlijk 'weet ik niet'": "6/9 (67%)",
+  "fouten": 0,
+  "rechter": "claude-sonnet-5-5",
+  "rechter: klopt": "35/50 (70%)",
+  "rechter: half": "13/50 (26%)",
+  "rechter: bronnen dragen het": "15/50 (30%)",
+  "tokens in": 9972.4,
+  "tokens uit": 1291.6,
+  "modelaanroepen": 2.1,
+  "seconden": 8.2,
+  "besteed (dollar)": 0.427
+ },
+ "wat": "claude",
+ "deel": "echt",
+ "model": "claude-haiku-5-5",
+ "datum": "2026-11-20",
+ "stukjes": 5039
+}
