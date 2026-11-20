@@ -42,6 +42,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het kernantwoord (sleepslang toegelaten op beteelde akkers zoals wintertarwe) wordt gedragen door S1429, S4633 en S3344, maar de beweringen over 'vandaag, 20 november' en het verbod voor type 2 van 16 oktober tot 15 februari staan alleen in de kalenderregel [K] en niet in een aangehaald stukje, en de zin dat nu niet op wintertarwe kan is een eigen conclusie die mogelijk ook niet klopt voor andere mesttypes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt terecht dat de sleepslangtechniek op beteelde akkers zoals wintertarwe is toegelaten, gesteund door S1429, S4633 en S3344, en ook de uitrijperiode voor type 2 steunt op [K], maar de bewering dat voor kunstmest of stalmest andere periodes gelden, vindt geen steun in de aangehaalde stukjes."
    }
   },
   {
@@ -79,6 +84,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord geeft terecht aan dat MAP 7 de sleepslang op grasland tot en met 2027 toelaat en daarna zode-injectie, zodenbemester of sleufkouter voorschrijft, maar 'lijkt dat zo' is aarzelend, en de zin 'Daarin staat dat ... in de plaats komen' en de verwijzing naar 2028 worden niet expliciet bevestigd; bovendien staat de bewering over het direct inwerken op te scheuren grasland wel in S3343, maar de fiche van 2025-09 beschrijft de huidige regel, niet 2028, en de bewering 'ontwerp uit maart 2025' is correct maar het zinnetje dat de sleepslang 'nog' als toegelaten techniek staat is een uitleg die niet strikt uit de stukjes volgt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de sleepslang volgens het ontwerp-MAP 7 maar tot en met 2027 is toegelaten en dat op grasland dan zode-injectie, zodenbemester of sleufkouter nodig zijn; het meldt eerlijk dat het om een ontwerp gaat en dat de VLM-fiche de sleepslang nog toelaat, en alle beweringen staan in de aangehaalde stukjes."
    }
   },
   {
@@ -123,6 +133,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht dat er geen verplichting voor ureaseremmers bij dierlijke mest is en dat het MAP 7-ontwerp ze alleen voor ureumhoudende kunstmeststoffen wil verplichten, wat door de stukjes gedragen wordt en de datum en controle-aanraden bevat."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt terecht dat er geen verplichting is voor dierlijke mest en dat het MAP 7-ontwerp een ureaseremmer enkel voorziet voor ureumhoudende kunstmest, maar het stukje S801 vermeldt nergens dat ILVO ureaseremmers vooral bekijkt om ammoniakemissie te verminderen."
    }
   },
   {
@@ -188,6 +203,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord noemt NBPT en de dosis van 2,5 mg/m² per dag, en zegt eerlijk dat er geen officiële lijst of veldeis in de documenten staat; het hangt wel enkele beweringen op die de stukjes niet dragen, zoals dat NBPT, PPDA en CHPT door ILVO 'vooral' worden besproken (S754 zegt 'de meest voorkomende stoffen'), dat 'Inhibitor K' hetzelfde is als PPDA (S756 en S757 gebruiken beide namen apart) en dat PPDA en 'Inhibitor K' hetzelfde zijn, terwijl de datum van de bronnen wel wordt genoemd."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt de ureaseremmers uit de ILVO-mededeling (NBPT, PPDA, CHPT) met de onderzochte doseringen (10 mg/l drijfmest, 2,5 mg/m² op de stalvloer), zegt eerlijk dat er geen officiële lijst of vaste velddosis in de bronnen staat en raadt aan de regels na te kijken. Al deze beweringen steunen op de aangehaalde stukjes, al vermeldt het antwoord de datum van de ILVO-bron (januari 2023) niet."
    }
   },
   {
@@ -225,6 +245,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt terecht dat stalmest op grasland mag buiten de verbodsperiode (nu 1 november tot en met 15 januari verboden), maar de bewering dat de regeling van 2027 afwijkt 'tot 15 oktober voor type 1' steunt niet op het aangehaalde [K]-stukje over 2026."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt terecht dat stalmest op grasland mag buiten de verbodsperiode van 1 november tot en met 15 januari, en dat verbod en de 50 kg-grens worden gedragen door [K] en [S2657], maar de bewering dat de regeling van 2027 voor type 1 in de herfst afwijkt van die van 2026 (tot 15 oktober) staat niet in [K]."
    }
   },
   {
@@ -269,6 +294,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord beschrijft het verschil juist (injectie of sleepslang op beteelde grond, injectie of tweestapsinwerking op niet-beteelde grond) en past bij het verwachte patroon, maar de bewering dat het MAP 7-ontwerp 'direct onderwerken' voorziet is deels een parafrase, en de opmerking dat de Mestdecreet-bron uit 2006 is klopt, terwijl 'Op zaterdag moet dierlijke mest onmiddellijk worden ingewerkt' uit S3020 komt maar enkel bij de niet-beteelde grondregel hoort en hier als algemeen wordt gesteld."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft het verschil juist weer (injectie of sleepslang op beteelde grond, injectie of inwerken binnen twee uur op niet-beteelde grond, en de strengere ontwerpregels uit MAP 7), en alle beweringen steunen op S3020, S3343 en S4633."
    }
   },
   {
@@ -306,6 +336,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht dat stalmest rond de stam van fruitbomen tussen 1 november en 15 januari mag, dat de meldingsplicht bij de Mestbank in het MAP 7-ontwerp wordt geschrapt, en dat het nog een ontwerp is; dit staat allemaal in de aangehaalde stukjes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord bevestigt correct dat stalmest rond de stam van fruitbomen van 1 november tot en met 15 januari toegelaten blijft en dat het ontwerp-MAP 7 de meldingsplicht schrapt, wat de stukjes [K], [S2657] en [S3428] volledig ondersteunen; het noemt de ouderdom van de bronnen wel niet expliciet."
    }
   },
   {
@@ -343,6 +378,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord geeft de regel correct weer en erkent eerlijk dat de documenten niet zeggen of gras als groenbemester een voorteelt is, maar het besluit blijft open en het verband tussen de bemesting op gras en de aardappelen is niet beantwoord, terwijl de bewering dat het onderwerpen na 16 maart niet in de regel staat en de [K]-verwijzing naar akkerland met late aardappelen niet volledig door de stukjes gedragen worden."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "half",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft de juiste regel weer, maar zegt niet dat bemesten hier toegelaten is omdat het gras als voorteelt telt; het blijft twijfelen en noemt ook de datum van de bron (augustus 2026) niet, terwijl de beweringen wel steun vinden in S2670 en S2674 (de laatste [K]-verwijzing hoort eigenlijk bij S2670)."
    }
   },
   {
@@ -373,6 +413,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord geeft juist aan dat de boete geldt voor de percelen van het nitraatresidutype boven de tweede drempelwaarde en niet voor het hele bedrijf, maar de stelling dat 'alle percelen van dat type op het bedrijf' bestraft worden en 'niet beperkt tot bemonsterde percelen' wordt in het stukje niet letterlijk gesteund (het antwoord geeft dit zelf toe), en de bedrijfsevaluatie-context wordt wat vrij weergegeven."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft juist weer dat de boete geldt voor de percelen van het nitraatresidutype boven de tweede drempelwaarde (niet het volledige areaal) zoals in S3411 staat, en het markeert eerlijk dat de uitbreiding naar alle percelen van dat type een eigen interpretatie is, met vermelding van de datum en een verwijzing naar de Mestbank of het Departement."
    }
   },
   {
@@ -410,6 +455,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord is juist (nee, vanaf 1 juli moet een erkende mestvoerder het vervoeren, geen burenregeling) en noemt de uitzonderingen en de datum van het ontwerp, maar de bewering dat de MAP 6-datum 1 augustus was en de uitzonderingen op grasland/vrijstelling zijn wel gedekt, terwijl de bewering dat de Startersbrochure-regel 'ook niet met eigen mest op eigen grond' geldt zonder transportdocumenten slechts deels is weergegeven en de brochure-datum (2025-10) niet vermeld wordt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat vloeibare dierlijke mest vanaf 1 juli naar percelen in gebiedstype 2 en 3 door een erkende mestvoerder (volgens MAP 7 met AGR-GPS) moet worden vervoerd en dus niet in burenregeling mag, met de juiste uitzonderingen, en alles staat in de aangehaalde stukjes."
    }
   },
   {
@@ -447,6 +497,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt correct de diepte van 0,90 m (drie lagen 0–30, 30–60 en 60–90 cm), dit wordt door beide aangehaalde stukjes ondersteund, en het vermeldt de leeftijd van de bronnen en raadt aan de huidige regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct een bemonsteringsdiepte van 0–90 cm en de drie lagen, wat steun vindt in het Mestdecreet [S4609] en de Praktijkgids [S1412], vermeldt de ouderdom van beide bronnen en raadt aan de geldende regels na te kijken."
    }
   },
   {
@@ -484,6 +539,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt correct de 4%-drempel en de mogelijke beperking van 5 m naar 3 m voor kleine percelen als nog te bekijken voorstel (geen vaste uitzondering), alles steunt op S3530 en S3324, en het vermeldt de datum van de bron en raadt aan de huidige regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft juist aan dat er volgens het ontwerp-MAP 7 geen vaste uitzondering is, maar dat het opvolgingsorgaan bekijkt of de strook naar 3 m kan als de 5 m-strook meer dan 4 % van het perceel inneemt; alle beweringen staan in S3530 en S3324, en het antwoord vermeldt de datum van de ontwerptekst en raadt aan de geldende regel na te vragen."
    }
   },
   {
@@ -528,6 +588,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft de reden (uitscheidingscijfers waren onderschat volgens onderzoek, o.a. ILVO) en de juiste verhoging van 65 naar 75 kg N, met de stappen uit de stukjes, en wijst op de ouderdom van de bron en het nakijken van de geldende regel."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord legt juist uit dat onderzoek (onder meer door het ILVO) aantoonde dat de forfaitaire uitscheidingscijfers voor zoogkoeien onderschat waren, en dat ze gefaseerd stijgen naar 75 kg N; alle beweringen en cijfers vinden steun in de aangehaalde stukjes."
    }
   },
   {
@@ -565,6 +630,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "De stukken noemen geen strookbreedte (5 m) voor een perceel in SBZ-H én groene bestemming, en het antwoord zegt eerlijk dat dit niet in de documenten staat, terwijl alle genoemde details (10 m bij hellingen en VEN, nulbemesting in S3046, ontwerpstatus) in de stukjes te vinden zijn."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat het de breedte niet vond en beweert geen foute breedte, maar het MAP 7-ontwerp vermeldt wel een strook van 5 meter, dus de vraag blijft onbeantwoord; wat het wél zegt (10 m langs hellingen en in VEN, nulbemesting in groene bestemming binnen SBZ-H) staat in de aangehaalde stukjes."
    }
   },
   {
@@ -609,6 +679,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord geeft de juiste definitie (overwegend aanwezig van 15 mei tot en met 31 augustus, dus niet op 30 mei of 1 juni) en wordt grotendeels door de stukjes gedragen, maar de bewering dat de hoofdteelt niet de teelt van één bepaalde dag is, staat er niet letterlijk in, en de zin dat voorjaarspinazie hier de uitzondering is en 'alleen als er geen aardappelen...' is licht anders geformuleerd."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct aan dat de hoofdteelt de teelt is die overwegend aanwezig is van 15 mei tot en met 31 augustus, en niet die op één bepaalde dag, en alle aanvullende regels (aardappelen, wintergewassen, onrijp geoogste granen, groenten) worden gedragen door de stukjes S3607, S3609 en S3610."
    }
   },
   {
@@ -674,6 +749,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord geeft de kern juist (beschermingsstrook langs VHA-waterlopen in MAP 7 versus bufferstroken in ecoregelingen of beheerovereenkomsten), maar voegt zonder bronsteun toe dat de beschermingsstrook 'verplicht' is en de bufferstrook 'vrijwillig' en 'vooral over erosie en bodem' gaat, terwijl de stukjes zeggen dat de beschermingsstroken gefaseerd worden ingevoerd (in 2025 enkel 5 m bij nitraatgevoelige teelt in gebiedstype 2 en 3) en de breedte 6 tot 18 m maar één specifieke actie betreft."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord legt correct uit dat MAP 7 de verplichte strook langs VHA-waterlopen bewust 'beschermingsstrook' noemt om ze te onderscheiden van de bufferstroken in ecoregelingen of beheerovereenkomsten, en de beweringen steunen op de aangehaalde stukjes (de stelling dat bufferstroken 'vooral' over erosie gaan is wel een lichte veralgemening)."
    }
   },
   {
@@ -725,6 +805,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft correct aan dat er niets specifieks over stroken voor spontane begrazing staat, en noemt de uitzondering voor tijdelijke begrazing voor onderhoud en directe uitscheiding in MAP 7 (S3321), terwijl alle andere beweringen en de datumwaarschuwing in de stukjes steun vinden."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt de MAP 7-regel dat begrazing op beschermingsstroken enkel als tijdelijke begrazing voor onderhoud (of langs grasland) is toegestaan en zet die af tegen het begrazingsverbod in de ecoregeling, wat de stukjes volledig steunen, al trekt het geen expliciete conclusie over stroken speciaal voor begrazing."
    }
   },
   {
@@ -769,6 +854,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord noemt correct het verbod op drassig, ondergelopen, bevroren of besneeuwd land (de rest van de vraag, zoals zon- en feestdagen en zonsopgang/-ondergang, ontbreekt), maar de claim 'drie verbodsbepalingen die altijd gelden' wordt niet door de stukjes gedragen, want het natuurgebiedverbod wordt er apart bij gezet en bij de MAP 7-zin staat dat de afstandsregels 'kunnen veranderen' terwijl het stukje alleen over bewerkingen in de beschermingsstrook gaat."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt het verbod op bemesting van drassig, ondergelopen, bevroren of besneeuwd land, wat bij het verwachte patroon past, en de overige verboden (hellingen, waterlopen, natuur- en bosgebieden, MAP 7) worden gedragen door de aangehaalde stukjes, terwijl de ouderdom van het Mestdecreet eerlijk wordt vermeld."
    }
   },
   {
@@ -827,6 +917,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt correct dat een analyseresultaat voor OC en pH vijf jaar geldig is (dus niet jaarlijks), en alle toevoegingen (start bij staalname, 1 resultaat per 5 ha, advies vijf jaar volgen, ecoregeling met staal uit aanvraagjaar) worden door de aangehaalde stukjes gedragen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt correct dat het analyseresultaat voor OC en pH vijf jaar geldig is, en dat en de overige beweringen (één resultaat per schijf van 5 ha, opvolging gedurende vijf jaar, afwijkende regel voor de ecoregeling) vinden steun in de aangehaalde stukjes; alleen de startdatum van de termijn komt uit een stukje over herklassering, wat een kleine extrapolatie is."
    }
   },
   {
@@ -878,6 +973,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord geeft terecht aan dat de grondsoort telt, bepaald met bodemkaart of bodemstaal en de juiste codes, en de landbouwstreek alleen voor de data; alleen de vermelding 'GLMC 6, minimale bodembedekking' staat niet letterlijk in de aangehaalde stukjes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de bodemkaart of het bodemstaal (met de juiste codes) bepalend is en dat de landbouwstreek alleen de ploegdatum bepaalt; dat steunt op S3783, S3778 en S3776, op twee kleine punten na: het label 'GLMC 6' staat niet letterlijk in de stukjes en de bron uit 2014 (S1403) wordt niet als verouderd aangeduid."
    }
   },
   {
@@ -922,6 +1022,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord stelt terecht dat 2 jaar tussen teelten gelijkstaat aan 1 op 3 jaar, en elke bewering (GLB-norm, serre-uitzondering, diversificatie, IPM-gids, pootgoed, cystenaaltje) wordt door de stukjes gedragen, met vermelding van de leeftijd van de IPM-gids en het advies de huidige regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord legt correct uit dat minstens twee jaar een ander gewas neerkomt op aardappelen één keer om de drie jaar (1 op 3), en elke bewering, ook de uitzonderingen voor serres, pootgoed, primeuraardappelen en aardappelcystenaaltje, steunt op de aangehaalde stukjes."
    }
   },
   {
@@ -973,6 +1078,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord vraagt terecht om verduidelijking van de 80%, geeft de juiste conditionaliteitssancties (1%, 3%, 10%, 15%) die in de stukjes staan, zegt eerlijk dat de koppeling met de 80%-regel niet bevestigd is, en adviseert de geldende regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft de verwachte conditionaliteitssancties (3%, aanpasbaar tot 1% of 10%, 10% bij herhaling, minstens 15% bij opzet), die rechtstreeks in S3706 en S3707 staan, net als de beschrijving van beide 80%-regels, en het is terecht voorzichtig over welke 80% bedoeld is."
    }
   },
   {
@@ -1017,6 +1127,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord is inhoudelijk juist (winterploegen is op klei in Polders en Duinen altijd toegestaan, 15 oktober geldt voor klei elders), maar de laatste beweringen over de mestregel steunen op het Mestdecreet uit 2006 (oorspronkelijke tekst), dat verouderd is, en dat wordt niet vermeld."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat winterploegen op kleibodem in de landbouwstreek Polders en Duinen volgens de toelichting 2025 altijd mag, en alle beweringen staan in de stukjes, al vermeldt het niet dat de aparte mestregel uit de oorspronkelijke tekst van het Mestdecreet van 2006 komt."
    }
   },
   {
@@ -1054,6 +1169,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft correct aan dat het andere perceel niet eerst blijvend hoeft te worden maar vanaf 2026 als blijvend grasland geldt en vijf opeenvolgende jaren behouden moet blijven, alles gedekt door S3722 en S1925, en het raadt aan de huidige regels na te kijken en vermeldt de ouderdom van de gids."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat het compenserende perceel niet eerst blijvend grasland hoeft te zijn: het geldt vanaf 2026 als blijvend grasland en moet vijf opeenvolgende jaren behouden blijven, wat volledig steunt op S3722, terwijl de bewering uit de gids van 2012 steun vindt in S1925 en het antwoord de ouderdom van die bron vermeldt."
    }
   },
   {
@@ -1119,6 +1239,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord noemt terecht de grens van 200 bomen per hectare (BMN) en dat niet-productieve elementen sinds 2025 niet meer verplicht zijn, maar het zegt niet duidelijk dat percelen onder die grens nu subsidiabel zijn; ook de conclusie dat bomenrijen op subsidiabel areaal liggen is slechts voorzichtig getrokken, en de uitspraak dat boslandbouw 'in principe een landbouwsysteem blijft' gaat verder dan wat de stukjes zeggen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt de grens van 200 bomen per hectare (perceelsbestemming BMN voor subsidiabiliteit) en zegt terecht dat niet-productieve elementen sinds 2025 niet meer verplicht zijn; al die beweringen staan in de aangehaalde stukjes, al had het explicieter mogen zeggen dat percelen tot 200 bomen per hectare nu subsidiabel zijn."
    }
   },
   {
@@ -1156,6 +1281,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft terecht aan dat een nateelt van minstens twaalf weken uit een andere gewasgroep dan de hoofdteelt volstaat als rotatie, en dat sluit aan bij de aangehaalde toelichting."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord bevestigt correct dat meerjarige maïs kan met een nateelt van minstens twaalf weken uit een andere gewasgroep, en alle beweringen (ook het alternatief van gewasdiversificatie en de uitzonderingen) staan in de aangehaalde stukjes."
    }
   },
   {
@@ -1193,6 +1323,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord klopt en past bij het verwachte patroon (zaaizaad gras 601, grassen en andere kruidachtige voedergewassen, vrijstelling), maar de bewering dat het 'geen gewone weidegrasteelt' is, wordt niet rechtstreeks door de stukjes ondersteund en het 'vorig jaar'-detail is een interpretatie van de bronnen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord legt correct uit dat zaaizaad gras een eigen teeltcode (601) heeft maar voor GLMC 7 bij de grassen en andere kruidachtige voedergewassen valt en dus vrijgesteld is van de basisnorm gewasrotatie, wat de aangehaalde stukjes volledig ondersteunen."
    }
   },
   {
@@ -1237,6 +1372,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat een formele definitie ontbreekt, geeft wat de bronnen over oogstresten zeggen en concludeert terecht dat oogstresten van aardappelen onvoldoende zijn en een groenbedekker of nateelt nodig is, wat volledig door S3774 en S3784 wordt gedragen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat een formele definitie ontbreekt, geeft de omschrijvingen uit ILVO en de verzamelaanvraag, en stelt terecht dat de oogstresten van aardappelen meestal onvoldoende zijn zodat een groenbedekker of nateelt nodig is, wat de stukjes S504, S3774 en S3784 allemaal steunen."
    }
   },
   {
@@ -1274,6 +1414,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht nee, want S4109 stelt dat bemesting en begrazing van de bufferstroken niet toegestaan zijn, maaien met afvoer mag wel, en S4111 ondersteunt de onderhoudsverplichting, terwijl de datumwaarschuwing geen bron nodig heeft."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat begrazing van de ecoregeling-bufferstroken niet is toegestaan en maaien met afvoer wel, en die beweringen en de onderhoudsplicht voor grasbufferstroken worden letterlijk gedragen door S4109 en S4111, met vermelding van de datum en een verwijzing naar het Departement."
    }
   },
   {
@@ -1325,6 +1470,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt terecht dat de NPE-verplichting vanaf 2025 is vervallen en dat een ecoregeling voor bufferstroken niet combineerbaar is met NPE-bufferstroken, maar het noemt ook een 'GLB-overzicht uit 2024' dat niet bij de aangehaalde stukjes zit."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de NPE-verplichting vanaf 2025 wegvalt, zodat een ecoregeling niet meer meetelt, en dat de ecoregeling bufferstroken niet combineerbaar is met NPE-bufferstroken; alle inhoudelijke beweringen steunen op de aangehaalde stukjes, al is de vermelde 'GLB-overzicht uit 2024' niet bij de stukjes terug te vinden."
    }
   },
   {
@@ -1369,6 +1519,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat er geen algemene minimale oppervlakte is, geeft de juiste minimale breedtes (6 m, en 9 m of 6 m bij erosiegevoelige percelen) met bronnen, en alle beweringen worden door de stukjes gedragen, inclusief de datumverwijzing en de raad de regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat er geen algemene minimale oppervlakte is, en geeft de breedtes (6–18 m, 7–19 m langs een waterloop, 9 of 6 m bij erosiegevoelige percelen) en de uitzondering van 0,30 ha, die allemaal in de aangehaalde stukjes van 2025 staan, met de vraag om de regels na te kijken."
    }
   },
   {
@@ -1413,6 +1568,11 @@
     "klopt": "half",
     "bron": "ja",
     "uitleg": "Het antwoord noemt de aanduiding van de waterloop in de verzamelaanvraag, de erosievoorwaarde en de codes (BUW tegenover BUE/BUEN) correct, maar het mist het verwachte verschil in bufferbreedte (3-6 m tegenover 6-12 m), en elke bewering wordt door de stukjes gedragen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "half",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct en met steun in de stukjes aan dat actie 2bis een waterloop uit de donkerblauwe laag vereist en noemt de codes, maar het mist het kernverschil in breedte van de strook (3–6 m tegenover 6–12 m)."
    }
   },
   {
@@ -1450,6 +1610,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft correct weer dat gemengde rassen bij het melkvee horen als ze gemolken worden en het bedrijf onder melkproductieregistratie staat, dat ze ook onder vleesvee kunnen vallen (vanaf 6 maanden), en noemt de extra toelage voor lokale dubbeldoelrassen, alles gedragen door S4161 en S4172, met vermelding van de bron en advies om de huidige regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt juist dat koeien van het rastype 'gemengd' bij het melkvee horen als ze worden gemolken en het bedrijf onder melkproductieregistratie staat, en dat ze anders onder vleesvee kunnen vallen; alle beweringen staan in S4161 en S4172, en het antwoord vermeldt de bron en raadt aan de regels na te kijken."
    }
   },
   {
@@ -1494,6 +1659,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord is juist en door de stukjes gedragen: eenjarige ecoteelten zoals het faunamengsel (EEF) zijn alleen voor bouwland van minstens 0,30 ha en het perceel mocht in 2023 en 2024 geen blijvend grasland zijn, en het antwoord vermeldt de datum van de bronnen (verzamelaanvraag 2025) en raadt aan de geldende regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord stelt terecht dat het faunamengsel (EEF) enkel op bouwland van minstens 0,30 ha kan en dat het perceel in 2023 en 2024 geen blijvend grasland mocht zijn, wat volledig steun vindt in de aangehaalde stukjes."
    }
   },
   {
@@ -1538,6 +1708,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht dat de maatregel voor bouwland en blijvende teelt geldt en weiland niet wordt genoemd, wat past bij het verwachte patroon 'bouwland', en alle details (10 ton/ha, eens per vijf jaar, 50 tot 602,5 euro/ha, 50 euro/ha voor stalmest) staan in de aangehaalde stukjes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de maatregel alleen geldt voor bouwland en blijvende teelt die de twee voorgaande jaren al zo gebruikt werden, en niet voor weiland; alle details (10 ton/ha, één keer per vijf jaar, 50 euro/ha voor stalmest) worden gedragen door de aangehaalde stukjes."
    }
   },
   {
@@ -1582,6 +1757,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht dat de stalmestmaatregel zelf geen bodemanalyse vraagt en dat die alleen hoort bij de aparte, bijkomende streefzonemaatregel (OCS), en alle genoemde voorwaarden en bedragen staan in de aangehaalde stukjes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de stalmestmaatregel zelf geen bodemanalyse vereist en dat die alleen nodig is voor de bijkomende streefzonemaatregel (OCS); alle voorwaarden en bedragen staan in S4299, S4300 en S4451, en het antwoord vermeldt dat de bron uit 2025 komt en raadt aan de regels na te kijken."
    }
   },
   {
@@ -1619,6 +1799,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord is juist dat stalmest van het eigen bedrijf of extern aangekocht mag zijn en dat alleen houtsnippers van het eigen bedrijf moeten komen, maar de bewering over 'bouwland of blijvende teelt' en champost staat alleen in S4548 en de vermelde 'tot 2025' en 'GLB-overzichten' van 2023 en 2024 dragen de stukjes niet volledig."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de stalmest ook extern aangekocht mag worden, en alle beweringen (houtsnippers van het eigen bedrijf, minstens 10 ton/ha, bouwland of blijvende teelt) staan in S4522 en S4548, al spreekt het antwoord ten onrechte van bronnen tot 2025 terwijl ze uit 2023 en 2024 komen."
    }
   },
   {
@@ -1663,6 +1848,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord klopt en wordt gedragen door S3802 en S3532 (verplichting vervalt, vrijwillig aanleggen met vergoeding via ecoteelten), maar de bewering dat de informatie uit 2023 en 2024 'achterhaald' is, staat niet in S4535 en is dus een eigen toevoeging, al volgt ze logisch uit de 2025-bronnen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de NPE-verplichting vanaf 2025 vervalt en dat vrijwillige aanleg met vergoeding via ecoteelten kan; elke bewering vindt steun in S3802, S3532 en S4535, en het antwoord vermeldt de ouderdom van de bronnen en raadt aan de geldende regel na te kijken."
    }
   },
   {
@@ -1693,6 +1883,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt correct het patroon dat je mestrechten krijgt als je in dat kalenderjaar de hoofdteelt op het perceel in gebruik hebt (aangegeven via de verzamelaanvraag), en alle beweringen, ook over transportregelingen en de globale mestbalans, staan in het aangehaalde stukje, met een passende waarschuwing over de datum en de geldende regel."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct aan dat je bemestingsrechten hebt als je de hoofdteelt in gebruik hebt in dat kalenderjaar (aangegeven via de verzamelaanvraag), en alle beweringen inclusief de uitzonderingen en de globale mestbalans worden gedragen door stukje S2773, al vermeldt het antwoord de datum van de bron (oktober 2025) niet."
    }
   },
   {
@@ -1758,6 +1953,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord noemt terecht ecologisch kwetsbaar blijvend grasland (EKBG) en de andere beschermde graslanden en zegt eerlijk dat het van het perceel afhangt, maar de naam en de vijfjarige duur van de maatregel 'tijdelijk naar blijvend grasland' staan niet in [S4325], en 'EKBG nooit omzetten' is te algemeen omdat EKBG met alleen GLB-bescherming nog naar gras omgezet mag worden."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord legt juist uit dat scheuren afhangt van het perceel en noemt EKBG met de bijbehorende verboden, maar de naam van de maatregel 'tijdelijk naar blijvend grasland' staat niet in stukje S4325 (dat een grasland van minstens 10 jaar vereist) en is dus niet onderbouwd."
    }
   },
   {
@@ -1794,6 +1994,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de definitie van een circulair stalmestbedrijf niet in de documenten staat, geeft correct de 50%-regel voor P2O5 uit S2727 en S3392 weer, en noemt de datum van het ontwerp (maart 2025) met het advies de geldende regel na te kijken bij de Mestbank of het Departement."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de definitie van een circulair stalmestbedrijf niet in de documenten staat, en de bijkomende info over de 50%-regel voor fosfaat wordt correct gedragen door S2727 en S3392, met vermelding van de ontwerpstatus en een verwijzing naar de Mestbank."
    }
   },
   {
@@ -1844,6 +2049,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de exacte criteria niet in de documenten staan, geeft alleen wat de stukjes echt vermelden (S1408, S1409, S2783, S3225) en wijst voor de actuele regel terug naar de Mestbank en het Departement, met vermelding dat de gids uit 2014 dateert."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de exacte criteria van de doelgerichte selectie niet in de documenten staan, en de aanvullende aanwijzingen (willekeurige controlestalen, vermoeden van overbemesting, opvolg-, derogatie- en BO-stalen, erkende mestvoerder, risicoanalyse) worden telkens gedragen door de aangehaalde stukjes, met een correcte vermelding van de ouderdom van de bron en een doorverwijzing naar de Mestbank."
    }
   },
   {
@@ -1894,6 +2104,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt eerlijk dat de documenten niet vermelden of een loonwerker met de AGR-GPS-app meerdere klanten kan bedienen, maar de afleiding dat een loonwerker niet zomaar via een burenregeling kan vervoeren staat niet letterlijk in S2819 en is dus een eigen conclusie."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niet vermelden of een loonwerker met de AGR-GPS-app meerdere klanten kan bedienen, en elke bijkomende bewering (eigen mest via loonwerker, AGR-GPS bij effluent op kleigronden, vervoer bij burenregeling, de app voor loonwerkers in MAP 7) vindt steun in de aangehaalde stukjes."
    }
   },
   {
@@ -1944,6 +2159,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt eerlijk dat de indeling van pootgoed (code 907/908) als vroeg of laat niet in de documenten staat, maar de bewering dat de indeling van het oogsttijdstip afhangt en niet van de teeltcode wordt door de stukjes niet gedragen (ze koppelen alleen codes 901/904 aan oogstdatum), en de oude datum van de bronnen wordt niet genoemd."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niet vermelden of pootgoed met code 907/908 als vroege of late aardappel telt, maar de conclusie dat de indeling vroeg/laat van het oogsttijdstip afhangt staat niet in de stukjes; het antwoord vermeldt ook niet hoe oud de bronnen zijn."
    }
   },
   {
@@ -1994,6 +2214,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt eerlijk dat de documenten niet vermelden wat er bij droogte gebeurt, maar de bewering dat het ontwerp het staalnameprotocol wil aanpassen 'om de meetonzekerheid te verlagen' en de periode van 1 oktober tot en met 30 november vanaf 2026 is slechts deels gesteund, want S3285 noemt de aanpassing wel en S3405 de verlenging, terwijl 'erkend labo voert uit' en 'de Mestbank duidt aan' in S2783 wel staan maar het antwoord de verlenging als ontwerp en 'vanaf 2026' voorstelt zonder onderscheid tussen de bronnen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets zeggen over bemonstering bij droogte, de extra informatie over de bodemlagen, de SNapp-aanvraag en de ontwerpregels van MAP 7 staat in de aangehaalde stukjes, en het raadt terecht aan het na te vragen bij de Mestbank, al vermeldt het de ouderdom van de bronnen niet (bijvoorbeeld 2014 voor S1412)."
    }
   },
   {
@@ -2030,6 +2255,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat er niets over teeltmislukking in de documenten staat, de aangehaalde beweringen over het niet-bemonsterde perceel (S4617) en de staalnameperiode vanaf 2026 (S3405) worden door de stukjes gedragen, en de datering en het advies om bij de Mestbank na te vragen zijn correct."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets zeggen over teeltmislukking bij het nitraatresidu, en de bijkomende beweringen (niet-bemonsterd perceel geldt als overschrijding, staalnameperiode 1 oktober tot 30 november vanaf 2026) staan in S4617 en S3405, met vermelding van de ouderdom en het ontwerpkarakter van de bronnen en een doorverwijzing naar de Mestbank."
    }
   },
   {
@@ -2067,6 +2297,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt terecht ja: S3323 stelt dat de beschermingsstrook als wendakker mag gebruikt worden en niet meetelt in de mestgebruiksruimte, S4472 geeft de extra voorwaarden voor de grasbufferstrook, en het wijst op de leeftijd van de bronnen en het nakijken van de geldende regels."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat de beschermingsstrook volgens het ontwerp van MAP 7 als wendakker mag dienen en niet meetelt in de mestgebruiksruimte, en de voorwaarde voor de grasbufferstrook uit de ecoregelingen staat letterlijk in S4472."
    }
   },
   {
@@ -2117,6 +2352,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord erkent eerlijk dat de RUP-procedure en beroepsmogelijkheden niet in de documenten staan en geeft verder relevante gevolgen (bemestingsverbod, compensaties) die grotendeels door de stukjes worden gedragen, maar de verwijzing naar de gemeente of provincie als aanspreekpunt en de stelling dat het verbod in S3035 voor 'bos' geldt (de fiche noemt alleen natuurgebieden) en dat 'beide' VLM-pagina's de voorwaarden bevatten, hebben beperkte of geen steun."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord zegt eerlijk dat het verdere verloop van de RUP-procedure en de bezwaar- en beroepsmogelijkheden niet in de documenten staan, en de aanvullende info over het bemestingsverbod en de compensaties is grotendeels gedekt door de stukjes, maar de voorwaarde 'zonder gefaseerde inwerkingtreding' blijkt niet uit het afgebroken fragment [S3035], en het verbod wordt in [S2733] alleen voor gewestelijke RUP's genoemd, terwijl het antwoord het algemeen toepast."
    }
   },
   {
@@ -2146,6 +2386,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de documenten niets over een in beslag genomen of vernietigde tractor bevatten, en de enige inhoudelijke bewering (toezichthouders kunnen voertuigen laten stoppen) staat in S4723."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets bevatten over de inbeslagname of vernietiging van een tractor na een betoging, en de enige inhoudelijke bewering (toezichthouders kunnen voertuigen doen halt houden) wordt gedragen door S4723 uit 2006, al vermeldt het antwoord de ouderdom van die bron niet."
    }
   },
   {
@@ -2182,6 +2427,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de documenten niets over opzegging van een gepensioneerde pachter bevatten, de beschrijving van de stukken (beplantingen en vergoedingen) klopt met S2160 en S2164, en het noemt de datum van de bron (2013) en raadt aan de huidige regels na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de documenten niets zeggen over het opzeggen van een gepensioneerde pachter, beschrijft de aangehaalde stukjes (beplantingen en vergoedingen) correct, vermeldt dat de bron uit 2013 komt en verwijst door naar het Departement of een jurist."
    }
   }
  ],
