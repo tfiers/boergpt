@@ -42,6 +42,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt terecht 30 november voor de leemstreek, en alle beweringen steunen op de stukjes, waaronder de verwijzing naar de VLM-website en de uitrijtool en de opmerking over regels voor uitrijden met vanggewassen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 30 november voor de leemstreek, wat S2673, S2689 en S2665 bevestigen; de verwijzing naar de VLM-website volstaat als advies om na te kijken, al vermeldt het antwoord de ouderdom van de bronnen (2026) niet."
    }
   },
   {
@@ -86,6 +91,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "De 36 kg werkzame stikstof per hectare klopt, maar de beperking geldt als som van type 2 en type 3 meststoffen en bij het eerste en derde punt wordt dit niet als voorwaarde (alleen na niet-nitraatgevoelige hoofdteelt, vanggewas uiterlijk 15 september) genoemd; ook ontbreekt het advies de geldende regel na te kijken en de datum van de bron."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 36 kg werkzame stikstof per hectare, en alle beweringen staan in de stukjes (al hoort de zin over type 2 en 3 eerder bij S2693/S2673 dan bij S2658). Wel ontbreken de voorwaarden dat het om een niet-nitraatgevoelige hoofdteelt gaat met een vanggewas ingezaaid uiterlijk op 15 september, en het antwoord vermeldt de datum van de bron niet en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -116,6 +126,11 @@
     "klopt": "nee",
     "bron": "deels",
     "uitleg": "Het juiste antwoord is 115 kg P2O5/ha, maar het antwoord noemt 0; die 0 komt uit de tabel 'fosfaatklasse in combinatie met natuur', een ander geval dan de algemene norm, dus het stukje gaat over een andere situatie en geeft geen steun voor de algemene vraag."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft 0 kg/ha uit de tabel voor percelen in combinatie met natuur (4.2.1.2), terwijl de algemene fosfaatnorm voor maaigrasland in klasse I 115 kg P2O5/ha is; het stukje steunt dus enkel een uitzonderingsregime, het antwoord meldt de ouderdom van de bron niet en raadt niet aan de geldende regel bij de Mestbank na te kijken."
    }
   },
   {
@@ -146,6 +161,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord (3 jaar) komt overeen met het verwachte antwoord en wordt letterlijk gedragen door het aangehaalde stukje uit de Praktijkgids (2019-04), dat zegt dat het register 3 jaar bewaard moet worden."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord (3 jaar) staat letterlijk in het aangehaalde stukje uit de praktijkgids van april 2019, maar het vermeldt niet hoe oud die bron is en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -197,6 +217,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het kernantwoord (minstens 5% van het volume van de spuitvloeistoftank, bij voorkeur 10%) klopt en staat in S2405, maar de bewering dat de spoelvloeistof 'tegen een hogere snelheid' wordt verspoten staat niet in S2390, en het antwoord zegt niet hoe oud de bron is (2019) of dat men de geldende regel moet nakijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft correct minstens 5% van het volume van de spuitvloeistoftank (bij voorkeur 10%), maar de bewering over verspuiten 'tegen een hogere snelheid' vindt geen steun in S2390, en het antwoord vermeldt niet dat de bron uit 2019 komt en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -219,6 +244,11 @@
     "klopt": "nee",
     "bron": "nee",
     "uitleg": "Het antwoord noemt 5 jaar terwijl het juiste antwoord 4 jaar (vier jaar) is, en er zijn geen stukjes aangehaald die de bewering ondersteunen, noch een vermelding van de ouderdom van de bron."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord noemt 5 jaar, terwijl de bron het over vier jaar heeft; het haalt bovendien geen enkel stukje aan, vermeldt geen ouderdom van een bron en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -270,6 +300,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het kernantwoord (minder dan 14% vocht, S2047) klopt en is gestaafd, ook de 14 à 16% en de 85% DS staan in de stukjes, maar de zin dat bij 85% DS 'het droog graan is' komt uit een context over erwten-gerstmengsels en wordt hier te algemeen voorgesteld, en het antwoord vermeldt noch de leeftijd van de bron (2012) noch het advies de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "De kern (minder dan 14% vocht, S2047) klopt, maar het antwoord voegt verwarrende gegevens toe: de 14 à 16% gaat over veldbonen en de '85% DS' wordt ten onrechte een vochtgehalte genoemd (85% droge stof is ongeveer 15% vocht, bij erwten-gerst), en het vermeldt niet dat de bron uit 2012 is noch dat men de geldende regel moet nakijken."
    }
   },
   {
@@ -300,6 +335,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het aangehaalde stukje stelt letterlijk dat de werkingscoëfficiënt van vleesvarkensmengmest 60% bedraagt, wat overeenkomt met het verwachte patroon en volledig door de bron gedragen wordt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 60% en dat staat letterlijk in S2996, al vermeldt het systeem niet hoe oud de bron is (2025-06) en raadt het niet aan de geldende regel na te kijken bij de Mestbank of een adviseur."
    }
   },
   {
@@ -358,6 +398,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het kernantwoord (de gebruiker van de hoofdteelt, niet meer die van 1 januari) is juist en gestaafd, maar de bewering dat bemestingsrechten overdraagbaar zijn binnen familiale verwantschap is een verkeerde lezing van S3104, dat over het recht op compensatievergoeding in SBZ-H gaat, en er is geen vermelding van de datum van de bronnen of advies om de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "De kern klopt (de gebruiker van de hoofdteelt, niet meer die van 1 januari, steun in S2839, S3425 en S3426), maar het antwoord verdraait S3426: daar gaat het over rechtstreekse betalingen en steunmaatregelen, niet over bemestingsrechten; het beweert ten onrechte dat bemestingsrechten binnen de familie overdraagbaar zijn, terwijl S3104 het over compensatievergoeding heeft; en het vermeldt geen brondatum en raadt niet aan de regel na te kijken."
    }
   },
   {
@@ -388,6 +433,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het aangehaalde stukje zegt dat de bijkomende bestemming OCS uiterlijk 31 mei 2025 op het perceel moet staan, wat overeenkomt met het antwoord."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct 31 mei 2025, wat letterlijk in het aangehaalde stukje uit de brochure van februari 2025 staat, al vermeldt het niet hoe oud de bron is en raadt het niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -432,6 +482,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt correct 100 euro/ha, en alle aanvullende beweringen (verzamelaanvraag 2025, bestemming 'PK', verwijzing naar de algemene fiche) staan in de aangehaalde stukjes."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct 100 euro/ha en alle beweringen worden gedragen door de aangehaalde stukjes uit februari 2025, maar het systeem vermeldt niet hoe oud de bron is en raadt niet aan de geldende regel na te kijken bij het Departement of een adviseur."
    }
   },
   {
@@ -476,6 +531,11 @@
     "klopt": "nee",
     "bron": "deels",
     "uitleg": "Het juiste antwoord is 3 tot 6 m (GLB-ecoregeling), maar het antwoord noemt 1 m, afkomstig uit een 2018-presentatie over geïntegreerde gewasbescherming die over een andere maatregel gaat; de bufferzone-zin klopt met S2473 maar beantwoordt de vraag niet, en er wordt geen leeftijd van de bron vermeld of aangeraden de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het juiste antwoord is 3 tot 6 m (ecoregeling GLB 2023-2027), terwijl het systeem op basis van een IPM-presentatie uit 2018 een minimum van 1 m noemt; de stukjes steunen die 1 m wel, maar niet voor een bloemenstrook aan de rand van een fruitboomgaard, de zin over bufferzones gaat over iets anders, en het antwoord vermeldt de ouderdom van de bronnen niet en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -506,6 +566,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord beschrijft correct dat PAS drukveranderingen meet en dat de geluidsamplitude met de concentratie samenhangt, maar het noemt de lichtpulsen en de microfoon niet, en het laat weg dat de filter de interferentie maar deels compenseert; dat is een lichte overdrijving, want het antwoord noemt de filter als iets 'belangrijks' terwijl de bron zegt dat dit slechts deels compenseert."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord legt correct uit dat PAS de drukveranderingen meet die ontstaan wanneer een gas licht absorbeert, en dat de amplitude van de geluidsgolf samenhangt met de concentratie, wat volledig steunt op S673; het vermeldt wel niet de lichtpulsen en de microfoon, noch de datum van de bron (2025-11) of het advies de geldende regel na te kijken."
    }
   },
   {
@@ -536,6 +601,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het stuk zegt dat ILVO op de Dier-site in Merelbeke-Melle 12 nieuwe sleufsilo's aanlegde, waaronder met cementloos beton, wat past bij het verwachte Merelbeke."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt correct Merelbeke-Melle, wat letterlijk in het aangehaalde stukje staat (Dier-site), al vermeldt het systeem de ouderdom van de bron niet en raadt het niet aan de informatie na te kijken."
    }
   },
   {
@@ -566,6 +636,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft correct aan dat kalk niet samen met (ammoniumhoudende) meststoffen mag worden uitgestrooid, wat letterlijk in het aangehaalde stukje uit de Praktijkgids Bemesting (2014) staat."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt terecht dat kalk niet samen met ammoniumhoudende meststoffen mag, en dat staat letterlijk in S1480, al vermeldt het niet dat de bron uit 2014 komt en raadt het niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -596,6 +671,11 @@
     "klopt": "nee",
     "bron": "ja",
     "uitleg": "Het antwoord noemt het aantal principes (acht) niet maar zegt dat het niet in de documenten staat, terwijl het juiste antwoord 8 is; de beweringen zelf zijn wel gedekt door het aangehaalde stukje, al ontbreekt de vermelding van de leeftijd van de bron (2019-04) en het advies de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft het gevraagde aantal (acht principes) niet en zegt ten onrechte dat het niet in de documenten staat, hoewel de Praktijkgids het wel vermeldt; de aangehaalde definitie klopt met het stukje, maar het antwoord noemt de ouderdom van de bron (2019) niet en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -647,6 +727,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "De aangehaalde stukjes bevatten het getal 36 niet, en het antwoord zegt eerlijk dat het aantal begeleidingstrajecten niet in de documenten staat; de overige beweringen worden door S1221, S1002 en S1003 gedragen, al ontbreekt de vermelding van de leeftijd van de bron en het advies de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft het juiste aantal (36 begeleidingstrajecten) niet en zegt ten onrechte dat het niet in de documenten staat, al worden de overige beweringen wel door de aangehaalde stukjes gedragen."
    }
   },
   {
@@ -712,6 +797,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord noemt administratieve vereenvoudiging wel, maar als een van meerdere gebieden, terwijl precisielandbouw voorop staat; de stukjes zeggen nergens dat Vangeyte daar het meeste potentieel ziet, en het antwoord zegt ook niet hoe oud de bronnen zijn."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "half",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt administratieve vereenvoudiging maar als bijkomstig punt, en het stelt zonder steun in de stukjes dat het grootste potentieel in precisielandbouw ligt; het stuk waarin de vraag naar het grootste potentieel gesteld wordt (S1343) bevat het antwoord niet, en het antwoord vermeldt niet hoe oud de bronnen zijn."
    }
   },
   {
@@ -777,6 +867,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord noemt de kerntaken uit art. 4 correct, waaronder informeren en voorlichten (S4578, S4583), maar de bewering dat de Mestbank toezicht houdt op mestvoerders en hun activiteiten staat niet letterlijk in S4703, en het antwoord vermeldt niet hoe oud de bron is (2006) en raadt niet aan de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt correct taken uit artikel 4, zoals het informeren van land- en tuinbouwers, voorlichting, boetes, audits, toezicht op labo's en erkenningen, maar de verwijzingen kloppen vaak niet (taken f-i en de erkenningen staan in S4583, het methodenboek in S4725), het 'toezicht op mestvoerders' is een eigen afleiding die de stukjes niet als taak vermelden, en het antwoord zegt niet dat de bron uit 2006 stamt en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -799,6 +894,11 @@
     "klopt": "nee",
     "bron": "nee",
     "uitleg": "Het antwoord is slechts een functieaanroep zonder inhoudelijk antwoord op de vraag (geen ja/nee), en er zijn geen aangehaalde stukjes die iets dragen, al wijst de [K]-regel zelf op 'Neen'."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord is alleen een ruwe functieaanroep naar de uitrijkalender en geeft de gebruiker geen antwoord: het zegt niet dat uitrijden van drijfmest op grasland op 20 november verboden is (periode 15/08 t.e.m. 15/02), noemt de datum van de bron niet en raadt niet aan de regel na te kijken bij de Mestbank."
    }
   },
   {
@@ -828,6 +928,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de prijs van een tractor niet in de documenten staat, wat klopt, en het aangehaalde stukje over zaaidichtheid van groenbedekkers bevat geen tractorprijs, dus er wordt niets onterecht beweerd."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat de prijs van een tractor niet in de documenten staat, wat klopt, en doet geen inhoudelijke beweringen die steun nodig hebben."
    }
   },
   {
@@ -849,6 +954,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat, wat klopt met wat we weten, en er worden geen beweringen gedaan die een bron nodig hebben."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat niet in de documenten en het systeem zegt dat eerlijk zonder iets te beweren, dus er is ook geen bron nodig."
    }
   },
   {
@@ -913,6 +1023,11 @@
     "klopt": "nee",
     "bron": "nee",
     "uitleg": "De documenten bevatten geen informatie over de behandeling van kreupelheid bij paarden, maar het antwoord beweert toch van alles (oorzaken, leefomstandigheden, gewasbeschermingsmiddelen) zonder steun in de stukjes, in plaats van eerlijk te zeggen dat het antwoord ontbreekt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord staat niet in de documenten, maar het systeem doet toch inhoudelijke beweringen (oorzaken in voet, been of rug, verbeteren van beweging en dieet, en zelfs gewasbeschermingsmiddelen op grasland als behandeling) die door geen enkel aangehaald stukje gedragen worden, en het vermeldt de ouderdom van de bronnen niet."
    }
   },
   {
@@ -970,6 +1085,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat het btw-tarief op kunstmest niet in de documenten staat, en geen van de aangehaalde stukjes noemt zo'n tarief, dus er wordt niets beweerd dat bron nodig heeft."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt eerlijk dat het btw-tarief op kunstmest niet in de documenten staat, wat klopt omdat geen van de aangehaalde stukjes dat tarief vermeldt, en het doet geen inhoudelijke beweringen die steun nodig hebben."
    }
   },
   {
@@ -1035,6 +1155,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord zegt terecht dat een vaste einddatum (30 november) niet in de stukjes staat, maar beweert dat de duur niet vermeld is terwijl S1670 wel zegt dat op leem het ondergeploegd wordt in het late najaar; de eerste beweringen over zaaien na graan en 'zo snel mogelijk' zijn niet op de vraag gericht en de graan-specificatie en 'aan te raden' ontbreekt deels in de bron, ook ontbreekt het advies de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het juiste antwoord (tot 30 november, uit het Overzicht uitrijregeling) staat niet in de aangehaalde stukjes en het systeem zegt eerlijk dat het niet expliciet vermeld is, maar de eerste zin over 'na de oogst van een graangewas' wordt niet zo door S1665 gesteld (dat spreekt over de hoofdteelt), en de ouderdom van de bronnen en het advies om de geldende regel na te kijken bij de Mestbank ontbreken."
    }
   },
   {
@@ -1065,6 +1190,11 @@
     "klopt": "nee",
     "bron": "deels",
     "uitleg": "Het antwoord noemt 0 kg P2O5/ha, maar dat is de norm voor grasland in combinatie met natuur; het juiste antwoord (115 kg) hoort bij het algemene bemestingsregime, dus de bron toont een ander geval en het antwoord noemt geen datum of raadt niet aan de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft 0 kg P2O5/ha uit de tabel voor fosfaatklasse in combinatie met natuur en verzwijgt die beperking, terwijl het verwachte antwoord voor het algemene regime 115 kg P2O5/ha is; bovendien noemt het de datum van de bron niet en raadt het niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -1095,6 +1225,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt 3 jaar bewaren, wat overeenkomt met het stukje uit de Praktijkgids (2019-04) waarin staat dat het register 3 jaar bewaard moet worden; de bewering heeft dus volledige steun, al wordt er niet gezegd dat de bron uit 2019 dateert en dat men de geldende regel moet nakijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct de bewaartermijn van 3 jaar, wat het stukje uit de praktijkgids (2019) bevestigt, al vermeldt het antwoord niet hoe oud de bron is en raadt het niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -1153,6 +1288,11 @@
     "klopt": "nee",
     "bron": "deels",
     "uitleg": "Het antwoord noemt het werkzame deel van de stikstof in varkensdrijfmest (ongeveer 60%) niet en geeft alleen algemene informatie over bemestingsnormen, groenbedekkers en andere mestsoorten, terwijl het niet eerlijk zegt dat het cijfer ontbreekt; bovendien vermeldt het de ouderdom van de bronnen niet en raadt het niet aan de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt het juiste aandeel (60%) voor varkensdrijfmest niet en dwaalt af naar andere meststoffen, past [S1389] verkeerd toe (dat stukje gaat over bemestingsnormen, niet over werkzame stikstof uit varkensmest), beweert ten onrechte dat minerale meststoffen de belangrijke bron zijn in veeteeltregio's terwijl [S1517] dat over organische mest zegt, en vermeldt de ouderdom van de bronnen (2014) niet en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -1183,6 +1323,11 @@
     "klopt": "nee",
     "bron": "ja",
     "uitleg": "Het juiste antwoord staat wel in de Praktijkgids Gewasbescherming (een hoeveelheid van ongeveer 5 %), maar het systeem beweert ten onrechte dat het niet in de documenten staat; het aangehaalde stukje bevat het antwoord inderdaad niet, dus de bewering is wel in lijn met het stukje."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord (ongeveer 5% van het tankvolume aan proper spoelwater) staat wel in de Praktijkgids Gewasbescherming, dus zeggen dat het niet in de documenten staat is fout, al doet het antwoord geen inhoudelijke beweringen die door het aangehaalde stukje gedragen moeten worden."
    }
   },
   {
@@ -1213,6 +1358,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het aangehaalde stukje bevat alleen een tabel over kalkmeststoffen en zegt niets over het samen strooien met ammonitraat, dus het antwoord dat dit niet in de documenten staat is eerlijk en juist."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Volgens wat we weten staat het antwoord (niet samen strooien) wel in de Praktijkgids Bemesting, dus het systeem zegt ten onrechte dat het niet in de documenten staat, al beweert het verder niets wat het aangehaalde stukje (2014) tegenspreekt; het systeem vermeldt ook niet hoe oud de bron is en raadt niet aan de geldende regel na te kijken bij de Mestbank, het Departement of een adviseur."
    }
   },
   {
@@ -1243,6 +1393,11 @@
     "klopt": "nee",
     "bron": "ja",
     "uitleg": "Het antwoord stelt dat de informatie niet in de documenten staat, maar volgens de referentie staat het antwoord (ca. 190 miljoen) wel in de Praktijkgids Gewasbescherming; het aangehaalde stukje bevat het bedrag niet, dus de bewering past bij dat stukje maar beantwoordt de vraag niet."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat wel in de documenten (Praktijkgids Gewasbescherming: ongeveer 190 miljoen), dus zeggen dat het ontbreekt is fout, al bevat het antwoord geen inhoudelijke beweringen die een bron nodig hebben."
    }
   },
   {
@@ -1308,6 +1463,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "De aangehaalde stukjes noemen boslandbouw wel, maar geven geen maximaal aantal bomen per hectare (het verwachte antwoord, 200, staat er niet in), dus het antwoord dat het niet in de documenten staat is eerlijk en bevat geen onderbouwde beweringen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "De aangehaalde stukjes vermelden het maximum van 200 bomen per hectare niet (dat staat in de Toelichting bij de verzamelaanvraag 2025, die niet geciteerd is), dus het antwoord zegt terecht en eerlijk dat het niet in de documenten staat."
    }
   },
   {
@@ -1338,6 +1498,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord 250 kg N/ha is juist, maar het aangehaalde stukje noemt dat cijfer alleen voor mais met derogatie in een rekenvoorbeeld en zegt niets over grasland."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "De 250 kg N/ha klopt, maar het stukje toont die waarde alleen voor maïs met derogatie en niet voor grasland, en het antwoord vermeldt de datum van de bron (2025-06) niet en raadt niet aan de geldende regel na te kijken."
    }
   },
   {
@@ -1368,6 +1533,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft '2 tot 4 m' hoog, wat overeenkomt met het verwachte patroon en letterlijk in het aangehaalde stuk uit de Praktijkgids (2012) staat."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct aan dat maïsplanten afhankelijk van het ras 2 tot 4 m hoog worden, wat letterlijk in het aangehaalde stukje uit de praktijkgids van 2012 staat, al vermeldt het die datum niet."
    }
   },
   {
@@ -1398,6 +1568,11 @@
     "klopt": "nee",
     "bron": "ja",
     "uitleg": "De documenten bevatten het antwoord wel (om de 4 à 5 jaar volgens de presentatie over duurzaam gebruik van gewasbeschermingsmiddelen), dus 'dat staat niet in mijn documenten' is hier fout, al is de aangehaalde bron (bemestingsnormen) niet de juiste en is de eerlijke melding op basis van dat stukje zelf wel gedragen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord stelt ten onrechte dat de informatie ontbreekt, terwijl de IPM-presentatie over duurzaam gebruik van gewasbeschermingsmiddelen vermeldt dat minstens om de 4 tot 5 jaar een bodemanalyse nodig is; er worden geen inhoudelijke beweringen gedaan die een bron vereisen."
    }
   },
   {
@@ -1428,6 +1603,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord geeft 30-35 m³/ha, wat overeenkomt met het verwachte patroon en letterlijk in het aangehaalde stukje staat."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "deels",
+    "uitleg": "Het antwoord geeft correct 30-35 m³/ha zoals het stukje uit 2021 vermeldt, maar het noemt de ouderdom van de bron niet en raadt niet aan de geldende regel na te kijken bij de Mestbank, het Departement of een adviseur."
    }
   },
   {
@@ -1458,6 +1638,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het geciteerde stukje gaat over fosfaat en zegt niets over stikstofbehoefte van maïs in ruime vruchtwisseling versus maïs na maïs, dus het eerlijke 'staat niet in mijn documenten' is correct en bevat geen onderbouwde beweringen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord stelt ten onrechte dat het niet in de documenten staat, terwijl 'Goede praktijken voor de bemesting (klimaatadaptief)' het stikstofgetal (102) bevat; de weigering zelf bevat geen inhoudelijke beweringen die steun nodig hebben."
    }
   },
   {
@@ -1488,6 +1673,11 @@
     "klopt": "nee",
     "bron": "deels",
     "uitleg": "Het juiste antwoord is 30 november (MAP 7), maar het systeem zegt dat het niet in de documenten staat, terwijl het wel een antwoord had moeten geven; het aangehaalde stuk (2021-03) noemt alleen de periode 1/10-15/11 voor een ander kader, en de verwijzing [S3454] bij 'niet in mijn documenten' is bovendien geen onderbouwing, noch wordt de ouderdom van de bron vermeld of aangeraden de geldende regel na te kijken."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt dat de informatie ontbreekt, terwijl het ontwerp van MAP 7 30 november als einddatum noemt; het aangehaalde stukje uit 2021 beschrijft alleen de oude periode (1/10-15/11), en omdat het antwoord niets inhoudelijks beweert, is er geen niet-onderbouwde bewering."
    }
   },
   {
@@ -1518,6 +1708,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat de informatie niet in de documenten staat, wat klopt omdat het aangehaalde stuk over ecoregelingen 2025 gaat en geen vergoeding voor een bemestingsverbod in 2027 noemt (het juiste bedrag staat in een ander document)."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord staat wel in de documenten (de toelichting PAS 2026 noemt een vergoeding van 13.125 euro/ha), dus zeggen dat het niet in de documenten staat is fout, al bevat het antwoord geen inhoudelijke bewering die bronsteun nodig heeft."
    }
   },
   {
@@ -1548,6 +1743,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord zegt eerlijk dat het niet in de documenten staat, wat klopt omdat het aangehaalde stukje over precisielandbouw gaat en niets zegt over een bedrag voor wegschoffelen (310 euro/ha), dus er worden geen onbewezen beweringen gedaan."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord zegt ten onrechte dat de informatie ontbreekt, terwijl het GLB-overzicht (campagne 2023) een bedrag van 310 euro per hectare vermeldt voor mechanische onkruidbestrijding; het weigerantwoord bevat geen inhoudelijke beweringen en heeft dus geen bronsteun nodig, al gaat het aangehaalde stukje over precisielandbouw en niet over onkruid."
    }
   },
   {
@@ -1578,6 +1778,11 @@
     "klopt": "nee",
     "bron": "ja",
     "uitleg": "Het antwoord zegt dat het niet in de documenten staat, maar het juiste antwoord (ongeveer 16 jaar) staat wel in de Praktijkgids fosforbemesting, dus de bewering is onjuist hoewel het aangehaalde stukje over peilgestuurde drainage er inderdaad niets over zegt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het aangehaalde stukje over fosformobilisatie bij peilgestuurde drainage bevat het antwoord (16 jaar uit de Praktijkgids fosforbemesting) niet, dus het systeem zegt terecht en eerlijk dat het dit niet in zijn documenten vindt, zonder iets te beweren."
    }
   },
   {
@@ -1643,6 +1848,11 @@
     "klopt": "nee",
     "bron": "nee",
     "uitleg": "Het antwoord beweert dat u aangifte moet doen, terwijl het juiste antwoord een vrijstelling van aangifteplicht betreft en geen enkel stukje die stelling over drie paarden op anderhalve hectare ondersteunt."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "nee",
+    "uitleg": "Het antwoord beweert ten onrechte dat aangifte verplicht is, terwijl drie paarden op anderhalve hectare normaal onder de vrijstelling van aangifteplicht vallen; geen enkel aangehaald stukje steunt die bewering, en het antwoord vermeldt de ouderdom van de bronnen niet en raadt niet aan de geldende regel bij de Mestbank na te kijken."
    }
   },
   {
@@ -1687,6 +1897,11 @@
     "klopt": "half",
     "bron": "deels",
     "uitleg": "Het antwoord noemt alleen de 10-31% voor stallen met roostervloer, maar mist de 58% jaarlijkse reductie (40-68% gemeten) bij volle vloer met natuurlijke ventilatie, terwijl de aanbeveling over dosering en frequentie, de 'vernevelaars' als automatisatie (S789 zegt juist dat hoge vernevelaars niet geschikt zijn) en de FAVV-toelating deels niet of verkeerd gesteund worden, en er geen datum of advies tot nakijken wordt gegeven."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "deels",
+    "uitleg": "Het antwoord noemt 10-31%, maar dat cijfer komt uit een andere studie met mechanische ventilatie en roostervloer; het mist de gevraagde reductie van 40-68% (jaarlijks tot 58%) bij dagelijks vernevelen van Inhibitor K, stelt vernevelaars als geschikte optie voor terwijl S789 zegt dat hoog gemonteerde vernevelaars niet geschikt zijn, en vermeldt niet hoe oud de bron (2023) is of dat men de geldende regel moet nakijken."
    }
   },
   {
@@ -1752,6 +1967,11 @@
     "klopt": "ja",
     "bron": "deels",
     "uitleg": "Het antwoord zegt eerlijk dat de aangehaalde stukjes (enkel adresgegevens van ILVO) geen antwoord geven, wat correct is, maar de verwijzing naar andere documenten als mogelijke plek van het antwoord en de bronnen [S4] voor 'niet duidelijk' zijn niet echt gesteund, en er wordt niets gezegd over de leeftijd van de bronnen."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "nee",
+    "bron": "ja",
+    "uitleg": "Het antwoord noemt Nederland niet en zegt dat het niet in de documenten staat, terwijl het wel in het ILVO Activiteitenverslag 2025 te vinden is; de aangehaalde stukjes bevatten alleen adresgegevens, dus de vaststelling dat zij geen antwoord geven klopt wel."
    }
   },
   {
@@ -1782,6 +2002,11 @@
     "klopt": "ja",
     "bron": "ja",
     "uitleg": "Het antwoord noemt terecht maximaal 25% bedrijfsafval bij een vergunde installatie, en zowel dat als de opmerking dat het nauwelijks voorkomt staat in het aangehaalde stukje, terwijl de verwijzing naar de Mestbank of het Departement een geldige aanbeveling is die geen bron nodig heeft."
+   },
+   "rechter:claude-opus-5-5": {
+    "klopt": "ja",
+    "bron": "ja",
+    "uitleg": "Het antwoord geeft correct maximaal 25% bedrijfsafval bij een vergunde installatie, wat volledig steun vindt in S1500, al vermeldt het niet dat de bron uit 2014 dateert."
    }
   }
  ],
