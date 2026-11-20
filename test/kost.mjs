@@ -4,7 +4,7 @@
 // de meting telt `tel` de echte tokens, en `op` zegt wanneer het plafond bereikt is.
 // Geteld wordt wat Claude kost (antwoorden en rechter) en een rechter op Cloudflare; de antwoorden
 // van open modellen niet (Cloudflare Workers Paid, ± $0,002 per vraag).
-import { kost, PRIJZEN } from "../netlify/functions/lib/budget.mjs";
+import { kost, PRIJZEN } from "../netlify/functions/lib/prijzen.mjs";
 
 const MAX = Number(process.env.KOST_MAX || 1);
 let besteed = 0;
