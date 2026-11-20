@@ -193,8 +193,9 @@ rekent het uit op de bewaarde metingen, zonder nieuwe modelaanroepen.
   goed te meten; de rechter telt "half" waar de sleutel alleen een getal of
   woord zoekt.
 - Rechter tegen rechter: Claude Opus 5.5 oordeelde over dezelfde 845 antwoorden
-  als Sonnet. Op de oefenvragen zijn ze het bijna altijd eens (kappa 0,7–1,0),
-  op de echte vragen minder (kappa 0,4–0,9 per run): daar ligt de grens tussen
+  als Sonnet. Over de antwoorden van Claude op de oefenvragen zijn ze het bijna
+  altijd eens (kappa 0,7–1,0; bij Llama 0,47), op de echte vragen minder (kappa
+  0,4–0,9 per run van Claude): daar ligt de grens tussen
   "klopt" en "half" minder vast. Hoe vaak een expert het met de rechter eens is,
   meet het blinde oordeel hierboven.
 
