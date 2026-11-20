@@ -31,7 +31,7 @@ form.addEventListener("submit", async e => {
   p.oppervlakte = Number(String(p.oppervlakte).replace(",", "."));
   const doos = $("#fiche");
   doos.hidden = false;
-  doos.scrollIntoView({ block: "start", behavior: "smooth" });
+  doos.scrollIntoView({ block: "start" });
   const knop = $("#stel"); knop.disabled = true;
   const stop = laden(doos, "Zoekt en vult in", "Een fiche vraagt meer zoekwerk dan één vraag: reken op een halve minuut.");
   const t0 = performance.now();

@@ -102,7 +102,7 @@ function open(doos, sleutel, wissel) {
   if (!bq) return;
   const nu = wissel ? bq.hidden : true;
   bq.hidden = !nu; k.setAttribute("aria-expanded", nu);
-  if (nu && !wissel) bq.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  if (nu && !wissel) bq.scrollIntoView({ block: "nearest" });
 }
 
 // --- Versie: label met geschiedenis, en een knop als er een nieuwere live staat ---
