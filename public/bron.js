@@ -44,10 +44,13 @@ export function laden(doos, wat, traag = "") {
   return () => clearInterval(klok);
 }
 
-// Zet [S12] en [K] om in tikbare nummers. nr: stukje-id → nummer in de bronnenlijst.
+// Zet [S12] en [K] om in tikbare nummers, zoals voetnoten. nr: stukje-id → nummer in de bronnenlijst;
+// de uitrijkalender krijgt het nummer na de stukjes.
+const kalNr = nr => nr.size + 1;
+const titelRef = "Toon de bron en de pagina uit de pdf";
 export const refs = (tekst, d, nr) => esc(tekst)
-  .replace(/\[S(\d+)\]/g, (_, id) => nr.has(+id) ? `<button class="ref" data-ref="${id}">${nr.get(+id)}</button>` : "")
-  .replace(/\[K\]/g, d.kalender ? `<button class="ref" data-ref="K">K</button>` : "");
+  .replace(/\[S(\d+)\]/g, (_, id) => nr.has(+id) ? `<button class="ref" data-ref="${id}" title="${titelRef}">${nr.get(+id)}</button>` : "")
+  .replace(/\[K\]/g, d.kalender ? `<button class="ref" data-ref="K" title="${titelRef}">${kalNr(nr)}</button>` : "");
 
 export const nummers = d => new Map(d.bronnen.map((b, i) => [b.id, i + 1]));
 
@@ -74,12 +77,12 @@ export function bronnenHtml(d, nr) {
   const lijst = [...docs.values()].map(({ b, paginas }) => `<li class="bron">
       <p class="doc">${esc(b.titel)} <span class="klein">${esc(b.uitgever)} · ${maand(b.datum)}</span></p>
       ${b.oud ? `<p class="oud">Deze bron is ouder dan drie jaar: kijk na of de regel nog geldt.</p>` : ""}
-      <div class="paginas">${[...paginas].map(([pagina, p]) => knop(p.sleutel, p.stukjes.map(s => `<span class="ref">${nr.get(s.id)}</span>`).join(""), `p. ${pagina}`)).join("")}</div>
+      <div class="paginas">${[...paginas].map(([pagina, p]) => knop(p.sleutel, p.stukjes.map(s => `<span class="ref">${nr.get(s.id)}</span>`).join(""), `Bekijk p. ${pagina}`)).join("")}</div>
       ${[...paginas].map(([pagina, p]) => paneel(p.sleutel, p.stukjes.map(s => esc(s.tekst)).join("<br>…<br>"), b.url, pagina, bronNr.has(b.url) ? `pdf/${bronNr.get(b.url)}.pdf` : "")).join("")}
     </li>`).join("");
   if (d.kalender) naarPagina.set("K", "K");
   const kal = d.kalender ? `<li class="bron"><p class="doc">Uitrijkalender <span class="klein">${esc(d.kalender.bron)}</span></p>
-      <div class="paginas">${knop("K", `<span class="ref">K</span>`, `p. ${d.kalender.pagina}`)}</div>
+      <div class="paginas">${knop("K", `<span class="ref">${kalNr(nr)}</span>`, `Bekijk p. ${d.kalender.pagina}`)}</div>
       ${paneel("K", `${esc(d.kalender.uitleg)} (${esc(d.kalender.van)} t.e.m. ${esc(d.kalender.tot)})`, d.kalender.url, d.kalender.pagina, "pdf/kalender.pdf")}</li>` : "";
   const koppel = doos => {
     doos.querySelectorAll("button.ref").forEach(b => b.addEventListener("click", () => open(doos, naarPagina.get(b.dataset.ref))));
@@ -94,7 +97,7 @@ export function bronnenHtml(d, nr) {
       } catch { blad.textContent = "Deze pagina laadt niet; open de pdf."; k.disabled = false; }
     }));
   };
-  return { html: `<ol class="bronnen">${lijst}${kal}</ol>`, koppel };
+  return { html: `<p class="bronkop">Bronnen <span class="klein">Tik op een bron: de tekst, en de pagina uit de pdf.</span></p><ol class="bronnen">${lijst}${kal}</ol>`, koppel };
 }
 
 function open(doos, sleutel, wissel) {
@@ -102,6 +105,9 @@ function open(doos, sleutel, wissel) {
   if (!bq) return;
   const nu = wissel ? bq.hidden : true;
   bq.hidden = !nu; k.setAttribute("aria-expanded", nu);
+  // De pagina uit de pdf laadt meteen mee: dat is wat de bron bewijst.
+  const toon = bq.querySelector("button.toon");
+  if (nu && toon && !toon.disabled && !toon.hidden) toon.click();
   if (nu && !wissel) bq.scrollIntoView({ block: "nearest" });
 }
 

@@ -5,10 +5,16 @@
 // De kost is tokens × de prijs per miljoen tokens hieronder (Cloudflare Workers AI geeft ook een
 // prijs per miljoen tokens, naast zijn neurons).
 import { readFileSync, writeFileSync } from "node:fs";
+import { PRIJZEN } from "../netlify/functions/lib/prijzen.mjs";
 
-// Dollar per miljoen tokens (in, uit), zoals de aanbieders ze op 16 november 2026 vroegen.
+// Dollar per miljoen tokens (in, uit): Claude uit lib/prijzen.mjs, de open modellen zoals de
+// aanbieders ze op 16 november 2026 vroegen.
+const claude = (naam, id) => ({ naam, open: false, ...PRIJZEN[id], bron: "https://platform.claude.com/docs/en/about-claude/pricing" });
 const PRIJS = {
-  claude: { naam: "Claude Sonnet 5.5", open: false, in: 2, uit: 10, bron: "https://platform.claude.com/docs/en/about-claude/pricing" },
+  claude: claude("Claude Sonnet 5.5", "claude-sonnet-5-5"),
+  "claude-sonnet-5-5": claude("Claude Sonnet 5.5", "claude-sonnet-5-5"),
+  "claude-haiku-5-5": claude("Claude Haiku 5.5", "claude-haiku-5-5"),
+  "claude-opus-5-5": claude("Claude Opus 5.5", "claude-opus-5-5"),
   "openai/gpt-oss-120b": { naam: "gpt-oss-120b", open: true, in: 0.15, uit: 0.6, bron: "https://groq.com/pricing" },
   "@cf/openai/gpt-oss-120b": { naam: "gpt-oss-120b", open: true, in: 0.35, uit: 0.75, bron: "https://developers.cloudflare.com/workers-ai/platform/pricing/" },
   "openai/gpt-oss-20b": { naam: "gpt-oss-20b", open: true, in: 0.075, uit: 0.3, bron: "https://groq.com/pricing" },
@@ -31,7 +37,7 @@ const rijen = process.argv.slice(2).map(pad => {
   const tin = gem(x => x.gebruik?.in), tuit = gem(x => x.gebruik?.uit);
   const pct = (n, d) => Math.round(100 * n / d);
   return {
-    model: p.naam, open: p.open, via: u.model ? u.model.split(":")[0] : "anthropic", deel: u.deel, datum: u.datum,
+    model: p.naam, open: p.open, via: u.model?.includes(":") ? u.model.split(":")[0] : "anthropic", deel: u.deel, datum: u.datum,
     vragen: u.r.length, fouten: u.r.length - r.length,
     klopt: pct(tel(met, x => x.klopt), met.length),
     bron: pct(tel(met, x => x.bron), met.length),

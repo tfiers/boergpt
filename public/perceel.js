@@ -2,7 +2,7 @@
 // Elk veld heeft een vinkje "nagekeken": de fiche is pas af als de boer alles nakeek.
 import { $, esc, haal, laden, refs, nummers, stappenHtml, bronnenHtml, volgVersie } from "./bron.js";
 
-volgVersie(3);
+volgVersie(4);
 
 const VELDEN = {
   uitrijperiode: "Uitrijperiode",

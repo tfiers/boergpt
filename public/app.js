@@ -2,7 +2,7 @@
 // elk antwoord met zijn stappen en bronnen.
 import { $, esc, maand, STAPEL, bronLijst, haal, laden, refs, nummers, stappenHtml, bronnenHtml, volgVersie } from "./bron.js";
 
-volgVersie(3);   // hoger bij elke versie die bezoekers merken; public/versies.json zegt wat er veranderde
+volgVersie(4);   // hoger bij elke versie die bezoekers merken; public/versies.json zegt wat er veranderde
 
 // --- Wat je typt, blijft staan ---------------------------------------------
 const veld = $("#vraag");
@@ -11,7 +11,7 @@ veld.addEventListener("input", () => {
   try { localStorage.setItem("vraag", veld.value); $("#bewaard").textContent = "bewaard op dit toestel"; } catch {}
 });
 
-// --- Uitleg: popover met tikbare tekening ---------------------------------
+// --- Uitleg: popover met de stappen ---------------------------------------
 const knop = $(".q"), pop = $("#hoe");
 const zet = open => { pop.hidden = !open; knop.setAttribute("aria-expanded", open); };
 knop.addEventListener("click", e => { e.stopPropagation(); zet(pop.hidden); });
@@ -19,10 +19,6 @@ pop.querySelector(".x").addEventListener("click", () => zet(false));
 pop.addEventListener("click", e => e.stopPropagation());
 document.addEventListener("click", () => zet(false));
 document.addEventListener("keydown", e => { if (e.key === "Escape") zet(false); });
-pop.querySelectorAll(".blok").forEach(b => b.addEventListener("click", () => {
-  pop.querySelectorAll(".blok").forEach(x => x.classList.toggle("aan", x === b));
-  $("#uitleg").textContent = b.dataset.uitleg;
-}));
 
 // --- Vragen -----------------------------------------------------------------
 document.querySelectorAll(".vb").forEach(b => b.addEventListener("click", () => {
@@ -50,7 +46,7 @@ async function vraagAan(kaart, vraag, live = false) {
     await new Promise(k => setTimeout(k, 900));
     stop();
     toon(doos, oud, Math.round(oud.ms / 100) / 10);
-    doos.insertAdjacentHTML("afterbegin", `<p class="bewaard">Bewaard antwoord van ${new Date(bewaard.datum).toLocaleDateString("nl-BE", { day: "numeric", month: "short" })}, niet nu gevraagd. <button type="button" class="live">Vraag het nu live</button></p>`);
+    doos.insertAdjacentHTML("beforeend", `<p class="bewaard">Bewaard antwoord van ${new Date(bewaard.datum).toLocaleDateString("nl-BE", { day: "numeric", month: "short" })}, niet nu gevraagd. <button type="button" class="live">Vraag het nu live</button></p>`);
     doos.querySelector(".live").addEventListener("click", () => vraagAan(kaart, vraag, true));
     return;
   }

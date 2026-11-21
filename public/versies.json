@@ -13,5 +13,10 @@
   "versie": 3,
   "datum": "2026-11-17",
   "wat": "Een perceelfiche: een agent vult uitrijperiode, stikstof, fosfor, vanggewas en steun in voor één perceel, met de bron bij elk veld. Verder: beter bestand tegen misbruik (hulplijnen voor wie in nood is, valse veronderstellingen tegengesproken), een MCP-server op /mcp, en een versielabel met deze lijst."
+ },
+ {
+  "versie": 4,
+  "datum": "2026-11-21",
+  "wat": "Rustiger opmaak: tekst in één leesbare kolom, uitleg in vier stappen. Bronnen als genummerde voetnoten; een tik toont meteen de pagina uit de pdf. Metingen van 20 nov met Claude Haiku en Opus 5.5."
  }
 ]
