@@ -17,6 +17,23 @@
   "prijsbron": "https://platform.claude.com/docs/en/about-claude/pricing"
  },
  {
+  "model": "Claude Opus 5.5",
+  "open": false,
+  "via": "anthropic",
+  "deel": "oefen",
+  "datum": "2026-11-20",
+  "vragen": 45,
+  "fouten": 0,
+  "klopt": 95,
+  "bron": 90,
+  "weetNiet": "2 van 4",
+  "seconden": 6.8,
+  "tokensIn": 7342,
+  "tokensUit": 523,
+  "kostPer1000": 39.82,
+  "prijsbron": "https://platform.claude.com/docs/en/about-claude/pricing"
+ },
+ {
   "model": "Qwen3.8 27B",
   "open": true,
   "via": "cloudflare",
@@ -32,6 +49,23 @@
   "tokensUit": 723,
   "kostPer1000": 5.69,
   "prijsbron": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+ },
+ {
+  "model": "Claude Haiku 5.5",
+  "open": false,
+  "via": "anthropic",
+  "deel": "oefen",
+  "datum": "2026-11-20",
+  "vragen": 45,
+  "fouten": 0,
+  "klopt": 88,
+  "bron": 88,
+  "weetNiet": "4 van 4",
+  "seconden": 5.8,
+  "tokensIn": 7902,
+  "tokensUit": 798,
+  "kostPer1000": 1.19,
+  "prijsbron": "https://platform.claude.com/docs/en/about-claude/pricing"
  },
  {
   "model": "gpt-oss-120b",

@@ -1,55 +1,57 @@
 :root{--bg:#f7f5f0;--panel:#fff;--ink:#1f1d1a;--muted:#6f675b;--line:#e3ddd2;--accent:#2f6fd0;--soft:#e3ecfa;--groen:#2f8a5b;--rood:#b03a2e;--geel:#fbf2d5;
-  --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color-scheme:light dark}
+  --ui:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,Georgia,serif;color-scheme:light dark}
 @media (prefers-color-scheme:dark){:root{--bg:#161514;--panel:#201f1d;--ink:#ece7df;--muted:#a39b8e;--line:#33302b;--accent:#64a0f2;--soft:#1b2537;--groen:#5cc48e;--rood:#e57368;--geel:#33301f}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--ui);
   padding:16px max(16px,env(safe-area-inset-right)) 40px max(16px,env(safe-area-inset-left))}
-main{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-h1{font-size:26px;margin:0 0 6px}
-h2{font-size:18px;margin:0;text-wrap:balance}
-p{margin:0;text-wrap:pretty}
+main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1{font:600 30px/1.2 var(--serif);margin:0 0 6px;letter-spacing:-.01em}
+h2{font:600 20px/1.3 var(--serif);margin:0;text-wrap:balance}
+#meting,#bronnen{border-top:1px solid var(--line);padding-top:20px}
+#meting td,#meting th,.klein{font-variant-numeric:tabular-nums}
+p,li{margin:0;text-wrap:pretty;max-width:60ch}
 a{color:var(--accent)}
-.sub{color:var(--muted);max-width:640px}
+.sub{color:var(--muted)}
 .klein{font-size:13px;color:var(--muted);font-weight:400}
 .verborgen{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 button{font:inherit;color:inherit;cursor:pointer}
 .q{border:0;background:none;color:var(--accent);padding:0;font-size:inherit;text-decoration:underline dotted;position:relative}
 .q::after{content:"";position:absolute;inset:-12px -4px}
-.pop{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 48px 14px 14px;margin-top:10px;max-width:640px;display:flex;flex-direction:column;gap:10px}
+.pop{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 48px 14px 14px;margin-top:10px;display:flex;flex-direction:column;gap:10px}
 .pop[hidden]{display:none}
 .pop .x{position:absolute;top:0;right:0;width:44px;height:44px;border:0;background:none;font-size:24px;color:var(--muted)}
-.pop svg{width:100%;height:auto;max-width:520px}
-.pop svg text{font:600 13px var(--ui);fill:var(--ink);text-anchor:middle}
-.pop svg text.klein{font-weight:400;font-size:10px;fill:var(--muted)}
-.pop svg rect{fill:var(--soft);stroke:var(--line)}
-.pop svg .blok{cursor:pointer}
-.pop svg .blok.aan rect{stroke:var(--accent);stroke-width:2}
-.pop svg .pijl{stroke:var(--muted);fill:none;stroke-width:1.5}
-.uitleg{font-size:14px;min-height:3em}
-form{display:flex;flex-direction:column;gap:8px;max-width:640px}
+.stappen{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.stappen li::marker{color:var(--accent);font-weight:700}
+form{display:flex;flex-direction:column;gap:8px}
 textarea{font:inherit;font-size:16px;width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);resize:vertical}
 .rij{display:flex;justify-content:space-between;align-items:center;gap:8px}
 #stel{border:0;background:var(--accent);color:var(--bg);font-weight:600;border-radius:22px;min-height:44px;padding:0 22px}
 .voorbeelden{display:flex;flex-wrap:wrap;gap:8px}
 .vb{border:1px solid var(--line);background:var(--panel);border-radius:16px;padding:8px 12px;min-height:44px;font-size:14px;text-align:left}
 .antwoorden{display:grid;grid-template-columns:1fr;gap:16px}
-@media (min-width:760px){.antwoorden{grid-template-columns:1fr 1fr}}
+@media (min-width:760px){.antwoorden{grid-template-columns:1fr 1fr;width:min(980px,100vw - 32px);margin-left:calc(50% - min(490px,50vw - 16px))}}
 .antwoorden[hidden]{display:none}
 .kaart{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:12px}
 .inhoud{display:flex;flex-direction:column;gap:12px}
 .antwoord{font-size:16px}
 .laden{color:var(--muted)}
-.bewaard{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 8px}
+.bewaard{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0}
+.kaart h2 .klein{font-family:var(--ui)}
+.bronkop{font-weight:600;font-size:14px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-wrap:wrap;gap:2px 8px;align-items:baseline}
 .bewaard .live{font:inherit;font-size:13px;min-height:36px;padding:0 10px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--accent);cursor:pointer}
 .fout{color:var(--rood)}
-.ref{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 5px;border-radius:7px;border:1px solid var(--accent);color:var(--accent);background:none;font-size:12px;font-weight:700;vertical-align:1px;margin-left:2px}
+.ref{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 4px;border-radius:4px;border:0;color:var(--accent);background:var(--soft);font-size:11px;font-weight:700;vertical-align:.45em;margin-left:2px;font-variant-numeric:tabular-nums}
+button.ref:hover{background:var(--accent);color:var(--bg)}
 button.ref{position:relative}
 button.ref::after{content:"";position:absolute;inset:-11px -6px}
-.bronnen{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;border-top:1px solid var(--line);padding-top:10px}
+.bronnen{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
 .doc{font-size:14px;font-weight:600;margin:0}
 .paginas{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.pag{display:inline-flex;align-items:center;gap:4px;min-height:40px;padding:0 10px;border:1px solid var(--line);border-radius:10px;background:none;font-size:13px;color:inherit;cursor:pointer}
-.pag .ref{margin-left:0}
+.pag{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px 0 8px;border:1px solid var(--accent);border-radius:10px;background:none;font-size:13px;color:var(--accent);font-weight:600;cursor:pointer}
+.pag>span:last-child::after{content:" ▾"}
+.pag[aria-expanded="true"]>span:last-child::after{content:" ▴"}
+.pag .ref{margin-left:0;vertical-align:0}
 .pag[aria-expanded="true"]{border-color:var(--accent);background:var(--soft)}
 .bron blockquote{margin:4px 0 8px;padding:8px 10px;border-left:3px solid var(--accent);background:var(--soft);font-size:14px;white-space:pre-line;border-radius:0 8px 8px 0}
 .pdfknoppen{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:8px}
@@ -73,7 +75,8 @@ footer{border-top:1px solid var(--line);padding-top:12px;display:flex;flex-wrap:
 #meting table{border-collapse:collapse;font-size:.9em;width:100%}
 #meting th,#meting td{padding:6px 8px;border-bottom:1px solid color-mix(in srgb,currentColor 15%,transparent);text-align:left;vertical-align:top}
 #meting td{white-space:nowrap}
-#meting h3{font-size:1em;margin:1em 0 .3em}
+@media (max-width:480px){#meting th,#meting td{padding:6px 4px}#meting table{font-size:.85em}}
+#meting h3{font:600 17px/1.3 var(--serif);margin:1em 0 .3em}
 #versie details{display:inline}#versie summary{cursor:pointer}#versie ul{margin:6px 0 0;padding-left:18px}
 .nieuw{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);padding:10px 16px;min-height:44px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit;box-shadow:0 4px 16px rgba(0,0,0,.18);cursor:pointer;z-index:9}
 .oordeel main{padding-bottom:96px}

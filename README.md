@@ -202,6 +202,9 @@ rekent het uit op de bewaarde metingen, zonder nieuwe modelaanroepen.
 De oefen- en apart gehouden vragen zijn geschreven met de documenten ernaast,
 dus die scores zijn eerder te hoog. De metingen staan in `metingen/`.
 
+Opmaak: `node test/opmaak.cjs [url]` kijkt op 360 en 1440 px of geen tekstregel langer
+is dan 75 tekens en niets zijwaarts scrollt; draai het vóór elke deploy.
+
 Zelf meten: `node test/meet.mjs zoek` (geen sleutels nodig; `--alleen-woorden`,
 `--deel apart|echt`, `--opties '{"herrangschik":false}'`), `node test/meet.mjs
 open|claude [--rechter]`, of op GitHub › Actions › Meten › Run workflow.
