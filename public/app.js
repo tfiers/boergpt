@@ -2,7 +2,7 @@
 // elk antwoord met zijn stappen en bronnen.
 import { $, esc, maand, STAPEL, bronLijst, haal, laden, refs, nummers, stappenHtml, bronnenHtml, volgVersie } from "./bron.js";
 
-volgVersie(4);   // hoger bij elke versie die bezoekers merken; public/versies.json zegt wat er veranderde
+volgVersie(5);   // hoger bij elke versie die bezoekers merken; public/versies.json zegt wat er veranderde
 
 // --- Wat je typt, blijft staan ---------------------------------------------
 const veld = $("#vraag");
@@ -11,14 +11,17 @@ veld.addEventListener("input", () => {
   try { localStorage.setItem("vraag", veld.value); $("#bewaard").textContent = "bewaard op dit toestel"; } catch {}
 });
 
-// --- Uitleg: popover met de stappen ---------------------------------------
-const knop = $(".q"), pop = $("#hoe");
-const zet = open => { pop.hidden = !open; knop.setAttribute("aria-expanded", open); };
-knop.addEventListener("click", e => { e.stopPropagation(); zet(pop.hidden); });
-pop.querySelector(".x").addEventListener("click", () => zet(false));
-pop.addEventListener("click", e => e.stopPropagation());
-document.addEventListener("click", () => zet(false));
-document.addEventListener("keydown", e => { if (e.key === "Escape") zet(false); });
+// --- Uitleg: "Hoe werkt het?" en "Hoe goed is het?", elk een paneel achter een knop -----
+// Eén paneel tegelijk; een tik ernaast, × of Escape sluit het.
+const panelen = [...document.querySelectorAll(".q")].map(knop => [knop, document.getElementById(knop.getAttribute("aria-controls"))]);
+const zet = open => panelen.forEach(([k, p]) => { p.hidden = p !== open; k.setAttribute("aria-expanded", p === open); });
+for (const [knop, pop] of panelen) {
+  knop.addEventListener("click", e => { e.stopPropagation(); zet(pop.hidden ? pop : null); });
+  pop.querySelector(".x").addEventListener("click", () => zet(null));
+  pop.addEventListener("click", e => e.stopPropagation());
+}
+document.addEventListener("click", () => zet(null));
+document.addEventListener("keydown", e => { if (e.key === "Escape") zet(null); });
 
 // --- Vragen -----------------------------------------------------------------
 document.querySelectorAll(".vb").forEach(b => b.addEventListener("click", () => {
@@ -80,7 +83,7 @@ fetch("meting.json").then(r => r.json()).then(tabellen => {
   $("#metingen").innerHTML = tabellen.map(t => `<h3>${esc(t.titel)} <span class="klein">${esc(new Date(t.datum).toLocaleDateString("nl-BE", { day: "numeric", month: "short", year: "numeric" }))}</span></h3>
     <table><thead><tr>${t.kolommen.map(k => `<th>${esc(k)}</th>`).join("")}</tr></thead>
     <tbody>${t.rijen.map(r => `<tr><th>${esc(r[0])}</th>${r.slice(1).map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`).join("");
-}).catch(() => { $("#meting").hidden = true; });
+}).catch(() => { $("#metingen").innerHTML = `<p class="fout">De metingen laden niet; ververs de pagina.</p>`; });
 
 // --- Welk model? Een balk per model: hoe vaak het antwoord klopt (test/vergelijk.mjs) ---
 fetch("modellen.json").then(r => r.json()).then(rijen => {

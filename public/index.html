@@ -14,18 +14,50 @@
   <header>
     <h1>BoerGPT <span class="demo">demo</span></h1>
     <p class="demotekst">Een demo, geen echt product: gemaakt om te tonen hoe zoeken met een taalmodel werkt.</p>
-    <p class="sub">Vlaamse mestregels, praktijkgidsen, GLB-subsidies en ILVO-onderzoek: 37 openbare documenten. Elke zin van een antwoord heeft zijn bron. <a href="perceel.html">Of laat een agent een perceelfiche invullen.</a> <button class="q" aria-expanded="false" aria-controls="hoe" type="button">Hoe werkt het?</button></p>
+    <p class="sub">Vlaamse mestregels, praktijkgidsen, GLB-subsidies en ILVO-onderzoek: 37 openbare documenten. Elke zin van een antwoord heeft zijn bron. <a href="perceel.html">Of laat een agent een perceelfiche invullen.</a></p>
+    <div class="knoppen">
+      <button class="q" aria-expanded="false" aria-controls="hoe" type="button">Hoe werkt het?</button>
+      <button class="q" aria-expanded="false" aria-controls="goed" type="button">Hoe goed is het?</button>
+    </div>
     <div class="pop" id="hoe" hidden>
       <button class="x" type="button" aria-label="Sluiten">×</button>
       <h2>Hoe werkt het?</h2>
       <ol class="stappen">
         <li><b>Je vraag</b> in gewone taal, in het Nederlands of een andere taal.</li>
-        <li><b>Een agent kiest</b>: een taalmodel (links een open model, rechts Claude) beslist zelf of het zoekt, in welke stapel documenten, en of het de uitrijkalender nodig heeft. Elke stap staat bij het antwoord.</li>
-        <li><b>Zoeken</b> in 5.000 stukjes tekst, op betekenis (bge-m3: "drijfmest" vindt ook "vloeibare dierlijke mest") en op exacte woorden (BM25). Een herrangschikker leest de vraag met de 30 beste stukjes en kiest er 6. De <b>uitrijkalender</b> van de VLM staat er als tabel bij.</li>
-        <li><b>Het antwoord</b> noemt bij elke zin zijn bron. Een bron die het model niet echt kreeg, valt weg. Tik op een bron voor de letterlijke tekst, de datum en de pagina in de pdf.</li>
+        <li><b>Een agent</b> (tool use): een taalmodel, links een open model en rechts Claude, beslist zelf of het zoekt, in welke stapel documenten, en of het de uitrijkalender nodig heeft. Elke stap staat bij het antwoord.</li>
+        <li><b>Retrieval</b> over 5.000 chunks: dense retrieval met bge-m3 embeddings ("drijfmest" vindt ook "vloeibare dierlijke mest") en BM25 op exacte woorden, samengevoegd met reciprocal rank fusion. Een cross-encoder reranker leest de vraag met de 30 beste chunks en kiest er 6. De <b>uitrijkalender</b> van de VLM is een tool met de tabel als data.</li>
+        <li><b>Het antwoord</b> citeert bij elke zin zijn bron. Een bron die het model niet echt kreeg, valt weg. Tik op een bron voor de letterlijke tekst en de pagina uit de pdf.</li>
       </ol>
       <p class="klein">Code: <a href="https://github.com/tfiers/boergpt">github.com/tfiers/boergpt</a> · <a href="#bronnen">alle documenten</a></p>
     </div>
+    <section class="pop" id="goed" hidden>
+      <button class="x" type="button" aria-label="Sluiten">×</button>
+      <h2>Hoe goed is het?</h2>
+    <p class="klein">Drie test sets. De oefenvragen (dev set) en apart gehouden vragen (held-out set) zijn geschreven met het document ernaast, de helft in andere woorden dan het document; de held-out set dient niet om de demo bij te stellen. De echte vragen stelden boeren aan de Mestbank, het Departement Landbouw en Visserij, het Agentschap Landbouw en Zeevisserij en Landbouwleven; 9 ervan staan niet in de documenten. "Klopt" komt van een answer key (het juiste getal of woord staat in het antwoord) en van een LLM-as-judge (Claude, met het juiste antwoord ernaast). <a href="https://github.com/tfiers/boergpt/blob/main/test/vragen.json">Alle vragen</a> · <a href="https://github.com/tfiers/boergpt#hoe-goed-is-het">alle cijfers, met confidence intervals en significance tests</a></p>
+    <div id="metingen"></div>
+    <div id="modellen" hidden>
+      <h3>Welk model?</h3>
+      <p class="klein">Dezelfde 41 oefenvragen met een antwoord in de documenten, dezelfde documenten, een ander taalmodel; de open modellen via Cloudflare Workers AI (16 nov 2026), Claude Haiku en Opus op 20 nov 2026. Klopt volgens de answer key; de kost is wat de aanbieder per token vraagt. Haiku, Sonnet, Opus en Qwen verschillen niet significant (McNemar, Holm-gecorrigeerd).</p>
+      <ol class="balken"></ol>
+    </div>
+      <h3>Blind spots</h3>
+      <ul class="lijst">
+        <li><b>Kleine test sets:</b> 41 echte vragen, dus het 95% confidence interval is ± 10 punten breed. En drie runs van hetzelfde model verschillen op 9 van de 41 vragen.</li>
+        <li><b>Geen domain expert keek mee.</b> De answer key is een regex, en de LLM-as-judge is Claude die ook Claude beoordeelt (self-preference bias). Een tweede judge (Opus) is het vaak eens, maar dat meet geen juistheid.</li>
+        <li><b>Optimistische dev set:</b> de oefenvragen schreven we met het document ernaast, en de demo is erop bijgesteld.</li>
+        <li><b>Retrieval telt het document, niet de passage:</b> "juiste bron" zegt niet of het juiste stuk tekst erbij zat.</li>
+        <li><b>Tabellen in pdf's</b> worden onleesbare tekst; alleen de uitrijkalender staat als data in de demo.</li>
+        <li><b>Een momentopname:</b> 37 documenten van één moment. Regels veranderen elk jaar, en niets houdt de documenten bij.</li>
+        <li><b>Geen echte gebruikers:</b> geen boer of adviseur gebruikte de demo al. Het red team telde 20 aanvallen.</li>
+      </ul>
+      <h3>Next steps</h3>
+      <ul class="lijst">
+        <li><b>Gebruikerstests</b> met boeren en adviseurs, in de geest van <i>Don't Make Me Think</i>: vijf mensen die hardop denken bij een eigen vraag.</li>
+        <li><b>Domain experts</b> beoordelen vragen en antwoorden blind (<a href="oordeel.html">de pagina staat klaar</a>), en meten zo hoe vaak de judge het met hen eens is.</li>
+        <li><b>Een grotere held-out set</b> van echte vragen, vastgelegd vóór er iets wordt bijgesteld, en error analysis per soort fout.</li>
+        <li><b>Passage-level labels</b> voor retrieval, en een pipeline die nieuwe versies van de documenten binnenhaalt.</li>
+      </ul>
+    </section>
   </header>
 
   <form id="vraagform">
@@ -53,16 +85,6 @@
     </article>
   </section>
 
-  <section id="meting">
-    <h2>Hoe goed is het?</h2>
-    <p class="klein">Oefenvragen en apart gehouden vragen zijn geschreven met het document ernaast, de helft in andere woorden dan het document; de apart gehouden vragen dienen niet om de demo bij te stellen. De echte vragen stelden boeren aan de Mestbank, het Departement Landbouw en Visserij, het Agentschap Landbouw en Zeevisserij en Landbouwleven; 9 ervan staan niet in de documenten. Of een antwoord klopt, oordeelt Claude als rechter, met het juiste antwoord ernaast. <a href="https://github.com/tfiers/boergpt/blob/main/test/vragen.json">Alle vragen</a></p>
-    <div id="metingen"></div>
-    <div id="modellen" hidden>
-      <h3>Welk model?</h3>
-      <p class="klein">Dezelfde 41 oefenvragen met een antwoord in de documenten, dezelfde documenten, een ander taalmodel; de open modellen via Cloudflare Workers AI (16 nov 2026), Claude Haiku en Opus op 20 nov 2026. Klopt: het juiste getal of woord staat in het antwoord. De kost is wat de aanbieder per token vraagt.</p>
-      <ol class="balken"></ol>
-    </div>
-  </section>
 
   <section id="bronnen">
     <h2>De documenten</h2>
