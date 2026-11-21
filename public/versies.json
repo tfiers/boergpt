@@ -18,5 +18,10 @@
   "versie": 4,
   "datum": "2026-11-21",
   "wat": "Rustiger opmaak: tekst in één leesbare kolom, uitleg in vier stappen. Bronnen als genummerde voetnoten; een tik toont meteen de pagina uit de pdf. Metingen van 20 nov met Claude Haiku en Opus 5.5."
+ },
+ {
+  "versie": 5,
+  "datum": "2026-11-21",
+  "wat": "Twee knoppen bovenaan: Hoe werkt het? en Hoe goed is het?, elk een paneel. Hoe goed is het? toont ook de blind spots en de next steps. Vaktermen uit ML en statistiek in het Engels (retrieval, reranker, LLM-as-judge)."
  }
 ]

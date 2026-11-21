@@ -1,34 +1,34 @@
 [
  {
-  "titel": "Zoeken: zit het juiste document bij de 6 stukjes die het model krijgt?",
+  "titel": "Retrieval: zit het juiste document bij de 6 chunks die het model krijgt?",
   "datum": "2026-11-16",
   "kolommen": [
    "",
-   "oefen (40)",
-   "apart (22)",
+   "dev (40)",
+   "held-out (22)",
    "echt (41)"
   ],
   "rijen": [
    [
-    "woorden",
+    "BM25 (woorden)",
     "83%",
     "73%",
     "73%"
    ],
    [
-    "betekenis",
+    "dense (bge-m3)",
     "83%",
     "91%",
     "88%"
    ],
    [
-    "woorden + betekenis",
+    "hybrid (RRF)",
     "90%",
     "91%",
     "73%"
    ],
    [
-    "+ herrangschikker",
+    "+ reranker",
     "90%",
     "95%",
     "85%"
@@ -41,14 +41,14 @@
   "kolommen": [
    "",
    "juiste bron",
-   "klopt",
-   "half",
+   "klopt (judge)",
+   "half (judge)",
    "weet niet",
-   "tijd"
+   "latency"
   ],
   "rijen": [
    [
-    "oefen (45)",
+    "dev (45)",
     "95%",
     "96–98%",
     "2–4%",
