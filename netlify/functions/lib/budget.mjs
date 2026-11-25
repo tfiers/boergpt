@@ -41,9 +41,8 @@ export async function budget(context, soort = "vraag") {
 }
 
 // Claude kost per token, en de API-sleutel van de demo heeft een maandlimiet.
-// Daarom hoogstens CLAUDE_DOLLAR_PER_DAG per dag. Zonder die
-// variabele: $2 per dag (± 80 vragen) t.e.m. 4 dec 2026, daarna $0,50
-// (± 20 vragen). Met 0 staat Claude uit.
+// Daarom hoogstens CLAUDE_DOLLAR_PER_DAG per dag. Zonder die variabele: $2 per dag (± 80 vragen)
+// t.e.m. 4 dec 2026, daarna $0,50 (± 20 vragen). Met 0 staat Claude uit.
 // Geteld in dollar na elk antwoord: elk antwoord schrijft een sleutel met zijn kost in de naam.
 // Is het budget op, dan antwoordt het open model in Claude's plaats (lib/antwoord.mjs).
 const dagVan = () => new Date().toISOString().slice(0, 10);
