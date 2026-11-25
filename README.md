@@ -168,12 +168,6 @@ opdracht in de vraag): Claude reageerde 19 keer gepast en 1 keer deels
 (de valse veronderstelling sprak het wel tegen, maar zonder bron). gpt-oss-120b
 gaf geen enkel onveilig antwoord, maar weigerde vaak kaal of in het Engels.
 
-**Blind oordeel van experts** (`public/oordeel.html`): 30 antwoorden op 15 echte
-vragen, van Claude en gpt-oss-120b door elkaar, zonder het model. Elke expert
-krijgt een eigen link met een code (`node test/oordeel.mjs code <naam>`);
-`node test/oordeel.mjs vergelijk` zet hun oordeel naast de sleutel en de
-rechter.
-
 **Hoe zeker zijn de cijfers?** `python3 test/statistiek.py metingen/echt-*.json`
 rekent het uit op de bewaarde metingen, zonder nieuwe modelaanroepen.
 
@@ -196,8 +190,7 @@ rekent het uit op de bewaarde metingen, zonder nieuwe modelaanroepen.
   als Sonnet. Over de antwoorden van Claude op de oefenvragen zijn ze het bijna
   altijd eens (kappa 0,7–1,0; bij Llama 0,47), op de echte vragen minder (kappa
   0,4–0,9 per run van Claude): daar ligt de grens tussen
-  "klopt" en "half" minder vast. Hoe vaak een expert het met de rechter eens is,
-  meet het blinde oordeel hierboven.
+  "klopt" en "half" minder vast.
 
 De oefen- en apart gehouden vragen zijn geschreven met de documenten ernaast,
 dus die scores zijn eerder te hoog. De metingen staan in `metingen/`.

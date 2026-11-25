@@ -1,6 +1,5 @@
 // Lokale stand-in: serveert public/ en beantwoordt /api/vraag en /api/perceel met een nep-model
-// dat echt zoekt (zelfde agent-lus), met vertraging, en /api/oordeel met de echte functie en een
-// opslag in het geheugen (maak een link met node test/oordeel.mjs code test http://localhost:8787).
+// dat echt zoekt (zelfde agent-lus), met vertraging.
 // Alleen om de pagina's te testen.
 import http from "node:http"; import { readFileSync, existsSync } from "node:fs"; import { join, extname } from "node:path";
 process.chdir(process.argv[2]);
@@ -36,7 +35,6 @@ const { opslag } = await import(join(process.cwd(), "netlify/functions/lib/budge
 const { nepStore } = await import(join(process.cwd(), "test/nep.mjs"));
 const winkels = {};
 opslag.open = naam => (winkels[naam] ??= nepStore());
-const { default: oordeel } = await import(join(process.cwd(), "netlify/functions/oordeel.mjs"));
 const lees = async req => { let body = ""; for await (const c of req) body += c; return JSON.parse(body); };
 const stuur = (res, data, status = 200) => { res.writeHead(status, { "content-type": "application/json" }); res.end(JSON.stringify(data)); };
 const TYPE = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" };
@@ -50,11 +48,6 @@ http.createServer(async (req, res) => {
     const p = await lees(req), vraag = perceelVraag(p);
     if (!vraag) return stuur(res, { fout: "Vul elk veld in." }, 400);
     return stuur(res, { vraag, ...await beantwoord(p.model === "open" ? "open" : "claude", vraag, { maxRondes: 4, taak: FICHE }) });
-  }
-  if (req.url.startsWith("/api/oordeel")) {
-    const body = req.method === "POST" ? JSON.stringify(await lees(req)) : undefined;
-    const r = await oordeel(new Request(`http://localhost${req.url}`, { method: req.method, body }));
-    return stuur(res, await r.json(), r.status);
   }
   const p = join("public", req.url === "/" ? "index.html" : req.url.split("?")[0]);
   if (!existsSync(p)) { res.writeHead(404); return res.end(); }

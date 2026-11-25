@@ -3,7 +3,7 @@
 //
 //   node tools/layout_check.cjs [out-dir]      # exit 1 on a fault; screenshots in out-dir (default /tmp/boergpt-layout)
 //
-// It serves public/ as it is and answers the site's functions (/api/vraag, /api/perceel, /api/oordeel) as each
+// It serves public/ as it is and answers the site's functions (/api/vraag, /api/perceel) as each
 // state says: with the saved answers of public/voorbeelden.json, an error code, or no connection. It fails on: an
 // error in the page; sideways scroll; what the state should show (an answer, an error message) not showing or
 // running off the screen; and an explanation ("Hoe werkt het?", "Hoe goed is het?") not opening on top or not
@@ -28,8 +28,6 @@ const ids = ANSWER.bronnen.map((b) => b.id);
 const FICHE = { ...ANSWER, vraag: 'Silomaïs op akkerland, drijfmest, 2,5 ha', model: 'Claude Sonnet 5.5',
   formulier: Object.fromEntries(['uitrijperiode', 'op_datum', 'stikstof', 'fosfor', 'vanggewas', 'ecoregelingen', 'nakijken']
     .map((k, i) => [k, i % 3 === 2 ? 'Niet gevonden in mijn documenten.' : `Een ingevuld veld voor de test [S${ids[i % ids.length]}].`])) };
-const ITEMS = { items: [0, 1].map((i) => ({ id: `t${i}`, vraag: EXAMPLE, herkomst: 'Landbouwleven', antwoord: ANSWER.antwoord,
-  bronnen: ANSWER.bronnen, kalender: ANSWER.kalender ? 'Type 2 op grasland: niet van 1 november tot 15 januari.' : '' })), oordelen: [] };
 
 // Each state: the page, how the functions answer (a number is a status; 0 is no connection), what to do, and
 // what must then be on screen.
@@ -50,13 +48,6 @@ const STATES = {
   'perceel-fiche': { page: '/perceel.html', api: FICHE, act: PERCEEL, must: ['#fiche .velden', '#fiche .kopieer'] },
   'perceel-429': { page: '/perceel.html', api: 429, act: PERCEEL, must: ['#fiche .fout'] },
   'perceel-offline': { page: '/perceel.html', api: 0, act: PERCEEL, must: ['#fiche .fout'] },
-  'oordeel-items': { page: '/oordeel.html?wie=test&code=test', api: ITEMS,
-    act: async (p) => { await p.click('[data-veld=klopt] [data-w=ja]'); await p.click('[data-veld=bron] [data-w=ja]'); }, must: ['#item .antwoord', '#balk'] },
-  'oordeel-niet-bewaard': { page: '/oordeel.html?wie=test&code=test', api: ITEMS, post: 502,
-    act: async (p) => { await p.click('[data-veld=klopt] [data-w=ja]'); await p.click('[data-veld=bron] [data-w=nee]'); }, must: ['#melding'] },
-  'oordeel-401': { page: '/oordeel.html?wie=test&code=fout', api: 401, must: ['#melding'] },
-  'oordeel-offline': { page: '/oordeel.html?wie=test&code=test', api: 0, must: ['#melding'] },
-  'oordeel-geen-link': { page: '/oordeel.html', must: ['#melding'] },
 };
 
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.mjs': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
@@ -70,7 +61,7 @@ async function open(browser, screen, s) {
     const req = r.request(), u = new URL(req.url());
     if (u.host !== 'local.test') return r.abort();   // the visit counter on tomasfiers.net
     if (u.pathname.startsWith('/api/')) {
-      const answer = req.method() === 'POST' && u.pathname === '/api/oordeel' ? (s.post ?? {}) : s.api;
+      const answer = s.api;
       if (answer === 0) return r.abort('internetdisconnected');
       if (typeof answer === 'number') return r.fulfill({ status: answer, contentType: 'application/json', body: JSON.stringify({ fout: 'Een foutmelding van de server voor de test.' }) });
       return r.fulfill({ contentType: 'application/json', body: JSON.stringify(answer ?? {}) });

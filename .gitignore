@@ -4,4 +4,3 @@ data/pdf/
 __pycache__/
 dev/*.png
 test/uitslag-*
-test/oordeel-sleutel.json
