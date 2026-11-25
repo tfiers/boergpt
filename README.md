@@ -230,7 +230,7 @@ vragen per minuut stuurt. Een perceelfiche heeft een eigen teller (60 per dag,
 
 Claude kost per token (± $0,025 per vraag), dus Claude heeft daarbovenop een
 dagbudget in dollar: `CLAUDE_DOLLAR_PER_DAG` in Netlify, geteld na elk antwoord
-(`lib/budget.mjs`), van het gratis tegoed van het plan. Zonder die variabele is
+(`lib/budget.mjs`). Zonder die variabele is
 het $2 per dag (± 80 vragen) t.e.m. 4 dec 2026, daarna $0,50 (± 20 vragen,
 hoogstens ± $15 per maand); met 0 staat Claude uit. Is het
 op, of antwoordt de Claude API niet (bijvoorbeeld omdat de maandlimiet van de
@@ -257,8 +257,7 @@ node tools/layout_check.cjs    # elke pagina op twee telefoons en een laptop, oo
 ```
 
 Draai `tools/layout_check.cjs` na elke wijziging aan `public/` en kijk naar de
-screenshots van wat je wijzigde (huisregels prefs/code.md "An app's layout is
-checked by a script"; Memo's berichtcheck vraagt hem voor een push).
+screenshots van wat je wijzigde.
 
 Online: een Netlify-site met deze map, en als omgevingsvariabelen
 `GROQ_API_KEY`, `ANTHROPIC_API_KEY`,

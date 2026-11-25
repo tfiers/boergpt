@@ -1,6 +1,5 @@
 // Layout check for BoerGPT's pages (public/): each page on each screen it is used on, in what it shows when
-// things go well and when they go wrong (huisregels prefs/code.md "An app's layout is checked by a script";
-// prefs/apps.md "Test zoals hij en de gebruikers het vasthouden").
+// things go well and when they go wrong.
 //
 //   node tools/layout_check.cjs [out-dir]      # exit 1 on a fault; screenshots in out-dir (default /tmp/boergpt-layout)
 //
