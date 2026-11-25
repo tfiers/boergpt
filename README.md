@@ -253,7 +253,11 @@ ontbreekt.
 npm install
 node dev/server.mjs .          # de pagina op http://localhost:8787, met een nep-model
 node --test test/*.test.mjs
+node tools/layout_check.cjs    # elke pagina op twee telefoons en een laptop, ook bij 429, 502 en offline
 ```
+
+Draai `tools/layout_check.cjs` na elke wijziging aan `public/` en kijk naar de
+screenshots van wat je wijzigde.
 
 Online: een Netlify-site met deze map, en als omgevingsvariabelen
 `GROQ_API_KEY`, `ANTHROPIC_API_KEY`,
