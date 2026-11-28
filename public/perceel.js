@@ -66,7 +66,7 @@ function toon(doos, d, sec) {
     const bron = id => { const s = d.bronnen.find(x => x.id === +id); return s ? ` (${s.titel}, p. ${s.pagina})` : ""; };
     const tekst = `${d.vraag}\n\n${Object.entries(VELDEN).map(([k, naam]) =>
       `${naam}: ${(d.formulier[k] || "").replace(/\s*\[S(\d+)\]/g, (_, id) => bron(id)).replace(/\s*\[K\]/g, d.kalender ? ` (uitrijkalender, ${d.kalender.bron})` : "")}`).join("\n")}\n\nConcept van BoerGPT: nakijken voor gebruik.`;
-    try { await navigator.clipboard.writeText(tekst); e.target.textContent = "Gekopieerd ✓"; }
+    try { await navigator.clipboard.writeText(tekst); e.target.textContent = "Gekopieerd"; }
     catch { e.target.textContent = "Kopiëren lukt hier niet"; }
   });
 }
